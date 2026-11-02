@@ -1,0 +1,8 @@
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:[m[K In constructor ‘[01m[KTitaWheelFootNode::TitaWheelFootNode()[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:44:43:[m[K [01;31m[Kerror: [m[K‘[01m[KcmdVelCallback[m[K’ is not a member of ‘[01m[KTitaWheelFootNode[m[K’
+   44 |             std::bind(&TitaWheelFootNode::[01;31m[KcmdVelCallback[m[K, this, _1));
+      |                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tita_drl_obs194.dir/build.make:76: CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/tita_drl_obs194.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

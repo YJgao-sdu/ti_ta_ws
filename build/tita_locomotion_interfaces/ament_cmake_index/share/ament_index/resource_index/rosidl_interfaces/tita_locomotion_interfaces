@@ -1,0 +1,4 @@
+msg/LocomotionCmd.idl
+msg/LocomotionCmd.msg
+msg/MotorsStatus.idl
+msg/MotorsStatus.msg

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-46d926eb47cfb85fa06b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tita_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_controller-8dc5a658b2c5907e3fb4.json",
+					"name" : "tita_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_controller_parameters-2dcde62c0d61c3b1ca0b.json",
+					"name" : "tita_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_controller_uninstall-e283290c2f3da63af2e8.json",
+					"name" : "tita_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-940776fc8993f5f5af73.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/build/tita_controller",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

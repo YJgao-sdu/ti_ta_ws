@@ -1,0 +1,249 @@
+[0.028s] Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/locomotion_msgs
+[0.113s] -- The C compiler identification is GNU 11.4.0
+[0.170s] -- The CXX compiler identification is GNU 11.4.0
+[0.178s] -- Detecting C compiler ABI info
+[0.239s] -- Detecting C compiler ABI info - done
+[0.249s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.249s] -- Detecting C compile features
+[0.249s] -- Detecting C compile features - done
+[0.252s] -- Detecting CXX compiler ABI info
+[0.319s] -- Detecting CXX compiler ABI info - done
+[0.326s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.326s] -- Detecting CXX compile features
+[0.327s] -- Detecting CXX compile features - done
+[0.329s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.475s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.531s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.629s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.634s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.674s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.009s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.270s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.654s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.677s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.679s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.708s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.708s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.708s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.708s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.733s] -- Found PythonExtra: .so  
+[1.844s] -- Configuring done
+[1.890s] -- Generating done
+[1.906s] -- Build files have been written to: /mnt/dev/tita_ws/build/locomotion_msgs
+[1.914s] Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/locomotion_msgs
+[1.915s] Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/locomotion_msgs -- -j16 -l16
+[1.961s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.968s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.976s] [  4%] Built target ament_cmake_python_symlink_locomotion_msgs
+[2.373s] running egg_info
+[2.374s] creating locomotion_msgs.egg-info
+[2.375s] writing locomotion_msgs.egg-info/PKG-INFO
+[2.375s] writing dependency_links to locomotion_msgs.egg-info/dependency_links.txt
+[2.375s] writing top-level names to locomotion_msgs.egg-info/top_level.txt
+[2.375s] writing manifest file 'locomotion_msgs.egg-info/SOURCES.txt'
+[2.378s] reading manifest file 'locomotion_msgs.egg-info/SOURCES.txt'
+[2.378s] writing manifest file 'locomotion_msgs.egg-info/SOURCES.txt'
+[2.422s] [  4%] Built target ament_cmake_python_build_locomotion_msgs_egg
+[2.712s] [  4%] Built target locomotion_msgs__cpp
+[2.757s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.764s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.784s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.796s] [ 12%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_generator_c.dir/rosidl_generator_c/locomotion_msgs/msg/detail/robot_states__functions.c.o[0m
+[2.801s] [ 14%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_generator_c.dir/rosidl_generator_c/locomotion_msgs/msg/detail/rigid_body__functions.c.o[0m
+[2.824s] [ 17%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_generator_c.dir/rosidl_generator_c/locomotion_msgs/msg/detail/plan_commands__functions.c.o[0m
+[2.997s] [ 19%] [32m[1mLinking C shared library liblocomotion_msgs__rosidl_generator_c.so[0m
+[3.117s] [ 19%] Built target locomotion_msgs__rosidl_generator_c
+[3.152s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.164s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.185s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.513s] [ 27%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/locomotion_msgs/msg/robot_states__type_support.cpp.o[0m
+[3.558s] [ 29%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/locomotion_msgs/msg/rigid_body__type_support.cpp.o[0m
+[3.580s] [ 31%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/locomotion_msgs/msg/plan_commands__type_support.cpp.o[0m
+[3.644s] [ 34%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/locomotion_msgs/msg/detail/robot_states__type_support.cpp.o[0m
+[3.665s] [ 36%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/locomotion_msgs/msg/detail/rigid_body__type_support.cpp.o[0m
+[3.688s] [ 38%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/locomotion_msgs/msg/detail/plan_commands__type_support.cpp.o[0m
+[3.883s] [ 40%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/locomotion_msgs/msg/detail/dds_fastrtps/robot_states__type_support.cpp.o[0m
+[3.906s] [ 42%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/locomotion_msgs/msg/detail/dds_fastrtps/plan_commands__type_support.cpp.o[0m
+[3.920s] [ 44%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/locomotion_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o[0m
+[3.998s] [ 46%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/locomotion_msgs/msg/robot_states__type_support.cpp.o[0m
+[4.019s] [ 48%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/locomotion_msgs/msg/rigid_body__type_support.cpp.o[0m
+[4.055s] [ 51%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/locomotion_msgs/msg/plan_commands__type_support.cpp.o[0m
+[4.076s] [ 53%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/rigid_body__type_support.c.o[0m
+[4.086s] [ 55%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/robot_states__type_support.c.o[0m
+[4.117s] [ 57%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/plan_commands__type_support.c.o[0m
+[4.186s] [ 59%] [32m[1mLinking CXX shared library liblocomotion_msgs__rosidl_typesupport_c.so[0m
+[4.359s] [ 61%] [32m[1mLinking C shared library liblocomotion_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.382s] [ 61%] Built target locomotion_msgs__rosidl_typesupport_c
+[4.382s] [ 63%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/locomotion_msgs/msg/detail/robot_states__type_support_c.cpp.o[0m
+[4.408s] [ 65%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/locomotion_msgs/msg/detail/rigid_body__type_support_c.cpp.o[0m
+[4.440s] [ 68%] [32mBuilding CXX object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/locomotion_msgs/msg/detail/plan_commands__type_support_c.cpp.o[0m
+[4.451s] [ 70%] [32m[1mLinking CXX shared library liblocomotion_msgs__rosidl_typesupport_cpp.so[0m
+[4.525s] [ 70%] Built target locomotion_msgs__rosidl_typesupport_introspection_c
+[4.641s] [ 70%] Built target locomotion_msgs__rosidl_typesupport_cpp
+[5.123s] [ 72%] [32m[1mLinking CXX shared library liblocomotion_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.477s] [ 72%] Built target locomotion_msgs__rosidl_typesupport_introspection_cpp
+[5.497s] [ 74%] [32m[1mLinking CXX shared library liblocomotion_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.560s] [ 76%] [32m[1mLinking CXX shared library liblocomotion_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.706s] [ 76%] Built target locomotion_msgs__rosidl_typesupport_fastrtps_cpp
+[5.706s] [ 76%] Built target locomotion_msgs__rosidl_typesupport_fastrtps_c
+[5.782s] [ 76%] Built target locomotion_msgs
+[5.895s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.444s] [ 78%] Built target locomotion_msgs__py
+[7.555s] [ 80%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_generator_py.dir/rosidl_generator_py/locomotion_msgs/msg/_robot_states_s.c.o[0m
+[7.578s] [ 82%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_generator_py.dir/rosidl_generator_py/locomotion_msgs/msg/_rigid_body_s.c.o[0m
+[7.596s] [ 85%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_generator_py.dir/rosidl_generator_py/locomotion_msgs/msg/_plan_commands_s.c.o[0m
+[7.876s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/locomotion_msgs/liblocomotion_msgs__rosidl_generator_py.so[0m
+[7.987s] [ 87%] Built target locomotion_msgs__rosidl_generator_py
+[8.076s] [ 89%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.098s] [ 91%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.104s] [ 93%] [32mBuilding C object CMakeFiles/locomotion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.242s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.276s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.283s] [100%] [32m[1mLinking C shared library rosidl_generator_py/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.356s] [100%] Built target locomotion_msgs__rosidl_typesupport_introspection_c__pyext
+[8.357s] [100%] Built target locomotion_msgs__rosidl_typesupport_c__pyext
+[8.382s] [100%] Built target locomotion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.396s] Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/locomotion_msgs -- -j16 -l16
+[8.396s] Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/locomotion_msgs
+[11.170s] -- Install configuration: ""
+[11.170s] -- Execute custom install script
+[11.170s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/rosidl_interfaces/locomotion_msgs
+[11.170s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__functions.h
+[11.170s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__struct.h
+[11.170s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__type_support.h
+[11.170s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__functions.h
+[11.171s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__struct.h
+[11.171s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__type_support.h
+[11.171s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__functions.h
+[11.171s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__struct.h
+[11.171s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__type_support.h
+[11.171s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/plan_commands.h
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rigid_body.h
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/robot_states.h
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_generator_c__visibility_control.h
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/library_path.sh
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/library_path.dsv
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_fastrtps_c.h
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h
+[11.172s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_fastrtps_c.h
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_introspection_c.h
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_introspection_c.h
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__builder.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__struct.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__traits.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__type_support.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__builder.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__struct.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__traits.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__type_support.hpp
+[11.173s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__builder.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__struct.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__traits.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__type_support.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/plan_commands.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rigid_body.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/robot_states.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_fastrtps_cpp.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_fastrtps_cpp.hpp
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.174s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_introspection_cpp.hpp
+[11.177s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+[11.178s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_introspection_cpp.hpp
+[11.178s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/pythonpath.sh
+[11.179s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/pythonpath.dsv
+[11.179s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[11.179s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[11.180s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[11.180s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[11.181s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/__init__.py
+[11.181s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_c.c
+[11.181s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.183s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[11.183s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/liblocomotion_msgs__rosidl_generator_py.so
+[11.184s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.184s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.185s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.185s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/__init__.py
+[11.186s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_plan_commands.py
+[11.187s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_plan_commands_s.c
+[11.187s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_rigid_body.py
+[11.187s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_rigid_body_s.c
+[11.187s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_robot_states.py
+[11.188s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_robot_states_s.c
+[11.188s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.188s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.188s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RobotStates.idl
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RigidBody.idl
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/PlanCommands.idl
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RobotStates.msg
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RigidBody.msg
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/PlanCommands.msg
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/package_run_dependencies/locomotion_msgs
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/parent_prefix_path/locomotion_msgs
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/ament_prefix_path.sh
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/ament_prefix_path.dsv
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/path.sh
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/path.dsv
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.bash
+[11.193s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.sh
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.zsh
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.dsv
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/package.dsv
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/packages/locomotion_msgs
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/rosidl_cmake-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgsConfig.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgsConfig-version.cmake
+[11.194s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/package.xml
+[11.194s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_generator_c.so
+[11.194s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_generator_c.so" to ""
+[11.195s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_fastrtps_c.so
+[11.195s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[11.195s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_introspection_c.so
+[11.195s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_introspection_c.so" to ""
+[11.195s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_c.so
+[11.195s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_c.so" to ""
+[11.195s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_fastrtps_cpp.so
+[11.195s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.195s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_introspection_cpp.so
+[11.195s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[11.195s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_cpp.so
+[11.195s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_cpp.so" to ""
+[11.195s] Listing '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs'...
+[11.195s] Compiling '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/__init__.py'...
+[11.195s] Listing '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg'...
+[11.195s] Compiling '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/__init__.py'...
+[11.196s] Compiling '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_plan_commands.py'...
+[11.196s] Compiling '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_rigid_body.py'...
+[11.196s] Compiling '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_robot_states.py'...
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_generator_py.so
+[11.196s] -- Set runtime path of "/mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_generator_py.so" to ""
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_cExport.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_cExport-noconfig.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cExport.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cExport.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_cppExport.cmake
+[11.196s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cppExport.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_pyExport.cmake
+[11.197s] -- Installing: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_pyExport-noconfig.cmake
+[11.197s] Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/locomotion_msgs

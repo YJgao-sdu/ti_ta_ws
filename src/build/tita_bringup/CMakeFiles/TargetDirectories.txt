@@ -1,0 +1,9 @@
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/uninstall.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/tita_bringup_uninstall.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/test.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/edit_cache.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/rebuild_cache.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/list_install_components.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/install.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/install/local.dir
+/mnt/dev/tita_ws/src/build/tita_bringup/CMakeFiles/install/strip.dir

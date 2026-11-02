@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/mnt/dev/tita_ws/src/build/robot_inertia_calculator/robot_inertia_calculator_node" "TARGETS" "robot_inertia_calculator_node" "DESTINATION" "lib/robot_inertia_calculator")

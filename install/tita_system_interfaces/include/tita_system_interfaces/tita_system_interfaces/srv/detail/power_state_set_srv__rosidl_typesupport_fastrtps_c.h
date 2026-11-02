@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/power_state_set_srv__rosidl_typesupport_fastrtps_c.h

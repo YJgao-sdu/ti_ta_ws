@@ -1,0 +1,39 @@
+[0.040s] Invoking command in '/mnt/dev/tita_ws/build/tita_robot': /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_robot -- -j16 -l16
+[0.091s] [100%] Built target tita_robot
+[0.110s] Invoked command in '/mnt/dev/tita_ws/build/tita_robot' returned '0': /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_robot -- -j16 -l16
+[0.115s] Invoking command in '/mnt/dev/tita_ws/build/tita_robot': /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_robot
+[0.129s] -- Install configuration: ""
+[0.129s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/can_sender.hpp
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/tita_robot.hpp
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/can_receiver.hpp
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/def_can.h
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_common.hpp
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/visibility_control.hpp
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/can_utils.hpp
+[0.130s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_receiver.hpp
+[0.131s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_sender.hpp
+[0.131s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_id.hpp
+[0.131s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/library_path.sh
+[0.132s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/library_path.dsv
+[0.132s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/lib/libtita_robot.so
+[0.132s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/package_run_dependencies/tita_robot
+[0.132s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/parent_prefix_path/tita_robot
+[0.132s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/ament_prefix_path.sh
+[0.137s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/ament_prefix_path.dsv
+[0.137s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/path.sh
+[0.137s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/path.dsv
+[0.137s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.bash
+[0.138s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.sh
+[0.138s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.zsh
+[0.138s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.dsv
+[0.139s] -- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/package.dsv
+[0.139s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/packages/tita_robot
+[0.139s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.139s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/ament_cmake_export_libraries-extras.cmake
+[0.139s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/tita_robotConfig.cmake
+[0.139s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/tita_robotConfig-version.cmake
+[0.142s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/package.xml
+[0.210s] Invoked command in '/mnt/dev/tita_ws/build/tita_robot' returned '0': /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_robot

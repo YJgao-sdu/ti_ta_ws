@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tita_system_interfaces__cpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/fan_mode_set_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/fan_mode_set_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/fan_mode_set_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/fan_mode_set_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/head_light_control_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/head_light_control_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/head_light_control_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/head_light_control_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/leg_light_control_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/leg_light_control_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/leg_light_control_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/leg_light_control_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_heart_beat_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_heart_beat_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_heart_beat_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_heart_beat_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_state_set_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_state_set_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_state_set_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_state_set_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/tail_light_control_srv__builder.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/tail_light_control_srv__struct.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/tail_light_control_srv__traits.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/detail/tail_light_control_srv__type_support.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/fan_mode_set_srv.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/head_light_control_srv.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/leg_light_control_srv.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/power_heart_beat_srv.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/power_self_test_srv.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/power_state_set_srv.hpp"
+  "rosidl_generator_cpp/tita_system_interfaces/srv/tail_light_control_srv.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/tita_system_interfaces__cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

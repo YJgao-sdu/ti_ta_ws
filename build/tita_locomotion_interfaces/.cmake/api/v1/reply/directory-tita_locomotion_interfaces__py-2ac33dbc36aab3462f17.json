@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tita_locomotion_interfaces__py",
+		"source" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces/tita_locomotion_interfaces__py"
+	}
+}

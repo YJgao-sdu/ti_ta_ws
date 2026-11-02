@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tita_system_interfaces/srv/LegLightControlSrv.srv
+// generated code does not contain a copyright notice
+
+
+module tita_system_interfaces {
+  module srv {
+    typedef uint32 uint32__10[10];
+    @verbatim (language="comment", text=
+      "This is tita robot leg light control service, " "\n"
+      "You can control a total of 10 leg rgb light")
+    struct LegLightControlSrv_Request {
+      @verbatim (language="comment", text=
+        "A total of 10 lights can be controlled," "\n"
+        "and the light efficiency of each light is represented" "\n"
+        "by the data structure uint32_t, so you need to use a" "\n"
+        "uint32_t array containing 10 elements" "\n"
+        "The leg light command needs to specify whether it controls" "\n"
+        "the left leg or the right leg, which would use a uint8_t value" "\n"
+        "indicating whether the command is sent to the left or right" "\n"
+        "leg, as shown in the following example:" "\n"
+        "If you want to send the command to the left leg:" "\n"
+        "uint8_t target_leg_light = 0x01;" "\n"
+        "or If you want to send the command to the right leg:" "\n"
+        "uint8_t target_leg_light = 0x02;" "\n"
+        "If you want to control the headlights, set the bool" "\n"
+        "is_control to true, when you give up control, you need" "\n"
+        "to set the bool to false, after which the light effect" "\n"
+        "will be automatically taken over by the software's" "\n"
+        "internal state machine" "\n"
+        "rgbl values refer to red, green and blue" "\n"
+        "for example: light_rgbl_value = 0x12345678" "\n"
+        "This means that default is: (0x12U) (This value is meaningless." "\n"
+        "It is only used to fill the uint32_t data of type), red is: (0x34U)," "\n"
+        "green is: (0x56U), blue is: (0x78U)" "\n"
+        "Each time you write data, you must complete the 48" "\n"
+        "light effects, because the underlying software will" "\n"
+        "directly update the light effects of 48 light beads" "\n"
+        "at one time" "\n"
+        "It should be noted that please limit the command control" "\n"
+        "frequency of the leg to less than 30hz, too high control" "\n"
+        "frequency will crowd out the signal bandwidth of the motion control")
+      @unit (value="0")
+      boolean is_control;
+
+      uint8 target_leg_light;
+
+      uint32__10 light_rgbl_value;
+    };
+    struct LegLightControlSrv_Response {
+      boolean success;
+    };
+  };
+};

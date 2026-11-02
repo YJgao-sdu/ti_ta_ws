@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tita_system_interfaces/srv/PowerSelfTestSrv.srv
+// generated code does not contain a copyright notice
+
+#include "diagnostic_msgs/msg/DiagnosticArray.idl"
+
+module tita_system_interfaces {
+  module srv {
+    struct PowerSelfTestSrv_Request {
+      diagnostic_msgs::msg::DiagnosticArray power_self_test;
+    };
+    struct PowerSelfTestSrv_Response {
+      boolean success;
+    };
+  };
+};

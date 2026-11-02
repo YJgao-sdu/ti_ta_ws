@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_generator_py/tita_system_interfaces/srv/_leg_light_control_srv_s.c

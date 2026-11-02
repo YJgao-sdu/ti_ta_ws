@@ -1,0 +1,124 @@
+[0.025s] Invoking command in '/mnt/dev/tita_ws/build/gazebo_bridge': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/gazebo_bridge
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.130s] -- The CXX compiler identification is GNU 11.4.0
+[0.135s] -- Detecting C compiler ABI info
+[0.186s] -- Detecting C compiler ABI info - done
+[0.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.198s] -- Detecting C compile features
+[0.198s] -- Detecting C compile features - done
+[0.202s] -- Detecting CXX compiler ABI info
+[0.266s] -- Detecting CXX compiler ABI info - done
+[0.272s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.272s] -- Detecting CXX compile features
+[0.273s] -- Detecting CXX compile features - done
+[0.275s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.433s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.509s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.646s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.650s] -- Checking for module 'bullet>=2.82'
+[0.661s] --   Found bullet, version 3.05
+[0.764s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.813s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.846s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.130s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.182s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.193s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.220s] -- Searching for dependencies of ignition-math6
+[1.222s] -- Looking for OGRE...
+[1.222s] -- OGRE_PREFIX_WATCH changed.
+[1.240s] -- Checking for module 'OGRE'
+[1.269s] --   Found OGRE, version 1.9.0
+[1.471s] -- Found Ogre Ghadamon (1.9.0)
+[1.489s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.502s] -- Looking for OGRE_Paging...
+[1.520s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.521s] -- Looking for OGRE_Terrain...
+[1.537s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.537s] -- Looking for OGRE_Property...
+[1.552s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.552s] -- Looking for OGRE_RTShaderSystem...
+[1.574s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.574s] -- Looking for OGRE_Volume...
+[1.600s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.600s] -- Looking for OGRE_Overlay...
+[1.614s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.051s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.069s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.069s] -- Searching for dependencies of ignition-transport8
+[2.120s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.148s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.172s] -- Checking for module 'libzmq >= 4'
+[2.260s] --   Found libzmq , version 4.3.4
+[2.528s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.574s] -- Checking for module 'uuid'
+[2.726s] --   Found uuid, version 2.37.2
+[3.006s] -- Found UUID: TRUE  
+[3.010s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.012s] -- Searching for dependencies of ignition-msgs5
+[3.055s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.066s] -- Checking for module 'tinyxml2'
+[3.150s] --   Found tinyxml2, version 9.0.0
+[3.449s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.457s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.457s] -- Searching for dependencies of ignition-common3
+[3.458s] -- Looking for dlfcn.h - found
+[3.459s] -- Looking for libdl - found
+[3.461s] -- Found DL: TRUE  
+[3.500s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.505s] -- Searching for <ignition-common3> component [graphics]
+[3.518s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.519s] -- Searching for dependencies of ignition-common3-graphics
+[3.519s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.527s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.527s] -- Searching for dependencies of ignition-fuel_tools4
+[4.076s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[4.116s] -- Checking for module 'jsoncpp'
+[4.183s] --   Found jsoncpp, version 1.9.5
+[4.429s] -- Found JSONCPP: TRUE  
+[4.457s] -- Checking for module 'libzip'
+[4.514s] --   Found libzip, version 1.7.3
+[4.725s] -- Found ZIP: TRUE  
+[4.725s] -- Looking for ignition-common3 -- found version 3.14.0
+[4.726s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.726s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.737s] -- Gazebo version: 11.10
+[4.738s] -- Checking for module 'tbb'
+[4.813s] --   Found tbb, version 2021.5.0
+[5.087s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.095s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.108s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.129s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.164s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.588s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.599s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.683s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.076s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.079s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.128s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.133s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.164s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.189s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.220s] -- Found Threads: TRUE  
+[6.704s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.779s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.802s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.802s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/include
+[6.803s] -- Configured cppcheck exclude dirs and/or files: 
+[6.805s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.805s] -- Configured cpplint exclude dirs and/or files: 
+[6.806s] -- Added test 'lint_cmake' to check CMake code style
+[6.808s] -- Added test 'xmllint' to check XML markup files
+[6.812s] -- Configuring done
+[6.923s] -- Generating done
+[6.944s] -- Build files have been written to: /mnt/dev/tita_ws/build/gazebo_bridge
+[7.017s] Invoked command in '/mnt/dev/tita_ws/build/gazebo_bridge' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/gazebo_bridge
+[7.017s] Invoking command in '/mnt/dev/tita_ws/build/gazebo_bridge': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/gazebo_bridge -- -j16 -l16
+[8.013s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_bridge.dir/src/gazebo_bridge.cpp.o[0m
+[10.264s] In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/include/gazebo_bridge/gazebo_bridge.h:17[m[K,
+[10.264s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/src/gazebo_bridge.cpp:15[m[K:
+[10.264s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+[10.264s]    22 | lude is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+[10.264s]       |                                                                                  [01;36m[K^[m[K
+[10.264s] 
+[24.748s] [100%] [32m[1mLinking CXX shared library libgazebo_bridge.so[0m
+[25.047s] [100%] Built target gazebo_bridge

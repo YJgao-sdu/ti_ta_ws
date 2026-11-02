@@ -1,0 +1,9 @@
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:684:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  684 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:684:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  684 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K

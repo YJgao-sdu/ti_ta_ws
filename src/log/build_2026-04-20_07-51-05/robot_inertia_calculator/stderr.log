@@ -1,0 +1,33 @@
+[33mCMake Warning at /opt/openrobots/lib/cmake/hpp-fcl/hpp-fclConfig.cmake:3 (message):
+  Please update your CMake from 'hpp-fcl' to 'coal'
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /opt/openrobots/lib/cmake/pinocchio/pinocchioConfig.cmake:161 (find_dependency)
+  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:13 (ament_auto_find_build_dependencies)
+
+[0m
+In file included from [01m[K/opt/openrobots/include/hpp/fcl/config.hh:1[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/eigen.hpp:20[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/fwd.hpp:11[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-composite.hpp:14[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-generic.hpp:9[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/model.hpp:17[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/algorithm/center-of-mass.hpp:8[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp:6[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/src/robot_inertia_calculator.cpp:1[m[K:
+[01m[K/opt/openrobots/include/hpp/fcl/coal.hpp:10:71:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Please update your includes from 'hpp/fcl' to 'coal'[m[K’
+   10 | #pragma message("Please update your includes from 'hpp/fcl' to 'coal'"[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+In file included from [01m[K/opt/openrobots/include/hpp/fcl/config.hh:1[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/eigen.hpp:20[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/fwd.hpp:11[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-composite.hpp:14[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-generic.hpp:9[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/model.hpp:17[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/algorithm/center-of-mass.hpp:8[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp:6[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/src/main.cpp:2[m[K:
+[01m[K/opt/openrobots/include/hpp/fcl/coal.hpp:10:71:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Please update your includes from 'hpp/fcl' to 'coal'[m[K’
+   10 | #pragma message("Please update your includes from 'hpp/fcl' to 'coal'"[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K

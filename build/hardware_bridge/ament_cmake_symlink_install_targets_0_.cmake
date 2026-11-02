@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/mnt/dev/tita_ws/build/hardware_bridge/libhardware_bridge.so" "TARGETS" "hardware_bridge" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

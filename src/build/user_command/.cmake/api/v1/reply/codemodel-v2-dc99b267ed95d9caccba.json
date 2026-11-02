@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8bf75f7e1f3d6d25967a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "user_command",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6f7ba9137d3891827158.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_command_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_command_lib-12f61f54598999f04d39.json",
+					"name" : "user_command_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_command_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_command_node-1281ca5ef6b0bbda6f3c.json",
+					"name" : "user_command_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_command_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_command_uninstall-d422863646adff791be9.json",
+					"name" : "user_command_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/src/build/user_command",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

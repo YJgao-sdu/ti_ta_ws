@@ -1,0 +1,95 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- pinocchio_default FOUND. pinocchio_default at /opt/openrobots/lib/libpinocchio_default.so
+-- pinocchio_parsers FOUND. pinocchio_parsers at /opt/openrobots/lib/libpinocchio_parsers.so
+-- pinocchio_casadi FOUND. pinocchio_casadi at /opt/openrobots/lib/libpinocchio_casadi.so
+-- boost_filesystem FOUND. boost_filesystem at /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+-- boost_serialization FOUND. boost_serialization at /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+-- boost_system FOUND. boost_system at /usr/lib/x86_64-linux-gnu/libboost_system.so
+[33mCMake Warning at /opt/openrobots/lib/cmake/hpp-fcl/hpp-fclConfig.cmake:3 (message):
+  Please update your CMake from 'hpp-fcl' to 'coal'
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /opt/openrobots/lib/cmake/pinocchio/pinocchioConfig.cmake:161 (find_dependency)
+  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:13 (ament_auto_find_build_dependencies)
+
+[0m
+-- coal FOUND. coal at /opt/openrobots/lib/libcoal.so
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Found Boost: /usr/include (found version "1.74.0") found components: chrono thread date_time serialization filesystem atomic 
+-- Default C++ standard: 201703
+-- Minimal C++ standard upgraded to 11
+-- C++ standard sufficient: Minimal required 11, currently defined: 17
+-- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+-- C++ standard sufficient: Minimal required 11, currently defined: 17
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/robot_inertia_calculator
+[ 25%] [32mBuilding CXX object CMakeFiles/robot_inertia_calculator_lib.dir/src/robot_inertia_calculator.cpp.o[0m
+In file included from [01m[K/opt/openrobots/include/hpp/fcl/config.hh:1[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/eigen.hpp:20[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/fwd.hpp:11[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-composite.hpp:14[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-generic.hpp:9[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/model.hpp:17[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/algorithm/center-of-mass.hpp:8[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp:6[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/src/robot_inertia_calculator.cpp:1[m[K:
+[01m[K/opt/openrobots/include/hpp/fcl/coal.hpp:10:71:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Please update your includes from 'hpp/fcl' to 'coal'[m[K’
+   10 | #pragma message("Please update your includes from 'hpp/fcl' to 'coal'"[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+[ 50%] [32m[1mLinking CXX shared library librobot_inertia_calculator_lib.so[0m
+[ 50%] Built target robot_inertia_calculator_lib
+[ 75%] [32mBuilding CXX object CMakeFiles/robot_inertia_calculator_node.dir/src/main.cpp.o[0m
+In file included from [01m[K/opt/openrobots/include/hpp/fcl/config.hh:1[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/eigen.hpp:20[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/serialization/fwd.hpp:11[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-composite.hpp:14[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-generic.hpp:9[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/multibody/model.hpp:17[m[K,
+                 from [01m[K/opt/openrobots/include/pinocchio/algorithm/center-of-mass.hpp:8[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp:6[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/src/main.cpp:2[m[K:
+[01m[K/opt/openrobots/include/hpp/fcl/coal.hpp:10:71:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Please update your includes from 'hpp/fcl' to 'coal'[m[K’
+   10 | #pragma message("Please update your includes from 'hpp/fcl' to 'coal'"[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+[100%] [32m[1mLinking CXX executable robot_inertia_calculator_node[0m
+[100%] Built target robot_inertia_calculator_node

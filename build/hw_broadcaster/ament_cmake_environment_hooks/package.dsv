@@ -1,0 +1,4 @@
+source;share/hw_broadcaster/local_setup.bash
+source;share/hw_broadcaster/local_setup.dsv
+source;share/hw_broadcaster/local_setup.sh
+source;share/hw_broadcaster/local_setup.zsh

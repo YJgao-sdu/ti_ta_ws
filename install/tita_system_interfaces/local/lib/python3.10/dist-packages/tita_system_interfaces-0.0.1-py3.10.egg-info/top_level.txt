@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_system_interfaces/ament_cmake_python/tita_system_interfaces/tita_system_interfaces.egg-info/top_level.txt

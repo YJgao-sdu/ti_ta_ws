@@ -1,0 +1,6 @@
+msg/PlanCommands.idl
+msg/PlanCommands.msg
+msg/RigidBody.idl
+msg/RigidBody.msg
+msg/RobotStates.idl
+msg/RobotStates.msg

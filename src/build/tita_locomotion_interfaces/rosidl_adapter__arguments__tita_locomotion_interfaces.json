@@ -1,0 +1,7 @@
+{
+  "package_name": "tita_locomotion_interfaces",
+  "non_idl_tuples": [
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces:msg/LocomotionCmd.msg",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces:msg/MotorsStatus.msg"
+  ]
+}

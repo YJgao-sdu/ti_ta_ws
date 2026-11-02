@@ -1,0 +1,1400 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/TITA_DRL
+Consolidate compiler generated dependencies of target text
+Consolidate compiler generated dependencies of target tita_drl_obs_192-stand
+Consolidate compiler generated dependencies of target tita_drl_obs374
+Consolidate compiler generated dependencies of target tita_drl_obs194
+Consolidate compiler generated dependencies of target tita_drl_obs32
+Consolidate compiler generated dependencies of target tita_drl_obs57
+Consolidate compiler generated dependencies of target tita_drl_obs320_slr
+[ 12%] Built target text
+Consolidate compiler generated dependencies of target tita_drl_obs192
+[ 81%] Built target tita_drl_obs57
+[ 81%] Built target tita_drl_obs32
+[ 87%] Built target tita_drl_obs320_slr
+[ 81%] Built target tita_drl_obs_192-stand
+[ 87%] Built target tita_drl_obs374
+[ 87%] Built target tita_drl_obs192
+[ 93%] Building CXX object CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:278:49: error: ‘Joy’ in namespace ‘sensor_msgs::msg’ does not name a type
+  278 |     void joycmdCallback(const sensor_msgs::msg::Joy::SharedPtr msg)
+      |                                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:278:64: error: expected unqualified-id before ‘msg’
+  278 |     void joycmdCallback(const sensor_msgs::msg::Joy::SharedPtr msg)
+      |                                                                ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:278:63: error: expected ‘)’ before ‘msg’
+  278 |     void joycmdCallback(const sensor_msgs::msg::Joy::SharedPtr msg)
+      |                        ~                                      ^~~~
+      |                                                               )
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:278:54: error: expected ‘;’ at end of member declaration
+  278 |     void joycmdCallback(const sensor_msgs::msg::Joy::SharedPtr msg)
+      |                                                      ^~~~~~~~~
+      |                                                               ;
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:278:64: error: ‘msg’ does not name a type
+  278 |     void joycmdCallback(const sensor_msgs::msg::Joy::SharedPtr msg)
+      |                                                                ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:313:10: error: expected ‘;’ after class definition
+  313 |         }
+      |          ^
+      |          ;
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In constructor ‘TitaWheelFootNode::TitaWheelFootNode()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:58:75: error: expected ‘)’ before ‘;’ token
+   58 |             std::bind(&TitaWheelFootNode::modeOverrideCallback, this, _1));
+      |                                                                           ^
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:54:61: note: to match this ‘(’
+   54 |         vel_action_pub_ = this->create_publisher<CommandMsg>(
+      |                                                             ^
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:62:13: warning: left operand of comma operator has no effect [-Wunused-value]
+   62 |             "/tita/wheel_pid_controller/reference", 10);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:62:55: error: expected ‘;’ before ‘)’ token
+   62 |             "/tita/wheel_pid_controller/reference", 10);
+      |                                                       ^
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:62:56: warning: right operand of comma operator has no effect [-Wunused-value]
+   62 |             "/tita/wheel_pid_controller/reference", 10);
+      |                                                        ^
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:65:14: error: ‘loadParameters’ was not declared in this scope
+   65 |         if (!loadParameters())
+      |              ^~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:73:14: error: ‘loadONNXModel’ was not declared in this scope
+   73 |         if (!loadONNXModel(model_path))
+      |              ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:82:43: error: ‘controlLoop’ is not a member of ‘TitaWheelFootNode’
+   82 |             std::bind(&TitaWheelFootNode::controlLoop, this));
+      |                                           ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘bool loadParameters()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:21: error: invalid use of ‘this’ in non-member function
+  319 |         RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:21: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:9: error: template argument 1 is invalid
+  319 |         RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:9: error: template argument 1 is invalid
+  319 |         RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:9: error: template argument 1 is invalid
+  319 |         RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+      |         ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:21: error: invalid use of ‘this’ in non-member function
+  319 |         RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:319:21: error: invalid use of ‘this’ in non-member function
+  319 |         RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:321:9: error: invalid use of ‘this’ in non-member function
+  321 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_1", -0.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:321:33: error: expected primary-expression before ‘float’
+  321 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_1", -0.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:322:9: error: invalid use of ‘this’ in non-member function
+  322 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_2", 0.8);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:322:33: error: expected primary-expression before ‘float’
+  322 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_2", 0.8);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:323:9: error: invalid use of ‘this’ in non-member function
+  323 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_3", -1.5);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:323:33: error: expected primary-expression before ‘float’
+  323 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_3", -1.5);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:324:9: error: invalid use of ‘this’ in non-member function
+  324 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_4", 0.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:324:33: error: expected primary-expression before ‘float’
+  324 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_4", 0.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:325:9: error: invalid use of ‘this’ in non-member function
+  325 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_1", 0.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:325:33: error: expected primary-expression before ‘float’
+  325 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_1", 0.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:326:9: error: invalid use of ‘this’ in non-member function
+  326 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_2", 0.8);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:326:33: error: expected primary-expression before ‘float’
+  326 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_2", 0.8);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:327:9: error: invalid use of ‘this’ in non-member function
+  327 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_3", -1.5);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:327:33: error: expected primary-expression before ‘float’
+  327 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_3", -1.5);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:328:9: error: invalid use of ‘this’ in non-member function
+  328 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_4", 0.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:328:33: error: expected primary-expression before ‘float’
+  328 |         this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_4", 0.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:330:9: error: invalid use of ‘this’ in non-member function
+  330 |         this->declare_parameter<int>("TITAWheelfootCfg.observation.history_length_dof_pos", 0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:330:33: error: expected primary-expression before ‘int’
+  330 |         this->declare_parameter<int>("TITAWheelfootCfg.observation.history_length_dof_pos", 0);
+      |                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:331:9: error: invalid use of ‘this’ in non-member function
+  331 |         this->declare_parameter<int>("TITAWheelfootCfg.observation.history_length_dof_vel", 0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:331:33: error: expected primary-expression before ‘int’
+  331 |         this->declare_parameter<int>("TITAWheelfootCfg.observation.history_length_dof_vel", 0);
+      |                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:333:9: error: invalid use of ‘this’ in non-member function
+  333 |         this->declare_parameter<float>("TITAWheelfootCfg.control.stiffness", 40.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:333:33: error: expected primary-expression before ‘float’
+  333 |         this->declare_parameter<float>("TITAWheelfootCfg.control.stiffness", 40.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:334:9: error: invalid use of ‘this’ in non-member function
+  334 |         this->declare_parameter<float>("TITAWheelfootCfg.control.damping", 1.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:334:33: error: expected primary-expression before ‘float’
+  334 |         this->declare_parameter<float>("TITAWheelfootCfg.control.damping", 1.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:335:9: error: invalid use of ‘this’ in non-member function
+  335 |         this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_pos", 0.25);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:335:33: error: expected primary-expression before ‘float’
+  335 |         this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_pos", 0.25);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:336:9: error: invalid use of ‘this’ in non-member function
+  336 |         this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_vel", 8.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:336:33: error: expected primary-expression before ‘float’
+  336 |         this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_vel", 8.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:337:9: error: invalid use of ‘this’ in non-member function
+  337 |         this->declare_parameter<float>("TITAWheelfootCfg.control.decimation", 4.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:337:33: error: expected primary-expression before ‘float’
+  337 |         this->declare_parameter<float>("TITAWheelfootCfg.control.decimation", 4.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:338:9: error: invalid use of ‘this’ in non-member function
+  338 |         this->declare_parameter<float>("TITAWheelfootCfg.control.user_torque_limit", 45.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:338:33: error: expected primary-expression before ‘float’
+  338 |         this->declare_parameter<float>("TITAWheelfootCfg.control.user_torque_limit", 45.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:340:9: error: invalid use of ‘this’ in non-member function
+  340 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.clip_scales.clip_observations", 100.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:340:33: error: expected primary-expression before ‘float’
+  340 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.clip_scales.clip_observations", 100.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:341:9: error: invalid use of ‘this’ in non-member function
+  341 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.clip_scales.clip_actions", 100.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:341:33: error: expected primary-expression before ‘float’
+  341 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.clip_scales.clip_actions", 100.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:342:9: error: invalid use of ‘this’ in non-member function
+  342 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.ang_vel", 0.25);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:342:33: error: expected primary-expression before ‘float’
+  342 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.ang_vel", 0.25);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:343:9: error: invalid use of ‘this’ in non-member function
+  343 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.dof_pos", 1.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:343:33: error: expected primary-expression before ‘float’
+  343 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.dof_pos", 1.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:344:9: error: invalid use of ‘this’ in non-member function
+  344 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.dof_vel", 0.05);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:344:33: error: expected primary-expression before ‘float’
+  344 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.dof_vel", 0.05);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:345:9: error: invalid use of ‘this’ in non-member function
+  345 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.projected_gravity", 1.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:345:33: error: expected primary-expression before ‘float’
+  345 |         this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.projected_gravity", 1.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:347:9: error: invalid use of ‘this’ in non-member function
+  347 |         this->declare_parameter<int>("TITAWheelfootCfg.size.actions_size", 8);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:347:33: error: expected primary-expression before ‘int’
+  347 |         this->declare_parameter<int>("TITAWheelfootCfg.size.actions_size", 8);
+      |                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:348:9: error: invalid use of ‘this’ in non-member function
+  348 |         this->declare_parameter<int>("TITAWheelfootCfg.size.observations_size", 32);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:348:33: error: expected primary-expression before ‘int’
+  348 |         this->declare_parameter<int>("TITAWheelfootCfg.size.observations_size", 32);
+      |                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:349:9: error: invalid use of ‘this’ in non-member function
+  349 |         this->declare_parameter<int>("TITAWheelfootCfg.size.history_len", 5);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:349:33: error: expected primary-expression before ‘int’
+  349 |         this->declare_parameter<int>("TITAWheelfootCfg.size.history_len", 5);
+      |                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:350:9: error: invalid use of ‘this’ in non-member function
+  350 |         this->declare_parameter<int>("TITAWheelfootCfg.size.commands_size", 4);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:350:33: error: expected primary-expression before ‘int’
+  350 |         this->declare_parameter<int>("TITAWheelfootCfg.size.commands_size", 4);
+      |                                 ^~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:352:9: error: invalid use of ‘this’ in non-member function
+  352 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.lin_vel_x", 2.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:352:33: error: expected primary-expression before ‘float’
+  352 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.lin_vel_x", 2.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:353:9: error: invalid use of ‘this’ in non-member function
+  353 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.lin_vel_y", 2.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:353:33: error: expected primary-expression before ‘float’
+  353 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.lin_vel_y", 2.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:354:9: error: invalid use of ‘this’ in non-member function
+  354 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.ang_vel_yaw", 0.25);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:354:33: error: expected primary-expression before ‘float’
+  354 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.ang_vel_yaw", 0.25);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:355:9: error: invalid use of ‘this’ in non-member function
+  355 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.base_height", 1.0);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:355:33: error: expected primary-expression before ‘float’
+  355 |         this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.base_height", 1.0);
+      |                                 ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:357:9: error: invalid use of ‘this’ in non-member function
+  357 |         this->declare_parameter<std::string>("TITAWheelfootCfg.model_path",
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:357:44: error: expected primary-expression before ‘>’ token
+  357 |         this->declare_parameter<std::string>("TITAWheelfootCfg.model_path",
+      |                                            ^
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:357:46: warning: left operand of comma operator has no effect [-Wunused-value]
+  357 |         this->declare_parameter<std::string>("TITAWheelfootCfg.model_path",
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:361:9: error: ‘default_joint_angles_’ was not declared in this scope
+  361 |         default_joint_angles_.resize(8);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:362:9: error: invalid use of ‘this’ in non-member function
+  362 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_1", default_joint_angles_[0]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:363:9: error: invalid use of ‘this’ in non-member function
+  363 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_2", default_joint_angles_[1]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:364:9: error: invalid use of ‘this’ in non-member function
+  364 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_3", default_joint_angles_[2]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:365:9: error: invalid use of ‘this’ in non-member function
+  365 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_4", default_joint_angles_[3]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:366:9: error: invalid use of ‘this’ in non-member function
+  366 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_1", default_joint_angles_[4]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:367:9: error: invalid use of ‘this’ in non-member function
+  367 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_2", default_joint_angles_[5]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:368:9: error: invalid use of ‘this’ in non-member function
+  368 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_3", default_joint_angles_[6]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:369:9: error: invalid use of ‘this’ in non-member function
+  369 |         this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_4", default_joint_angles_[7]);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:371:9: error: invalid use of ‘this’ in non-member function
+  371 |         this->get_parameter("TITAWheelfootCfg.observation.history_length_dof_pos", history_length_dof_pos_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:371:84: error: ‘history_length_dof_pos_’ was not declared in this scope
+  371 |         this->get_parameter("TITAWheelfootCfg.observation.history_length_dof_pos", history_length_dof_pos_);
+      |                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:372:9: error: invalid use of ‘this’ in non-member function
+  372 |         this->get_parameter("TITAWheelfootCfg.observation.history_length_dof_vel", history_length_dof_vel_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:372:84: error: ‘history_length_dof_vel_’ was not declared in this scope
+  372 |         this->get_parameter("TITAWheelfootCfg.observation.history_length_dof_vel", history_length_dof_vel_);
+      |                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:374:9: error: invalid use of ‘this’ in non-member function
+  374 |         this->get_parameter("TITAWheelfootCfg.control.stiffness", stiffness_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:374:67: error: ‘stiffness_’ was not declared in this scope
+  374 |         this->get_parameter("TITAWheelfootCfg.control.stiffness", stiffness_);
+      |                                                                   ^~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:375:9: error: invalid use of ‘this’ in non-member function
+  375 |         this->get_parameter("TITAWheelfootCfg.control.damping", damping_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:375:65: error: ‘damping_’ was not declared in this scope
+  375 |         this->get_parameter("TITAWheelfootCfg.control.damping", damping_);
+      |                                                                 ^~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:376:9: error: invalid use of ‘this’ in non-member function
+  376 |         this->get_parameter("TITAWheelfootCfg.control.action_scale_pos", action_scale_pos_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:376:74: error: ‘action_scale_pos_’ was not declared in this scope
+  376 |         this->get_parameter("TITAWheelfootCfg.control.action_scale_pos", action_scale_pos_);
+      |                                                                          ^~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:377:9: error: invalid use of ‘this’ in non-member function
+  377 |         this->get_parameter("TITAWheelfootCfg.control.action_scale_vel", action_scale_vel_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:377:74: error: ‘action_scale_vel_’ was not declared in this scope
+  377 |         this->get_parameter("TITAWheelfootCfg.control.action_scale_vel", action_scale_vel_);
+      |                                                                          ^~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:378:9: error: invalid use of ‘this’ in non-member function
+  378 |         this->get_parameter("TITAWheelfootCfg.control.decimation", decimation_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:378:68: error: ‘decimation_’ was not declared in this scope
+  378 |         this->get_parameter("TITAWheelfootCfg.control.decimation", decimation_);
+      |                                                                    ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:379:9: error: invalid use of ‘this’ in non-member function
+  379 |         this->get_parameter("TITAWheelfootCfg.control.user_torque_limit", user_torque_limit_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:379:75: error: ‘user_torque_limit_’ was not declared in this scope
+  379 |         this->get_parameter("TITAWheelfootCfg.control.user_torque_limit", user_torque_limit_);
+      |                                                                           ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:381:9: error: invalid use of ‘this’ in non-member function
+  381 |         this->get_parameter("TITAWheelfootCfg.normalization.clip_scales.clip_observations", clip_observations_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:381:93: error: ‘clip_observations_’ was not declared in this scope
+  381 |         this->get_parameter("TITAWheelfootCfg.normalization.clip_scales.clip_observations", clip_observations_);
+      |                                                                                             ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:382:9: error: invalid use of ‘this’ in non-member function
+  382 |         this->get_parameter("TITAWheelfootCfg.normalization.clip_scales.clip_actions", clip_actions_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:382:88: error: ‘clip_actions_’ was not declared in this scope
+  382 |         this->get_parameter("TITAWheelfootCfg.normalization.clip_scales.clip_actions", clip_actions_);
+      |                                                                                        ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:383:9: error: invalid use of ‘this’ in non-member function
+  383 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.ang_vel", obs_scales_angvel_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:383:82: error: ‘obs_scales_angvel_’ was not declared in this scope
+  383 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.ang_vel", obs_scales_angvel_);
+      |                                                                                  ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:384:9: error: invalid use of ‘this’ in non-member function
+  384 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.dof_pos", obs_scales_dofpos_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:384:82: error: ‘obs_scales_dofpos_’ was not declared in this scope
+  384 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.dof_pos", obs_scales_dofpos_);
+      |                                                                                  ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:385:9: error: invalid use of ‘this’ in non-member function
+  385 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.dof_vel", obs_scales_dofvel_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:385:82: error: ‘obs_scales_dofvel_’ was not declared in this scope
+  385 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.dof_vel", obs_scales_dofvel_);
+      |                                                                                  ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:386:9: error: invalid use of ‘this’ in non-member function
+  386 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.projected_gravity", obs_scales_gravity_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:386:92: error: ‘obs_scales_gravity_’ was not declared in this scope
+  386 |         this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.projected_gravity", obs_scales_gravity_);
+      |                                                                                            ^~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:388:9: error: invalid use of ‘this’ in non-member function
+  388 |         this->get_parameter("TITAWheelfootCfg.size.actions_size", actions_size_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:388:67: error: ‘actions_size_’ was not declared in this scope
+  388 |         this->get_parameter("TITAWheelfootCfg.size.actions_size", actions_size_);
+      |                                                                   ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:389:9: error: invalid use of ‘this’ in non-member function
+  389 |         this->get_parameter("TITAWheelfootCfg.size.observations_size", observations_size_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:389:72: error: ‘observations_size_’ was not declared in this scope
+  389 |         this->get_parameter("TITAWheelfootCfg.size.observations_size", observations_size_);
+      |                                                                        ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:390:9: error: invalid use of ‘this’ in non-member function
+  390 |         this->get_parameter("TITAWheelfootCfg.size.history_len", history_len_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:390:66: error: ‘history_len_’ was not declared in this scope
+  390 |         this->get_parameter("TITAWheelfootCfg.size.history_len", history_len_);
+      |                                                                  ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:391:9: error: invalid use of ‘this’ in non-member function
+  391 |         this->get_parameter("TITAWheelfootCfg.size.commands_size", commands_size_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:391:68: error: ‘commands_size_’ was not declared in this scope
+  391 |         this->get_parameter("TITAWheelfootCfg.size.commands_size", commands_size_);
+      |                                                                    ^~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:393:9: error: invalid use of ‘this’ in non-member function
+  393 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.lin_vel_x", scaled_commands_x_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:393:75: error: ‘scaled_commands_x_’ was not declared in this scope
+  393 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.lin_vel_x", scaled_commands_x_);
+      |                                                                           ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:394:9: error: invalid use of ‘this’ in non-member function
+  394 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.lin_vel_y", scaled_commands_y_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:394:75: error: ‘scaled_commands_y_’ was not declared in this scope
+  394 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.lin_vel_y", scaled_commands_y_);
+      |                                                                           ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:395:9: error: invalid use of ‘this’ in non-member function
+  395 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.ang_vel_yaw", scaled_commands_z_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:395:77: error: ‘scaled_commands_z_’ was not declared in this scope
+  395 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.ang_vel_yaw", scaled_commands_z_);
+      |                                                                             ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:396:9: error: invalid use of ‘this’ in non-member function
+  396 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.base_height", scaled_commands_h_);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:396:77: error: ‘scaled_commands_h_’ was not declared in this scope
+  396 |         this->get_parameter("TITAWheelfootCfg.user_cmd_scales.base_height", scaled_commands_h_);
+      |                                                                             ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:398:9: error: invalid use of ‘this’ in non-member function
+  398 |         this->get_parameter("TITAWheelfootCfg.model_path", model_path);
+      |         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:398:60: error: ‘model_path’ was not declared in this scope; did you mean ‘mode_t’?
+  398 |         this->get_parameter("TITAWheelfootCfg.model_path", model_path);
+      |                                                            ^~~~~~~~~~
+      |                                                            mode_t
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:21: error: invalid use of ‘this’ in non-member function
+  400 |         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:21: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:9: error: template argument 1 is invalid
+  400 |         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:9: error: template argument 1 is invalid
+  400 |         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:9: error: template argument 1 is invalid
+  400 |         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+      |         ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:21: error: invalid use of ‘this’ in non-member function
+  400 |         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:400:21: error: invalid use of ‘this’ in non-member function
+  400 |         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘bool loadONNXModel(const string&)’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:407:9: error: ‘session_options_’ was not declared in this scope
+  407 |         session_options_.SetIntraOpNumThreads(1);
+      |         ^~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:411:13: error: ‘policy_session_’ was not declared in this scope
+  411 |             policy_session_ = new Ort::Session(env_, model_path.c_str(), session_options_);
+      |             ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:411:48: error: ‘env_’ was not declared in this scope
+  411 |             policy_session_ = new Ort::Session(env_, model_path.c_str(), session_options_);
+      |                                                ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:26: error: invalid use of ‘this’ in non-member function
+  415 |             RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:26: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:13: error: template argument 1 is invalid
+  415 |             RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+      |             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:13: error: template argument 1 is invalid
+  415 |             RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+      |             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:13: error: template argument 1 is invalid
+  415 |             RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+      |             ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:26: error: invalid use of ‘this’ in non-member function
+  415 |             RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:415:26: error: invalid use of ‘this’ in non-member function
+  415 |             RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:419:9: error: ‘input_names_storage_’ was not declared in this scope
+  419 |         input_names_storage_.clear();
+      |         ^~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:420:9: error: ‘input_names_’ was not declared in this scope
+  420 |         input_names_.clear();
+      |         ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:422:29: error: ‘policy_session_’ was not declared in this scope
+  422 |         size_t num_inputs = policy_session_->GetInputCount();
+      |                             ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:21: error: invalid use of ‘this’ in non-member function
+  423 |         RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:21: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:9: error: template argument 1 is invalid
+  423 |         RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:9: error: template argument 1 is invalid
+  423 |         RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:9: error: template argument 1 is invalid
+  423 |         RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+      |         ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:21: error: invalid use of ‘this’ in non-member function
+  423 |         RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:423:21: error: invalid use of ‘this’ in non-member function
+  423 |         RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:432:17: error: ‘input_name_storage_’ was not declared in this scope
+  432 |                 input_name_storage_ = input_names_storage_.back();
+      |                 ^~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:437:9: error: ‘output_name_storage_’ was not declared in this scope
+  437 |         output_name_storage_ = std::string(output_name_ptr.get());
+      |         ^~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:443:9: error: ‘output_names_’ was not declared in this scope
+  443 |         output_names_.clear();
+      |         ^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:25: error: invalid use of ‘this’ in non-member function
+  447 |             RCLCPP_INFO(this->get_logger(),
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:25: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:13: error: template argument 1 is invalid
+  447 |             RCLCPP_INFO(this->get_logger(),
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:13: error: template argument 1 is invalid
+  447 |             RCLCPP_INFO(this->get_logger(),
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:13: error: template argument 1 is invalid
+  447 |             RCLCPP_INFO(this->get_logger(),
+      |             ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:25: error: invalid use of ‘this’ in non-member function
+  447 |             RCLCPP_INFO(this->get_logger(),
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:447:25: error: invalid use of ‘this’ in non-member function
+  447 |             RCLCPP_INFO(this->get_logger(),
+      |                         ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:21: error: invalid use of ‘this’ in non-member function
+  450 |         RCLCPP_INFO(this->get_logger(),
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:21: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:9: error: template argument 1 is invalid
+  450 |         RCLCPP_INFO(this->get_logger(),
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:9: error: template argument 1 is invalid
+  450 |         RCLCPP_INFO(this->get_logger(),
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:9: error: template argument 1 is invalid
+  450 |         RCLCPP_INFO(this->get_logger(),
+      |         ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:21: error: invalid use of ‘this’ in non-member function
+  450 |         RCLCPP_INFO(this->get_logger(),
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:450:21: error: invalid use of ‘this’ in non-member function
+  450 |         RCLCPP_INFO(this->get_logger(),
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:453:9: error: ‘input_shapes_’ was not declared in this scope
+  453 |         input_shapes_.clear();
+      |         ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:458:9: error: ‘output_shape_’ was not declared in this scope
+  458 |         output_shape_ = policy_session_->GetOutputTypeInfo(0).GetTensorTypeAndShapeInfo().GetShape();
+      |         ^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:25: error: invalid use of ‘this’ in non-member function
+  467 |             RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:25: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:13: error: template argument 1 is invalid
+  467 |             RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:13: error: template argument 1 is invalid
+  467 |             RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:13: error: template argument 1 is invalid
+  467 |             RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |             ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:25: error: invalid use of ‘this’ in non-member function
+  467 |             RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:467:25: error: invalid use of ‘this’ in non-member function
+  467 |             RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |                         ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:21: error: invalid use of ‘this’ in non-member function
+  476 |         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:21: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:9: error: template argument 1 is invalid
+  476 |         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:9: error: template argument 1 is invalid
+  476 |         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:9: error: template argument 1 is invalid
+  476 |         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |         ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:21: error: invalid use of ‘this’ in non-member function
+  476 |         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:476:21: error: invalid use of ‘this’ in non-member function
+  476 |         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      |                     ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:21: error: invalid use of ‘this’ in non-member function
+  478 |         RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:21: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:9: error: template argument 1 is invalid
+  478 |         RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:9: error: template argument 1 is invalid
+  478 |         RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+      |         ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:9: error: template argument 1 is invalid
+  478 |         RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+      |         ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:21: error: invalid use of ‘this’ in non-member function
+  478 |         RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:478:21: error: invalid use of ‘this’ in non-member function
+  478 |         RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+      |                     ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘void controlLoop()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:489:50: error: ‘imu_mutex_’ was not declared in this scope
+  489 |             std::lock_guard<std::mutex> imu_lock(imu_mutex_);
+      |                                                  ^~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:490:23: error: ‘latest_imu_msg_’ was not declared in this scope
+  490 |             imu_msg = latest_imu_msg_;
+      |                       ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:493:52: error: ‘joint_state_mutex_’ was not declared in this scope
+  493 |             std::lock_guard<std::mutex> joint_lock(joint_state_mutex_);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:494:25: error: ‘latest_joint_state_msg_’ was not declared in this scope
+  494 |             joint_msg = latest_joint_state_msg_;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:34: error: invalid use of ‘this’ in non-member function
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |                                  ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:34: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:13: error: template argument 1 is invalid
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |             ^~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:13: error: template argument 1 is invalid
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |             ^~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:13: error: template argument 1 is invalid
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |             ^~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:55: error: invalid use of ‘this’ in non-member function
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |                                                       ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In lambda function:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:13: error: ‘c’ was not declared in this scope
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘void controlLoop()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:34: error: invalid use of ‘this’ in non-member function
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |                                  ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:499:34: error: invalid use of ‘this’ in non-member function
+  499 |             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+      |                                  ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:505:45: error: ‘observations_size_’ was not declared in this scope
+  505 |         std::vector<float> temp_observation(observations_size_, 0.0f);
+      |                                             ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:506:48: error: ‘last_actions_’ was not declared in this scope; did you mean ‘temp_last_actions’?
+  506 |         std::vector<float> temp_last_actions = last_actions_;
+      |                                                ^~~~~~~~~~~~~
+      |                                                temp_last_actions
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:507:52: error: ‘current_commands_’ was not declared in this scope; did you mean ‘temp_current_commands’?
+  507 |         std::vector<float> temp_current_commands = current_commands_;
+      |                                                    ^~~~~~~~~~~~~~~~~
+      |                                                    temp_current_commands
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:517:81: error: ‘obs_scales_angvel_’ was not declared in this scope
+  517 |         temp_observation[0] = static_cast<float>(imu_msg->angular_velocity.x) * obs_scales_angvel_;
+      |                                                                                 ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:522:75: error: ‘obs_scales_gravity_’ was not declared in this scope
+  522 |         temp_observation[3] = static_cast<float>(projected_gravity.x()) * obs_scales_gravity_;
+      |                                                                           ^~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:542:53: error: ‘obs_scales_dofvel_’ was not declared in this scope
+  542 |             temp_observation[16 + i] = vel_scaled * obs_scales_dofvel_;
+      |                                                     ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:546:32: error: ‘pos_joint_indices’ was not declared in this scope
+  546 |         for (size_t j = 0; j < pos_joint_indices.size(); ++j)
+      |                                ^~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:551:90: error: ‘default_joint_angles_’ was not declared in this scope
+  551 |                 temp_observation[10 + j] = (static_cast<float>(joint_msg->position[i]) - default_joint_angles_[i]) * obs_scales_dofpos_;
+      |                                                                                          ^~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:551:118: error: ‘obs_scales_dofpos_’ was not declared in this scope
+  551 |                 temp_observation[10 + j] = (static_cast<float>(joint_msg->position[i]) - default_joint_angles_[i]) * obs_scales_dofpos_;
+      |                                                                                                                      ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:562:9: error: ‘current_obs_’ was not declared in this scope
+  562 |         current_obs_ = temp_observation;
+      |         ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:563:9: error: ‘has_received_observation_’ was not declared in this scope
+  563 |         has_received_observation_ = true;
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:567:25: error: invalid use of ‘this’ in non-member function
+  567 |                        [this](float x) -> float
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In lambda function:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:568:48: error: ‘clip_observations_’ was not declared in this scope; did you mean ‘temp_observation’?
+  568 |                        { return std::clamp(x, -clip_observations_, clip_observations_); });
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                temp_observation
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘void controlLoop()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:574:17: error: ‘mode_override_’ was not declared in this scope
+  574 |             if (mode_override_ >= 0) {
+      |                 ^~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:580:13: error: ‘mode_status_pub_’ was not declared in this scope
+  580 |             mode_status_pub_->publish(mode_msg);
+      |             ^~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:584:38: error: ‘runInference’ was not declared in this scope
+  584 |         std::vector<float> actions = runInference(current_obs_);
+      |                                      ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:586:25: error: invalid use of ‘this’ in non-member function
+  586 |                        [this](float x) -> float
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In lambda function:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:587:48: error: ‘clip_actions_’ was not declared in this scope
+  587 |                        { return std::clamp(x, -clip_actions_, clip_actions_); });
+      |                                                ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘void controlLoop()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:590:48: error: ‘convertActionsToDesiredPositions’ was not declared in this scope
+  590 |         std::vector<float> desired_positions = convertActionsToDesiredPositions(actions);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:591:49: error: ‘convertActionsToDesiredVelocities’ was not declared in this scope
+  591 |         std::vector<float> desired_velocities = convertActionsToDesiredVelocities(actions);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:598:9: error: ‘publishDesiredPositions’ was not declared in this scope
+  598 |         publishDesiredPositions(desired_goals);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘std::vector<float> runInference(const std::vector<float>&)’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:606:16: error: ‘history_buffer_’ was not declared in this scope
+  606 |         while (history_buffer_.size() < static_cast<size_t>(history_len_))
+      |                ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:606:61: error: ‘history_len_’ was not declared in this scope
+  606 |         while (history_buffer_.size() < static_cast<size_t>(history_len_))
+      |                                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:608:61: error: ‘current_obs_’ was not declared in this scope
+  608 |             history_buffer_.insert(history_buffer_.begin(), current_obs_);
+      |                                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:613:28: error: ‘observations_size_’ was not declared in this scope
+  613 |         input_data.reserve(observations_size_ + history_len_ * observations_size_ + 2);
+      |                            ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:613:49: error: ‘history_len_’ was not declared in this scope
+  613 |         input_data.reserve(observations_size_ + history_len_ * observations_size_ + 2);
+      |                                                 ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:616:45: error: ‘current_obs_’ was not declared in this scope
+  616 |         input_data.insert(input_data.end(), current_obs_.begin(), current_obs_.end());
+      |                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:619:34: error: ‘history_buffer_’ was not declared in this scope
+  619 |         for (const auto& frame : history_buffer_)
+      |                                  ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:628:13: error: ‘mode_override_’ was not declared in this scope
+  628 |         if (mode_override_ >= 0) {
+      |             ^~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:632:57: error: ‘obs_scales_gravity_’ was not declared in this scope
+  632 |             recovery_mode = (gravity_z_scaled > -0.2f * obs_scales_gravity_);
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:26: error: invalid use of ‘this’ in non-member function
+  641 |             RCLCPP_ERROR(this->get_logger(), "Input size mismatch: expected %zu, got %zu",
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:26: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:13: error: template argument 1 is invalid
+  641 |             RCLCPP_ERROR(this->get_logger(), "Input size mismatch: expected %zu, got %zu",
+      |             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:13: error: template argument 1 is invalid
+  641 |             RCLCPP_ERROR(this->get_logger(), "Input size mismatch: expected %zu, got %zu",
+      |             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:13: error: template argument 1 is invalid
+  641 |             RCLCPP_ERROR(this->get_logger(), "Input size mismatch: expected %zu, got %zu",
+      |             ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:26: error: invalid use of ‘this’ in non-member function
+  641 |             RCLCPP_ERROR(this->get_logger(), "Input size mismatch: expected %zu, got %zu",
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:641:26: error: invalid use of ‘this’ in non-member function
+  641 |             RCLCPP_ERROR(this->get_logger(), "Input size mismatch: expected %zu, got %zu",
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:643:39: error: ‘actions_size_’ was not declared in this scope
+  643 |             return std::vector<float>(actions_size_, 0.0f);
+      |                                       ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:647:9: error: ‘history_buffer_’ was not declared in this scope
+  647 |         history_buffer_.push_back(current_obs_);
+      |         ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:668:18: error: ‘policy_session_’ was not declared in this scope
+  668 |             if (!policy_session_) {
+      |                  ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:30: error: invalid use of ‘this’ in non-member function
+  669 |                 RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+      |                              ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:30: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:17: error: template argument 1 is invalid
+  669 |                 RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+      |                 ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:17: error: template argument 1 is invalid
+  669 |                 RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+      |                 ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:17: error: template argument 1 is invalid
+  669 |                 RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+      |                 ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:30: error: invalid use of ‘this’ in non-member function
+  669 |                 RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+      |                              ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:669:30: error: invalid use of ‘this’ in non-member function
+  669 |                 RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+      |                              ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:670:43: error: ‘actions_size_’ was not declared in this scope
+  670 |                 return std::vector<float>(actions_size_, 0.0f);
+      |                                           ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:673:35: error: ‘policy_session_’ was not declared in this scope
+  673 |             auto output_tensors = policy_session_->Run(Ort::RunOptions{nullptr},
+      |                                   ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:674:56: error: ‘input_names_’ was not declared in this scope
+  674 |                                                        input_names_.data(),
+      |                                                        ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:676:56: error: ‘output_names_’ was not declared in this scope
+  676 |                                                        output_names_.data(), 1);
+      |                                                        ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:678:73: error: expected primary-expression before ‘float’
+  678 |             float *output_data = output_tensors[0].GetTensorMutableData<float>();
+      |                                                                         ^~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:679:73: error: ‘actions_size_’ was not declared in this scope
+  679 |             std::vector<float> output_values(output_data, output_data + actions_size_);
+      |                                                                         ^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:26: error: invalid use of ‘this’ in non-member function
+  684 |             RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:26: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:13: error: template argument 1 is invalid
+  684 |             RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+      |             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:13: error: template argument 1 is invalid
+  684 |             RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+      |             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:13: error: template argument 1 is invalid
+  684 |             RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+      |             ^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:26: error: invalid use of ‘this’ in non-member function
+  684 |             RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:684:26: error: invalid use of ‘this’ in non-member function
+  684 |             RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+      |                          ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:685:39: error: ‘actions_size_’ was not declared in this scope
+  685 |             return std::vector<float>(actions_size_, 0.0f);
+      |                                       ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘std::vector<float> convertActionsToDesiredPositions(const std::vector<float>&)’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:697:47: error: ‘current_obs_’ was not declared in this scope
+  697 |         std::vector<float> temp_observation = current_obs_;
+      |                                               ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:716:62: error: ‘obs_scales_dofpos_’ was not declared in this scope
+  716 |             float joint_position = temp_observation[obs_i] / obs_scales_dofpos_
+      |                                                              ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:717:38: error: ‘default_joint_angles_’ was not declared in this scope
+  717 |                                    + default_joint_angles_[act_i];
+      |                                      ^~~~~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:718:62: error: ‘obs_scales_dofvel_’ was not declared in this scope
+  718 |             float joint_velocity = temp_observation[vel_i] / obs_scales_dofvel_;
+      |                                                              ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:726:34: error: ‘damping_’ was not declared in this scope
+  726 |                               + (damping_ * joint_velocity - user_torque_limit_) / stiffness_;
+      |                                  ^~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:726:62: error: ‘user_torque_limit_’ was not declared in this scope
+  726 |                               + (damping_ * joint_velocity - user_torque_limit_) / stiffness_;
+      |                                                              ^~~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:726:84: error: ‘stiffness_’ was not declared in this scope
+  726 |                               + (damping_ * joint_velocity - user_torque_limit_) / stiffness_;
+      |                                                                                    ^~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:730:56: error: ‘action_scale_pos_’ was not declared in this scope
+  730 |             float scaled_action = std::max(actionMin / action_scale_pos_,
+      |                                                        ^~~~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:735:9: error: ‘last_actions_’ was not declared in this scope
+  735 |         last_actions_ = actions;
+      |         ^~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘std::vector<float> convertActionsToDesiredVelocities(const std::vector<float>&)’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:747:46: error: ‘action_scale_vel_’ was not declared in this scope
+  747 |         desired_velocities[0] = actions[3] * action_scale_vel_;
+      |                                              ^~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In function ‘void publishDesiredPositions(const std::vector<float>&)’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:25: error: invalid use of ‘this’ in non-member function
+  757 |             RCLCPP_WARN(this->get_logger(), "desired_goals is empty!");
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:25: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:13: error: template argument 1 is invalid
+  757 |             RCLCPP_WARN(this->get_logger(), "desired_goals is empty!");
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:13: error: template argument 1 is invalid
+  757 |             RCLCPP_WARN(this->get_logger(), "desired_goals is empty!");
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:13: error: template argument 1 is invalid
+  757 |             RCLCPP_WARN(this->get_logger(), "desired_goals is empty!");
+      |             ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:25: error: invalid use of ‘this’ in non-member function
+  757 |             RCLCPP_WARN(this->get_logger(), "desired_goals is empty!");
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:757:25: error: invalid use of ‘this’ in non-member function
+  757 |             RCLCPP_WARN(this->get_logger(), "desired_goals is empty!");
+      |                         ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:25: error: invalid use of ‘this’ in non-member function
+  764 |             RCLCPP_INFO(this->get_logger(), "RL first 8-dim action published, mean=%.3f",
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:25: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:13: error: template argument 1 is invalid
+  764 |             RCLCPP_INFO(this->get_logger(), "RL first 8-dim action published, mean=%.3f",
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:13: error: template argument 1 is invalid
+  764 |             RCLCPP_INFO(this->get_logger(), "RL first 8-dim action published, mean=%.3f",
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:13: error: template argument 1 is invalid
+  764 |             RCLCPP_INFO(this->get_logger(), "RL first 8-dim action published, mean=%.3f",
+      |             ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:25: error: invalid use of ‘this’ in non-member function
+  764 |             RCLCPP_INFO(this->get_logger(), "RL first 8-dim action published, mean=%.3f",
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:764:25: error: invalid use of ‘this’ in non-member function
+  764 |             RCLCPP_INFO(this->get_logger(), "RL first 8-dim action published, mean=%.3f",
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:782:45: error: ‘joint_names_’ was not declared in this scope
+  782 |                 vel_cmd.dof_names.push_back(joint_names_[3]);
+      |                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:787:45: error: ‘joint_names_’ was not declared in this scope
+  787 |                 vel_cmd.dof_names.push_back(joint_names_[7]);
+      |                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:792:45: error: ‘joint_names_’ was not declared in this scope
+  792 |                 pos_cmd.dof_names.push_back(joint_names_[i + 1]);
+      |                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:797:45: error: ‘joint_names_’ was not declared in this scope
+  797 |                 pos_cmd.dof_names.push_back(joint_names_[i]);
+      |                                             ^~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:802:9: error: ‘pos_action_pub_’ was not declared in this scope
+  802 |         pos_action_pub_->publish(pos_cmd);
+      |         ^~~~~~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:803:9: error: ‘vel_action_pub_’ was not declared in this scope
+  803 |         vel_action_pub_->publish(vel_cmd);
+      |         ^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:25: error: invalid use of ‘this’ in non-member function
+  809 |             RCLCPP_INFO(this->get_logger(), "First pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:25: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:13: error: template argument 1 is invalid
+  809 |             RCLCPP_INFO(this->get_logger(), "First pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:13: error: template argument 1 is invalid
+  809 |             RCLCPP_INFO(this->get_logger(), "First pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:13: error: template argument 1 is invalid
+  809 |             RCLCPP_INFO(this->get_logger(), "First pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+      |             ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:25: error: invalid use of ‘this’ in non-member function
+  809 |             RCLCPP_INFO(this->get_logger(), "First pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:809:25: error: invalid use of ‘this’ in non-member function
+  809 |             RCLCPP_INFO(this->get_logger(), "First pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+      |                         ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:25: error: invalid use of ‘this’ in non-member function
+  813 |             RCLCPP_INFO(this->get_logger(), "First vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:25: error: invalid use of ‘this’ in non-member function
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:13: error: template argument 1 is invalid
+  813 |             RCLCPP_INFO(this->get_logger(), "First vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:13: error: template argument 1 is invalid
+  813 |             RCLCPP_INFO(this->get_logger(), "First vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+      |             ^~~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:13: error: template argument 1 is invalid
+  813 |             RCLCPP_INFO(this->get_logger(), "First vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+      |             ^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:1:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:25: error: invalid use of ‘this’ in non-member function
+  813 |             RCLCPP_INFO(this->get_logger(), "First vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:813:25: error: invalid use of ‘this’ in non-member function
+  813 |             RCLCPP_INFO(this->get_logger(), "First vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+      |                         ^~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: At global scope:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:816:1: error: expected declaration before ‘}’ token
+  816 | };
+      | ^
+gmake[2]: *** [CMakeFiles/tita_drl_obs194.dir/build.make:76: CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/tita_drl_obs194.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

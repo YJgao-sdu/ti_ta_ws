@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/tita_locomotion_interfaces/rosidl_generator_cpp/tita_locomotion_interfaces/msg/motors_status.hpp

@@ -1,0 +1,83 @@
+[0.028s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL
+[0.047s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.187s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.196s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.236s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.239s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.247s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.278s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.331s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.335s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.452s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.506s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.608s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.612s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.666s] WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.695s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.696s] -- Configured cppcheck include dirs: 
+[0.696s] -- Configured cppcheck exclude dirs and/or files: 
+[0.697s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.697s] -- Added test 'lint_cmake' to check CMake code style
+[0.698s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.699s] -- Added test 'uncrustify' to check C / C++ code style
+[0.699s] -- Configured uncrustify additional arguments: 
+[0.700s] -- Added test 'xmllint' to check XML markup files
+[0.701s] -- Configuring done
+[0.730s] -- Generating done
+[0.741s] -- Build files have been written to: /mnt/dev/tita_ws/build/TITA_DRL
+[0.752s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL
+[0.752s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[1.330s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs57[0m
+[1.330s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs32[0m
+[1.331s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs320_slr[0m
+[1.331s] [35m[1mConsolidate compiler generated dependencies of target text[0m
+[1.331s] [ 50%] Built target tita_drl_obs32
+[1.332s] [ 50%] Built target tita_drl_obs320_slr
+[1.332s] [ 75%] Built target tita_drl_obs57
+[1.332s] [100%] Built target text
+[1.338s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[1.339s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/TITA_DRL
+[1.350s] -- Install configuration: ""
+[1.350s] -- Execute custom install script
+[1.350s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs57
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs32
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs320_slr
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/text
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/launch/tita_drl.launch.py
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/initial_pose.yaml
+[1.351s] -- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_192.yaml
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_32.yaml
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_320.yaml
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_57.yaml
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_p.yaml
+[1.351s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy.onnx
+[1.352s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.06-16.26.51.onnx
+[1.352s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-10000.onnx
+[1.352s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-16000.onnx
+[1.353s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.10-21.59.34-slr.onnx
+[1.353s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy10.15-09.55.57.onnx
+[1.353s] -- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy12.25-16.55.26.onnx
+[1.360s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-16.16.04-12000.onnx
+[1.360s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-10000.onnx
+[1.360s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-12000.onnx
+[1.361s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57.onnx
+[1.361s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_1.onnx
+[1.361s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_2.onnx
+[1.361s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_p.onnx
+[1.361s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/package_run_dependencies/TITA_DRL
+[1.361s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/parent_prefix_path/TITA_DRL
+[1.362s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.sh
+[1.362s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.dsv
+[1.362s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.sh
+[1.362s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.dsv
+[1.362s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.bash
+[1.363s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.sh
+[1.363s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.zsh
+[1.363s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.dsv
+[1.363s] -- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.dsv
+[1.366s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/packages/TITA_DRL
+[1.366s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig.cmake
+[1.366s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig-version.cmake
+[1.367s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.xml
+[1.407s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/TITA_DRL

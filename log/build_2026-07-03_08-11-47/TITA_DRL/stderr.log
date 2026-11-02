@@ -1,0 +1,7 @@
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In member function ‘void TitaWheelFootNode::controlLoop()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:493:45: error: ‘pos_offset’ was not declared in this scope
+  493 |                 temp_observation[10 + j] = (pos_offset - default_joint_angles_[i]) * obs_scales_dofpos_;
+      |                                             ^~~~~~~~~~
+gmake[2]: *** [CMakeFiles/tita_drl_obs194.dir/build.make:76: CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/tita_drl_obs194.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

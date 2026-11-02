@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target tita_robot[0m
+[100%] Built target tita_robot
+-- Install configuration: ""
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/can_sender.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/tita_robot.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/can_receiver.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/def_can.h
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_common.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/visibility_control.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/can_utils.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_receiver.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_sender.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_id.hpp
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/library_path.sh
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/library_path.dsv
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/lib/libtita_robot.so
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/package_run_dependencies/tita_robot
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/parent_prefix_path/tita_robot
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/ament_prefix_path.sh
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/ament_prefix_path.dsv
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/path.sh
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/path.dsv
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.bash
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.sh
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.zsh
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.dsv
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/package.dsv
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/packages/tita_robot
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/tita_robotConfig.cmake
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/tita_robotConfig-version.cmake
+-- Up-to-date: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/package.xml

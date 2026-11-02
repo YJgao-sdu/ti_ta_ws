@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs192[0m
+[ 20%] Built target text
+[ 40%] Built target tita_drl_obs320_slr
+[ 60%] Built target tita_drl_obs57
+[ 80%] Built target tita_drl_obs32
+[ 90%] [32mBuilding CXX object CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o[0m

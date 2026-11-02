@@ -1,0 +1,38 @@
+[0.057s] Invoking command in '/mnt/dev/tita_ws/build/teleop_command': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/teleop_command -- -j16 -l16
+[0.100s] [ 16%] [32mBuilding CXX object CMakeFiles/teleop_command_lib.dir/src/teleop_command_node.cpp.o[0m
+[11.083s] [ 33%] [32m[1mLinking CXX shared library libteleop_command_lib.so[0m
+[11.205s] [ 66%] Built target teleop_command_lib
+[11.218s] [ 83%] [32m[1mLinking CXX executable teleop_command_node[0m
+[11.311s] [100%] Built target teleop_command_node
+[11.317s] Invoked command in '/mnt/dev/tita_ws/build/teleop_command' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/teleop_command -- -j16 -l16
+[11.318s] Invoking command in '/mnt/dev/tita_ws/build/teleop_command': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/teleop_command
+[11.322s] -- Install configuration: ""
+[11.322s] -- Execute custom install script
+[11.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/launch/teleop_command.launch.py
+[11.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/config/tita_joy.yaml
+[11.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/include/teleop_command/button_function.hpp
+[11.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/include/teleop_command/elrs_emwave_device.hpp
+[11.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/include/teleop_command/teleop_command_node.hpp
+[11.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/library_path.sh
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/library_path.dsv
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/lib/libteleop_command_lib.so
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/lib/teleop_command/teleop_command_node
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/ament_index/resource_index/package_run_dependencies/teleop_command
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/ament_index/resource_index/parent_prefix_path/teleop_command
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/ament_prefix_path.sh
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/ament_prefix_path.dsv
+[11.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/path.sh
+[11.325s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/path.dsv
+[11.325s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.bash
+[11.325s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.sh
+[11.325s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.zsh
+[11.325s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.dsv
+[11.325s] -- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/package.dsv
+[11.330s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/ament_index/resource_index/packages/teleop_command
+[11.330s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/ament_cmake_export_libraries-extras.cmake
+[11.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/teleop_commandConfig.cmake
+[11.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/teleop_commandConfig-version.cmake
+[11.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/package.xml
+[11.332s] Invoked command in '/mnt/dev/tita_ws/build/teleop_command' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/teleop_command

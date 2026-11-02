@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b06dd23e02b5bd8f7e45.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "tita_perception_interfaces__py",
+					"jsonFile" : "directory-tita_perception_interfaces__py-2f0ae6f7c5c0fb97ad33.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/mnt/dev/tita_ws/src/build/tita_perception_interfaces/tita_perception_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "tita_perception_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_tita_perception_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_tita_perception_interfaces_egg-ee0318aaa5595182ecaf.json",
+					"name" : "ament_cmake_python_build_tita_perception_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_tita_perception_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_tita_perception_interfaces-6159a2fe53fd86073eb9.json",
+					"name" : "ament_cmake_python_symlink_tita_perception_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces-6232af6886b1e4755d5a.json",
+					"name" : "tita_perception_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__cpp-55a74fedc4980c01fa70.json",
+					"name" : "tita_perception_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tita_perception_interfaces__py::@015a6ee5dbfe91280444",
+					"jsonFile" : "target-tita_perception_interfaces__py-742cfe64900eee324b7f.json",
+					"name" : "tita_perception_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_generator_c-139ad3a8b146a8dc4b7f.json",
+					"name" : "tita_perception_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_generator_py-9a1ef5bfc5c975983519.json",
+					"name" : "tita_perception_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_c-6b12ef7cb2d49819ba1c.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_c__pyext-96b9e5c206727aeaf485.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_cpp-500b768dc44359e3c31b.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_fastrtps_c-bfa767bcd64c377a2b2f.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_fastrtps_c__pyext-da61eff34159608ec206.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp-534f3a8d70be4caead1f.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_introspection_c-e16c70933ddacc0682d0.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_introspection_c__pyext-3806c58b78cbcb6ac65e.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces__rosidl_typesupport_introspection_cpp-5a65fb5c791106808f03.json",
+					"name" : "tita_perception_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_perception_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_perception_interfaces_uninstall-f6ecf116b86aa161e28a.json",
+					"name" : "tita_perception_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-474038b165f2e332de7c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/src/build/tita_perception_interfaces",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

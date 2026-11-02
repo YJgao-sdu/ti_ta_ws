@@ -1,0 +1,9 @@
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In member function ‘void TitaWheelFootNode::controlLoop()’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:481:19: warning: unused variable ‘pos_offset’ [-Wunused-variable]
+  481 |             float pos_offset = static_cast<float>(joint_msg->position[i]);
+      |                   ^~~~~~~~~~
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In member function ‘std::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)’:
+/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:534:63: warning: unused parameter ‘input_obs’ [-Wunused-parameter]
+  534 |     std::vector<float> runInference(const std::vector<float> &input_obs)
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~

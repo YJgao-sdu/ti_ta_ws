@@ -1,0 +1,81 @@
+[0.199s] Invoking command in '/mnt/dev/tita_ws/src/build/user_command': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/user_command
+[0.414s] -- The C compiler identification is GNU 11.4.0
+[0.579s] -- The CXX compiler identification is GNU 11.4.0
+[0.589s] -- Detecting C compiler ABI info
+[0.761s] -- Detecting C compiler ABI info - done
+[0.778s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.778s] -- Detecting C compile features
+[0.779s] -- Detecting C compile features - done
+[0.786s] -- Detecting CXX compiler ABI info
+[0.995s] -- Detecting CXX compiler ABI info - done
+[1.012s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.012s] -- Detecting CXX compile features
+[1.013s] -- Detecting CXX compile features - done
+[1.017s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.285s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.411s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.700s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.716s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.740s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.776s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.944s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.949s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.136s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.194s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.289s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.307s] -- Looking for pthread.h
+[2.445s] -- Looking for pthread.h - found
+[2.445s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.585s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.585s] -- Found Threads: TRUE  
+[2.744s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.784s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.786s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.787s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command/include
+[2.787s] -- Configured cppcheck exclude dirs and/or files: 
+[2.788s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.788s] -- Configured cpplint exclude dirs and/or files: 
+[2.788s] -- Added test 'lint_cmake' to check CMake code style
+[2.789s] -- Added test 'xmllint' to check XML markup files
+[2.793s] -- Configuring done
+[2.830s] -- Generating done
+[2.838s] -- Build files have been written to: /mnt/dev/tita_ws/src/build/user_command
+[2.852s] Invoked command in '/mnt/dev/tita_ws/src/build/user_command' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/user_command
+[2.853s] Invoking command in '/mnt/dev/tita_ws/src/build/user_command': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/user_command -- -j16 -l16
+[2.906s] [ 25%] [32mBuilding CXX object CMakeFiles/user_command_lib.dir/src/sdk_command_node.cpp.o[0m
+[10.860s] [ 50%] [32m[1mLinking CXX shared library libuser_command_lib.so[0m
+[10.987s] [ 50%] Built target user_command_lib
+[11.003s] [ 75%] [32mBuilding CXX object CMakeFiles/user_command_node.dir/src/main.cpp.o[0m
+[15.127s] [100%] [32m[1mLinking CXX executable user_command_node[0m
+[15.272s] [100%] Built target user_command_node
+[15.284s] Invoked command in '/mnt/dev/tita_ws/src/build/user_command' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/user_command -- -j16 -l16
+[15.286s] Invoking command in '/mnt/dev/tita_ws/src/build/user_command': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/user_command
+[15.294s] -- Install configuration: ""
+[15.294s] -- Execute custom install script
+[15.295s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/launch/user_command.launch.py
+[15.302s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/config/param.yaml
+[15.311s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/include/sdk_command/sdk_command_node.hpp
+[15.321s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/environment/library_path.sh
+[15.328s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/environment/library_path.dsv
+[15.335s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/lib/libuser_command_lib.so
+[15.342s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/lib/user_command/user_command_node
+[15.348s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/ament_index/resource_index/package_run_dependencies/user_command
+[15.354s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/ament_index/resource_index/parent_prefix_path/user_command
+[15.360s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/environment/ament_prefix_path.sh
+[15.367s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/environment/ament_prefix_path.dsv
+[15.373s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/environment/path.sh
+[15.380s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/environment/path.dsv
+[15.386s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/local_setup.bash
+[15.393s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/local_setup.sh
+[15.399s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/local_setup.zsh
+[15.406s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/local_setup.dsv
+[15.412s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/package.dsv
+[15.419s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/ament_index/resource_index/packages/user_command
+[15.426s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.433s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.440s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/cmake/ament_cmake_export_libraries-extras.cmake
+[15.447s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/cmake/user_commandConfig.cmake
+[15.453s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/cmake/user_commandConfig-version.cmake
+[15.460s] -- Symlinking: /mnt/dev/tita_ws/src/install/user_command/share/user_command/package.xml
+[15.470s] Invoked command in '/mnt/dev/tita_ws/src/build/user_command' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/user_command

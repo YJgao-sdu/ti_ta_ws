@@ -1,0 +1,99 @@
+[0.007s] Invoking command in '/mnt/dev/tita_ws/src/build/joy_controller': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/teleop_command/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/joy_controller
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.082s] -- The CXX compiler identification is GNU 11.4.0
+[0.087s] -- Detecting C compiler ABI info
+[0.130s] -- Detecting C compiler ABI info - done
+[0.136s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.136s] -- Detecting C compile features
+[0.136s] -- Detecting C compile features - done
+[0.138s] -- Detecting CXX compiler ABI info
+[0.190s] -- Detecting CXX compiler ABI info - done
+[0.197s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.197s] -- Detecting CXX compile features
+[0.197s] -- Detecting CXX compile features - done
+[0.199s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.309s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.355s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.378s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.380s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.477s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.482s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.488s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.499s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.512s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.549s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.552s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.614s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.639s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.676s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.684s] -- Looking for pthread.h
+[0.730s] -- Looking for pthread.h - found
+[0.730s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.777s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.777s] -- Found Threads: TRUE  
+[0.897s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.922s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.990s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.018s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.019s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.019s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/include
+[1.019s] -- Configured cppcheck exclude dirs and/or files: 
+[1.020s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.020s] -- Configured cpplint exclude dirs and/or files: 
+[1.021s] -- Added test 'lint_cmake' to check CMake code style
+[1.021s] -- Added test 'xmllint' to check XML markup files
+[1.025s] -- Configuring done
+[1.043s] -- Generating done
+[1.048s] -- Build files have been written to: /mnt/dev/tita_ws/src/build/joy_controller
+[1.056s] Invoked command in '/mnt/dev/tita_ws/src/build/joy_controller' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/teleop_command/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/joy_controller
+[1.057s] Invoking command in '/mnt/dev/tita_ws/src/build/joy_controller': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/teleop_command/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/joy_controller -- -j16 -l16
+[1.088s] [ 20%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /mnt/dev/tita_ws/src/build/joy_controller/joy_controller_parameters/include//joy_controller_parameters.hpp /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/src/joy_controller_parameters.yaml `[0m
+[1.277s] [ 20%] Built target joy_controller_parameters
+[1.290s] [ 40%] [32mBuilding CXX object CMakeFiles/joy_controller_lib.dir/src/joy_controller.cpp.o[0m
+[3.271s] In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/include/joy_controller/joy_controller.hpp:30[m[K,
+[3.271s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/src/joy_controller.cpp:15[m[K:
+[3.271s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h:22:103:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_publisher.hpp' header.[m[K’
+[3.271s]    22 | der include is deprecated. Please update your code to use 'realtime_publisher.hpp' header."[01;36m[K)[m[K  //NOLINT
+[3.271s]       |                                                                                            [01;36m[K^[m[K
+[3.271s] 
+[11.109s] [ 60%] [32m[1mLinking CXX shared library libjoy_controller_lib.so[0m
+[11.246s] [ 60%] Built target joy_controller_lib
+[11.258s] [ 80%] [32mBuilding CXX object CMakeFiles/joy_controller_node.dir/src/main.cpp.o[0m
+[13.149s] In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/include/joy_controller/joy_controller.hpp:30[m[K,
+[13.149s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/src/main.cpp:24[m[K:
+[13.149s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h:22:103:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_publisher.hpp' header.[m[K’
+[13.149s]    22 | der include is deprecated. Please update your code to use 'realtime_publisher.hpp' header."[01;36m[K)[m[K  //NOLINT
+[13.149s]       |                                                                                            [01;36m[K^[m[K
+[13.149s] 
+[13.777s] [100%] [32m[1mLinking CXX executable joy_controller_node[0m
+[13.871s] [100%] Built target joy_controller_node
+[13.877s] Invoked command in '/mnt/dev/tita_ws/src/build/joy_controller' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/teleop_command/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/joy_controller -- -j16 -l16
+[13.879s] Invoking command in '/mnt/dev/tita_ws/src/build/joy_controller': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/teleop_command/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/joy_controller
+[13.883s] -- Install configuration: ""
+[13.883s] -- Execute custom install script
+[13.883s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/include/joy_controller_parameters/joy_controller_parameters.hpp
+[13.888s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/launch/joy_controller.launch.py
+[13.893s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/include/joy_controller/joy_controller.hpp
+[13.898s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/environment/library_path.sh
+[13.903s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/environment/library_path.dsv
+[13.908s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/lib/libjoy_controller_lib.so
+[13.913s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/lib/joy_controller/joy_controller_node
+[13.918s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/ament_index/resource_index/package_run_dependencies/joy_controller
+[13.922s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/ament_index/resource_index/parent_prefix_path/joy_controller
+[13.927s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/environment/ament_prefix_path.sh
+[13.931s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/environment/ament_prefix_path.dsv
+[13.936s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/environment/path.sh
+[13.941s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/environment/path.dsv
+[13.945s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/local_setup.bash
+[13.950s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/local_setup.sh
+[13.955s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/local_setup.zsh
+[13.959s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/local_setup.dsv
+[13.964s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/package.dsv
+[13.968s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/ament_index/resource_index/packages/joy_controller
+[13.973s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.978s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.983s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[13.988s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig.cmake
+[13.993s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig-version.cmake
+[13.998s] -- Symlinking: /mnt/dev/tita_ws/src/install/joy_controller/share/joy_controller/package.xml
+[14.004s] Invoked command in '/mnt/dev/tita_ws/src/build/joy_controller' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/tita_bringup:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/teleop_command/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/joy_controller

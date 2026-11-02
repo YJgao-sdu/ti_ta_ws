@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/locomotion_msgs/rosidl_generator_py/locomotion_msgs/msg/_rigid_body_s.c

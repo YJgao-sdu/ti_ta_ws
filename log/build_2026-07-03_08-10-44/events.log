@@ -1,0 +1,55 @@
+[0.000000] (-) TimerEvent: {}
+[0.000072] (-) JobUnselected: {'identifier': 'commands_can'}
+[0.000110] (-) JobUnselected: {'identifier': 'custom_joint_position_controller'}
+[0.000184] (-) JobUnselected: {'identifier': 'gazebo_bridge'}
+[0.000253] (-) JobUnselected: {'identifier': 'hardware_bridge'}
+[0.000278] (-) JobUnselected: {'identifier': 'hw_broadcaster'}
+[0.000301] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.000322] (-) JobUnselected: {'identifier': 'keyboard_controller'}
+[0.000343] (-) JobUnselected: {'identifier': 'locomotion_msgs'}
+[0.000364] (-) JobUnselected: {'identifier': 'robot_inertia_calculator'}
+[0.000385] (-) JobUnselected: {'identifier': 'sim_bringup'}
+[0.000406] (-) JobUnselected: {'identifier': 'teleop_command'}
+[0.000427] (-) JobUnselected: {'identifier': 'template_ros2_controller'}
+[0.000448] (-) JobUnselected: {'identifier': 'tita_bringup'}
+[0.000469] (-) JobUnselected: {'identifier': 'tita_controller'}
+[0.000489] (-) JobUnselected: {'identifier': 'tita_description'}
+[0.000509] (-) JobUnselected: {'identifier': 'tita_locomotion_interfaces'}
+[0.000530] (-) JobUnselected: {'identifier': 'tita_perception_interfaces'}
+[0.000551] (-) JobUnselected: {'identifier': 'tita_pointfoot_description'}
+[0.000572] (-) JobUnselected: {'identifier': 'tita_robot'}
+[0.000594] (-) JobUnselected: {'identifier': 'tita_system_interfaces'}
+[0.000615] (-) JobUnselected: {'identifier': 'user_command'}
+[0.000636] (-) JobUnselected: {'identifier': 'webots_bridge'}
+[0.000660] (TITA_DRL) JobQueued: {'identifier': 'TITA_DRL', 'dependencies': OrderedDict()}
+[0.000687] (TITA_DRL) JobStarted: {'identifier': 'TITA_DRL'}
+[0.006606] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'cmake'}
+[0.007415] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL', '-DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL'], 'cwd': '/mnt/dev/tita_ws/build/TITA_DRL', 'env': OrderedDict([('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/mnt/dev'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('PWD', '/mnt/dev/tita_ws/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1')]), 'shell': False}
+[0.021619] (TITA_DRL) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098886] (-) TimerEvent: {}
+[0.175984] (TITA_DRL) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.195738] (TITA_DRL) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.198960] (-) TimerEvent: {}
+[0.249686] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.254314] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.265243] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.282101] (TITA_DRL) StderrLine: {'line': b'CMake Error at /opt/ros/humble/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:35 (message):\n'}
+[0.282270] (TITA_DRL) StderrLine: {'line': b"  No 'rosidl_typesupport_c' found\n"}
+[0.282546] (TITA_DRL) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.282676] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:8 (get_used_typesupports)\n'}
+[0.282772] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.282860] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.282946] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.283030] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.283114] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)\n'}
+[0.283196] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.283279] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)\n'}
+[0.283361] (TITA_DRL) StderrLine: {'line': b'  CMakeLists.txt:10 (find_package)\n'}
+[0.283443] (TITA_DRL) StderrLine: {'line': b'\n'}
+[0.283525] (TITA_DRL) StderrLine: {'line': b'\n'}
+[0.283606] (TITA_DRL) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.283689] (TITA_DRL) StdoutLine: {'line': b'See also "/mnt/dev/tita_ws/build/TITA_DRL/CMakeFiles/CMakeOutput.log".\n'}
+[0.286474] (TITA_DRL) CommandEnded: {'returncode': 1}
+[0.299153] (-) TimerEvent: {}
+[0.302991] (TITA_DRL) JobEnded: {'identifier': 'TITA_DRL', 'rc': 1}
+[0.313949] (-) EventReactorShutdown: {}

@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target gazebo_bridge[0m
+[100%] Built target gazebo_bridge
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge//gazebo_bridge_plugin.xml
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/config/controllers.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/launch/gazebo_bridge.launch.py
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/worlds/empty_world.world
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/include/gazebo_bridge/gazebo_bridge.h
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/environment/library_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/environment/library_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/lib/libgazebo_bridge.so
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/ament_index/resource_index/package_run_dependencies/gazebo_bridge
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/ament_index/resource_index/parent_prefix_path/gazebo_bridge
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/ament_index/resource_index/packages/gazebo_bridge
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/ament_index/resource_index/gazebo_ros2_control__pluginlib__plugin/gazebo_bridge
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/cmake/gazebo_bridgeConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/cmake/gazebo_bridgeConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/gazebo_bridge/share/gazebo_bridge/package.xml

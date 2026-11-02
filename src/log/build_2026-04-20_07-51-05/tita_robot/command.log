@@ -1,0 +1,6 @@
+Invoking command in '/mnt/dev/tita_ws/src/build/tita_robot': /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/tita_robot
+Invoked command in '/mnt/dev/tita_ws/src/build/tita_robot' returned '0': /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/tita_robot
+Invoking command in '/mnt/dev/tita_ws/src/build/tita_robot': /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/tita_robot -- -j16 -l16
+Invoked command in '/mnt/dev/tita_ws/src/build/tita_robot' returned '0': /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/tita_robot -- -j16 -l16
+Invoking command in '/mnt/dev/tita_ws/src/build/tita_robot': /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/tita_robot
+Invoked command in '/mnt/dev/tita_ws/src/build/tita_robot' returned '0': /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/tita_robot

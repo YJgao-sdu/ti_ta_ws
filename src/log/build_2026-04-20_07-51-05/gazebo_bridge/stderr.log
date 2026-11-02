@@ -1,0 +1,6 @@
+In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/include/gazebo_bridge/gazebo_bridge.h:17[m[K,
+                 from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/src/gazebo_bridge.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+   22 | header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+      |                                                                                            [01;36m[K^[m[K
+

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/mnt/dev/tita_ws/build/hw_broadcaster/libhw_broadcaster_lib.so" "TARGETS" "hw_broadcaster_lib" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

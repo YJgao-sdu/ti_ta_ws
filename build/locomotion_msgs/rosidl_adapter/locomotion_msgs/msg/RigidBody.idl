@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from locomotion_msgs/msg/RigidBody.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Inertia.idl"
+#include "geometry_msgs/msg/Pose.idl"
+
+module locomotion_msgs {
+  module msg {
+    struct RigidBody {
+      geometry_msgs::msg::Inertia inertia;
+
+      geometry_msgs::msg::Pose transform;
+    };
+  };
+};

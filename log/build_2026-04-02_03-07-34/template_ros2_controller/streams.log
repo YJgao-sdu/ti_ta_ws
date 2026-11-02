@@ -1,0 +1,33 @@
+[0.025s] Invoking command in '/mnt/dev/tita_ws/build/template_ros2_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/template_ros2_controller -- -j16 -l16
+[0.060s] [ 33%] Built target template_ros2_controller_parameters
+[0.102s] [100%] Built target template_ros2_controller
+[0.187s] Invoked command in '/mnt/dev/tita_ws/build/template_ros2_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/template_ros2_controller -- -j16 -l16
+[0.189s] Invoking command in '/mnt/dev/tita_ws/build/template_ros2_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/template_ros2_controller
+[0.212s] -- Install configuration: ""
+[0.212s] -- Execute custom install script
+[0.212s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/include/template_ros2_controller_parameters/template_ros2_controller_parameters.hpp
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller//template_ros2_controller_plugin.xml
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/include/template_ros2_controller/template_ros2_controller.hpp
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/environment/library_path.sh
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/environment/library_path.dsv
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/lib/libtemplate_ros2_controller.so
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/ament_index/resource_index/package_run_dependencies/template_ros2_controller
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/ament_index/resource_index/parent_prefix_path/template_ros2_controller
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/environment/ament_prefix_path.sh
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/environment/ament_prefix_path.dsv
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/environment/path.sh
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/environment/path.dsv
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/local_setup.bash
+[0.213s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/local_setup.sh
+[0.214s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/local_setup.zsh
+[0.214s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/local_setup.dsv
+[0.214s] -- Symlinking: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/package.dsv
+[0.214s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/ament_index/resource_index/packages/template_ros2_controller
+[0.215s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/template_ros2_controller
+[0.215s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.215s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.215s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[0.215s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/cmake/template_ros2_controllerConfig.cmake
+[0.216s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/cmake/template_ros2_controllerConfig-version.cmake
+[0.216s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/template_ros2_controller/share/template_ros2_controller/package.xml
+[0.240s] Invoked command in '/mnt/dev/tita_ws/build/template_ros2_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/template_ros2_controller

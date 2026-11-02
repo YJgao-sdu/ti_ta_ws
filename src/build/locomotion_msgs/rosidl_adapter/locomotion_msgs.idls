@@ -1,0 +1,3 @@
+/mnt/dev/tita_ws/src/build/locomotion_msgs/rosidl_adapter/locomotion_msgs:msg/RobotStates.idl
+/mnt/dev/tita_ws/src/build/locomotion_msgs/rosidl_adapter/locomotion_msgs:msg/RigidBody.idl
+/mnt/dev/tita_ws/src/build/locomotion_msgs/rosidl_adapter/locomotion_msgs:msg/PlanCommands.idl

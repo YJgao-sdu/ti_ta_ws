@@ -1,0 +1,83 @@
+[0.081s] Invoking command in '/mnt/dev/tita_ws/src/build/hardware_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/src/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/src/install/tita_robot/share /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/hardware_bridge
+[2.903s] -- The C compiler identification is GNU 11.4.0
+[2.903s] -- The CXX compiler identification is GNU 11.4.0
+[2.903s] -- Detecting C compiler ABI info
+[2.903s] -- Detecting C compiler ABI info - done
+[2.903s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.904s] -- Detecting C compile features
+[2.904s] -- Detecting C compile features - done
+[2.904s] -- Detecting CXX compiler ABI info
+[2.904s] -- Detecting CXX compiler ABI info - done
+[2.904s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.904s] -- Detecting CXX compile features
+[2.904s] -- Detecting CXX compile features - done
+[2.904s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.904s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.904s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.904s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.904s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.905s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.905s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.905s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.203s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.231s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.398s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.589s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.592s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.619s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.628s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.662s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.702s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.763s] -- Looking for pthread.h
+[4.144s] -- Looking for pthread.h - found
+[4.145s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.391s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.392s] -- Found Threads: TRUE  
+[4.703s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.785s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.786s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.787s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge/include
+[4.787s] -- Configured cppcheck exclude dirs and/or files: 
+[4.788s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.788s] -- Configured cpplint exclude dirs and/or files: 
+[4.789s] -- Added test 'lint_cmake' to check CMake code style
+[4.789s] -- Added test 'xmllint' to check XML markup files
+[4.802s] -- Configuring done
+[4.877s] -- Generating done
+[4.886s] -- Build files have been written to: /mnt/dev/tita_ws/src/build/hardware_bridge
+[4.926s] Invoked command in '/mnt/dev/tita_ws/src/build/hardware_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/src/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/src/install/tita_robot/share /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/hardware_bridge
+[4.935s] Invoking command in '/mnt/dev/tita_ws/src/build/hardware_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/src/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/src/install/tita_robot/share /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/hardware_bridge -- -j16 -l16
+[8.693s] [ 50%] [32mBuilding CXX object CMakeFiles/hardware_bridge.dir/src/hardware_bridge_node.cpp.o[0m
+[14.695s] [100%] [32m[1mLinking CXX shared library libhardware_bridge.so[0m
+[14.937s] [100%] Built target hardware_bridge
+[14.983s] Invoked command in '/mnt/dev/tita_ws/src/build/hardware_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/src/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/src/install/tita_robot/share /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/hardware_bridge -- -j16 -l16
+[14.983s] Invoking command in '/mnt/dev/tita_ws/src/build/hardware_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/src/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/src/install/tita_robot/share /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/hardware_bridge
+[15.314s] -- Install configuration: ""
+[15.314s] -- Execute custom install script
+[15.315s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge//hardware_bridge_plugin.xml
+[15.315s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/launch/hardware_bridge.launch.py
+[15.315s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/launch/joint_calibration_launch.py
+[15.315s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/include/hardware_bridge/hardware_bridge_node.hpp
+[15.315s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/environment/library_path.sh
+[15.316s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/environment/library_path.dsv
+[15.316s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/lib/libhardware_bridge.so
+[15.317s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/ament_index/resource_index/package_run_dependencies/hardware_bridge
+[15.317s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/ament_index/resource_index/parent_prefix_path/hardware_bridge
+[15.317s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/environment/ament_prefix_path.sh
+[15.318s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/environment/ament_prefix_path.dsv
+[15.318s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/environment/path.sh
+[15.318s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/environment/path.dsv
+[15.318s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/local_setup.bash
+[15.319s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/local_setup.sh
+[15.319s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/local_setup.zsh
+[15.319s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/local_setup.dsv
+[15.320s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/package.dsv
+[15.321s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/ament_index/resource_index/packages/hardware_bridge
+[15.321s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware_bridge
+[15.331s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.339s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.370s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[15.376s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/cmake/hardware_bridgeConfig.cmake
+[15.386s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/cmake/hardware_bridgeConfig-version.cmake
+[15.395s] -- Symlinking: /mnt/dev/tita_ws/src/install/hardware_bridge/share/hardware_bridge/package.xml
+[15.414s] Invoked command in '/mnt/dev/tita_ws/src/build/hardware_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/src/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/src/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/src/install/tita_robot/share /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/hardware_bridge

@@ -1,0 +1,57 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/tita_robot
+[ 25%] [32mBuilding CXX object CMakeFiles/tita_robot.dir/src/can_sender.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tita_robot.dir/src/can_receiver.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tita_robot.dir/src/tita_robot.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libtita_robot.so[0m
+[100%] Built target tita_robot
+-- Install configuration: ""
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/can_sender.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/tita_robot.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/can_receiver.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/tita_robot/def_can.h
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_common.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol/visibility_control.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol/can_utils.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_receiver.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_sender.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/include/protocol/socket_can_id.hpp
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/library_path.sh
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/library_path.dsv
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/lib/libtita_robot.so
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/package_run_dependencies/tita_robot
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/parent_prefix_path/tita_robot
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/ament_prefix_path.sh
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/ament_prefix_path.dsv
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/path.sh
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/environment/path.dsv
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.bash
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.sh
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.zsh
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/local_setup.dsv
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/package.dsv
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/ament_index/resource_index/packages/tita_robot
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/tita_robotConfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/cmake/tita_robotConfig-version.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_robot/share/tita_robot/package.xml

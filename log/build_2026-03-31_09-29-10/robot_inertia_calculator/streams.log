@@ -1,0 +1,79 @@
+[0.006s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/robot_inertia_calculator
+[0.014s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.105s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.181s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.183s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.188s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.204s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.229s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.230s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.313s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.396s] -- pinocchio_default FOUND. pinocchio_default at /opt/openrobots/lib/libpinocchio_default.so
+[0.396s] -- pinocchio_parsers FOUND. pinocchio_parsers at /opt/openrobots/lib/libpinocchio_parsers.so
+[0.396s] -- pinocchio_casadi FOUND. pinocchio_casadi at /opt/openrobots/lib/libpinocchio_casadi.so
+[0.397s] -- boost_filesystem FOUND. boost_filesystem at /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.397s] -- boost_serialization FOUND. boost_serialization at /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+[0.397s] -- boost_system FOUND. boost_system at /usr/lib/x86_64-linux-gnu/libboost_system.so
+[0.408s] [33mCMake Warning at /opt/openrobots/lib/cmake/hpp-fcl/hpp-fclConfig.cmake:3 (message):
+[0.408s]   Please update your CMake from 'hpp-fcl' to 'coal'
+[0.409s] Call Stack (most recent call first):
+[0.409s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[0.409s]   /opt/openrobots/lib/cmake/pinocchio/pinocchioConfig.cmake:161 (find_dependency)
+[0.409s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[0.409s]   CMakeLists.txt:13 (ament_auto_find_build_dependencies)
+[0.409s] 
+[0.409s] [0m
+[0.409s] -- coal FOUND. coal at /opt/openrobots/lib/libcoal.so
+[0.734s] -- Default C++ standard: 201703
+[0.734s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[0.734s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[0.735s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[0.750s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.768s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.768s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.769s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include
+[0.769s] -- Configured cppcheck exclude dirs and/or files: 
+[0.769s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.769s] -- Configured cpplint exclude dirs and/or files: 
+[0.770s] -- Added test 'lint_cmake' to check CMake code style
+[0.770s] -- Added test 'xmllint' to check XML markup files
+[0.773s] -- Configuring done
+[0.791s] -- Generating done
+[0.795s] -- Build files have been written to: /mnt/dev/tita_ws/build/robot_inertia_calculator
+[0.802s] Invoked command in '/mnt/dev/tita_ws/build/robot_inertia_calculator' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/robot_inertia_calculator
+[0.803s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/build/robot_inertia_calculator -- -j16 -l16
+[0.826s] [35m[1mConsolidate compiler generated dependencies of target robot_inertia_calculator_lib[0m
+[0.868s] [ 50%] Built target robot_inertia_calculator_lib
+[0.876s] [35m[1mConsolidate compiler generated dependencies of target robot_inertia_calculator_node[0m
+[0.899s] [100%] Built target robot_inertia_calculator_node
+[0.906s] Invoked command in '/mnt/dev/tita_ws/build/robot_inertia_calculator' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/build/robot_inertia_calculator -- -j16 -l16
+[0.907s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/build/robot_inertia_calculator
+[0.910s] -- Install configuration: ""
+[0.911s] -- Execute custom install script
+[0.911s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/launch/robot_inertia_calculator.launch.py
+[0.911s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/config/param.yaml
+[0.911s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/library_path.sh
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/library_path.dsv
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/lib/librobot_inertia_calculator_lib.so
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/lib/robot_inertia_calculator/robot_inertia_calculator_node
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/package_run_dependencies/robot_inertia_calculator
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/parent_prefix_path/robot_inertia_calculator
+[0.912s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/ament_prefix_path.sh
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/ament_prefix_path.dsv
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/path.sh
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/path.dsv
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.bash
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.sh
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.zsh
+[0.913s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.dsv
+[0.913s] -- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/package.dsv
+[0.918s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/packages/robot_inertia_calculator
+[0.918s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.918s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.918s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_libraries-extras.cmake
+[0.918s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/robot_inertia_calculatorConfig.cmake
+[0.918s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/robot_inertia_calculatorConfig-version.cmake
+[0.919s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/package.xml
+[0.920s] Invoked command in '/mnt/dev/tita_ws/build/robot_inertia_calculator' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/build/robot_inertia_calculator

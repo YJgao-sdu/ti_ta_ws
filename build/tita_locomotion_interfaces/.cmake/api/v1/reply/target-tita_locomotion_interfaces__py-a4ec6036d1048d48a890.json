@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/mnt/dev/tita_ws/build/tita_locomotion_interfaces/tita_locomotion_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "tita_locomotion_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "tita_locomotion_interfaces__py::@d679def8a3e6a8e41c57",
+	"name" : "tita_locomotion_interfaces__py",
+	"paths" : 
+	{
+		"build" : "tita_locomotion_interfaces__py",
+		"source" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces/tita_locomotion_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces/tita_locomotion_interfaces__py/CMakeFiles/tita_locomotion_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces/tita_locomotion_interfaces__py/CMakeFiles/tita_locomotion_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces/rosidl_generator_py/tita_locomotion_interfaces/_tita_locomotion_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

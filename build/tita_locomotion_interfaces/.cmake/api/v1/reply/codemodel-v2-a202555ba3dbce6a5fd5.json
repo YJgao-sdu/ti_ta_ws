@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8186a133f2e74157b32c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "tita_locomotion_interfaces__py",
+					"jsonFile" : "directory-tita_locomotion_interfaces__py-2ac33dbc36aab3462f17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces/tita_locomotion_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "tita_locomotion_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_tita_locomotion_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_tita_locomotion_interfaces_egg-e839c21ac48bc4c87059.json",
+					"name" : "ament_cmake_python_build_tita_locomotion_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_tita_locomotion_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_tita_locomotion_interfaces-765c121bce0d2cc937ac.json",
+					"name" : "ament_cmake_python_symlink_tita_locomotion_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces-a066a78673eb7749aafe.json",
+					"name" : "tita_locomotion_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__cpp-50ff06a469043cf21d40.json",
+					"name" : "tita_locomotion_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tita_locomotion_interfaces__py::@d679def8a3e6a8e41c57",
+					"jsonFile" : "target-tita_locomotion_interfaces__py-a4ec6036d1048d48a890.json",
+					"name" : "tita_locomotion_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_generator_c-0fe5d34fa4877dcf4ce4.json",
+					"name" : "tita_locomotion_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_generator_py-d98434ba9feb871dec18.json",
+					"name" : "tita_locomotion_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_c-8f80bb4683352fbfaee4.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_c__pyext-bfdc49960c19eec64456.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_cpp-3e6cfbb39cc133d276c8.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c-b3db8231f7e348ff0604.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c__pyext-e14f6500c5f1e85c2cfe.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cpp-9cde8ee6f822b739d58e.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_introspection_c-09b3c1baec3cc6713f69.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_introspection_c__pyext-e3acd75b083078530028.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces__rosidl_typesupport_introspection_cpp-125ef7da8a08effe79be.json",
+					"name" : "tita_locomotion_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_locomotion_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_locomotion_interfaces_uninstall-3de8998023f3164315b2.json",
+					"name" : "tita_locomotion_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b54ea8b27692f0cffd5f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/build/tita_locomotion_interfaces",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

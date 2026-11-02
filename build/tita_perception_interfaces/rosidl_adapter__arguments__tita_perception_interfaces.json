@@ -1,0 +1,8 @@
+{
+  "package_name": "tita_perception_interfaces",
+  "non_idl_tuples": [
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces:msg/BoundingBox.msg",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces:msg/BoundingBoxArray.msg",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces:srv/ObjectDetection.srv"
+  ]
+}

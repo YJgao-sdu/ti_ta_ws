@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/locomotion_msgs/rosidl_typesupport_fastrtps_c/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h

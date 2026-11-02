@@ -1,0 +1,151 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-08f1636adae8aaa40b7a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TITA_DRL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TITA_DRL_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TITA_DRL_uninstall-cbaff8d439fbeaa59081.json",
+					"name" : "TITA_DRL_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "text::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-text-3a34f85eef489c5f2970.json",
+					"name" : "text",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs170::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs170-eb89f62b478a5481d38e.json",
+					"name" : "tita_drl_obs170",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs192::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs192-cd3dcfae13c7e920bafe.json",
+					"name" : "tita_drl_obs192",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs194::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs194-d8574f7be81f4ea49f57.json",
+					"name" : "tita_drl_obs194",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs32::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs32-e59ab8fba045a5b44cea.json",
+					"name" : "tita_drl_obs32",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs320_slr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs320_slr-835db8da06446d122f16.json",
+					"name" : "tita_drl_obs320_slr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs374::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs374-2541fce98fc3b39b6a6e.json",
+					"name" : "tita_drl_obs374",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs57::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs57-3cc55c1ed82fc3975813.json",
+					"name" : "tita_drl_obs57",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tita_drl_obs_192-stand::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tita_drl_obs_192-stand-559fe47e20c93f71b942.json",
+					"name" : "tita_drl_obs_192-stand",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-682af3c99f17cba63dc8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/build/TITA_DRL",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o"
+  "CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o.d"
+  "CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/dds_fastrtps/bounding_box_array__type_support.cpp.o"
+  "CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/dds_fastrtps/bounding_box_array__type_support.cpp.o.d"
+  "CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/srv/detail/dds_fastrtps/object_detection__type_support.cpp.o"
+  "CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/srv/detail/dds_fastrtps/object_detection__type_support.cpp.o.d"
+  "libtita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libtita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/bounding_box_array__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/dds_fastrtps/bounding_box__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/msg/detail/dds_fastrtps/bounding_box_array__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/srv/detail/dds_fastrtps/object_detection__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/tita_perception_interfaces/srv/detail/object_detection__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__rosidl_typesupport_introspection_cpp.hpp

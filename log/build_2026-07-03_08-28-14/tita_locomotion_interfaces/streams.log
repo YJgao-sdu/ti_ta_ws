@@ -1,0 +1,137 @@
+[0.044s] Invoking command in '/mnt/dev/tita_ws/build/tita_locomotion_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_locomotion_interfaces -- -j16 -l16
+[0.187s] [  0%] Built target ament_cmake_python_symlink_tita_locomotion_interfaces
+[0.187s] [ 10%] Built target tita_locomotion_interfaces__rosidl_generator_c
+[0.198s] [ 12%] Built target tita_locomotion_interfaces__cpp
+[0.252s] [ 23%] Built target tita_locomotion_interfaces__rosidl_typesupport_introspection_c
+[0.253s] [ 33%] Built target tita_locomotion_interfaces__rosidl_typesupport_c
+[0.268s] [ 43%] Built target tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c
+[0.277s] [ 53%] Built target tita_locomotion_interfaces__rosidl_typesupport_cpp
+[0.279s] [ 64%] Built target tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.318s] [ 74%] Built target tita_locomotion_interfaces__rosidl_typesupport_introspection_cpp
+[0.354s] [ 74%] Built target tita_locomotion_interfaces
+[0.383s] [ 76%] Built target tita_locomotion_interfaces__py
+[0.424s] [ 84%] Built target tita_locomotion_interfaces__rosidl_generator_py
+[0.473s] [ 89%] Built target tita_locomotion_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.474s] [ 94%] Built target tita_locomotion_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.474s] [100%] Built target tita_locomotion_interfaces__rosidl_typesupport_c__pyext
+[0.874s] running egg_info
+[0.875s] writing tita_locomotion_interfaces.egg-info/PKG-INFO
+[0.876s] writing dependency_links to tita_locomotion_interfaces.egg-info/dependency_links.txt
+[0.878s] writing top-level names to tita_locomotion_interfaces.egg-info/top_level.txt
+[0.886s] reading manifest file 'tita_locomotion_interfaces.egg-info/SOURCES.txt'
+[0.886s] writing manifest file 'tita_locomotion_interfaces.egg-info/SOURCES.txt'
+[0.956s] [100%] Built target ament_cmake_python_build_tita_locomotion_interfaces_egg
+[1.195s] Invoked command in '/mnt/dev/tita_ws/build/tita_locomotion_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_locomotion_interfaces -- -j16 -l16
+[1.200s] Invoking command in '/mnt/dev/tita_ws/build/tita_locomotion_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_locomotion_interfaces
+[1.223s] -- Install configuration: ""
+[1.226s] -- Execute custom install script
+[1.236s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/ament_index/resource_index/rosidl_interfaces/tita_locomotion_interfaces
+[1.237s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__functions.h
+[1.238s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__struct.h
+[1.239s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__type_support.h
+[1.240s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__functions.h
+[1.241s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__struct.h
+[1.241s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__type_support.h
+[1.244s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/locomotion_cmd.h
+[1.247s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/motors_status.h
+[1.250s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.251s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/library_path.sh
+[1.252s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/library_path.dsv
+[1.253s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__rosidl_typesupport_fastrtps_c.h
+[1.254s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__rosidl_typesupport_fastrtps_c.h
+[1.255s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.263s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__rosidl_typesupport_introspection_c.h
+[1.264s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__rosidl_typesupport_introspection_c.h
+[1.265s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.273s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__builder.hpp
+[1.274s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__struct.hpp
+[1.276s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__traits.hpp
+[1.276s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__type_support.hpp
+[1.278s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__builder.hpp
+[1.279s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__struct.hpp
+[1.279s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__traits.hpp
+[1.280s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__type_support.hpp
+[1.280s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/locomotion_cmd.hpp
+[1.281s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/motors_status.hpp
+[1.281s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.282s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[1.282s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.288s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.290s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/locomotion_cmd__rosidl_typesupport_introspection_cpp.hpp
+[1.292s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/include/tita_locomotion_interfaces/tita_locomotion_interfaces/msg/detail/motors_status__rosidl_typesupport_introspection_cpp.hpp
+[1.294s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/pythonpath.sh
+[1.303s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/pythonpath.dsv
+[1.308s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[1.311s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.312s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.313s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[1.316s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/__init__.py
+[1.317s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/_tita_locomotion_interfaces_s.ep.rosidl_typesupport_c.c
+[1.317s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/_tita_locomotion_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.318s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/_tita_locomotion_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.318s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/libtita_locomotion_interfaces__rosidl_generator_py.so
+[1.319s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/msg/__init__.py
+[1.319s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/msg/_locomotion_cmd.py
+[1.319s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/msg/_locomotion_cmd_s.c
+[1.320s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/msg/_motors_status.py
+[1.320s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/msg/_motors_status_s.c
+[1.321s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/tita_locomotion_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.321s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/tita_locomotion_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.322s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/tita_locomotion_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.322s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/tita_locomotion_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/tita_locomotion_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/tita_locomotion_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.323s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/msg/LocomotionCmd.idl
+[1.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/msg/MotorsStatus.idl
+[1.324s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/msg/LocomotionCmd.msg
+[1.325s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/msg/MotorsStatus.msg
+[1.329s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/ament_index/resource_index/package_run_dependencies/tita_locomotion_interfaces
+[1.329s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/ament_index/resource_index/parent_prefix_path/tita_locomotion_interfaces
+[1.329s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/ament_prefix_path.sh
+[1.330s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/ament_prefix_path.dsv
+[1.330s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/path.sh
+[1.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/environment/path.dsv
+[1.331s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/local_setup.bash
+[1.332s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/local_setup.sh
+[1.332s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/local_setup.zsh
+[1.333s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/local_setup.dsv
+[1.333s] -- Symlinking: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/package.dsv
+[1.333s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/ament_index/resource_index/packages/tita_locomotion_interfaces
+[1.334s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.334s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.335s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.336s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.336s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.337s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.337s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.338s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfacesConfig.cmake
+[1.338s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfacesConfig-version.cmake
+[1.338s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/package.xml
+[1.339s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_generator_c.so
+[1.339s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.339s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_typesupport_introspection_c.so
+[1.341s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_typesupport_c.so
+[1.341s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.341s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.345s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_typesupport_cpp.so
+[1.430s] Listing '/mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces'...
+[1.430s] Listing '/mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages/tita_locomotion_interfaces/msg'...
+[1.447s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib/libtita_locomotion_interfaces__rosidl_generator_py.so
+[1.451s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_generator_cExport.cmake
+[1.452s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.453s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.454s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.455s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.456s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.456s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_cExport.cmake
+[1.456s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.457s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_generator_cppExport.cmake
+[1.458s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.458s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.458s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.459s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.460s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_cppExport.cmake
+[1.460s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/tita_locomotion_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.461s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_generator_pyExport.cmake
+[1.462s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_locomotion_interfaces/share/tita_locomotion_interfaces/cmake/export_tita_locomotion_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.568s] Invoked command in '/mnt/dev/tita_ws/build/tita_locomotion_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_locomotion_interfaces

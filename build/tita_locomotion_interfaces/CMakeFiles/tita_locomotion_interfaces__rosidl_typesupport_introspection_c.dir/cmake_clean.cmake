@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tita_locomotion_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/locomotion_cmd__type_support.c.o"
+  "CMakeFiles/tita_locomotion_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/locomotion_cmd__type_support.c.o.d"
+  "CMakeFiles/tita_locomotion_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/motors_status__type_support.c.o"
+  "CMakeFiles/tita_locomotion_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/motors_status__type_support.c.o.d"
+  "libtita_locomotion_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libtita_locomotion_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/locomotion_cmd__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/locomotion_cmd__type_support.c"
+  "rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/motors_status__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/tita_locomotion_interfaces/msg/detail/motors_status__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/tita_locomotion_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

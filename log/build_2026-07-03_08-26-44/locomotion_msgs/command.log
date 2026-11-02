@@ -1,0 +1,4 @@
+Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/locomotion_msgs -- -j16 -l16
+Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/locomotion_msgs -- -j16 -l16
+Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/locomotion_msgs
+Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/locomotion_msgs

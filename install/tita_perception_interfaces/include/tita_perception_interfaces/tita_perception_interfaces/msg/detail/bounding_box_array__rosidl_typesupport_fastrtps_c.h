@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_perception_interfaces/rosidl_typesupport_fastrtps_c/tita_perception_interfaces/msg/detail/bounding_box_array__rosidl_typesupport_fastrtps_c.h

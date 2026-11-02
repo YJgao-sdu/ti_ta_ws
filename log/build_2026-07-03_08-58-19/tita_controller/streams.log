@@ -1,0 +1,64 @@
+[0.036s] Invoking command in '/mnt/dev/tita_ws/build/tita_controller': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_controller -- -j16 -l16
+[0.069s] [  7%] Built target tita_controller_parameters
+[0.094s] [100%] Built target tita_controller
+[0.100s] Invoked command in '/mnt/dev/tita_ws/build/tita_controller' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_controller -- -j16 -l16
+[0.102s] Invoking command in '/mnt/dev/tita_ws/build/tita_controller': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_controller
+[0.106s] -- Install configuration: ""
+[0.106s] -- Execute custom install script
+[0.107s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/tita_controller_parameters/tita_controller_parameters.hpp
+[0.107s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller//tita_controller_plugin.xml
+[0.108s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Benchmark.h
+[0.108s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/FirstOrderIIRFilter.h
+[0.108s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/Interpolation.h
+[0.109s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/MathUtilities.h
+[0.109s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/orientation_tools.h
+[0.109s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/RobotParameters.h
+[0.109s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/BSplineBasic.h
+[0.109s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/BezierCurve.h
+[0.110s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/PeriodicTask.h
+[0.110s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/SharedMemory.h
+[0.110s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/Timer.h
+[0.111s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/filters.h
+[0.111s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/pseudoInverse.h
+[0.111s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/splines.hpp
+[0.111s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/cTypes.h
+[0.112s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/cppTypes.h
+[0.112s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/enumClass.h
+[0.112s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/common/timeMarker.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/estimator/OrientationEstimator.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/estimator/StateEstimatorContainer.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/ControlFSMData.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSM.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_JointPD.h
+[0.113s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_Passive.h
+[0.114s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_RL.h
+[0.114s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_RecoveryStand.h
+[0.114s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_TransformDown.h
+[0.115s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/planner/DesiredStateCommand.h
+[0.115s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/planner/RemoterCommandPlanner.h
+[0.115s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/tensorrt_cuda/tensor_cuda_test.hpp
+[0.115s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/include/tita_controller/tita_controller_node.hpp
+[0.116s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/library_path.sh
+[0.116s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/library_path.dsv
+[0.116s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/lib/libtita_controller.so
+[0.117s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/package_run_dependencies/tita_controller
+[0.117s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/parent_prefix_path/tita_controller
+[0.118s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/ament_prefix_path.sh
+[0.119s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/ament_prefix_path.dsv
+[0.119s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/path.sh
+[0.119s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/path.dsv
+[0.119s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.bash
+[0.120s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.sh
+[0.120s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.zsh
+[0.120s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.dsv
+[0.120s] -- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/package.dsv
+[0.125s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/packages/tita_controller
+[0.125s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/tita_controller
+[0.126s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.126s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.126s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[0.126s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/tita_controllerConfig.cmake
+[0.127s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/tita_controllerConfig-version.cmake
+[0.127s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/package.xml
+[0.140s] Invoked command in '/mnt/dev/tita_ws/build/tita_controller' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_controller

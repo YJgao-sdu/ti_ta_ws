@@ -1,0 +1,30 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/fan_mode_set_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/fan_mode_set_srv__type_support.cpp.o.d"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/head_light_control_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/head_light_control_srv__type_support.cpp.o.d"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/leg_light_control_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/leg_light_control_srv__type_support.cpp.o.d"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_heart_beat_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_heart_beat_srv__type_support.cpp.o.d"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_self_test_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_self_test_srv__type_support.cpp.o.d"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_state_set_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_state_set_srv__type_support.cpp.o.d"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/tail_light_control_srv__type_support.cpp.o"
+  "CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/tail_light_control_srv__type_support.cpp.o.d"
+  "libtita_system_interfaces__rosidl_typesupport_cpp.pdb"
+  "libtita_system_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/fan_mode_set_srv__type_support.cpp"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/head_light_control_srv__type_support.cpp"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/leg_light_control_srv__type_support.cpp"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/power_heart_beat_srv__type_support.cpp"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/power_self_test_srv__type_support.cpp"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/power_state_set_srv__type_support.cpp"
+  "rosidl_typesupport_cpp/tita_system_interfaces/srv/tail_light_control_srv__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

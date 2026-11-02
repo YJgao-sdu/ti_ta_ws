@@ -1,0 +1,9 @@
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/uninstall.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/tita_pointfoot_description_uninstall.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/test.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/edit_cache.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/rebuild_cache.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/list_install_components.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/install.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/install/local.dir
+/mnt/dev/tita_ws/src/build/tita_pointfoot_description/CMakeFiles/install/strip.dir

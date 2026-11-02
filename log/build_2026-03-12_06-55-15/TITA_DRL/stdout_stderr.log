@@ -1,0 +1,76 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/TITA_DRL
+[35m[1mConsolidate compiler generated dependencies of target text[0m
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs57[0m
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs32[0m
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs320_slr[0m
+[ 25%] Built target text
+[ 87%] Built target tita_drl_obs57
+[ 87%] Built target tita_drl_obs32
+[ 62%] [32m[1mLinking CXX executable tita_drl_obs320_slr[0m
+[100%] Built target tita_drl_obs320_slr
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs57
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs32
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs320_slr
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/text
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/launch/tita_drl.launch.py
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/initial_pose.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_32.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_320.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_57.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_p.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.06-16.26.51.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-10000.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-16000.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.10-21.59.34-slr.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy10.15-09.55.57.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-16.16.04-12000.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-10000.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-12000.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_1.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_2.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_p.onnx
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/package_run_dependencies/TITA_DRL
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/parent_prefix_path/TITA_DRL
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/packages/TITA_DRL
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.xml

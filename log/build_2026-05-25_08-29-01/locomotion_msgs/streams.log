@@ -1,0 +1,154 @@
+[0.037s] Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/locomotion_msgs -- -j16 -l16
+[0.084s] [ 10%] Built target locomotion_msgs__rosidl_generator_c
+[0.086s] [ 12%] Built target locomotion_msgs__cpp
+[0.095s] [ 12%] Built target ament_cmake_python_symlink_locomotion_msgs
+[0.135s] [ 23%] Built target locomotion_msgs__rosidl_typesupport_introspection_c
+[0.138s] [ 34%] Built target locomotion_msgs__rosidl_typesupport_fastrtps_c
+[0.145s] [ 44%] Built target locomotion_msgs__rosidl_typesupport_fastrtps_cpp
+[0.145s] [ 55%] Built target locomotion_msgs__rosidl_typesupport_c
+[0.147s] [ 65%] Built target locomotion_msgs__rosidl_typesupport_introspection_cpp
+[0.151s] [ 76%] Built target locomotion_msgs__rosidl_typesupport_cpp
+[0.169s] [ 76%] Built target locomotion_msgs
+[0.187s] [ 78%] Built target locomotion_msgs__py
+[0.208s] [ 87%] Built target locomotion_msgs__rosidl_generator_py
+[0.230s] [ 91%] Built target locomotion_msgs__rosidl_typesupport_introspection_c__pyext
+[0.230s] [ 95%] Built target locomotion_msgs__rosidl_typesupport_c__pyext
+[0.239s] [100%] Built target locomotion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.373s] running egg_info
+[0.374s] writing locomotion_msgs.egg-info/PKG-INFO
+[0.374s] writing dependency_links to locomotion_msgs.egg-info/dependency_links.txt
+[0.374s] writing top-level names to locomotion_msgs.egg-info/top_level.txt
+[0.376s] reading manifest file 'locomotion_msgs.egg-info/SOURCES.txt'
+[0.376s] writing manifest file 'locomotion_msgs.egg-info/SOURCES.txt'
+[0.401s] [100%] Built target ament_cmake_python_build_locomotion_msgs_egg
+[0.433s] Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/locomotion_msgs -- -j16 -l16
+[0.434s] Invoking command in '/mnt/dev/tita_ws/build/locomotion_msgs': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --install /mnt/dev/tita_ws/build/locomotion_msgs
+[0.445s] -- Install configuration: ""
+[0.445s] -- Execute custom install script
+[0.445s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/rosidl_interfaces/locomotion_msgs
+[0.445s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__functions.h
+[0.445s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__struct.h
+[0.446s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__type_support.h
+[0.446s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__functions.h
+[0.446s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__struct.h
+[0.451s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__type_support.h
+[0.452s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__functions.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__struct.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__type_support.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/plan_commands.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rigid_body.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/robot_states.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/library_path.sh
+[0.453s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/library_path.dsv
+[0.454s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_fastrtps_c.h
+[0.454s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h
+[0.455s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_fastrtps_c.h
+[0.455s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.456s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_introspection_c.h
+[0.456s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+[0.457s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_introspection_c.h
+[0.457s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.459s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__builder.hpp
+[0.459s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__struct.hpp
+[0.461s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__traits.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__type_support.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__builder.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__struct.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__traits.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__type_support.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__builder.hpp
+[0.462s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__struct.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__traits.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__type_support.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/plan_commands.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rigid_body.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/robot_states.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.464s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_fastrtps_cpp.hpp
+[0.465s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp
+[0.465s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_fastrtps_cpp.hpp
+[0.465s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.466s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_introspection_cpp.hpp
+[0.466s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+[0.466s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/include/locomotion_msgs/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_introspection_cpp.hpp
+[0.466s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/pythonpath.sh
+[0.467s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/pythonpath.dsv
+[0.467s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[0.468s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.468s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.468s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[0.468s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/__init__.py
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_c.c
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/_locomotion_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/liblocomotion_msgs__rosidl_generator_py.so
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.469s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/__init__.py
+[0.470s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_plan_commands.py
+[0.470s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_plan_commands_s.c
+[0.470s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_rigid_body.py
+[0.471s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_rigid_body_s.c
+[0.471s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_robot_states.py
+[0.471s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg/_robot_states_s.c
+[0.475s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.475s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.475s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/locomotion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.475s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RobotStates.idl
+[0.476s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RigidBody.idl
+[0.476s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/PlanCommands.idl
+[0.476s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RobotStates.msg
+[0.476s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/RigidBody.msg
+[0.478s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/msg/PlanCommands.msg
+[0.478s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/package_run_dependencies/locomotion_msgs
+[0.478s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/parent_prefix_path/locomotion_msgs
+[0.478s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/ament_prefix_path.sh
+[0.480s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/ament_prefix_path.dsv
+[0.482s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/path.sh
+[0.482s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/environment/path.dsv
+[0.482s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.bash
+[0.483s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.sh
+[0.483s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.zsh
+[0.483s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/local_setup.dsv
+[0.483s] -- Symlinking: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/package.dsv
+[0.508s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/ament_index/resource_index/packages/locomotion_msgs
+[0.509s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/rosidl_cmake-extras.cmake
+[0.509s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.510s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.510s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.510s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.511s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.512s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.512s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgsConfig.cmake
+[0.512s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgsConfig-version.cmake
+[0.512s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/package.xml
+[0.512s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_generator_c.so
+[0.512s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_fastrtps_c.so
+[0.513s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_introspection_c.so
+[0.513s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_c.so
+[0.513s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.514s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_introspection_cpp.so
+[0.514s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_typesupport_cpp.so
+[0.524s] Listing '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs'...
+[0.524s] Listing '/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages/locomotion_msgs/msg'...
+[0.524s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/lib/liblocomotion_msgs__rosidl_generator_py.so
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_cExport.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cExport.cmake
+[0.525s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_cppExport.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cppExport.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/locomotion_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_pyExport.cmake
+[0.526s] -- Up-to-date: /mnt/dev/tita_ws/install/locomotion_msgs/share/locomotion_msgs/cmake/export_locomotion_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.549s] Invoked command in '/mnt/dev/tita_ws/build/locomotion_msgs' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --install /mnt/dev/tita_ws/build/locomotion_msgs

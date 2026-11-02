@@ -1,0 +1,61 @@
+[  7%] Built target tita_controller_parameters
+[35m[1mConsolidate compiler generated dependencies of target tita_controller[0m
+[100%] Built target tita_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/tita_controller_parameters/tita_controller_parameters.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller//tita_controller_plugin.xml
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Benchmark.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/FirstOrderIIRFilter.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/Interpolation.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/MathUtilities.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Math/orientation_tools.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/RobotParameters.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/BSplineBasic.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/BezierCurve.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/PeriodicTask.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/SharedMemory.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/Timer.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/filters.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/pseudoInverse.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/Utilities/splines.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/cTypes.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/cppTypes.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/enumClass.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/common/timeMarker.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/estimator/OrientationEstimator.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/estimator/StateEstimatorContainer.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/ControlFSMData.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSM.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_JointPD.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_Passive.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_RL.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_RecoveryStand.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/fsm/FSMState_TransformDown.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/planner/DesiredStateCommand.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/planner/RemoterCommandPlanner.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/tensorrt_cuda/tensor_cuda_test.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/include/tita_controller/tita_controller_node.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/library_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/library_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/lib/libtita_controller.so
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/package_run_dependencies/tita_controller
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/parent_prefix_path/tita_controller
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/packages/tita_controller
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/tita_controller
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/tita_controllerConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/cmake/tita_controllerConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_controller/share/tita_controller/package.xml

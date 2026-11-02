@@ -1,0 +1,6 @@
+Invoking command in '/mnt/dev/tita_ws/src/build/tita_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/tita_bringup
+Invoked command in '/mnt/dev/tita_ws/src/build/tita_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/tita_bringup
+Invoking command in '/mnt/dev/tita_ws/src/build/tita_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/tita_bringup -- -j16 -l16
+Invoked command in '/mnt/dev/tita_ws/src/build/tita_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/tita_bringup -- -j16 -l16
+Invoking command in '/mnt/dev/tita_ws/src/build/tita_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/tita_bringup
+Invoked command in '/mnt/dev/tita_ws/src/build/tita_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/tita_bringup

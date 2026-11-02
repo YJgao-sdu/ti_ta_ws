@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tita_system_interfaces/srv/HeadLightControlSrv.srv
+// generated code does not contain a copyright notice
+
+
+module tita_system_interfaces {
+  module srv {
+    typedef uint32 uint32__48[48];
+    @verbatim (language="comment", text=
+      "This is tita robot Head light control service, " "\n"
+      "You can control a total of 48 tail rgb light")
+    struct HeadLightControlSrv_Request {
+      @verbatim (language="comment", text=
+        "A total of 48 lights can be controlled," "\n"
+        "and the light efficiency of each light is represented" "\n"
+        "by the data structure uint32_t, so you need to use a" "\n"
+        "uint32_t array containing 48 elements" "\n"
+        "If you want to control the headlights, set the bool" "\n"
+        "is_control to true, when you give up control, you need" "\n"
+        "to set the bool to false, after which the light effect" "\n"
+        "will be automatically taken over by the software's" "\n"
+        "internal state machine" "\n"
+        "rgbl values refer to red, green," "\n"
+        "blue and brightness" "\n"
+        "for example: light_rgbl_value = 0x12345678" "\n"
+        "This means that red is: (0x12U), green is: (0x34U)," "\n"
+        "blue is: (0x56U), brightness is: (0x78U)" "\n"
+        "Each time you write data, you must complete the 48" "\n"
+        "light effects, because the underlying software will" "\n"
+        "directly update the light effects of 48 light beads" "\n"
+        "at one time")
+      @unit (value="0")
+      boolean is_control;
+
+      uint32__48 light_rgbl_value;
+    };
+    struct HeadLightControlSrv_Response {
+      boolean success;
+    };
+  };
+};

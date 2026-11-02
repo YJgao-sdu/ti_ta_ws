@@ -1,0 +1,58 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/tita_pointfoot_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/launch/tita_display.launch.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/base_link.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_1.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_2.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_3.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_4.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_1.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_2.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_3.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_4.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/urdf/robot.urdf
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/urdf/robot_with_tower.urdf
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/description.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/description_wheel.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/display.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/materials.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/robot.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/robot_wheel.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/ros2control.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tower/meshes/base_link.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tower/meshes/radar_link.STL
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/tower/xacro/tower.urdf.xacro
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/rviz/tita.rviz
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/ament_index/resource_index/package_run_dependencies/tita_pointfoot_description
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/ament_index/resource_index/parent_prefix_path/tita_pointfoot_description
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/ament_index/resource_index/packages/tita_pointfoot_description
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/cmake/tita_pointfoot_descriptionConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/cmake/tita_pointfoot_descriptionConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_pointfoot_description/share/tita_pointfoot_description/package.xml

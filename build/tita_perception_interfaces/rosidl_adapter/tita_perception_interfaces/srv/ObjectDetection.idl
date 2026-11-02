@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tita_perception_interfaces/srv/ObjectDetection.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+#include "tita_perception_interfaces/msg/BoundingBoxArray.idl"
+
+module tita_perception_interfaces {
+  module srv {
+    struct ObjectDetection_Request {
+      sensor_msgs::msg::Image image;
+    };
+    struct ObjectDetection_Response {
+      tita_perception_interfaces::msg::BoundingBoxArray result;
+    };
+  };
+};

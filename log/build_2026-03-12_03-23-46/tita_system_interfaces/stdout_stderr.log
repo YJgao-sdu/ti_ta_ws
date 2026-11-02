@@ -1,0 +1,365 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/tita_system_interfaces
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_symlink_tita_system_interfaces
+running egg_info
+creating tita_system_interfaces.egg-info
+writing tita_system_interfaces.egg-info/PKG-INFO
+writing dependency_links to tita_system_interfaces.egg-info/dependency_links.txt
+writing top-level names to tita_system_interfaces.egg-info/top_level.txt
+writing manifest file 'tita_system_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'tita_system_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'tita_system_interfaces.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_tita_system_interfaces_egg
+[  2%] Built target tita_system_interfaces__cpp
+[  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  7%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/power_self_test_srv__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/power_heart_beat_srv__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/power_state_set_srv__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/fan_mode_set_srv__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/head_light_control_srv__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/tail_light_control_srv__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tita_system_interfaces/srv/detail/leg_light_control_srv__functions.c.o[0m
+[ 16%] [32m[1mLinking C shared library libtita_system_interfaces__rosidl_generator_c.so[0m
+[ 16%] Built target tita_system_interfaces__rosidl_generator_c
+[ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_state_set_srv__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_self_test_srv__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/power_heart_beat_srv__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/fan_mode_set_srv__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/head_light_control_srv__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/leg_light_control_srv__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tita_system_interfaces/srv/tail_light_control_srv__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/power_state_set_srv__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/power_self_test_srv__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/power_heart_beat_srv__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/power_state_set_srv__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/fan_mode_set_srv__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/power_heart_beat_srv__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/head_light_control_srv__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/power_state_set_srv__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/power_self_test_srv__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/power_heart_beat_srv__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/tail_light_control_srv__type_support.cpp.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/power_state_set_srv__type_support.c.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tita_system_interfaces/srv/leg_light_control_srv__type_support.cpp.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/power_self_test_srv__type_support.c.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/power_heart_beat_srv__type_support.c.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/fan_mode_set_srv__type_support.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/fan_mode_set_srv__type_support.c.o[0m
+[ 53%] [32m[1mLinking CXX shared library libtita_system_interfaces__rosidl_typesupport_c.so[0m
+[ 54%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/head_light_control_srv__type_support.c.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/fan_mode_set_srv__type_support.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/head_light_control_srv__type_support.cpp.o[0m
+[ 58%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/tail_light_control_srv__type_support.c.o[0m
+[ 59%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tita_system_interfaces/srv/detail/leg_light_control_srv__type_support.c.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/tail_light_control_srv__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tita_system_interfaces/srv/detail/leg_light_control_srv__type_support.cpp.o[0m
+[ 62%] Built target tita_system_interfaces__rosidl_typesupport_c
+[ 63%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/head_light_control_srv__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/power_state_set_srv__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/tail_light_control_srv__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/power_self_test_srv__type_support_c.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libtita_system_interfaces__rosidl_typesupport_cpp.so[0m
+[ 69%] [32m[1mLinking C shared library libtita_system_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 69%] Built target tita_system_interfaces__rosidl_typesupport_introspection_c
+[ 69%] Built target tita_system_interfaces__rosidl_typesupport_cpp
+[ 70%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/power_heart_beat_srv__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tita_system_interfaces/srv/detail/dds_fastrtps/leg_light_control_srv__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/fan_mode_set_srv__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/head_light_control_srv__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/tail_light_control_srv__type_support_c.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tita_system_interfaces/srv/detail/leg_light_control_srv__type_support_c.cpp.o[0m
+[ 78%] [32m[1mLinking CXX shared library libtita_system_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 78%] Built target tita_system_interfaces__rosidl_typesupport_introspection_cpp
+[ 79%] [32m[1mLinking CXX shared library libtita_system_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 81%] [32m[1mLinking CXX shared library libtita_system_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 81%] Built target tita_system_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 81%] Built target tita_system_interfaces__rosidl_typesupport_fastrtps_c
+[ 81%] Built target tita_system_interfaces
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target tita_system_interfaces__py
+[ 83%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_power_self_test_srv_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_fan_mode_set_srv_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_head_light_control_srv_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_power_state_set_srv_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_tail_light_control_srv_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_power_heart_beat_srv_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tita_system_interfaces/srv/_leg_light_control_srv_s.c.o[0m
+[ 92%] [32m[1mLinking C shared library rosidl_generator_py/tita_system_interfaces/libtita_system_interfaces__rosidl_generator_py.so[0m
+[ 92%] Built target tita_system_interfaces__rosidl_generator_py
+[ 96%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tita_system_interfaces/_tita_system_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tita_system_interfaces/_tita_system_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/tita_system_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tita_system_interfaces/_tita_system_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 97%] Built target tita_system_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target tita_system_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target tita_system_interfaces__rosidl_typesupport_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/ament_index/resource_index/rosidl_interfaces/tita_system_interfaces
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__functions.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__struct.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__type_support.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/fan_mode_set_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/head_light_control_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/leg_light_control_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/power_heart_beat_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/power_self_test_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/power_state_set_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/tail_light_control_srv.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/library_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/library_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__rosidl_typesupport_introspection_c.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__builder.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__struct.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__traits.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__type_support.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/fan_mode_set_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/head_light_control_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/leg_light_control_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/power_heart_beat_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/power_self_test_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/power_state_set_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/tail_light_control_srv.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/fan_mode_set_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/head_light_control_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/leg_light_control_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_heart_beat_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_self_test_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/power_state_set_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/include/tita_system_interfaces/tita_system_interfaces/srv/detail/tail_light_control_srv__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/pythonpath.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/pythonpath.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/__init__.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/_tita_system_interfaces_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/_tita_system_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/_tita_system_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/libtita_system_interfaces__rosidl_generator_py.so
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/__init__.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_fan_mode_set_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_fan_mode_set_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_head_light_control_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_head_light_control_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_leg_light_control_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_leg_light_control_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_heart_beat_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_heart_beat_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_self_test_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_self_test_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_state_set_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_state_set_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_tail_light_control_srv.py
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_tail_light_control_srv_s.c
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/tita_system_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerStateSetSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerSelfTestSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerHeartBeatSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/FanModeSetSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/HeadLightControlSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/TailLightControlSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/LegLightControlSrv.idl
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerStateSetSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerStateSetSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerStateSetSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerSelfTestSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerSelfTestSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerSelfTestSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerHeartBeatSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerHeartBeatSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/PowerHeartBeatSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/FanModeSetSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/FanModeSetSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/FanModeSetSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/HeadLightControlSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/HeadLightControlSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/HeadLightControlSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/TailLightControlSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/TailLightControlSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/TailLightControlSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/LegLightControlSrv.srv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/LegLightControlSrv_Request.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/srv/LegLightControlSrv_Response.msg
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/ament_index/resource_index/package_run_dependencies/tita_system_interfaces
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/ament_index/resource_index/parent_prefix_path/tita_system_interfaces
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/ament_index/resource_index/packages/tita_system_interfaces
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfacesConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfacesConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/package.xml
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_generator_c.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_c.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_typesupport_cpp.so" to ""
+Listing '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/__init__.py'...
+Listing '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/__init__.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_fan_mode_set_srv.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_head_light_control_srv.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_leg_light_control_srv.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_heart_beat_srv.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_self_test_srv.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_power_state_set_srv.py'...
+Compiling '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages/tita_system_interfaces/srv/_tail_light_control_srv.py'...
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_generator_py.so
+-- Set runtime path of "/mnt/dev/tita_ws/install/tita_system_interfaces/lib/libtita_system_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/tita_system_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /mnt/dev/tita_ws/install/tita_system_interfaces/share/tita_system_interfaces/cmake/export_tita_system_interfaces__rosidl_generator_pyExport-noconfig.cmake

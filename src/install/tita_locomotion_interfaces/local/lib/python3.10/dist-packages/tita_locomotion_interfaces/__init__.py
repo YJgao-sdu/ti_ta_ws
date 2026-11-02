@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/tita_locomotion_interfaces/rosidl_generator_py/tita_locomotion_interfaces/__init__.py

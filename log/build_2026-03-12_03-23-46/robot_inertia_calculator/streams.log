@@ -1,0 +1,98 @@
+[0.011s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/robot_inertia_calculator
+[0.100s] -- The C compiler identification is GNU 11.4.0
+[0.143s] -- The CXX compiler identification is GNU 11.4.0
+[0.151s] -- Detecting C compiler ABI info
+[0.225s] -- Detecting C compiler ABI info - done
+[0.237s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.237s] -- Detecting C compile features
+[0.238s] -- Detecting C compile features - done
+[0.242s] -- Detecting CXX compiler ABI info
+[0.334s] -- Detecting CXX compiler ABI info - done
+[0.346s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.346s] -- Detecting CXX compile features
+[0.347s] -- Detecting CXX compile features - done
+[0.351s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.554s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.637s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.823s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.831s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.845s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.864s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.890s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.958s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.963s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.079s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.121s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.183s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.197s] -- Looking for pthread.h
+[1.276s] -- Looking for pthread.h - found
+[1.276s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.355s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.358s] -- Found Threads: TRUE  
+[1.548s] -- pinocchio_default FOUND. pinocchio_default at /opt/openrobots/lib/libpinocchio_default.so
+[1.548s] -- pinocchio_parsers FOUND. pinocchio_parsers at /opt/openrobots/lib/libpinocchio_parsers.so
+[1.548s] -- pinocchio_casadi FOUND. pinocchio_casadi at /opt/openrobots/lib/libpinocchio_casadi.so
+[1.550s] -- boost_filesystem FOUND. boost_filesystem at /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+[1.551s] -- boost_serialization FOUND. boost_serialization at /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+[1.553s] -- boost_system FOUND. boost_system at /usr/lib/x86_64-linux-gnu/libboost_system.so
+[1.670s] [33mCMake Warning at /opt/openrobots/lib/cmake/hpp-fcl/hpp-fclConfig.cmake:3 (message):
+[1.670s]   Please update your CMake from 'hpp-fcl' to 'coal'
+[1.670s] Call Stack (most recent call first):
+[1.671s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[1.671s]   /opt/openrobots/lib/cmake/pinocchio/pinocchioConfig.cmake:161 (find_dependency)
+[1.671s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[1.671s]   CMakeLists.txt:13 (ament_auto_find_build_dependencies)
+[1.671s] 
+[1.671s] [0m
+[1.671s] -- coal FOUND. coal at /opt/openrobots/lib/libcoal.so
+[1.673s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.702s] -- Found Boost: /usr/include (found version "1.74.0") found components: chrono thread date_time serialization filesystem atomic 
+[2.060s] -- Default C++ standard: 201703
+[2.060s] -- Minimal C++ standard upgraded to 11
+[2.060s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.060s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[2.061s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.103s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.136s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.137s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.137s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include
+[2.137s] -- Configured cppcheck exclude dirs and/or files: 
+[2.138s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.138s] -- Configured cpplint exclude dirs and/or files: 
+[2.139s] -- Added test 'lint_cmake' to check CMake code style
+[2.139s] -- Added test 'xmllint' to check XML markup files
+[2.142s] -- Configuring done
+[2.164s] -- Generating done
+[2.169s] -- Build files have been written to: /mnt/dev/tita_ws/build/robot_inertia_calculator
+[2.199s] Invoked command in '/mnt/dev/tita_ws/build/robot_inertia_calculator' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/robot_inertia_calculator
+[2.201s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /mnt/dev/tita_ws/build/robot_inertia_calculator -- -j16 -l16
+[2.238s] [ 25%] [32mBuilding CXX object CMakeFiles/robot_inertia_calculator_lib.dir/src/robot_inertia_calculator.cpp.o[0m
+[8.354s] In file included from [01m[K/opt/openrobots/include/hpp/fcl/config.hh:1[m[K,
+[8.355s]                  from [01m[K/opt/openrobots/include/pinocchio/serialization/eigen.hpp:20[m[K,
+[8.355s]                  from [01m[K/opt/openrobots/include/pinocchio/serialization/fwd.hpp:11[m[K,
+[8.355s]                  from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-composite.hpp:14[m[K,
+[8.355s]                  from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-generic.hpp:9[m[K,
+[8.355s]                  from [01m[K/opt/openrobots/include/pinocchio/multibody/model.hpp:17[m[K,
+[8.355s]                  from [01m[K/opt/openrobots/include/pinocchio/algorithm/center-of-mass.hpp:8[m[K,
+[8.355s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp:6[m[K,
+[8.355s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/src/robot_inertia_calculator.cpp:1[m[K:
+[8.355s] [01m[K/opt/openrobots/include/hpp/fcl/coal.hpp:10:71:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Please update your includes from 'hpp/fcl' to 'coal'[m[K’
+[8.355s]    10 | #pragma message("Please update your includes from 'hpp/fcl' to 'coal'"[01;36m[K)[m[K
+[8.356s]       |                                                                       [01;36m[K^[m[K
+[28.448s] [ 50%] [32m[1mLinking CXX shared library librobot_inertia_calculator_lib.so[0m
+[28.624s] [ 50%] Built target robot_inertia_calculator_lib
+[28.644s] [ 75%] [32mBuilding CXX object CMakeFiles/robot_inertia_calculator_node.dir/src/main.cpp.o[0m
+[31.776s] In file included from [01m[K/opt/openrobots/include/hpp/fcl/config.hh:1[m[K,
+[31.776s]                  from [01m[K/opt/openrobots/include/pinocchio/serialization/eigen.hpp:20[m[K,
+[31.776s]                  from [01m[K/opt/openrobots/include/pinocchio/serialization/fwd.hpp:11[m[K,
+[31.776s]                  from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-composite.hpp:14[m[K,
+[31.776s]                  from [01m[K/opt/openrobots/include/pinocchio/multibody/joint/joint-generic.hpp:9[m[K,
+[31.777s]                  from [01m[K/opt/openrobots/include/pinocchio/multibody/model.hpp:17[m[K,
+[31.777s]                  from [01m[K/opt/openrobots/include/pinocchio/algorithm/center-of-mass.hpp:8[m[K,
+[31.777s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp:6[m[K,
+[31.777s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator/src/main.cpp:2[m[K:
+[31.777s] [01m[K/opt/openrobots/include/hpp/fcl/coal.hpp:10:71:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Please update your includes from 'hpp/fcl' to 'coal'[m[K’
+[31.777s]    10 | #pragma message("Please update your includes from 'hpp/fcl' to 'coal'"[01;36m[K)[m[K
+[31.777s]       |                                                                       [01;36m[K^[m[K
+[37.506s] [100%] [32m[1mLinking CXX executable robot_inertia_calculator_node[0m
+[37.646s] [100%] Built target robot_inertia_calculator_node

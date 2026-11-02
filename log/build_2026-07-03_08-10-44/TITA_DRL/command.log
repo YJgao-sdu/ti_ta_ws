@@ -1,0 +1,2 @@
+Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL
+Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '1': /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL

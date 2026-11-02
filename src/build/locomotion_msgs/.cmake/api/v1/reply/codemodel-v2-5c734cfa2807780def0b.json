@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-58c8cbb23fec053aa197.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "locomotion_msgs__py",
+					"jsonFile" : "directory-locomotion_msgs__py-f98b1a48afc00275434a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/mnt/dev/tita_ws/src/build/locomotion_msgs/locomotion_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "locomotion_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_locomotion_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_locomotion_msgs_egg-c045ac3feaa38819910d.json",
+					"name" : "ament_cmake_python_build_locomotion_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_locomotion_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_locomotion_msgs-088bdbe23e8e32308fd0.json",
+					"name" : "ament_cmake_python_symlink_locomotion_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs-ce50abfc42b3a5033ba9.json",
+					"name" : "locomotion_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__cpp-3a28a6ec5544f1789f96.json",
+					"name" : "locomotion_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "locomotion_msgs__py::@a030c0711428c57fae2c",
+					"jsonFile" : "target-locomotion_msgs__py-638edd99b8cd209403db.json",
+					"name" : "locomotion_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_generator_c-63fcdc2e8d14d0ffa9b6.json",
+					"name" : "locomotion_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_generator_py-8097fa75a1b9d7d0a9bb.json",
+					"name" : "locomotion_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_c-7d400b51ebcee3c25641.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_c__pyext-ba2251a8b6be2577dcf7.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_cpp-9ae8ffc995d43aab7030.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_fastrtps_c-4fa5ea3c31e3abda4055.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_fastrtps_c__pyext-c1a78e19af2a6db05ea6.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_fastrtps_cpp-f76bd83fa21730df6625.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_introspection_c-5a09155895a8f621d63e.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_introspection_c__pyext-3041d853c79907ebecc0.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs__rosidl_typesupport_introspection_cpp-417b65af8649e626586d.json",
+					"name" : "locomotion_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "locomotion_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-locomotion_msgs_uninstall-e6f34dc377f8e712da44.json",
+					"name" : "locomotion_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d8747830cf6108736fa0.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/src/build/locomotion_msgs",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

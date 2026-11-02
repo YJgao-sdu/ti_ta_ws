@@ -1,0 +1,383 @@
+[0.000000] (-) TimerEvent: {}
+[0.000461] (-) JobUnselected: {'identifier': 'commands_can'}
+[0.000514] (-) JobUnselected: {'identifier': 'custom_joint_position_controller'}
+[0.000544] (-) JobUnselected: {'identifier': 'gazebo_bridge'}
+[0.000569] (-) JobUnselected: {'identifier': 'hardware_bridge'}
+[0.000593] (-) JobUnselected: {'identifier': 'hw_broadcaster'}
+[0.000616] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.000638] (-) JobUnselected: {'identifier': 'keyboard_controller'}
+[0.000660] (-) JobUnselected: {'identifier': 'locomotion_msgs'}
+[0.000681] (-) JobUnselected: {'identifier': 'robot_inertia_calculator'}
+[0.000703] (-) JobUnselected: {'identifier': 'sim_bringup'}
+[0.000724] (-) JobUnselected: {'identifier': 'teleop_command'}
+[0.000745] (-) JobUnselected: {'identifier': 'template_ros2_controller'}
+[0.000765] (-) JobUnselected: {'identifier': 'tita_bringup'}
+[0.000786] (-) JobUnselected: {'identifier': 'tita_controller'}
+[0.000807] (-) JobUnselected: {'identifier': 'tita_description'}
+[0.000827] (-) JobUnselected: {'identifier': 'tita_locomotion_interfaces'}
+[0.000848] (-) JobUnselected: {'identifier': 'tita_perception_interfaces'}
+[0.000869] (-) JobUnselected: {'identifier': 'tita_pointfoot_description'}
+[0.000889] (-) JobUnselected: {'identifier': 'tita_robot'}
+[0.000911] (-) JobUnselected: {'identifier': 'tita_system_interfaces'}
+[0.000932] (-) JobUnselected: {'identifier': 'user_command'}
+[0.000952] (-) JobUnselected: {'identifier': 'webots_bridge'}
+[0.000977] (TITA_DRL) JobQueued: {'identifier': 'TITA_DRL', 'dependencies': OrderedDict()}
+[0.001879] (TITA_DRL) JobStarted: {'identifier': 'TITA_DRL'}
+[0.009993] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'cmake'}
+[0.011240] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL', '-DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL'], 'cwd': '/mnt/dev/tita_ws/build/TITA_DRL', 'env': OrderedDict([('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/mnt/dev'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('PWD', '/mnt/dev/tita_ws/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.025756] (TITA_DRL) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100007] (-) TimerEvent: {}
+[0.185819] (TITA_DRL) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.195407] (TITA_DRL) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.200118] (-) TimerEvent: {}
+[0.235026] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.238532] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.246758] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.261480] (TITA_DRL) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.282833] (TITA_DRL) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300236] (-) TimerEvent: {}
+[0.341501] (TITA_DRL) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.344480] (TITA_DRL) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400355] (-) TimerEvent: {}
+[0.500540] (-) TimerEvent: {}
+[0.514261] (TITA_DRL) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.600657] (-) TimerEvent: {}
+[0.602972] (TITA_DRL) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.700773] (-) TimerEvent: {}
+[0.762221] (TITA_DRL) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[0.768240] (TITA_DRL) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.800857] (-) TimerEvent: {}
+[0.872104] (TITA_DRL) StderrLine: {'line': b'WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[0.900984] (-) TimerEvent: {}
+[0.919371] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.920628] (TITA_DRL) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.920770] (TITA_DRL) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.921364] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.922328] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.923130] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.925165] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.925298] (TITA_DRL) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.925933] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.927847] (TITA_DRL) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.982005] (TITA_DRL) StdoutLine: {'line': b'-- Generating done\n'}
+[1.001098] (-) TimerEvent: {}
+[1.002459] (TITA_DRL) StdoutLine: {'line': b'-- Build files have been written to: /mnt/dev/tita_ws/build/TITA_DRL\n'}
+[1.010539] (TITA_DRL) CommandEnded: {'returncode': 0}
+[1.012502] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'build'}
+[1.012542] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/dev/tita_ws/build/TITA_DRL', '--', '-j16', '-l16'], 'cwd': '/mnt/dev/tita_ws/build/TITA_DRL', 'env': OrderedDict([('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/mnt/dev'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('PWD', '/mnt/dev/tita_ws/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.055359] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target text\n'}
+[1.061739] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs320_slr\n'}
+[1.062136] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs32\n'}
+[1.062310] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs57\n'}
+[1.062483] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs_192-stand\n'}
+[1.062651] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs192\n'}
+[1.063888] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs374\n'}
+[1.065460] (TITA_DRL) StdoutLine: {'line': b'[  6%] Building CXX object CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o\n'}
+[1.072400] (TITA_DRL) StdoutLine: {'line': b'[ 18%] Built target text\n'}
+[1.099625] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Built target tita_drl_obs320_slr\n'}
+[1.099868] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Built target tita_drl_obs374\n'}
+[1.100011] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Built target tita_drl_obs192\n'}
+[1.100146] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Built target tita_drl_obs57\n'}
+[1.100271] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Built target tita_drl_obs_192-stand\n'}
+[1.100395] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Built target tita_drl_obs32\n'}
+[1.101168] (-) TimerEvent: {}
+[1.201340] (-) TimerEvent: {}
+[1.301548] (-) TimerEvent: {}
+[1.401757] (-) TimerEvent: {}
+[1.501972] (-) TimerEvent: {}
+[1.602179] (-) TimerEvent: {}
+[1.702392] (-) TimerEvent: {}
+[1.802571] (-) TimerEvent: {}
+[1.902780] (-) TimerEvent: {}
+[2.002955] (-) TimerEvent: {}
+[2.103128] (-) TimerEvent: {}
+[2.203340] (-) TimerEvent: {}
+[2.303555] (-) TimerEvent: {}
+[2.403827] (-) TimerEvent: {}
+[2.504086] (-) TimerEvent: {}
+[2.604297] (-) TimerEvent: {}
+[2.704513] (-) TimerEvent: {}
+[2.804725] (-) TimerEvent: {}
+[2.904940] (-) TimerEvent: {}
+[3.005152] (-) TimerEvent: {}
+[3.105363] (-) TimerEvent: {}
+[3.205577] (-) TimerEvent: {}
+[3.305791] (-) TimerEvent: {}
+[3.406004] (-) TimerEvent: {}
+[3.506218] (-) TimerEvent: {}
+[3.606426] (-) TimerEvent: {}
+[3.706646] (-) TimerEvent: {}
+[3.806830] (-) TimerEvent: {}
+[3.907040] (-) TimerEvent: {}
+[4.007258] (-) TimerEvent: {}
+[4.107474] (-) TimerEvent: {}
+[4.207687] (-) TimerEvent: {}
+[4.307872] (-) TimerEvent: {}
+[4.408088] (-) TimerEvent: {}
+[4.508264] (-) TimerEvent: {}
+[4.608474] (-) TimerEvent: {}
+[4.708686] (-) TimerEvent: {}
+[4.808894] (-) TimerEvent: {}
+[4.909103] (-) TimerEvent: {}
+[5.009312] (-) TimerEvent: {}
+[5.109526] (-) TimerEvent: {}
+[5.209738] (-) TimerEvent: {}
+[5.309947] (-) TimerEvent: {}
+[5.410170] (-) TimerEvent: {}
+[5.510381] (-) TimerEvent: {}
+[5.610570] (-) TimerEvent: {}
+[5.632387] (TITA_DRL) StderrLine: {'line': b'/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In member function \xe2\x80\x98void TitaWheelFootNode::controlLoop()\xe2\x80\x99:\n'}
+[5.632570] (TITA_DRL) StderrLine: {'line': b'/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:481:19: warning: unused variable \xe2\x80\x98pos_offset\xe2\x80\x99 [-Wunused-variable]\n'}
+[5.632679] (TITA_DRL) StderrLine: {'line': b'  481 |             float pos_offset = static_cast<float>(joint_msg->position[i]);\n'}
+[5.632768] (TITA_DRL) StderrLine: {'line': b'      |                   ^~~~~~~~~~\n'}
+[5.640160] (TITA_DRL) StderrLine: {'line': b'/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In member function \xe2\x80\x98std::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)\xe2\x80\x99:\n'}
+[5.640324] (TITA_DRL) StderrLine: {'line': b'/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:534:63: warning: unused parameter \xe2\x80\x98input_obs\xe2\x80\x99 [-Wunused-parameter]\n'}
+[5.640417] (TITA_DRL) StderrLine: {'line': b'  534 |     std::vector<float> runInference(const std::vector<float> &input_obs)\n'}
+[5.640502] (TITA_DRL) StderrLine: {'line': b'      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n'}
+[5.710714] (-) TimerEvent: {}
+[5.810926] (-) TimerEvent: {}
+[5.911137] (-) TimerEvent: {}
+[6.011336] (-) TimerEvent: {}
+[6.111544] (-) TimerEvent: {}
+[6.211761] (-) TimerEvent: {}
+[6.311970] (-) TimerEvent: {}
+[6.412183] (-) TimerEvent: {}
+[6.512400] (-) TimerEvent: {}
+[6.612612] (-) TimerEvent: {}
+[6.712822] (-) TimerEvent: {}
+[6.813038] (-) TimerEvent: {}
+[6.913259] (-) TimerEvent: {}
+[7.013475] (-) TimerEvent: {}
+[7.113653] (-) TimerEvent: {}
+[7.213828] (-) TimerEvent: {}
+[7.314005] (-) TimerEvent: {}
+[7.414215] (-) TimerEvent: {}
+[7.514425] (-) TimerEvent: {}
+[7.614645] (-) TimerEvent: {}
+[7.714820] (-) TimerEvent: {}
+[7.815029] (-) TimerEvent: {}
+[7.915237] (-) TimerEvent: {}
+[8.015445] (-) TimerEvent: {}
+[8.115656] (-) TimerEvent: {}
+[8.215867] (-) TimerEvent: {}
+[8.316080] (-) TimerEvent: {}
+[8.416295] (-) TimerEvent: {}
+[8.516508] (-) TimerEvent: {}
+[8.616723] (-) TimerEvent: {}
+[8.716935] (-) TimerEvent: {}
+[8.817145] (-) TimerEvent: {}
+[8.917358] (-) TimerEvent: {}
+[9.017571] (-) TimerEvent: {}
+[9.117780] (-) TimerEvent: {}
+[9.217990] (-) TimerEvent: {}
+[9.318199] (-) TimerEvent: {}
+[9.418413] (-) TimerEvent: {}
+[9.518641] (-) TimerEvent: {}
+[9.618853] (-) TimerEvent: {}
+[9.719066] (-) TimerEvent: {}
+[9.819275] (-) TimerEvent: {}
+[9.919485] (-) TimerEvent: {}
+[10.019693] (-) TimerEvent: {}
+[10.119905] (-) TimerEvent: {}
+[10.220121] (-) TimerEvent: {}
+[10.320337] (-) TimerEvent: {}
+[10.420545] (-) TimerEvent: {}
+[10.520755] (-) TimerEvent: {}
+[10.620968] (-) TimerEvent: {}
+[10.721180] (-) TimerEvent: {}
+[10.821392] (-) TimerEvent: {}
+[10.921600] (-) TimerEvent: {}
+[11.021808] (-) TimerEvent: {}
+[11.122020] (-) TimerEvent: {}
+[11.222237] (-) TimerEvent: {}
+[11.322464] (-) TimerEvent: {}
+[11.422676] (-) TimerEvent: {}
+[11.522885] (-) TimerEvent: {}
+[11.623105] (-) TimerEvent: {}
+[11.723327] (-) TimerEvent: {}
+[11.823810] (-) TimerEvent: {}
+[11.924021] (-) TimerEvent: {}
+[12.024233] (-) TimerEvent: {}
+[12.124435] (-) TimerEvent: {}
+[12.224646] (-) TimerEvent: {}
+[12.324859] (-) TimerEvent: {}
+[12.425075] (-) TimerEvent: {}
+[12.525289] (-) TimerEvent: {}
+[12.625500] (-) TimerEvent: {}
+[12.725717] (-) TimerEvent: {}
+[12.825892] (-) TimerEvent: {}
+[12.926114] (-) TimerEvent: {}
+[13.026328] (-) TimerEvent: {}
+[13.126501] (-) TimerEvent: {}
+[13.226683] (-) TimerEvent: {}
+[13.326910] (-) TimerEvent: {}
+[13.427101] (-) TimerEvent: {}
+[13.527301] (-) TimerEvent: {}
+[13.627510] (-) TimerEvent: {}
+[13.727683] (-) TimerEvent: {}
+[13.827891] (-) TimerEvent: {}
+[13.928102] (-) TimerEvent: {}
+[14.028312] (-) TimerEvent: {}
+[14.128480] (-) TimerEvent: {}
+[14.228648] (-) TimerEvent: {}
+[14.328857] (-) TimerEvent: {}
+[14.429082] (-) TimerEvent: {}
+[14.529297] (-) TimerEvent: {}
+[14.629502] (-) TimerEvent: {}
+[14.729705] (-) TimerEvent: {}
+[14.829906] (-) TimerEvent: {}
+[14.930106] (-) TimerEvent: {}
+[15.030308] (-) TimerEvent: {}
+[15.130520] (-) TimerEvent: {}
+[15.230682] (-) TimerEvent: {}
+[15.330881] (-) TimerEvent: {}
+[15.431086] (-) TimerEvent: {}
+[15.531284] (-) TimerEvent: {}
+[15.631488] (-) TimerEvent: {}
+[15.731696] (-) TimerEvent: {}
+[15.831897] (-) TimerEvent: {}
+[15.932099] (-) TimerEvent: {}
+[16.032304] (-) TimerEvent: {}
+[16.132471] (-) TimerEvent: {}
+[16.232632] (-) TimerEvent: {}
+[16.332835] (-) TimerEvent: {}
+[16.433039] (-) TimerEvent: {}
+[16.533242] (-) TimerEvent: {}
+[16.633447] (-) TimerEvent: {}
+[16.733656] (-) TimerEvent: {}
+[16.833860] (-) TimerEvent: {}
+[16.934060] (-) TimerEvent: {}
+[17.034252] (-) TimerEvent: {}
+[17.134420] (-) TimerEvent: {}
+[17.234594] (-) TimerEvent: {}
+[17.334797] (-) TimerEvent: {}
+[17.435004] (-) TimerEvent: {}
+[17.535209] (-) TimerEvent: {}
+[17.635415] (-) TimerEvent: {}
+[17.735616] (-) TimerEvent: {}
+[17.835825] (-) TimerEvent: {}
+[17.936032] (-) TimerEvent: {}
+[18.036201] (-) TimerEvent: {}
+[18.136405] (-) TimerEvent: {}
+[18.236616] (-) TimerEvent: {}
+[18.336820] (-) TimerEvent: {}
+[18.437023] (-) TimerEvent: {}
+[18.537223] (-) TimerEvent: {}
+[18.637428] (-) TimerEvent: {}
+[18.737635] (-) TimerEvent: {}
+[18.837813] (-) TimerEvent: {}
+[18.938030] (-) TimerEvent: {}
+[19.038236] (-) TimerEvent: {}
+[19.138453] (-) TimerEvent: {}
+[19.238619] (-) TimerEvent: {}
+[19.338822] (-) TimerEvent: {}
+[19.439029] (-) TimerEvent: {}
+[19.539232] (-) TimerEvent: {}
+[19.639437] (-) TimerEvent: {}
+[19.739643] (-) TimerEvent: {}
+[19.839807] (-) TimerEvent: {}
+[19.940010] (-) TimerEvent: {}
+[20.040223] (-) TimerEvent: {}
+[20.140393] (-) TimerEvent: {}
+[20.240597] (-) TimerEvent: {}
+[20.340801] (-) TimerEvent: {}
+[20.441005] (-) TimerEvent: {}
+[20.541197] (-) TimerEvent: {}
+[20.641396] (-) TimerEvent: {}
+[20.741600] (-) TimerEvent: {}
+[20.841806] (-) TimerEvent: {}
+[20.942010] (-) TimerEvent: {}
+[21.042217] (-) TimerEvent: {}
+[21.142383] (-) TimerEvent: {}
+[21.242557] (-) TimerEvent: {}
+[21.342760] (-) TimerEvent: {}
+[21.442964] (-) TimerEvent: {}
+[21.543169] (-) TimerEvent: {}
+[21.643378] (-) TimerEvent: {}
+[21.743585] (-) TimerEvent: {}
+[21.843791] (-) TimerEvent: {}
+[21.943963] (-) TimerEvent: {}
+[22.044175] (-) TimerEvent: {}
+[22.144350] (-) TimerEvent: {}
+[22.244520] (-) TimerEvent: {}
+[22.344730] (-) TimerEvent: {}
+[22.432414] (TITA_DRL) StdoutLine: {'line': b'[100%] Linking CXX executable tita_drl_obs194\n'}
+[22.444860] (-) TimerEvent: {}
+[22.545069] (-) TimerEvent: {}
+[22.645275] (-) TimerEvent: {}
+[22.745483] (-) TimerEvent: {}
+[22.845704] (-) TimerEvent: {}
+[22.945916] (-) TimerEvent: {}
+[23.046122] (-) TimerEvent: {}
+[23.146331] (-) TimerEvent: {}
+[23.246554] (-) TimerEvent: {}
+[23.346762] (-) TimerEvent: {}
+[23.411895] (TITA_DRL) StdoutLine: {'line': b'[100%] Built target tita_drl_obs194\n'}
+[23.421983] (TITA_DRL) CommandEnded: {'returncode': 0}
+[23.422719] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'install'}
+[23.430734] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/dev/tita_ws/build/TITA_DRL'], 'cwd': '/mnt/dev/tita_ws/build/TITA_DRL', 'env': OrderedDict([('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/mnt/dev'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('PWD', '/mnt/dev/tita_ws/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[23.438131] (TITA_DRL) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.438755] (TITA_DRL) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.439158] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs57\n'}
+[23.439497] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs32\n'}
+[23.439729] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs320_slr\n'}
+[23.440033] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs192\n'}
+[23.440127] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs_192-stand\n'}
+[23.440214] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs194\n'}
+[23.446822] (-) TimerEvent: {}
+[23.447855] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs374\n'}
+[23.448114] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/text\n'}
+[23.448427] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/launch/tita_drl.launch.py\n'}
+[23.449010] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/initial_pose.yaml\n'}
+[23.449296] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_192.yaml\n'}
+[23.449389] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_194.yaml\n'}
+[23.457088] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_32.yaml\n'}
+[23.457490] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_320.yaml\n'}
+[23.457614] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_374.yaml\n'}
+[23.457881] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_57.yaml\n'}
+[23.457984] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_p.yaml\n'}
+[23.458081] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy0205.onnx\n'}
+[23.466786] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.06-16.26.51.onnx\n'}
+[23.467271] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-10000.onnx\n'}
+[23.467415] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-16000.onnx\n'}
+[23.467975] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.10-21.59.34-slr.onnx\n'}
+[23.468114] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.01-20.44.22.onnx\n'}
+[23.468242] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.03-11.12.35.onnx\n'}
+[23.468367] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.09-17.28.51.onnx\n'}
+[23.468488] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.10-15.37.25-2400.onnx\n'}
+[23.468610] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-09.51.53.onnx\n'}
+[23.468876] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07-9200.onnx\n'}
+[23.468995] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07.onnx\n'}
+[23.469091] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-21.48.14.onnx\n'}
+[23.469184] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.14-17.27.50.onnx\n'}
+[23.469275] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.15.onnx\n'}
+[23.469367] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy0526.onnx\n'}
+[23.477649] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy10.15-09.55.57.onnx\n'}
+[23.478012] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy12.25-16.55.26.onnx\n'}
+[23.478465] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-16.16.04-12000.onnx\n'}
+[23.478987] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-10000.onnx\n'}
+[23.479107] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-12000.onnx\n'}
+[23.479206] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy5.25.onnx\n'}
+[23.479302] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57.onnx\n'}
+[23.479396] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_1.onnx\n'}
+[23.479489] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_2.onnx\n'}
+[23.479593] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_fr194.onnx\n'}
+[23.487859] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_p.onnx\n'}
+[23.488217] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/package_run_dependencies/TITA_DRL\n'}
+[23.488526] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/parent_prefix_path/TITA_DRL\n'}
+[23.488874] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.sh\n'}
+[23.489102] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.dsv\n'}
+[23.489233] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.sh\n'}
+[23.489523] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.dsv\n'}
+[23.489757] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.bash\n'}
+[23.489892] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.sh\n'}
+[23.490140] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.zsh\n'}
+[23.490383] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.dsv\n'}
+[23.490501] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.dsv\n'}
+[23.499421] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/packages/TITA_DRL\n'}
+[23.499846] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig.cmake\n'}
+[23.499991] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig-version.cmake\n'}
+[23.500239] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.xml\n'}
+[23.501580] (TITA_DRL) CommandEnded: {'returncode': 0}
+[23.527032] (TITA_DRL) JobEnded: {'identifier': 'TITA_DRL', 'rc': 0}
+[23.527855] (-) EventReactorShutdown: {}

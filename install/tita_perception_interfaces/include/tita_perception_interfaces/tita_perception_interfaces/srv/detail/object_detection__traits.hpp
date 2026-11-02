@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_perception_interfaces/rosidl_generator_cpp/tita_perception_interfaces/srv/detail/object_detection__traits.hpp

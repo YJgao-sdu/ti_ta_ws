@@ -1,0 +1,110 @@
+[0.031s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL
+[0.042s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.173s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.179s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.222s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.222s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.223s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.231s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.242s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.270s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.271s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.385s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.427s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.505s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.507s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.572s] WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.609s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.610s] -- Configured cppcheck include dirs: 
+[0.610s] -- Configured cppcheck exclude dirs and/or files: 
+[0.611s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.611s] -- Added test 'lint_cmake' to check CMake code style
+[0.611s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.612s] -- Added test 'uncrustify' to check C / C++ code style
+[0.613s] -- Configured uncrustify additional arguments: 
+[0.613s] -- Added test 'xmllint' to check XML markup files
+[0.613s] -- Configuring done
+[0.639s] -- Generating done
+[0.651s] -- Build files have been written to: /mnt/dev/tita_ws/build/TITA_DRL
+[0.668s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL
+[0.669s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[0.698s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs194[0m
+[0.698s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs320_slr[0m
+[0.698s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs192[0m
+[0.699s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs_192-stand[0m
+[0.699s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs57[0m
+[0.699s] [35m[1mConsolidate compiler generated dependencies of target text[0m
+[0.699s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs32[0m
+[0.701s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs374[0m
+[0.708s] [ 12%] Built target text
+[0.714s] [ 31%] Built target tita_drl_obs194
+[0.714s] [ 37%] Built target tita_drl_obs_192-stand
+[0.715s] [ 50%] Built target tita_drl_obs192
+[0.717s] [ 62%] Built target tita_drl_obs320_slr
+[0.717s] [ 75%] Built target tita_drl_obs57
+[0.717s] [ 93%] Built target tita_drl_obs32
+[0.717s] [100%] Built target tita_drl_obs374
+[0.725s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[0.727s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --install /mnt/dev/tita_ws/build/TITA_DRL
+[0.731s] -- Install configuration: ""
+[0.731s] -- Execute custom install script
+[0.731s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs57
+[0.731s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs32
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs320_slr
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs192
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs_192-stand
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs194
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs374
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/lib/TITA_DRL/text
+[0.732s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/launch/tita_drl.launch.py
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/initial_pose.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_192.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_194.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_32.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_320.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_374.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_57.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/params_p.yaml
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy0205.onnx
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.06-16.26.51.onnx
+[0.733s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-10000.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-16000.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.10-21.59.34-slr.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.01-20.44.22.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.03-11.12.35.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.09-17.28.51.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.10-15.37.25-2400.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-09.51.53.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07-9200.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07.onnx
+[0.734s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-21.48.14.onnx
+[0.735s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.14-17.27.50.onnx
+[0.735s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.15.onnx
+[0.735s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy0526.onnx
+[0.735s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy10.15-09.55.57.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy12.25-16.55.26.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-16.16.04-12000.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-10000.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-12000.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy5.25.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_1.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_2.onnx
+[0.736s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_fr194.onnx
+[0.737s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/config/policy/policy_p.onnx
+[0.737s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/package_run_dependencies/TITA_DRL
+[0.737s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/parent_prefix_path/TITA_DRL
+[0.738s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.sh
+[0.738s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.dsv
+[0.738s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.sh
+[0.738s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/environment/path.dsv
+[0.738s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.bash
+[0.738s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.sh
+[0.739s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.zsh
+[0.739s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/local_setup.dsv
+[0.739s] -- Symlinking: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.dsv
+[0.742s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/ament_index/resource_index/packages/TITA_DRL
+[0.742s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig.cmake
+[0.742s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig-version.cmake
+[0.742s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.xml
+[0.751s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --install /mnt/dev/tita_ws/build/TITA_DRL

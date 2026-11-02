@@ -1,0 +1,53 @@
+[0.013s] Invoking command in '/mnt/dev/tita_ws/build/teleop_command': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_command/teleop_command -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/teleop_command
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.137s] -- The CXX compiler identification is GNU 11.4.0
+[0.145s] -- Detecting C compiler ABI info
+[0.205s] -- Detecting C compiler ABI info - done
+[0.212s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.213s] -- Detecting C compile features - done
+[0.215s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.296s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.296s] -- Detecting CXX compile features
+[0.296s] -- Detecting CXX compile features - done
+[0.299s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.553s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.753s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.772s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.790s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.813s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.841s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.915s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.920s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.133s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.176s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.245s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.290s] -- Looking for pthread.h
+[1.521s] -- Looking for pthread.h - found
+[1.521s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.813s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.815s] -- Found Threads: TRUE  
+[2.130s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.218s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.231s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.232s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_command/teleop_command/include
+[2.232s] -- Configured cppcheck exclude dirs and/or files: 
+[2.234s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.234s] -- Configured cpplint exclude dirs and/or files: 
+[2.235s] -- Added test 'lint_cmake' to check CMake code style
+[2.244s] -- Added test 'xmllint' to check XML markup files
+[2.256s] -- Configuring done
+[2.364s] -- Generating done
+[2.389s] -- Build files have been written to: /mnt/dev/tita_ws/build/teleop_command
+[2.415s] Invoked command in '/mnt/dev/tita_ws/build/teleop_command' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_command/teleop_command -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/teleop_command
+[2.416s] Invoking command in '/mnt/dev/tita_ws/build/teleop_command': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/teleop_command -- -j16 -l16
+[4.506s] [ 16%] [32mBuilding CXX object CMakeFiles/teleop_command_lib.dir/src/button_function.cpp.o[0m
+[4.506s] [ 33%] [32mBuilding CXX object CMakeFiles/teleop_command_lib.dir/src/elrs_emwave_device.cpp.o[0m
+[4.506s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_command_lib.dir/src/teleop_command_node.cpp.o[0m
+[21.417s] [ 66%] [32m[1mLinking CXX shared library libteleop_command_lib.so[0m
+[21.569s] [ 66%] Built target teleop_command_lib
+[21.585s] [ 83%] [32mBuilding CXX object CMakeFiles/teleop_command_node.dir/src/main.cpp.o[0m
+[24.148s] [100%] [32m[1mLinking CXX executable teleop_command_node[0m
+[24.262s] [100%] Built target teleop_command_node

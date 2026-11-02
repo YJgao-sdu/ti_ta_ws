@@ -1,0 +1,77 @@
+[0.034s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target tita_drl_obs192[0m
+[0.089s] [ 20%] Built target tita_drl_obs57
+[0.114s] [ 40%] Built target text
+[0.115s] [ 60%] Built target tita_drl_obs32
+[0.123s] [ 80%] Built target tita_drl_obs320_slr
+[0.129s] [ 90%] [32mBuilding CXX object CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o[0m
+[2.574s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[2.574s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:686:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<std::deque<float> >[m[K’ has no member named ‘[01m[Kpush_front[m[K’
+[2.574s]   686 |         history_buffer_.[01;31m[Kpush_front[m[K(current_obs_);  // 新数据添加到头部
+[2.575s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[2.575s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:693:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<std::deque<float> >::insert(std::vector<std::deque<float> >::iterator, std::vector<float>&)[m[K’
+[2.575s]   693 |             [01;31m[Khistory_buffer_.insert(history_buffer_.begin(), current_obs_)[m[K;
+[2.575s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.575s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[2.575s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[2.575s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[2.576s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.576s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:1[m[K:
+[2.576s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1379:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator, class> std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = std::deque<float>; _Alloc = std::allocator<std::deque<float> >][m[K’
+[2.576s]  1379 |         [01;36m[Kinsert[m[K(const_iterator __position, _InputIterator __first,
+[2.576s]       |         [01;36m[K^~~~~~[m[K
+[2.576s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1379:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.576s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:693:35:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.576s]   693 |             [01;36m[Khistory_buffer_.insert(history_buffer_.begin(), current_obs_)[m[K;
+[2.576s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.576s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[2.576s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[2.576s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[2.576s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.576s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.577s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:1[m[K:
+[2.577s] [01m[K/usr/include/c++/11/bits/vector.tcc:130:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, const value_type&) [with _Tp = std::deque<float>; _Alloc = std::allocator<std::deque<float> >; std::vector<_Tp, _Alloc>::iterator = std::vector<std::deque<float> >::iterator; std::vector<_Tp, _Alloc>::const_iterator = std::vector<std::deque<float> >::const_iterator; std::vector<_Tp, _Alloc>::value_type = std::deque<float>][m[K’
+[2.577s]   130 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[2.577s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.577s] [01m[K/usr/include/c++/11/bits/vector.tcc:132:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<float>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst std::deque<float>&[m[K’}
+[2.577s]   132 |     insert(const_iterator __position, [01;36m[Kconst value_type& __x[m[K)
+[2.577s]       |                                       [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.577s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[2.577s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[2.577s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[2.577s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[2.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[2.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.577s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:1[m[K:
+[2.577s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1293:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::deque<float>; _Alloc = std::allocator<std::deque<float> >; std::vector<_Tp, _Alloc>::iterator = std::vector<std::deque<float> >::iterator; std::vector<_Tp, _Alloc>::const_iterator = std::vector<std::deque<float> >::const_iterator; std::vector<_Tp, _Alloc>::value_type = std::deque<float>][m[K’
+[2.577s]  1293 |       [01;36m[Kinsert[m[K(const_iterator __position, value_type&& __x)
+[2.577s]       |       [01;36m[K^~~~~~[m[K
+[2.577s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1293:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<float>[m[K’ to ‘[01m[Kstd::vector<std::deque<float> >::value_type&&[m[K’ {aka ‘[01m[Kstd::deque<float>&&[m[K’}
+[2.577s]  1293 |       insert(const_iterator __position, [01;36m[Kvalue_type&& __x[m[K)
+[2.578s]       |                                         [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[2.578s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1310:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::initializer_list<_Tp>) [with _Tp = std::deque<float>; _Alloc = std::allocator<std::deque<float> >; std::vector<_Tp, _Alloc>::iterator = std::vector<std::deque<float> >::iterator; std::vector<_Tp, _Alloc>::const_iterator = std::vector<std::deque<float> >::const_iterator][m[K’
+[2.578s]  1310 |       [01;36m[Kinsert[m[K(const_iterator __position, initializer_list<value_type> __l)
+[2.578s]       |       [01;36m[K^~~~~~[m[K
+[2.578s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1310:70:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::vector<float>[m[K’ to ‘[01m[Kstd::initializer_list<std::deque<float> >[m[K’
+[2.578s]  1310 |       insert(const_iterator __position, [01;36m[Kinitializer_list<value_type> __l[m[K)
+[2.578s]       |                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.578s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1335:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = std::deque<float>; _Alloc = std::allocator<std::deque<float> >; std::vector<_Tp, _Alloc>::iterator = std::vector<std::deque<float> >::iterator; std::vector<_Tp, _Alloc>::const_iterator = std::vector<std::deque<float> >::const_iterator; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = std::deque<float>][m[K’
+[2.578s]  1335 |       [01;36m[Kinsert[m[K(const_iterator __position, size_type __n, const value_type& __x)
+[2.578s]       |       [01;36m[K^~~~~~[m[K
+[2.578s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1335:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.578s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:684:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.578s]   684 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+[2.578s]       |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[6.121s] gmake[2]: *** [CMakeFiles/tita_drl_obs192.dir/build.make:76: CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o] Error 1
+[6.121s] gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/tita_drl_obs192.dir/all] Error 2
+[6.121s] gmake: *** [Makefile:146: all] Error 2
+[6.122s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '2': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16

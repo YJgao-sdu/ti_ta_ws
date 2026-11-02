@@ -1,0 +1,11 @@
+setup.py
+tita_perception_interfaces/__init__.py
+tita_perception_interfaces.egg-info/PKG-INFO
+tita_perception_interfaces.egg-info/SOURCES.txt
+tita_perception_interfaces.egg-info/dependency_links.txt
+tita_perception_interfaces.egg-info/top_level.txt
+tita_perception_interfaces/msg/__init__.py
+tita_perception_interfaces/msg/_bounding_box.py
+tita_perception_interfaces/msg/_bounding_box_array.py
+tita_perception_interfaces/srv/__init__.py
+tita_perception_interfaces/srv/_object_detection.py

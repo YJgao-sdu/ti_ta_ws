@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/sim_bringup/ament_cmake_environment_hooks/local_setup.sh

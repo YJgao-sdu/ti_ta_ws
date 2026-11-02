@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++17 -Wall -O3 -shared -Wl,-soname,libtita_robot.so -o libtita_robot.so CMakeFiles/tita_robot.dir/src/tita_robot.cpp.o CMakeFiles/tita_robot.dir/src/can_receiver.cpp.o CMakeFiles/tita_robot.dir/src/can_sender.cpp.o 

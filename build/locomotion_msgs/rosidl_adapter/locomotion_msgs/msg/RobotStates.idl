@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from locomotion_msgs/msg/RobotStates.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+#include "std_msgs/msg/Header.idl"
+
+module locomotion_msgs {
+  module msg {
+    struct RobotStates {
+      std_msgs::msg::Header header;
+
+      string fsm_state_name;
+
+      geometry_msgs::msg::Vector3 twist_linear;
+
+      geometry_msgs::msg::Vector3 twist_linear_int;
+
+      geometry_msgs::msg::Vector3 twist_angular;
+
+      geometry_msgs::msg::Vector3 twist_angular_int;
+
+      geometry_msgs::msg::Vector3 pose_position;
+
+      geometry_msgs::msg::Vector3 pose_position_dot;
+
+      geometry_msgs::msg::Vector3 pose_rpy;
+
+      geometry_msgs::msg::Vector3 pose_rpy_dot;
+
+      double two_wheel_distance;
+
+      double two_wheel_distance_dot;
+
+      geometry_msgs::msg::Vector3 com_position_relative;
+
+      geometry_msgs::msg::Vector3 com_velocity_relative;
+
+      sequence<double> joint_positions;
+
+      sequence<double> joint_velocities;
+
+      sequence<double> joint_torques;
+    };
+  };
+};

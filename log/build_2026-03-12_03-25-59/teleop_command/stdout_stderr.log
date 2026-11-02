@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target teleop_command_lib[0m
+[ 66%] Built target teleop_command_lib
+[35m[1mConsolidate compiler generated dependencies of target teleop_command_node[0m
+[100%] Built target teleop_command_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/launch/teleop_command.launch.py
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/config/tita_joy.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/include/teleop_command/button_function.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/include/teleop_command/elrs_emwave_device.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/include/teleop_command/teleop_command_node.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/library_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/library_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/lib/libteleop_command_lib.so
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/lib/teleop_command/teleop_command_node
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/ament_index/resource_index/package_run_dependencies/teleop_command
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/ament_index/resource_index/parent_prefix_path/teleop_command
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/ament_index/resource_index/packages/teleop_command
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/teleop_commandConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/cmake/teleop_commandConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/teleop_command/share/teleop_command/package.xml

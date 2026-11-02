@@ -1,0 +1,4 @@
+source;share/tita_perception_interfaces/local_setup.bash
+source;share/tita_perception_interfaces/local_setup.dsv
+source;share/tita_perception_interfaces/local_setup.sh
+source;share/tita_perception_interfaces/local_setup.zsh

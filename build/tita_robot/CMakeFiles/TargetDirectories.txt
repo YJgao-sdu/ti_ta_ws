@@ -1,0 +1,10 @@
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/uninstall.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/tita_robot_uninstall.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/tita_robot.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/test.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/edit_cache.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/rebuild_cache.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/list_install_components.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/install.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/install/local.dir
+/mnt/dev/tita_ws/build/tita_robot/CMakeFiles/install/strip.dir

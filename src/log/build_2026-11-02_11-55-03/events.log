@@ -1,0 +1,308 @@
+[0.000000] (-) TimerEvent: {}
+[0.000136] (-) JobUnselected: {'identifier': 'commands_can'}
+[0.000242] (-) JobUnselected: {'identifier': 'custom_joint_position_controller'}
+[0.000304] (-) JobUnselected: {'identifier': 'gazebo_bridge'}
+[0.000365] (-) JobUnselected: {'identifier': 'hardware_bridge'}
+[0.000380] (-) JobUnselected: {'identifier': 'hw_broadcaster'}
+[0.000416] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.000448] (-) JobUnselected: {'identifier': 'keyboard_controller'}
+[0.000461] (-) JobUnselected: {'identifier': 'locomotion_msgs'}
+[0.000519] (-) JobUnselected: {'identifier': 'robot_inertia_calculator'}
+[0.000551] (-) JobUnselected: {'identifier': 'sim_bringup'}
+[0.000565] (-) JobUnselected: {'identifier': 'teleop_command'}
+[0.000577] (-) JobUnselected: {'identifier': 'template_ros2_controller'}
+[0.000595] (-) JobUnselected: {'identifier': 'tita_bringup'}
+[0.000627] (-) JobUnselected: {'identifier': 'tita_controller'}
+[0.000680] (-) JobUnselected: {'identifier': 'tita_description'}
+[0.000702] (-) JobUnselected: {'identifier': 'tita_locomotion_interfaces'}
+[0.000714] (-) JobUnselected: {'identifier': 'tita_perception_interfaces'}
+[0.000731] (-) JobUnselected: {'identifier': 'tita_pointfoot_description'}
+[0.000746] (-) JobUnselected: {'identifier': 'tita_robot'}
+[0.000787] (-) JobUnselected: {'identifier': 'tita_system_interfaces'}
+[0.000818] (-) JobUnselected: {'identifier': 'user_command'}
+[0.000830] (-) JobUnselected: {'identifier': 'webots_bridge'}
+[0.000845] (TITA_DRL) JobQueued: {'identifier': 'TITA_DRL', 'dependencies': OrderedDict()}
+[0.000861] (TITA_DRL) JobStarted: {'identifier': 'TITA_DRL'}
+[0.006839] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'cmake'}
+[0.007342] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL', '-DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/TITA_DRL'], 'cwd': '/mnt/dev/tita_ws/src/build/TITA_DRL', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('ROS_PACKAGE_PATH', '/mnt/dev/tita_ws/install/tita_robot/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/mnt/dev/tita_ws/install/locomotion_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('COLCON_PREFIX_PATH', '/mnt/dev/tita_ws/install'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/dev/tita_ws/src/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL')]), 'shell': False}
+[0.018058] (TITA_DRL) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.096608] (TITA_DRL) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.099337] (-) TimerEvent: {}
+[0.101640] (TITA_DRL) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.122106] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.124160] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.128557] (TITA_DRL) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.135854] (TITA_DRL) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.145203] (TITA_DRL) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.168423] (TITA_DRL) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.169747] (TITA_DRL) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199447] (-) TimerEvent: {}
+[0.252819] (TITA_DRL) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.289147] (TITA_DRL) StdoutLine: {'line': b'-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.299551] (-) TimerEvent: {}
+[0.365640] (TITA_DRL) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[0.367727] (TITA_DRL) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.399628] (-) TimerEvent: {}
+[0.420292] (TITA_DRL) StderrLine: {'line': b'WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[0.456022] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.456705] (TITA_DRL) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.456777] (TITA_DRL) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.457034] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.457554] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.457861] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.459160] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.459230] (TITA_DRL) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.459426] (TITA_DRL) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.460167] (TITA_DRL) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.485796] (TITA_DRL) StdoutLine: {'line': b'-- Generating done\n'}
+[0.498592] (TITA_DRL) StdoutLine: {'line': b'-- Build files have been written to: /mnt/dev/tita_ws/src/build/TITA_DRL\n'}
+[0.499694] (-) TimerEvent: {}
+[0.504169] (TITA_DRL) CommandEnded: {'returncode': 0}
+[0.505044] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'build'}
+[0.505091] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/dev/tita_ws/src/build/TITA_DRL', '--', '-j16', '-l16'], 'cwd': '/mnt/dev/tita_ws/src/build/TITA_DRL', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('ROS_PACKAGE_PATH', '/mnt/dev/tita_ws/install/tita_robot/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/mnt/dev/tita_ws/install/locomotion_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('COLCON_PREFIX_PATH', '/mnt/dev/tita_ws/install'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/dev/tita_ws/src/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL')]), 'shell': False}
+[0.531708] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target text\x1b[0m\n'}
+[0.531964] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tita_drl_obs320_slr\x1b[0m\n'}
+[0.532072] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tita_drl_obs374\x1b[0m\n'}
+[0.532170] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tita_drl_obs192\x1b[0m\n'}
+[0.532302] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tita_drl_obs32\x1b[0m\n'}
+[0.533300] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tita_drl_obs57\x1b[0m\n'}
+[0.534562] (TITA_DRL) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tita_drl_obs_192-stand\x1b[0m\n'}
+[0.539046] (TITA_DRL) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/tita_drl_obs170.dir/src/tita_drl_obs170.cpp.o\x1b[0m\n'}
+[0.539300] (TITA_DRL) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o\x1b[0m\n'}
+[0.540029] (TITA_DRL) StdoutLine: {'line': b'[ 22%] Built target text\n'}
+[0.548200] (TITA_DRL) StdoutLine: {'line': b'[ 33%] Built target tita_drl_obs374\n'}
+[0.548428] (TITA_DRL) StdoutLine: {'line': b'[ 44%] Built target tita_drl_obs320_slr\n'}
+[0.550639] (TITA_DRL) StdoutLine: {'line': b'[ 55%] Built target tita_drl_obs32\n'}
+[0.551703] (TITA_DRL) StdoutLine: {'line': b'[ 66%] Built target tita_drl_obs57\n'}
+[0.552002] (TITA_DRL) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o\x1b[0m\n'}
+[0.555260] (TITA_DRL) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tita_drl_obs_192-stand.dir/src/tita_drl_obs_192-stand.cpp.o\x1b[0m\n'}
+[0.599784] (-) TimerEvent: {}
+[0.700027] (-) TimerEvent: {}
+[0.800287] (-) TimerEvent: {}
+[0.900529] (-) TimerEvent: {}
+[1.000774] (-) TimerEvent: {}
+[1.101023] (-) TimerEvent: {}
+[1.201267] (-) TimerEvent: {}
+[1.301507] (-) TimerEvent: {}
+[1.401754] (-) TimerEvent: {}
+[1.501995] (-) TimerEvent: {}
+[1.602243] (-) TimerEvent: {}
+[1.702457] (-) TimerEvent: {}
+[1.802703] (-) TimerEvent: {}
+[1.903047] (-) TimerEvent: {}
+[2.003343] (-) TimerEvent: {}
+[2.103664] (-) TimerEvent: {}
+[2.203965] (-) TimerEvent: {}
+[2.304264] (-) TimerEvent: {}
+[2.404575] (-) TimerEvent: {}
+[2.504905] (-) TimerEvent: {}
+[2.605245] (-) TimerEvent: {}
+[2.705511] (-) TimerEvent: {}
+[2.805807] (-) TimerEvent: {}
+[2.906204] (-) TimerEvent: {}
+[3.006594] (-) TimerEvent: {}
+[3.049081] (TITA_DRL) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.049279] (TITA_DRL) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:684:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kinput_obs\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.049383] (TITA_DRL) StderrLine: {'line': b'  684 |     std::vector<float> runInference(\x1b[01;35m\x1b[Kconst std::vector<float> &input_obs\x1b[m\x1b[K)\n'}
+[3.049473] (TITA_DRL) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.084777] (TITA_DRL) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs170.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TitaWheelFootNode::controlLoop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.085014] (TITA_DRL) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs170.cpp:706:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[3.085135] (TITA_DRL) StderrLine: {'line': b'  706 |             if (\x1b[01;35m\x1b[K26 + i >= observations_size_\x1b[m\x1b[K)\n'}
+[3.085224] (TITA_DRL) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.106691] (-) TimerEvent: {}
+[3.207037] (-) TimerEvent: {}
+[3.307384] (-) TimerEvent: {}
+[3.407779] (-) TimerEvent: {}
+[3.508102] (-) TimerEvent: {}
+[3.608402] (-) TimerEvent: {}
+[3.708751] (-) TimerEvent: {}
+[3.809058] (-) TimerEvent: {}
+[3.909378] (-) TimerEvent: {}
+[4.009784] (-) TimerEvent: {}
+[4.110066] (-) TimerEvent: {}
+[4.210414] (-) TimerEvent: {}
+[4.310737] (-) TimerEvent: {}
+[4.411060] (-) TimerEvent: {}
+[4.511392] (-) TimerEvent: {}
+[4.611810] (-) TimerEvent: {}
+[4.712158] (-) TimerEvent: {}
+[4.812472] (-) TimerEvent: {}
+[4.912795] (-) TimerEvent: {}
+[5.013102] (-) TimerEvent: {}
+[5.113428] (-) TimerEvent: {}
+[5.213690] (-) TimerEvent: {}
+[5.314028] (-) TimerEvent: {}
+[5.414333] (-) TimerEvent: {}
+[5.514627] (-) TimerEvent: {}
+[5.614913] (-) TimerEvent: {}
+[5.715210] (-) TimerEvent: {}
+[5.815503] (-) TimerEvent: {}
+[5.915847] (-) TimerEvent: {}
+[6.016077] (-) TimerEvent: {}
+[6.116348] (-) TimerEvent: {}
+[6.216576] (-) TimerEvent: {}
+[6.316882] (-) TimerEvent: {}
+[6.417185] (-) TimerEvent: {}
+[6.517468] (-) TimerEvent: {}
+[6.617777] (-) TimerEvent: {}
+[6.718086] (-) TimerEvent: {}
+[6.818386] (-) TimerEvent: {}
+[6.918665] (-) TimerEvent: {}
+[7.018965] (-) TimerEvent: {}
+[7.119235] (-) TimerEvent: {}
+[7.219540] (-) TimerEvent: {}
+[7.319886] (-) TimerEvent: {}
+[7.420209] (-) TimerEvent: {}
+[7.520552] (-) TimerEvent: {}
+[7.620876] (-) TimerEvent: {}
+[7.721191] (-) TimerEvent: {}
+[7.821499] (-) TimerEvent: {}
+[7.921814] (-) TimerEvent: {}
+[8.022081] (-) TimerEvent: {}
+[8.122362] (-) TimerEvent: {}
+[8.222640] (-) TimerEvent: {}
+[8.322960] (-) TimerEvent: {}
+[8.423234] (-) TimerEvent: {}
+[8.523528] (-) TimerEvent: {}
+[8.623814] (-) TimerEvent: {}
+[8.724115] (-) TimerEvent: {}
+[8.824419] (-) TimerEvent: {}
+[8.924724] (-) TimerEvent: {}
+[9.024998] (-) TimerEvent: {}
+[9.125269] (-) TimerEvent: {}
+[9.225580] (-) TimerEvent: {}
+[9.325858] (-) TimerEvent: {}
+[9.426153] (-) TimerEvent: {}
+[9.526431] (-) TimerEvent: {}
+[9.626729] (-) TimerEvent: {}
+[9.726985] (-) TimerEvent: {}
+[9.827258] (-) TimerEvent: {}
+[9.927552] (-) TimerEvent: {}
+[10.027853] (-) TimerEvent: {}
+[10.128123] (-) TimerEvent: {}
+[10.228394] (-) TimerEvent: {}
+[10.328656] (-) TimerEvent: {}
+[10.428928] (-) TimerEvent: {}
+[10.529234] (-) TimerEvent: {}
+[10.629497] (-) TimerEvent: {}
+[10.729777] (-) TimerEvent: {}
+[10.830058] (-) TimerEvent: {}
+[10.930359] (-) TimerEvent: {}
+[11.030612] (-) TimerEvent: {}
+[11.130924] (-) TimerEvent: {}
+[11.231195] (-) TimerEvent: {}
+[11.331513] (-) TimerEvent: {}
+[11.431820] (-) TimerEvent: {}
+[11.532155] (-) TimerEvent: {}
+[11.632426] (-) TimerEvent: {}
+[11.732652] (-) TimerEvent: {}
+[11.832893] (-) TimerEvent: {}
+[11.933174] (-) TimerEvent: {}
+[12.033506] (-) TimerEvent: {}
+[12.133771] (-) TimerEvent: {}
+[12.234042] (-) TimerEvent: {}
+[12.334341] (-) TimerEvent: {}
+[12.434622] (-) TimerEvent: {}
+[12.534906] (-) TimerEvent: {}
+[12.635231] (-) TimerEvent: {}
+[12.735536] (-) TimerEvent: {}
+[12.748443] (TITA_DRL) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable tita_drl_obs170\x1b[0m\n'}
+[12.748739] (TITA_DRL) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable tita_drl_obs194\x1b[0m\n'}
+[12.822193] (TITA_DRL) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable tita_drl_obs192\x1b[0m\n'}
+[12.835646] (-) TimerEvent: {}
+[12.872408] (TITA_DRL) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable tita_drl_obs_192-stand\x1b[0m\n'}
+[12.935780] (-) TimerEvent: {}
+[13.036242] (-) TimerEvent: {}
+[13.136684] (-) TimerEvent: {}
+[13.237016] (-) TimerEvent: {}
+[13.337284] (-) TimerEvent: {}
+[13.437584] (-) TimerEvent: {}
+[13.523192] (TITA_DRL) StdoutLine: {'line': b'[100%] Built target tita_drl_obs194\n'}
+[13.537701] (-) TimerEvent: {}
+[13.539266] (TITA_DRL) StdoutLine: {'line': b'[100%] Built target tita_drl_obs170\n'}
+[13.599206] (TITA_DRL) StdoutLine: {'line': b'[100%] Built target tita_drl_obs192\n'}
+[13.601451] (TITA_DRL) StdoutLine: {'line': b'[100%] Built target tita_drl_obs_192-stand\n'}
+[13.608352] (TITA_DRL) CommandEnded: {'returncode': 0}
+[13.608902] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'install'}
+[13.614328] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/dev/tita_ws/src/build/TITA_DRL'], 'cwd': '/mnt/dev/tita_ws/src/build/TITA_DRL', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('ROS_PACKAGE_PATH', '/mnt/dev/tita_ws/install/tita_robot/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/mnt/dev/tita_ws/install/locomotion_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('COLCON_PREFIX_PATH', '/mnt/dev/tita_ws/install'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/dev/tita_ws/src/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/mnt/dev/tita_ws/install/tita_system_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/local/lib/python3.10/dist-packages:/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL')]), 'shell': False}
+[13.618986] (TITA_DRL) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.619296] (TITA_DRL) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.619772] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs57\n'}
+[13.619864] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs32\n'}
+[13.619941] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs320_slr\n'}
+[13.620040] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs192\n'}
+[13.620127] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs_192-stand\n'}
+[13.620214] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs194\n'}
+[13.625144] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs374\n'}
+[13.625214] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs170\n'}
+[13.630670] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/text\n'}
+[13.630956] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/launch/tita_drl.launch.py\n'}
+[13.631035] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/launch/tita_drl_obs170.launch.py\n'}
+[13.636475] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/initial_pose.yaml\n'}
+[13.636584] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_170.yaml\n'}
+[13.637794] (-) TimerEvent: {}
+[13.641867] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_170.yaml.bak.20261102_195345\n'}
+[13.646659] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_192.yaml\n'}
+[13.646872] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_194.yaml\n'}
+[13.651751] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_32.yaml\n'}
+[13.651965] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_320.yaml\n'}
+[13.652073] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_374.yaml\n'}
+[13.652278] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_57.yaml\n'}
+[13.652372] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_p.yaml\n'}
+[13.652439] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy0205.onnx\n'}
+[13.657389] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.06-16.26.51.onnx\n'}
+[13.657710] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-10000.onnx\n'}
+[13.657957] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-16000.onnx\n'}
+[13.658123] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.10-21.59.34-slr.onnx\n'}
+[13.658195] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.01-20.44.22.onnx\n'}
+[13.658257] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.03-11.12.35.onnx\n'}
+[13.658328] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.09-17.28.51.onnx\n'}
+[13.658410] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.10-15.37.25-2400.onnx\n'}
+[13.658468] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-09.51.53.onnx\n'}
+[13.658525] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07-9200.onnx\n'}
+[13.658571] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07.onnx\n'}
+[13.658643] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-21.48.14.onnx\n'}
+[13.658701] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.14-17.27.50.onnx\n'}
+[13.658746] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.15.onnx\n'}
+[13.658790] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy0526.onnx\n'}
+[13.664012] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy10.15-09.55.57.onnx\n'}
+[13.664206] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy12.25-16.55.26.onnx\n'}
+[13.664281] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-16.16.04-12000.onnx\n'}
+[13.664439] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-10000.onnx\n'}
+[13.664516] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-12000.onnx\n'}
+[13.664561] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy5.25.onnx\n'}
+[13.669843] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57.onnx\n'}
+[13.670019] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_1.onnx\n'}
+[13.670097] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_2.onnx\n'}
+[13.670147] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_fr194.onnx\n'}
+[13.675392] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_p.onnx\n'}
+[13.675572] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy.onnx\n'}
+[13.681188] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy1.onnx\n'}
+[13.686453] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy2.onnx\n'}
+[13.691768] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy3.onnx\n'}
+[13.696918] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy4.onnx\n'}
+[13.701978] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy5.onnx\n'}
+[13.706892] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy6.onnx\n'}
+[13.712416] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy7.onnx\n'}
+[13.717527] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy8.onnx\n'}
+[13.722500] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/student_policy9.onnx\n'}
+[13.727686] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/plot_drl_actions.py\n'}
+[13.733085] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/ament_index/resource_index/package_run_dependencies/TITA_DRL\n'}
+[13.733259] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/ament_index/resource_index/parent_prefix_path/TITA_DRL\n'}
+[13.733413] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.sh\n'}
+[13.733624] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.dsv\n'}
+[13.733710] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/path.sh\n'}
+[13.733780] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/path.dsv\n'}
+[13.733838] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.bash\n'}
+[13.733894] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.sh\n'}
+[13.733939] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.zsh\n'}
+[13.734005] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.dsv\n'}
+[13.734050] (TITA_DRL) StdoutLine: {'line': b'-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/package.dsv\n'}
+[13.737862] (-) TimerEvent: {}
+[13.739288] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/ament_index/resource_index/packages/TITA_DRL\n'}
+[13.739381] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig.cmake\n'}
+[13.739485] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig-version.cmake\n'}
+[13.739632] (TITA_DRL) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/package.xml\n'}
+[13.740574] (TITA_DRL) CommandEnded: {'returncode': 0}
+[13.754665] (TITA_DRL) JobEnded: {'identifier': 'TITA_DRL', 'rc': 0}
+[13.755214] (-) EventReactorShutdown: {}

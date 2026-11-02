@@ -1,0 +1,69 @@
+[0.039s] Invoking command in '/mnt/dev/tita_ws/build/joy_controller': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/mnt/dev/tita_ws/install/locomotion_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/joy_controller
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.124s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.176s] -- Detecting C compiler ABI info - done
+[0.182s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.183s] -- Detecting C compile features
+[0.183s] -- Detecting C compile features - done
+[0.185s] -- Detecting CXX compiler ABI info
+[0.242s] -- Detecting CXX compiler ABI info - done
+[0.248s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.249s] -- Detecting CXX compile features
+[0.249s] -- Detecting CXX compile features - done
+[0.254s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.368s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.415s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.441s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.443s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.527s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.532s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.539s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.549s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.563s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.601s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.603s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.667s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.691s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.728s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.737s] -- Looking for pthread.h
+[0.784s] -- Looking for pthread.h - found
+[0.784s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.832s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.833s] -- Found Threads: TRUE  
+[0.943s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.961s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.026s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.052s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.053s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.053s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/include
+[1.053s] -- Configured cppcheck exclude dirs and/or files: 
+[1.054s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.054s] -- Configured cpplint exclude dirs and/or files: 
+[1.055s] -- Added test 'lint_cmake' to check CMake code style
+[1.055s] -- Added test 'xmllint' to check XML markup files
+[1.058s] -- Configuring done
+[1.073s] -- Generating done
+[1.079s] -- Build files have been written to: /mnt/dev/tita_ws/build/joy_controller
+[1.086s] Invoked command in '/mnt/dev/tita_ws/build/joy_controller' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/mnt/dev/tita_ws/install/locomotion_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/joy_controller
+[1.087s] Invoking command in '/mnt/dev/tita_ws/build/joy_controller': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/mnt/dev/tita_ws/install/locomotion_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /mnt/dev/tita_ws/build/joy_controller -- -j16 -l16
+[1.119s] [ 20%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /mnt/dev/tita_ws/build/joy_controller/joy_controller_parameters/include//joy_controller_parameters.hpp /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/src/joy_controller_parameters.yaml `[0m
+[1.278s] [ 20%] Built target joy_controller_parameters
+[1.292s] [ 40%] [32mBuilding CXX object CMakeFiles/joy_controller_lib.dir/src/joy_controller.cpp.o[0m
+[3.094s] In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/include/joy_controller/joy_controller.hpp:30[m[K,
+[3.094s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/src/joy_controller.cpp:15[m[K:
+[3.094s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h:22:103:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_publisher.hpp' header.[m[K’
+[3.094s]    22 | e is deprecated. Please update your code to use 'realtime_publisher.hpp' header."[01;36m[K)[m[K  //NOLINT
+[3.094s]       |                                                                                  [01;36m[K^[m[K
+[3.094s] 
+[10.267s] [ 60%] [32m[1mLinking CXX shared library libjoy_controller_lib.so[0m
+[10.382s] [ 60%] Built target joy_controller_lib
+[10.394s] [ 80%] [32mBuilding CXX object CMakeFiles/joy_controller_node.dir/src/main.cpp.o[0m
+[12.277s] In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/include/joy_controller/joy_controller.hpp:30[m[K,
+[12.277s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller/src/main.cpp:24[m[K:
+[12.277s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h:22:103:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_publisher.hpp' header.[m[K’
+[12.277s]    22 | e is deprecated. Please update your code to use 'realtime_publisher.hpp' header."[01;36m[K)[m[K  //NOLINT
+[12.277s]       |                                                                                  [01;36m[K^[m[K
+[12.278s] 
+[12.842s] [100%] [32m[1mLinking CXX executable joy_controller_node[0m
+[12.930s] [100%] Built target joy_controller_node

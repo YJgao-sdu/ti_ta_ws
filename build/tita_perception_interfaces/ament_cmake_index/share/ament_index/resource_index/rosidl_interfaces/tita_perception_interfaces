@@ -1,0 +1,8 @@
+msg/BoundingBox.idl
+msg/BoundingBox.msg
+msg/BoundingBoxArray.idl
+msg/BoundingBoxArray.msg
+srv/ObjectDetection.idl
+srv/ObjectDetection.srv
+srv/ObjectDetection_Request.msg
+srv/ObjectDetection_Response.msg

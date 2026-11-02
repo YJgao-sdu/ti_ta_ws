@@ -1,0 +1,69 @@
+[0.009s] Invoking command in '/mnt/dev/tita_ws/build/tita_controller': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/tita_controller
+[1.685s] -- The C compiler identification is GNU 11.4.0
+[1.685s] -- The CXX compiler identification is GNU 11.4.0
+[1.685s] -- Detecting C compiler ABI info
+[1.685s] -- Detecting C compiler ABI info - done
+[1.686s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.686s] -- Detecting C compile features
+[1.686s] -- Detecting C compile features - done
+[1.686s] -- Detecting CXX compiler ABI info
+[1.686s] -- Detecting CXX compiler ABI info - done
+[1.686s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.686s] -- Detecting CXX compile features
+[1.687s] -- Detecting CXX compile features - done
+[1.687s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.687s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.687s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.687s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.687s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.687s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.688s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.688s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.688s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.688s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.688s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.688s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.688s] -- Looking for pthread.h
+[1.689s] -- Looking for pthread.h - found
+[1.689s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.689s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.689s] -- Found Threads: TRUE  
+[1.856s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.857s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.857s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.865s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.021s] -- Found CUDA: /usr (found version "11.5") 
+[2.063s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.090s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.093s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.093s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller/include
+[2.093s] -- Configured cppcheck exclude dirs and/or files: 
+[2.095s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.095s] -- Configured cpplint exclude dirs and/or files: 
+[2.096s] -- Added test 'lint_cmake' to check CMake code style
+[2.097s] -- Added test 'xmllint' to check XML markup files
+[2.100s] -- Configuring done
+[2.127s] -- Generating done
+[2.133s] -- Build files have been written to: /mnt/dev/tita_ws/build/tita_controller
+[2.146s] Invoked command in '/mnt/dev/tita_ws/build/tita_controller' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/tita_controller
+[2.151s] Invoking command in '/mnt/dev/tita_ws/build/tita_controller': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:/mnt/dev/tita_ws/install/webots_bridge/lib:/mnt/dev/tita_ws/install/user_command/lib:/mnt/dev/tita_ws/install/tita_system_interfaces/lib:/mnt/dev/tita_ws/install/hw_broadcaster/lib:/mnt/dev/tita_ws/install/hardware_bridge/lib:/mnt/dev/tita_ws/install/commands_can/lib:/mnt/dev/tita_ws/install/tita_robot/lib:/mnt/dev/tita_ws/install/tita_perception_interfaces/lib:/mnt/dev/tita_ws/install/tita_locomotion_interfaces/lib:/mnt/dev/tita_ws/install/gazebo_bridge/lib:/mnt/dev/tita_ws/install/tita_controller/lib:/mnt/dev/tita_ws/install/joy_controller/lib:/mnt/dev/tita_ws/install/teleop_command/lib:/mnt/dev/tita_ws/install/robot_inertia_calculator/lib:/mnt/dev/tita_ws/install/template_ros2_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_controller -- -j16 -l16
+[2.193s] [  7%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /mnt/dev/tita_ws/build/tita_controller/tita_controller_parameters/include//tita_controller_parameters.hpp /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller/src/tita_controller_parameters.yaml `[0m
+[4.205s] [  7%] Built target tita_controller_parameters
+[4.224s] [ 30%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSM.cpp.o[0m
+[4.224s] [ 23%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSMState.cpp.o[0m
+[4.224s] [ 30%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSMState_RecoveryStand.cpp.o[0m
+[4.224s] [ 46%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSMState_Passive.cpp.o[0m
+[4.224s] [ 38%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/estimator/OrientationEstimator.cpp.o[0m
+[4.225s] [ 53%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSMState_JointPD.cpp.o[0m
+[4.228s] [ 61%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSMState_RL.cpp.o[0m
+[4.231s] [ 69%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/planner/DesiredStateCommand.cpp.o[0m
+[4.231s] [ 76%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/tita_controller_node.cpp.o[0m
+[4.231s] [ 84%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/tensorrt_cuda/tensor_cuda_test.cpp.o[0m
+[4.231s] [ 92%] [32mBuilding CXX object CMakeFiles/tita_controller.dir/src/fsm/FSMState_TransformDown.cpp.o[0m
+[6.344s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp:[m[K In member function ‘[01m[Kvoid FSMState_RL::_GetObs()[m[K’:
+[6.344s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp:188:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kprojected_forward[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[6.344s]   188 |      Vec3<double> [01;35m[Kprojected_forward[m[K = _G2B_RotMat * Vec3<double>(1.0, 0.0, 0.0);
+[6.344s]       |                   [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[33.848s] [100%] [32m[1mLinking CXX shared library libtita_controller.so[0m
+[34.124s] [100%] Built target tita_controller

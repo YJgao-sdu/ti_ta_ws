@@ -1,0 +1,11 @@
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/uninstall.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/tita_controller_uninstall.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/tita_controller_parameters.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/tita_controller.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/test.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/edit_cache.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/rebuild_cache.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/list_install_components.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/install.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/install/local.dir
+/mnt/dev/tita_ws/build/tita_controller/CMakeFiles/install/strip.dir

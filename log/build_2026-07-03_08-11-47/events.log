@@ -1,0 +1,158 @@
+[0.000000] (-) TimerEvent: {}
+[0.000071] (-) JobUnselected: {'identifier': 'commands_can'}
+[0.000109] (-) JobUnselected: {'identifier': 'custom_joint_position_controller'}
+[0.000136] (-) JobUnselected: {'identifier': 'gazebo_bridge'}
+[0.000160] (-) JobUnselected: {'identifier': 'hardware_bridge'}
+[0.000182] (-) JobUnselected: {'identifier': 'hw_broadcaster'}
+[0.000267] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.000293] (-) JobUnselected: {'identifier': 'keyboard_controller'}
+[0.000316] (-) JobUnselected: {'identifier': 'locomotion_msgs'}
+[0.000338] (-) JobUnselected: {'identifier': 'robot_inertia_calculator'}
+[0.000360] (-) JobUnselected: {'identifier': 'sim_bringup'}
+[0.001038] (-) JobUnselected: {'identifier': 'teleop_command'}
+[0.001129] (-) JobUnselected: {'identifier': 'template_ros2_controller'}
+[0.001265] (-) JobUnselected: {'identifier': 'tita_bringup'}
+[0.001292] (-) JobUnselected: {'identifier': 'tita_controller'}
+[0.001315] (-) JobUnselected: {'identifier': 'tita_description'}
+[0.001337] (-) JobUnselected: {'identifier': 'tita_locomotion_interfaces'}
+[0.001380] (-) JobUnselected: {'identifier': 'tita_perception_interfaces'}
+[0.001405] (-) JobUnselected: {'identifier': 'tita_pointfoot_description'}
+[0.001427] (-) JobUnselected: {'identifier': 'tita_robot'}
+[0.001451] (-) JobUnselected: {'identifier': 'tita_system_interfaces'}
+[0.001494] (-) JobUnselected: {'identifier': 'user_command'}
+[0.001518] (-) JobUnselected: {'identifier': 'webots_bridge'}
+[0.001604] (TITA_DRL) JobQueued: {'identifier': 'TITA_DRL', 'dependencies': OrderedDict()}
+[0.001674] (TITA_DRL) JobStarted: {'identifier': 'TITA_DRL'}
+[0.009673] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'cmake'}
+[0.011618] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'build'}
+[0.011963] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/dev/tita_ws/build/TITA_DRL', '--', '-j16', '-l16'], 'cwd': '/mnt/dev/tita_ws/build/TITA_DRL', 'env': OrderedDict([('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/mnt/dev'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('ROS_DISTRO', 'humble'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('PWD', '/mnt/dev/tita_ws/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.058502] (TITA_DRL) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target tita_drl_obs194\n'}
+[0.063580] (TITA_DRL) StdoutLine: {'line': b'[ 12%] Built target text\n'}
+[0.071953] (TITA_DRL) StdoutLine: {'line': b'[ 31%] Built target tita_drl_obs32\n'}
+[0.072138] (TITA_DRL) StdoutLine: {'line': b'[ 37%] Built target tita_drl_obs57\n'}
+[0.072398] (TITA_DRL) StdoutLine: {'line': b'[ 50%] Built target tita_drl_obs_192-stand\n'}
+[0.072652] (TITA_DRL) StdoutLine: {'line': b'[ 62%] Built target tita_drl_obs192\n'}
+[0.072863] (TITA_DRL) StdoutLine: {'line': b'[ 75%] Built target tita_drl_obs374\n'}
+[0.073076] (TITA_DRL) StdoutLine: {'line': b'[ 87%] Built target tita_drl_obs320_slr\n'}
+[0.076436] (TITA_DRL) StdoutLine: {'line': b'[ 93%] Building CXX object CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o\n'}
+[0.099670] (-) TimerEvent: {}
+[0.199857] (-) TimerEvent: {}
+[0.300046] (-) TimerEvent: {}
+[0.400260] (-) TimerEvent: {}
+[0.500471] (-) TimerEvent: {}
+[0.600648] (-) TimerEvent: {}
+[0.700861] (-) TimerEvent: {}
+[0.801067] (-) TimerEvent: {}
+[0.901277] (-) TimerEvent: {}
+[1.001487] (-) TimerEvent: {}
+[1.101697] (-) TimerEvent: {}
+[1.201906] (-) TimerEvent: {}
+[1.302115] (-) TimerEvent: {}
+[1.402307] (-) TimerEvent: {}
+[1.502522] (-) TimerEvent: {}
+[1.602733] (-) TimerEvent: {}
+[1.702944] (-) TimerEvent: {}
+[1.803155] (-) TimerEvent: {}
+[1.903362] (-) TimerEvent: {}
+[2.003572] (-) TimerEvent: {}
+[2.103764] (-) TimerEvent: {}
+[2.203998] (-) TimerEvent: {}
+[2.304207] (-) TimerEvent: {}
+[2.404416] (-) TimerEvent: {}
+[2.504626] (-) TimerEvent: {}
+[2.604836] (-) TimerEvent: {}
+[2.705046] (-) TimerEvent: {}
+[2.805259] (-) TimerEvent: {}
+[2.905478] (-) TimerEvent: {}
+[3.005692] (-) TimerEvent: {}
+[3.105903] (-) TimerEvent: {}
+[3.206116] (-) TimerEvent: {}
+[3.306290] (-) TimerEvent: {}
+[3.406498] (-) TimerEvent: {}
+[3.506710] (-) TimerEvent: {}
+[3.606918] (-) TimerEvent: {}
+[3.707126] (-) TimerEvent: {}
+[3.807334] (-) TimerEvent: {}
+[3.907584] (-) TimerEvent: {}
+[4.007795] (-) TimerEvent: {}
+[4.107973] (-) TimerEvent: {}
+[4.208184] (-) TimerEvent: {}
+[4.308363] (-) TimerEvent: {}
+[4.408539] (-) TimerEvent: {}
+[4.475620] (TITA_DRL) StderrLine: {'line': b'/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp: In member function \xe2\x80\x98void TitaWheelFootNode::controlLoop()\xe2\x80\x99:\n'}
+[4.475828] (TITA_DRL) StderrLine: {'line': b'/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs194.cpp:493:45: error: \xe2\x80\x98pos_offset\xe2\x80\x99 was not declared in this scope\n'}
+[4.475929] (TITA_DRL) StderrLine: {'line': b'  493 |                 temp_observation[10 + j] = (pos_offset - default_joint_angles_[i]) * obs_scales_dofpos_;\n'}
+[4.476017] (TITA_DRL) StderrLine: {'line': b'      |                                             ^~~~~~~~~~\n'}
+[4.508676] (-) TimerEvent: {}
+[4.608892] (-) TimerEvent: {}
+[4.709100] (-) TimerEvent: {}
+[4.809300] (-) TimerEvent: {}
+[4.909513] (-) TimerEvent: {}
+[5.009685] (-) TimerEvent: {}
+[5.109892] (-) TimerEvent: {}
+[5.210106] (-) TimerEvent: {}
+[5.310281] (-) TimerEvent: {}
+[5.410458] (-) TimerEvent: {}
+[5.510670] (-) TimerEvent: {}
+[5.610887] (-) TimerEvent: {}
+[5.711102] (-) TimerEvent: {}
+[5.811329] (-) TimerEvent: {}
+[5.911520] (-) TimerEvent: {}
+[6.011758] (-) TimerEvent: {}
+[6.111969] (-) TimerEvent: {}
+[6.212165] (-) TimerEvent: {}
+[6.312378] (-) TimerEvent: {}
+[6.412591] (-) TimerEvent: {}
+[6.512801] (-) TimerEvent: {}
+[6.613009] (-) TimerEvent: {}
+[6.713218] (-) TimerEvent: {}
+[6.813427] (-) TimerEvent: {}
+[6.913604] (-) TimerEvent: {}
+[7.013811] (-) TimerEvent: {}
+[7.114034] (-) TimerEvent: {}
+[7.214211] (-) TimerEvent: {}
+[7.314421] (-) TimerEvent: {}
+[7.414631] (-) TimerEvent: {}
+[7.514841] (-) TimerEvent: {}
+[7.615050] (-) TimerEvent: {}
+[7.715261] (-) TimerEvent: {}
+[7.815475] (-) TimerEvent: {}
+[7.915686] (-) TimerEvent: {}
+[8.015876] (-) TimerEvent: {}
+[8.116050] (-) TimerEvent: {}
+[8.216223] (-) TimerEvent: {}
+[8.316438] (-) TimerEvent: {}
+[8.416651] (-) TimerEvent: {}
+[8.516862] (-) TimerEvent: {}
+[8.617074] (-) TimerEvent: {}
+[8.717288] (-) TimerEvent: {}
+[8.817496] (-) TimerEvent: {}
+[8.917669] (-) TimerEvent: {}
+[9.017856] (-) TimerEvent: {}
+[9.118092] (-) TimerEvent: {}
+[9.218263] (-) TimerEvent: {}
+[9.318435] (-) TimerEvent: {}
+[9.418606] (-) TimerEvent: {}
+[9.518814] (-) TimerEvent: {}
+[9.619021] (-) TimerEvent: {}
+[9.719194] (-) TimerEvent: {}
+[9.819422] (-) TimerEvent: {}
+[9.919595] (-) TimerEvent: {}
+[10.019787] (-) TimerEvent: {}
+[10.120024] (-) TimerEvent: {}
+[10.220244] (-) TimerEvent: {}
+[10.320462] (-) TimerEvent: {}
+[10.420682] (-) TimerEvent: {}
+[10.520897] (-) TimerEvent: {}
+[10.621073] (-) TimerEvent: {}
+[10.721296] (-) TimerEvent: {}
+[10.821510] (-) TimerEvent: {}
+[10.921721] (-) TimerEvent: {}
+[11.021938] (-) TimerEvent: {}
+[11.122150] (-) TimerEvent: {}
+[11.145544] (TITA_DRL) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tita_drl_obs194.dir/build.make:76: CMakeFiles/tita_drl_obs194.dir/src/tita_drl_obs194.cpp.o] Error 1\n'}
+[11.145844] (TITA_DRL) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:281: CMakeFiles/tita_drl_obs194.dir/all] Error 2\n'}
+[11.146086] (TITA_DRL) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.147881] (TITA_DRL) CommandEnded: {'returncode': 2}
+[11.162610] (TITA_DRL) JobEnded: {'identifier': 'TITA_DRL', 'rc': 2}
+[11.173226] (-) EventReactorShutdown: {}

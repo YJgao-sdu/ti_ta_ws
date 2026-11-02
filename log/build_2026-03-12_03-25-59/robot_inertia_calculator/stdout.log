@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target robot_inertia_calculator_lib[0m
+[ 50%] Built target robot_inertia_calculator_lib
+[35m[1mConsolidate compiler generated dependencies of target robot_inertia_calculator_node[0m
+[100%] Built target robot_inertia_calculator_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/launch/robot_inertia_calculator.launch.py
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/config/param.yaml
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/library_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/library_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/lib/librobot_inertia_calculator_lib.so
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/lib/robot_inertia_calculator/robot_inertia_calculator_node
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/package_run_dependencies/robot_inertia_calculator
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/parent_prefix_path/robot_inertia_calculator
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/packages/robot_inertia_calculator
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/robot_inertia_calculatorConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/robot_inertia_calculatorConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/package.xml

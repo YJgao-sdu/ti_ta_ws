@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/gazebo_bridge/ament_cmake_environment_hooks/local_setup.bash

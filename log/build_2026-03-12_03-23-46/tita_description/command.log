@@ -1,0 +1,6 @@
+Invoking command in '/mnt/dev/tita_ws/build/tita_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/tita_description
+Invoked command in '/mnt/dev/tita_ws/build/tita_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/tita_description
+Invoking command in '/mnt/dev/tita_ws/build/tita_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_description -- -j16 -l16
+Invoked command in '/mnt/dev/tita_ws/build/tita_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_description -- -j16 -l16
+Invoking command in '/mnt/dev/tita_ws/build/tita_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_description
+Invoked command in '/mnt/dev/tita_ws/build/tita_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_description

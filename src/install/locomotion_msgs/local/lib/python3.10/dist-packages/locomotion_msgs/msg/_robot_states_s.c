@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/locomotion_msgs/rosidl_generator_py/locomotion_msgs/msg/_robot_states_s.c

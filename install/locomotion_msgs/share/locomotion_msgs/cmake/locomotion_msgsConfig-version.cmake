@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/locomotion_msgs/ament_cmake_core/locomotion_msgsConfig-version.cmake

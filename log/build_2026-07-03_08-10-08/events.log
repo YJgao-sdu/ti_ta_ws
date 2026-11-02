@@ -1,0 +1,50 @@
+[0.000000] (-) TimerEvent: {}
+[0.000150] (-) JobUnselected: {'identifier': 'commands_can'}
+[0.000194] (-) JobUnselected: {'identifier': 'custom_joint_position_controller'}
+[0.000222] (-) JobUnselected: {'identifier': 'gazebo_bridge'}
+[0.000248] (-) JobUnselected: {'identifier': 'hardware_bridge'}
+[0.000271] (-) JobUnselected: {'identifier': 'hw_broadcaster'}
+[0.000293] (-) JobUnselected: {'identifier': 'joy_controller'}
+[0.000315] (-) JobUnselected: {'identifier': 'keyboard_controller'}
+[0.000336] (-) JobUnselected: {'identifier': 'locomotion_msgs'}
+[0.000357] (-) JobUnselected: {'identifier': 'robot_inertia_calculator'}
+[0.000378] (-) JobUnselected: {'identifier': 'sim_bringup'}
+[0.000400] (-) JobUnselected: {'identifier': 'teleop_command'}
+[0.000421] (-) JobUnselected: {'identifier': 'template_ros2_controller'}
+[0.000442] (-) JobUnselected: {'identifier': 'tita_bringup'}
+[0.000463] (-) JobUnselected: {'identifier': 'tita_controller'}
+[0.000484] (-) JobUnselected: {'identifier': 'tita_description'}
+[0.000505] (-) JobUnselected: {'identifier': 'tita_locomotion_interfaces'}
+[0.000525] (-) JobUnselected: {'identifier': 'tita_perception_interfaces'}
+[0.000546] (-) JobUnselected: {'identifier': 'tita_pointfoot_description'}
+[0.000567] (-) JobUnselected: {'identifier': 'tita_robot'}
+[0.000589] (-) JobUnselected: {'identifier': 'tita_system_interfaces'}
+[0.000610] (-) JobUnselected: {'identifier': 'user_command'}
+[0.000631] (-) JobUnselected: {'identifier': 'webots_bridge'}
+[0.000656] (TITA_DRL) JobQueued: {'identifier': 'TITA_DRL', 'dependencies': OrderedDict()}
+[0.000709] (TITA_DRL) JobStarted: {'identifier': 'TITA_DRL'}
+[0.009133] (TITA_DRL) JobProgress: {'identifier': 'TITA_DRL', 'progress': 'cmake'}
+[0.010890] (TITA_DRL) Command: {'cmd': ['/usr/bin/cmake', '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL', '-DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL'], 'cwd': '/mnt/dev/tita_ws/build/TITA_DRL', 'env': OrderedDict([('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('LANGUAGE', 'en_US:en'), ('USER', 'root'), ('HOSTNAME', 'SUCRO'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/mnt/dev'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('CUDA_VERSION', '11.8.0'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/webots:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NVARCH', 'x86_64'), ('QTWEBENGINE_DISABLE_SANDBOX', '1'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('DEBIAN_FRONTEND', 'noninteractive'), ('WEBOTS_HOME', '/usr/local/webots'), ('PWD', '/mnt/dev/tita_ws/build/TITA_DRL'), ('LC_ALL', 'en_US.UTF-8'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1')]), 'shell': False}
+[0.047757] (TITA_DRL) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098951] (-) TimerEvent: {}
+[0.151153] (TITA_DRL) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.151355] (TITA_DRL) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[0.151471] (TITA_DRL) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[0.151563] (TITA_DRL) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[0.154990] (TITA_DRL) StderrLine: {'line': b'CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[0.155136] (TITA_DRL) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.155330] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[0.155429] (TITA_DRL) StderrLine: {'line': b'  /mnt/dev/tita_ws/build/TITA_DRL/ament_cmake_package_templates/templates.cmake)\n'}
+[0.155517] (TITA_DRL) StderrLine: {'line': b'  returned error code 1\n'}
+[0.155608] (TITA_DRL) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.155695] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.155781] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.155865] (TITA_DRL) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.155948] (TITA_DRL) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[0.156032] (TITA_DRL) StderrLine: {'line': b'\n'}
+[0.156115] (TITA_DRL) StderrLine: {'line': b'\n'}
+[0.156196] (TITA_DRL) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.156281] (TITA_DRL) StdoutLine: {'line': b'See also "/mnt/dev/tita_ws/build/TITA_DRL/CMakeFiles/CMakeOutput.log".\n'}
+[0.160438] (TITA_DRL) CommandEnded: {'returncode': 1}
+[0.185728] (TITA_DRL) JobEnded: {'identifier': 'TITA_DRL', 'rc': 1}
+[0.196293] (-) EventReactorShutdown: {}

@@ -1,0 +1,33 @@
+[0.077s] Invoking command in '/mnt/dev/tita_ws/build/hardware_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/install/tita_robot/share /usr/bin/cmake --build /mnt/dev/tita_ws/build/hardware_bridge -- -j16 -l16
+[0.164s] [100%] Built target hardware_bridge
+[0.226s] Invoked command in '/mnt/dev/tita_ws/build/hardware_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/install/tita_robot/share /usr/bin/cmake --build /mnt/dev/tita_ws/build/hardware_bridge -- -j16 -l16
+[0.227s] Invoking command in '/mnt/dev/tita_ws/build/hardware_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/install/tita_robot/share /usr/bin/cmake --install /mnt/dev/tita_ws/build/hardware_bridge
+[0.234s] -- Install configuration: ""
+[0.234s] -- Execute custom install script
+[0.234s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge//hardware_bridge_plugin.xml
+[0.235s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/launch/hardware_bridge.launch.py
+[0.235s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/launch/joint_calibration_launch.py
+[0.236s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/include/hardware_bridge/hardware_bridge_node.hpp
+[0.237s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/environment/library_path.sh
+[0.238s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/environment/library_path.dsv
+[0.238s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/lib/libhardware_bridge.so
+[0.239s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/ament_index/resource_index/package_run_dependencies/hardware_bridge
+[0.239s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/ament_index/resource_index/parent_prefix_path/hardware_bridge
+[0.240s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/environment/ament_prefix_path.sh
+[0.240s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/environment/ament_prefix_path.dsv
+[0.241s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/environment/path.sh
+[0.241s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/environment/path.dsv
+[0.242s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/local_setup.bash
+[0.242s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/local_setup.sh
+[0.242s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/local_setup.zsh
+[0.243s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/local_setup.dsv
+[0.244s] -- Symlinking: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/package.dsv
+[0.246s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/ament_index/resource_index/packages/hardware_bridge
+[0.247s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware_bridge
+[0.247s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.248s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.248s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[0.249s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/cmake/hardware_bridgeConfig.cmake
+[0.250s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/cmake/hardware_bridgeConfig-version.cmake
+[0.250s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/hardware_bridge/share/hardware_bridge/package.xml
+[0.309s] Invoked command in '/mnt/dev/tita_ws/build/hardware_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/tita_robot/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/mnt/dev/tita_ws/install/tita_robot/lib/x86_64-linux-gnu/pkgconfig:/mnt/dev/tita_ws/install/tita_robot/lib/pkgconfig ROS_PACKAGE_PATH=/mnt/dev/tita_ws/install/tita_robot/share /usr/bin/cmake --install /mnt/dev/tita_ws/build/hardware_bridge

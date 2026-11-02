@@ -1,0 +1,31 @@
+[0.034s] Invoking command in '/mnt/dev/tita_ws/src/build/TITA_DRL': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/sim_bringup:/mnt/dev/tita_ws/src/install/webots_bridge:/mnt/dev/tita_ws/src/install/user_command:/mnt/dev/tita_ws/src/install/tita_system_interfaces:/mnt/dev/tita_ws/src/install/hw_broadcaster:/mnt/dev/tita_ws/src/install/hardware_bridge:/mnt/dev/tita_ws/src/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot:/mnt/dev/tita_ws/src/install/tita_pointfoot_description:/mnt/dev/tita_ws/src/install/tita_perception_interfaces:/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/gazebo_bridge:/mnt/dev/tita_ws/src/install/tita_description:/mnt/dev/tita_ws/src/install/tita_controller:/mnt/dev/tita_ws/src/install/joy_controller:/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/robot_inertia_calculator:/mnt/dev/tita_ws/src/install/keyboard_controller:/mnt/dev/tita_ws/src/install/tita_bringup:/mnt/dev/tita_ws/src/install/template_ros2_controller:/mnt/dev/tita_ws/src/install/locomotion_msgs:/mnt/dev/tita_ws/src/install/custom_joint_position_controller:/mnt/dev/tita_ws/src/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/TITA_DRL -- -j16 -l16
+[0.101s] [ 14%] Built target tita_drl_obs57
+[0.103s] [ 21%] [32mBuilding CXX object CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o[0m
+[0.111s] [ 35%] Built target text
+[0.111s] [ 50%] Built target tita_drl_obs320_slr
+[0.115s] [ 64%] Built target tita_drl_obs32
+[0.120s] [ 78%] Built target tita_drl_obs_192-stand
+[0.122s] [ 92%] Built target tita_drl_obs374
+[2.652s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.652s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:1[m[K:
+[2.652s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[2.652s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:749:84:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[K((TitaWheelFootNode*)this)->TitaWheelFootNode::input_names_.std::vector<const char*>::operator[](0)[m[K’, which is of non-class type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<const char*>, const char*>::value_type[m[K’ {aka ‘[01m[Kconst char*[m[K’}
+[2.652s]   749 |                 RCLCPP_INFO(this->get_logger(), "Input names: %s", input_names_[0].[01;31m[Kc_str[m[K());
+[2.652s]       |                                                                                    [01;31m[K^~~~~[m[K
+[2.653s] [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:684:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.653s]   684 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+[2.653s]       |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[6.277s] gmake[2]: *** [CMakeFiles/tita_drl_obs192.dir/build.make:76: CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o] Error 1
+[6.277s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/tita_drl_obs192.dir/all] Error 2
+[6.278s] gmake: *** [Makefile:146: all] Error 2
+[6.279s] Invoked command in '/mnt/dev/tita_ws/src/build/TITA_DRL' returned '2': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/sim_bringup:/mnt/dev/tita_ws/src/install/webots_bridge:/mnt/dev/tita_ws/src/install/user_command:/mnt/dev/tita_ws/src/install/tita_system_interfaces:/mnt/dev/tita_ws/src/install/hw_broadcaster:/mnt/dev/tita_ws/src/install/hardware_bridge:/mnt/dev/tita_ws/src/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/src/install/tita_robot:/mnt/dev/tita_ws/src/install/tita_pointfoot_description:/mnt/dev/tita_ws/src/install/tita_perception_interfaces:/mnt/dev/tita_ws/src/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/src/install/gazebo_bridge:/mnt/dev/tita_ws/src/install/tita_description:/mnt/dev/tita_ws/src/install/tita_controller:/mnt/dev/tita_ws/src/install/joy_controller:/mnt/dev/tita_ws/src/install/teleop_command:/mnt/dev/tita_ws/src/install/robot_inertia_calculator:/mnt/dev/tita_ws/src/install/keyboard_controller:/mnt/dev/tita_ws/src/install/tita_bringup:/mnt/dev/tita_ws/src/install/template_ros2_controller:/mnt/dev/tita_ws/src/install/locomotion_msgs:/mnt/dev/tita_ws/src/install/custom_joint_position_controller:/mnt/dev/tita_ws/src/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/TITA_DRL -- -j16 -l16

@@ -1,0 +1,35 @@
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:168:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksttd[m[K’ does not name a type
+  168 |     [01;31m[Ksttd[m[K::vector<float> hisory_buffer_;
+      |     [01;31m[K^~~~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kbool TitaWheelFootNode::loadParameters()[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:419:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kthis[m[K’
+  419 |         [01;31m[Kthis[m[K->get_parameter("TITAWheelfootCfg.size.commands_size", commands_size_);
+      |         [01;31m[K^~~~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kbool TitaWheelFootNode::loadONNXModel(const string&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:503:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kss[m[K’ was not declared in this scope
+  503 |             [01;31m[Kss[m[K.str("");
+      |             [01;31m[K^~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:511:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kss[m[K’ was not declared in this scope
+  511 |         [01;31m[Kss[m[K.str("");
+      |         [01;31m[K^~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:685:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_obs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_obs_[m[K’?
+  685 |         history_buffer_.push_back([01;31m[Kcurrent_obs[m[K);
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+      |                                   [32m[Kcurrent_obs_[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:722:90:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{1, <expression error>}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’
+  722 |         std::vector<int64_t> current_shape = {1, static_cast<int64_t>(current_obs.size())[01;31m[K}[m[K;
+      |                                                                                          [01;31m[K^[m[K
+      |                                                                                          [01;31m[K|[m[K
+      |                                                                                          [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:756:16:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_values[m[K’ was not declared in this scope; did you mean ‘[01m[Koutput_names_[m[K’?
+  756 |         return [01;31m[Koutput_values[m[K;
+      |                [01;31m[K^~~~~~~~~~~~~[m[K
+      |                [32m[Koutput_names_[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:683:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  683 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tita_drl_obs320_slr.dir/build.make:76: CMakeFiles/tita_drl_obs320_slr.dir/src/tita_drl_obs320_slr.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tita_drl_obs320_slr.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

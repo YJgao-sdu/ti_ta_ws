@@ -1,0 +1,1 @@
+diagnostic_msgs/DiagnosticArray power_heart_beat

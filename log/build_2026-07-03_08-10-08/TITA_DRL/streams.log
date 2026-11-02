@@ -1,0 +1,21 @@
+[0.011s] Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL
+[0.047s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.151s] Traceback (most recent call last):
+[0.151s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.151s]     from ament_package.templates import get_environment_hook_template_path
+[0.151s] ModuleNotFoundError: No module named 'ament_package'
+[0.154s] CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.155s]   execute_process(/usr/bin/python3
+[0.155s]   /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.155s]   /mnt/dev/tita_ws/build/TITA_DRL/ament_cmake_package_templates/templates.cmake)
+[0.155s]   returned error code 1
+[0.155s] Call Stack (most recent call first):
+[0.155s]   /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.155s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.155s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.155s]   CMakeLists.txt:9 (find_package)
+[0.155s] 
+[0.155s] 
+[0.156s] -- Configuring incomplete, errors occurred!
+[0.156s] See also "/mnt/dev/tita_ws/build/TITA_DRL/CMakeFiles/CMakeOutput.log".
+[0.160s] Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '1': /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/TITA_DRL

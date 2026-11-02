@@ -1,0 +1,7 @@
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/PowerStateSetSrv.idl
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/PowerSelfTestSrv.idl
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/PowerHeartBeatSrv.idl
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/FanModeSetSrv.idl
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/HeadLightControlSrv.idl
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/TailLightControlSrv.idl
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_adapter/tita_system_interfaces:srv/LegLightControlSrv.idl

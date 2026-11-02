@@ -1,0 +1,60 @@
+[0.013s] Invoking command in '/mnt/dev/tita_ws/build/webots_bridge': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/webots_bridge
+[0.028s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.148s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.300s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.301s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.306s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.321s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.335s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.380s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.382s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.501s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.668s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.670s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.955s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.993s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.994s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.996s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge/include
+[0.996s] -- Configured cppcheck exclude dirs and/or files: 
+[0.996s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.996s] -- Configured cpplint exclude dirs and/or files: 
+[0.996s] -- Added test 'lint_cmake' to check CMake code style
+[0.997s] -- Added test 'xmllint' to check XML markup files
+[1.000s] -- Configuring done
+[1.053s] -- Generating done
+[1.060s] -- Build files have been written to: /mnt/dev/tita_ws/build/webots_bridge
+[1.071s] Invoked command in '/mnt/dev/tita_ws/build/webots_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/install/webots_bridge
+[1.072s] Invoking command in '/mnt/dev/tita_ws/build/webots_bridge': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/webots_bridge -- -j16 -l16
+[1.181s] [35m[1mConsolidate compiler generated dependencies of target webots_bridge[0m
+[1.181s] [100%] Built target webots_bridge
+[1.185s] Invoked command in '/mnt/dev/tita_ws/build/webots_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/webots_bridge -- -j16 -l16
+[1.186s] Invoking command in '/mnt/dev/tita_ws/build/webots_bridge': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/webots_bridge
+[1.194s] -- Install configuration: ""
+[1.194s] -- Execute custom install script
+[1.194s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/webots_bridge_plugin.xml
+[1.194s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/config/controllers.yaml
+[1.194s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/launch/webots_bridge.launch.py
+[1.194s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/worlds/tita.wbt
+[1.198s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/include/webots_bridge/webots_bridge_node.hpp
+[1.198s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/environment/library_path.sh
+[1.198s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/environment/library_path.dsv
+[1.198s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/lib/libwebots_bridge.so
+[1.198s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/ament_index/resource_index/package_run_dependencies/webots_bridge
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/ament_index/resource_index/parent_prefix_path/webots_bridge
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/environment/ament_prefix_path.sh
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/environment/ament_prefix_path.dsv
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/environment/path.sh
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/environment/path.dsv
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/local_setup.bash
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/local_setup.sh
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/local_setup.zsh
+[1.199s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/local_setup.dsv
+[1.199s] -- Symlinking: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/package.dsv
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/ament_index/resource_index/packages/webots_bridge
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/cmake/webots_bridgeConfig.cmake
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/cmake/webots_bridgeConfig-version.cmake
+[1.204s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/webots_bridge/share/webots_bridge/package.xml
+[1.207s] Invoked command in '/mnt/dev/tita_ws/build/webots_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_description:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/webots_bridge

@@ -1,0 +1,32 @@
+[ 20%] Built target joy_controller_parameters
+[35m[1mConsolidate compiler generated dependencies of target joy_controller_lib[0m
+[ 60%] Built target joy_controller_lib
+[35m[1mConsolidate compiler generated dependencies of target joy_controller_node[0m
+[100%] Built target joy_controller_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/include/joy_controller_parameters/joy_controller_parameters.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/launch/joy_controller.launch.py
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/include/joy_controller/joy_controller.hpp
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/environment/library_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/environment/library_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/lib/libjoy_controller_lib.so
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/lib/joy_controller/joy_controller_node
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/ament_index/resource_index/package_run_dependencies/joy_controller
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/ament_index/resource_index/parent_prefix_path/joy_controller
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/environment/ament_prefix_path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/environment/path.sh
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/environment/path.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/local_setup.bash
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/local_setup.sh
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/local_setup.zsh
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/package.dsv
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/ament_index/resource_index/packages/joy_controller
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/cmake/joy_controllerConfig-version.cmake
+-- Symlinking: /mnt/dev/tita_ws/install/joy_controller/share/joy_controller/package.xml

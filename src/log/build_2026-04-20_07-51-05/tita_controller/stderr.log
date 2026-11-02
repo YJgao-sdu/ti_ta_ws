@@ -1,0 +1,4 @@
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp:[m[K In member function ‘[01m[Kvoid FSMState_RL::_GetObs()[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp:188:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kprojected_forward[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  188 |      Vec3<double> [01;35m[Kprojected_forward[m[K = _G2B_RotMat * Vec3<double>(1.0, 0.0, 0.0);
+      |                   [01;35m[K^~~~~~~~~~~~~~~~~[m[K

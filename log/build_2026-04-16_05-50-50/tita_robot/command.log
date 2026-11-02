@@ -1,0 +1,4 @@
+Invoking command in '/mnt/dev/tita_ws/build/tita_robot': /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_robot -- -j16 -l16
+Invoked command in '/mnt/dev/tita_ws/build/tita_robot' returned '0': /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_robot -- -j16 -l16
+Invoking command in '/mnt/dev/tita_ws/build/tita_robot': /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_robot
+Invoked command in '/mnt/dev/tita_ws/build/tita_robot' returned '0': /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_robot

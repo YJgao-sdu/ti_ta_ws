@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/tita_system_interfaces/rosidl_generator_py/tita_system_interfaces/srv/_power_state_set_srv.py

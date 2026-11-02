@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target joint_position_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/joint_position_controller.dir/src/joint_position_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable joint_position_controller[0m
+[100%] Built target joint_position_controller

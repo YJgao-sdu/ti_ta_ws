@@ -1,0 +1,597 @@
+[0.148s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'TITA_DRL']
+[0.148s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['TITA_DRL'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f02c1b58040>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f02c1b236d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f02c1b236d0>>)
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.374s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.374s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/dev/tita_ws'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extensions ['ignore', 'ignore_ament_install']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'ignore_ament_install'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extensions ['colcon_pkg']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'colcon_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extensions ['colcon_meta']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'colcon_meta'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extensions ['ros']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'ros'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extensions ['cmake', 'python']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'cmake'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'python'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extensions ['python_setup_py']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL) by extension 'python_setup_py'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'colcon_pkg'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extensions ['colcon_meta']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'colcon_meta'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'ros'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extensions ['cmake', 'python']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'cmake'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'python'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extensions ['python_setup_py']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src) by extension 'python_setup_py'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'ignore_ament_install'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extensions ['colcon_pkg']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extensions ['colcon_meta']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'colcon_meta'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extensions ['ros']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'ros'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extensions ['cmake', 'python']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'cmake'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'python'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extensions ['python_setup_py']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2) by extension 'python_setup_py'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'ros'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extensions ['cmake', 'python']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'cmake'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'python'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extensions ['python_setup_py']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs) by extension 'python_setup_py'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extensions ['ignore', 'ignore_ament_install']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'ignore'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'ignore_ament_install'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extensions ['colcon_pkg']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'colcon_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extensions ['colcon_meta']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'ros'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extensions ['cmake', 'python']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'cmake'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'python'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extensions ['python_setup_py']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/docs/img) by extension 'python_setup_py'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup) by extension 'ros'
+[0.437s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup' with type 'ros.ament_cmake' and name 'tita_bringup'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'colcon_meta'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'ros'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extensions ['cmake', 'python']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'cmake'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'python'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extensions ['python_setup_py']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces) by extension 'python_setup_py'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extension 'ignore_ament_install'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extensions ['colcon_pkg']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extensions ['colcon_meta']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extension 'colcon_meta'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extensions ['ros']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces) by extension 'ros'
+[0.440s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces' with type 'ros.ament_cmake' and name 'tita_locomotion_interfaces'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces) by extension 'ros'
+[0.441s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces' with type 'ros.ament_cmake' and name 'tita_perception_interfaces'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extension 'colcon_pkg'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extensions ['colcon_meta']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extension 'colcon_meta'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extensions ['ros']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces) by extension 'ros'
+[0.443s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces' with type 'ros.ament_cmake' and name 'tita_system_interfaces'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command) by extension 'ros'
+[0.445s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command' with type 'ros.ament_cmake' and name 'user_command'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extension 'colcon_pkg'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extensions ['colcon_meta']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_DRL) by extension 'ros'
+[0.447s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_DRL' with type 'ros.ament_cmake' and name 'TITA_DRL'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Description) by extension 'ros'
+[0.456s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_Description' with type 'ros.ament_cmake' and name 'tita_description'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description) by extension 'ros'
+[0.462s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description' with type 'ros.ament_cmake' and name 'tita_pointfoot_description'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extensions ['colcon_pkg']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'colcon_pkg'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extensions ['colcon_meta']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'ros'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extensions ['cmake', 'python']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'cmake'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'python'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extensions ['python_setup_py']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim) by extension 'python_setup_py'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extension 'ignore'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extension 'ignore_ament_install'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extensions ['colcon_pkg']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extension 'colcon_pkg'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extensions ['colcon_meta']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller) by extension 'ros'
+[0.465s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller' with type 'ros.ament_cmake' and name 'custom_joint_position_controller'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'ignore'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'ignore_ament_install'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extensions ['colcon_pkg']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'colcon_pkg'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extensions ['colcon_meta']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'ros'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extensions ['cmake', 'python']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'cmake'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'python'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extensions ['python_setup_py']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices) by extension 'python_setup_py'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extension 'colcon_pkg'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extensions ['colcon_meta']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extension 'colcon_meta'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extensions ['ros']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can) by extension 'ros'
+[0.468s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can' with type 'ros.ament_cmake' and name 'commands_can'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extensions ['colcon_meta']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extension 'colcon_meta'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extensions ['ros']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge) by extension 'ros'
+[0.471s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge' with type 'ros.ament_cmake' and name 'hardware_bridge'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster) by extension 'ros'
+[0.473s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster' with type 'ros.ament_cmake' and name 'hw_broadcaster'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extension 'ignore'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extensions ['colcon_pkg']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extension 'colcon_pkg'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extensions ['colcon_meta']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extension 'colcon_meta'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extensions ['ros']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot) by extension 'ros'
+[0.474s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot' with type 'ros.catkin' and name 'tita_robot'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extension 'ignore'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extension 'ignore_ament_install'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extensions ['colcon_pkg']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extension 'colcon_pkg'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extensions ['colcon_meta']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extension 'colcon_meta'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extensions ['ros']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge' with type 'ros.ament_cmake' and name 'gazebo_bridge'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extension 'ignore'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extension 'ignore_ament_install'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extensions ['colcon_pkg']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extension 'colcon_pkg'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extensions ['colcon_meta']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller) by extension 'ros'
+[0.479s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller' with type 'ros.ament_cmake' and name 'joy_controller'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extensions ['colcon_pkg']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extension 'colcon_pkg'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller) by extension 'ros'
+[0.481s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller' with type 'ros.ament_cmake' and name 'keyboard_controller'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extension 'ignore_ament_install'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extensions ['colcon_pkg']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extension 'colcon_pkg'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extensions ['colcon_meta']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs) by extension 'ros'
+[0.483s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs' with type 'ros.ament_cmake' and name 'locomotion_msgs'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup) by extension 'ros'
+[0.485s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup' with type 'ros.ament_cmake' and name 'sim_bringup'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extension 'ignore'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller) by extension 'ros'
+[0.488s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller' with type 'ros.ament_cmake' and name 'template_ros2_controller'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extension 'ignore'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extension 'ignore_ament_install'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extensions ['colcon_pkg']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extension 'colcon_pkg'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extensions ['colcon_meta']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extension 'colcon_meta'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extensions ['ros']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge) by extension 'ros'
+[0.490s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge' with type 'ros.ament_cmake' and name 'webots_bridge'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extensions ['ignore', 'ignore_ament_install']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'ignore_ament_install'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extensions ['colcon_pkg']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'colcon_pkg'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extensions ['colcon_meta']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'colcon_meta'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extensions ['ros']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'ros'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extensions ['cmake', 'python']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'cmake'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'python'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extensions ['python_setup_py']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command) by extension 'python_setup_py'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extension 'ignore_ament_install'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extensions ['colcon_pkg']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extension 'colcon_pkg'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extensions ['colcon_meta']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extension 'colcon_meta'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extensions ['ros']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_command/teleop_command) by extension 'ros'
+[0.493s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/tita_command/teleop_command' with type 'ros.ament_cmake' and name 'teleop_command'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'ros'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extensions ['cmake', 'python']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'cmake'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'python'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extensions ['python_setup_py']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers) by extension 'python_setup_py'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator) by extension 'ros'
+[0.497s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator' with type 'ros.ament_cmake' and name 'robot_inertia_calculator'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller) by extension 'ros'
+[0.501s] DEBUG:colcon.colcon_core.package_identification:Package 'src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller' with type 'ros.ament_cmake' and name 'tita_controller'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'ignore_ament_install'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'colcon_meta'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'ros'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extensions ['cmake', 'python']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'cmake'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'python'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extensions ['python_setup_py']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1) by extension 'python_setup_py'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'ignore_ament_install'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extensions ['colcon_pkg']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'colcon_pkg'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extensions ['colcon_meta']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'ros'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extensions ['cmake', 'python']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'cmake'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'python'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extensions ['python_setup_py']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/include) by extension 'python_setup_py'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'ignore'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'ignore_ament_install'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extensions ['colcon_pkg']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'colcon_pkg'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extensions ['colcon_meta']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'colcon_meta'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extensions ['ros']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'ros'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extensions ['cmake', 'python']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'cmake'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'python'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extensions ['python_setup_py']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.15.1/lib) by extension 'python_setup_py'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'ignore_ament_install'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extensions ['colcon_pkg']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'colcon_pkg'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extensions ['colcon_meta']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'colcon_meta'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extensions ['ros']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'ros'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extensions ['cmake', 'python']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'cmake'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'python'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extensions ['python_setup_py']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1) by extension 'python_setup_py'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'ignore_ament_install'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extensions ['colcon_pkg']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'colcon_pkg'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extensions ['colcon_meta']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'colcon_meta'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extensions ['ros']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'ros'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extensions ['cmake', 'python']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'cmake'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'python'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extensions ['python_setup_py']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/include) by extension 'python_setup_py'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'ignore'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'ignore_ament_install'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extensions ['colcon_pkg']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'colcon_pkg'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extensions ['colcon_meta']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'colcon_meta'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extensions ['ros']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'ros'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extensions ['cmake', 'python']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'cmake'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'python'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extensions ['python_setup_py']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/onnxruntime-linux-x64-1.16.1/lib) by extension 'python_setup_py'
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.541s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'custom_joint_position_controller' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/custom_joint_position_controller'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'locomotion_msgs' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/locomotion_msgs'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'template_ros2_controller' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/template_ros2_controller'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_bringup' in 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_bringup'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_description' in 'src/TITA_GAZEBO_DRL/src/TITA_Description'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_locomotion_interfaces' in 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_locomotion_interfaces'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_perception_interfaces' in 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_perception_interfaces'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_pointfoot_description' in 'src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_robot' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/tita_robot'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_system_interfaces' in 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'commands_can' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/commands_can'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gazebo_bridge' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hardware_bridge' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hardware_bridge'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'hw_broadcaster' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/devices/hw_broadcaster'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'keyboard_controller' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/keyboard_controller'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_inertia_calculator' in 'src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teleop_command' in 'src/TITA_GAZEBO_DRL/src/tita_command/teleop_command'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tita_controller' in 'src/TITA_GAZEBO_DRL/src/tita_controllers/tita_controller'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'user_command' in 'src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/user_command'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'webots_bridge' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/webots_bridge'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'joy_controller' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/joy_controller'
+[0.542s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sim_bringup' in 'src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup'
+[0.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.543s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.547s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 336 installed packages in /opt/ros/humble
+[0.549s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'cmake_target' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'cmake_clean_cache' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'cmake_clean_first' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'cmake_force_configure' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'ament_cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'catkin_cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'TITA_DRL' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.612s] DEBUG:colcon.colcon_core.verb:Building package 'TITA_DRL' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/dev/tita_ws/build/TITA_DRL', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/dev/tita_ws/install/TITA_DRL', 'merge_install': False, 'path': '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL', 'symlink_install': False, 'test_result_base': None}
+[0.613s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.614s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL' with build type 'ament_cmake'
+[0.615s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL'
+[0.617s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.618s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/dev/tita_ws/build/TITA_DRL': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[11.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/dev/tita_ws/build/TITA_DRL' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/TITA_DRL -- -j16 -l16
+[11.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(TITA_DRL)
+[11.765s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL' for CMake module files
+[11.766s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL' for CMake config files
+[11.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('TITA_DRL', 'cmake_prefix_path')
+[11.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/hook/cmake_prefix_path.ps1'
+[11.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/hook/cmake_prefix_path.dsv'
+[11.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/hook/cmake_prefix_path.sh'
+[11.769s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL/lib'
+[11.770s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL/bin'
+[11.770s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL/lib/pkgconfig/TITA_DRL.pc'
+[11.770s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL/lib/python3.10/site-packages'
+[11.770s] Level 1:colcon.colcon_core.environment:checking '/mnt/dev/tita_ws/install/TITA_DRL/bin'
+[11.771s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.ps1'
+[11.772s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.dsv'
+[11.773s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.sh'
+[11.774s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.bash'
+[11.775s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/dev/tita_ws/install/TITA_DRL/share/TITA_DRL/package.zsh'
+[11.776s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/dev/tita_ws/install/TITA_DRL/share/colcon-core/packages/TITA_DRL)
+[11.786s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.787s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.787s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[11.787s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.796s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[11.797s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.797s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.797s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.800s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[11.800s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.801s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/tita_ws/install/local_setup.ps1'
+[11.804s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/dev/tita_ws/install/_local_setup_util_ps1.py'
+[11.807s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/tita_ws/install/setup.ps1'
+[11.809s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/tita_ws/install/local_setup.sh'
+[11.810s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/dev/tita_ws/install/_local_setup_util_sh.py'
+[11.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/tita_ws/install/setup.sh'
+[11.813s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/tita_ws/install/local_setup.bash'
+[11.814s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/tita_ws/install/setup.bash'
+[11.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/dev/tita_ws/install/local_setup.zsh'
+[11.817s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/dev/tita_ws/install/setup.zsh'

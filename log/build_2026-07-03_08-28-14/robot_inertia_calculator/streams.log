@@ -1,0 +1,33 @@
+[0.111s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/build/robot_inertia_calculator -- -j16 -l16
+[0.322s] [ 50%] Built target robot_inertia_calculator_lib
+[0.445s] [100%] Built target robot_inertia_calculator_node
+[0.475s] Invoked command in '/mnt/dev/tita_ws/build/robot_inertia_calculator' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/dev/tita_ws/build/robot_inertia_calculator -- -j16 -l16
+[0.481s] Invoking command in '/mnt/dev/tita_ws/build/robot_inertia_calculator': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/build/robot_inertia_calculator
+[0.499s] -- Install configuration: ""
+[0.501s] -- Execute custom install script
+[0.503s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/launch/robot_inertia_calculator.launch.py
+[0.504s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/config/param.yaml
+[0.505s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/include/robot_inertia_calculator/robot_inertia_calculator.hpp
+[0.505s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/library_path.sh
+[0.506s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/library_path.dsv
+[0.507s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/lib/librobot_inertia_calculator_lib.so
+[0.508s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/lib/robot_inertia_calculator/robot_inertia_calculator_node
+[0.509s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/package_run_dependencies/robot_inertia_calculator
+[0.509s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/parent_prefix_path/robot_inertia_calculator
+[0.510s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/ament_prefix_path.sh
+[0.511s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/ament_prefix_path.dsv
+[0.511s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/path.sh
+[0.511s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/environment/path.dsv
+[0.512s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.bash
+[0.513s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.sh
+[0.513s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.zsh
+[0.514s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/local_setup.dsv
+[0.514s] -- Symlinking: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/package.dsv
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/ament_index/resource_index/packages/robot_inertia_calculator
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/ament_cmake_export_libraries-extras.cmake
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/robot_inertia_calculatorConfig.cmake
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/cmake/robot_inertia_calculatorConfig-version.cmake
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/robot_inertia_calculator/share/robot_inertia_calculator/package.xml
+[0.548s] Invoked command in '/mnt/dev/tita_ws/build/robot_inertia_calculator' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/locomotion_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/dev/tita_ws/install/locomotion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/dev/tita_ws/install/locomotion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /mnt/dev/tita_ws/build/robot_inertia_calculator

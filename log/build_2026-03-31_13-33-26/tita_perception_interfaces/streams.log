@@ -1,0 +1,158 @@
+[0.031s] Invoking command in '/mnt/dev/tita_ws/build/tita_perception_interfaces': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_perception_interfaces -- -j16 -l16
+[0.095s] [ 10%] Built target tita_perception_interfaces__rosidl_generator_c
+[0.102s] [ 12%] Built target tita_perception_interfaces__cpp
+[0.117s] [ 12%] Built target ament_cmake_python_symlink_tita_perception_interfaces
+[0.138s] [ 23%] Built target tita_perception_interfaces__rosidl_typesupport_c
+[0.138s] [ 34%] Built target tita_perception_interfaces__rosidl_typesupport_fastrtps_c
+[0.138s] [ 44%] Built target tita_perception_interfaces__rosidl_typesupport_cpp
+[0.140s] [ 55%] Built target tita_perception_interfaces__rosidl_typesupport_introspection_cpp
+[0.140s] [ 65%] Built target tita_perception_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.146s] [ 76%] Built target tita_perception_interfaces__rosidl_typesupport_introspection_c
+[0.181s] [ 76%] Built target tita_perception_interfaces
+[0.202s] [ 78%] Built target tita_perception_interfaces__py
+[0.224s] [ 87%] Built target tita_perception_interfaces__rosidl_generator_py
+[0.253s] [ 91%] Built target tita_perception_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.253s] [ 95%] Built target tita_perception_interfaces__rosidl_typesupport_c__pyext
+[0.263s] [100%] Built target tita_perception_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.410s] running egg_info
+[0.411s] writing tita_perception_interfaces.egg-info/PKG-INFO
+[0.411s] writing dependency_links to tita_perception_interfaces.egg-info/dependency_links.txt
+[0.411s] writing top-level names to tita_perception_interfaces.egg-info/top_level.txt
+[0.414s] reading manifest file 'tita_perception_interfaces.egg-info/SOURCES.txt'
+[0.415s] writing manifest file 'tita_perception_interfaces.egg-info/SOURCES.txt'
+[0.445s] [100%] Built target ament_cmake_python_build_tita_perception_interfaces_egg
+[0.509s] Invoked command in '/mnt/dev/tita_ws/build/tita_perception_interfaces' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --build /mnt/dev/tita_ws/build/tita_perception_interfaces -- -j16 -l16
+[0.510s] Invoking command in '/mnt/dev/tita_ws/build/tita_perception_interfaces': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_perception_interfaces
+[0.536s] -- Install configuration: ""
+[0.536s] -- Execute custom install script
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/ament_index/resource_index/rosidl_interfaces/tita_perception_interfaces
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/bounding_box.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/bounding_box_array.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__functions.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__struct.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__type_support.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__functions.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__struct.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__type_support.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.536s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__functions.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__struct.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__type_support.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/object_detection.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/library_path.sh
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/library_path.dsv
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__rosidl_typesupport_fastrtps_c.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__rosidl_typesupport_fastrtps_c.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__rosidl_typesupport_introspection_c.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__rosidl_typesupport_introspection_c.h
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/bounding_box.hpp
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/bounding_box_array.hpp
+[0.537s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__builder.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__struct.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__traits.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__type_support.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__builder.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__struct.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__traits.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__type_support.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__builder.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__struct.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__traits.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__type_support.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/object_detection.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.538s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/msg/detail/bounding_box_array__rosidl_typesupport_introspection_cpp.hpp
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/include/tita_perception_interfaces/tita_perception_interfaces/srv/detail/object_detection__rosidl_typesupport_introspection_cpp.hpp
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/pythonpath.sh
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/pythonpath.dsv
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/__init__.py
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/_tita_perception_interfaces_s.ep.rosidl_typesupport_c.c
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/_tita_perception_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/_tita_perception_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/libtita_perception_interfaces__rosidl_generator_py.so
+[0.539s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/msg/__init__.py
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/msg/_bounding_box.py
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/msg/_bounding_box_array.py
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/msg/_bounding_box_array_s.c
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/msg/_bounding_box_s.c
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/srv/__init__.py
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/srv/_object_detection.py
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/srv/_object_detection_s.c
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/tita_perception_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/tita_perception_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/tita_perception_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/tita_perception_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/tita_perception_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/tita_perception_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/msg/BoundingBox.idl
+[0.540s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/msg/BoundingBoxArray.idl
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/srv/ObjectDetection.idl
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/msg/BoundingBox.msg
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/msg/BoundingBoxArray.msg
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/srv/ObjectDetection.srv
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/srv/ObjectDetection_Request.msg
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/srv/ObjectDetection_Response.msg
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/ament_index/resource_index/package_run_dependencies/tita_perception_interfaces
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/ament_index/resource_index/parent_prefix_path/tita_perception_interfaces
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/ament_prefix_path.sh
+[0.541s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/ament_prefix_path.dsv
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/path.sh
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/environment/path.dsv
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/local_setup.bash
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/local_setup.sh
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/local_setup.zsh
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/local_setup.dsv
+[0.542s] -- Symlinking: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/package.dsv
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/ament_index/resource_index/packages/tita_perception_interfaces
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.542s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.543s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.543s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.543s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfacesConfig.cmake
+[0.543s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfacesConfig-version.cmake
+[0.543s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/package.xml
+[0.543s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_generator_c.so
+[0.544s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.544s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_typesupport_introspection_c.so
+[0.544s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_typesupport_c.so
+[0.544s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.545s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.545s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_typesupport_cpp.so
+[0.564s] Listing '/mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces'...
+[0.564s] Listing '/mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/msg'...
+[0.565s] Listing '/mnt/dev/tita_ws/install/tita_perception_interfaces/local/lib/python3.10/dist-packages/tita_perception_interfaces/srv'...
+[0.613s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/lib/libtita_perception_interfaces__rosidl_generator_py.so
+[0.613s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_generator_cExport.cmake
+[0.613s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.614s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.614s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.614s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.614s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.615s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_cExport.cmake
+[0.615s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.616s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_generator_cppExport.cmake
+[0.616s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.616s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.616s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.616s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.616s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_cppExport.cmake
+[0.617s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/tita_perception_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.617s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_generator_pyExport.cmake
+[0.618s] -- Up-to-date: /mnt/dev/tita_ws/install/tita_perception_interfaces/share/tita_perception_interfaces/cmake/export_tita_perception_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.622s] Invoked command in '/mnt/dev/tita_ws/build/tita_perception_interfaces' returned '0': CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/install/sim_bringup:/mnt/dev/tita_ws/install/webots_bridge:/mnt/dev/tita_ws/install/user_command:/mnt/dev/tita_ws/install/tita_system_interfaces:/mnt/dev/tita_ws/install/hw_broadcaster:/mnt/dev/tita_ws/install/hardware_bridge:/mnt/dev/tita_ws/install/commands_can:/opt/ros/humble:/mnt/dev/tita_ws/install/tita_robot:/mnt/dev/tita_ws/install/tita_pointfoot_description:/mnt/dev/tita_ws/install/tita_perception_interfaces:/mnt/dev/tita_ws/install/tita_locomotion_interfaces:/mnt/dev/tita_ws/install/gazebo_bridge:/mnt/dev/tita_ws/install/tita_description:/mnt/dev/tita_ws/install/tita_controller:/mnt/dev/tita_ws/install/joy_controller:/mnt/dev/tita_ws/install/teleop_command:/mnt/dev/tita_ws/install/robot_inertia_calculator:/mnt/dev/tita_ws/install/keyboard_controller:/mnt/dev/tita_ws/install/tita_bringup:/mnt/dev/tita_ws/install/template_ros2_controller:/mnt/dev/tita_ws/install/locomotion_msgs:/mnt/dev/tita_ws/install/custom_joint_position_controller:/mnt/dev/tita_ws/install/TITA_DRL /usr/bin/cmake --install /mnt/dev/tita_ws/build/tita_perception_interfaces

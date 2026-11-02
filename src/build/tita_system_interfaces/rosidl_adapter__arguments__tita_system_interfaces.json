@@ -1,0 +1,12 @@
+{
+  "package_name": "tita_system_interfaces",
+  "non_idl_tuples": [
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/PowerStateSetSrv.srv",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/PowerSelfTestSrv.srv",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/PowerHeartBeatSrv.srv",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/FanModeSetSrv.srv",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/HeadLightControlSrv.srv",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/TailLightControlSrv.srv",
+    "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA-SDK-ROS2/tita_interfaces/tita_system_interfaces:srv/LegLightControlSrv.srv"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "locomotion_msgs__py",
+		"source" : "/mnt/dev/tita_ws/src/build/locomotion_msgs/locomotion_msgs__py"
+	}
+}

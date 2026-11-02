@@ -1,0 +1,65 @@
+[0.020s] Invoking command in '/mnt/dev/tita_ws/src/build/tita_pointfoot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/tita_pointfoot_description
+[0.108s] -- The C compiler identification is GNU 11.4.0
+[0.175s] -- The CXX compiler identification is GNU 11.4.0
+[0.183s] -- Detecting C compiler ABI info
+[0.248s] -- Detecting C compiler ABI info - done
+[0.255s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.255s] -- Detecting C compile features
+[0.255s] -- Detecting C compile features - done
+[0.258s] -- Detecting CXX compiler ABI info
+[0.317s] -- Detecting CXX compiler ABI info - done
+[0.324s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.324s] -- Detecting CXX compile features
+[0.324s] -- Detecting CXX compile features - done
+[0.325s] [0mCurrently in ROS2 compilation environment[0m
+[0.330s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.496s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.574s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.676s] -- Configuring done
+[0.678s] -- Generating done
+[0.679s] -- Build files have been written to: /mnt/dev/tita_ws/src/build/tita_pointfoot_description
+[0.682s] Invoked command in '/mnt/dev/tita_ws/src/build/tita_pointfoot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_Pointfoot_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/tita_pointfoot_description
+[0.684s] Invoking command in '/mnt/dev/tita_ws/src/build/tita_pointfoot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/tita_pointfoot_description -- -j16 -l16
+[0.708s] Invoked command in '/mnt/dev/tita_ws/src/build/tita_pointfoot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/tita_pointfoot_description -- -j16 -l16
+[0.710s] Invoking command in '/mnt/dev/tita_ws/src/build/tita_pointfoot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/tita_pointfoot_description
+[0.714s] -- Install configuration: ""
+[0.714s] -- Execute custom install script
+[0.715s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/launch/tita_display.launch.py
+[0.720s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/base_link.STL
+[0.726s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_1.STL
+[0.731s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_2.STL
+[0.736s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_3.STL
+[0.743s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/left_leg_4.STL
+[0.750s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_1.STL
+[0.757s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_2.STL
+[0.762s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_3.STL
+[0.767s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/meshes/right_leg_4.STL
+[0.774s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/urdf/robot.urdf
+[0.780s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/urdf/robot_with_tower.urdf
+[0.787s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/description.xacro
+[0.794s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/description_wheel.xacro
+[0.800s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/display.xacro
+[0.808s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/materials.xacro
+[0.814s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/robot.xacro
+[0.821s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/robot_wheel.xacro
+[0.828s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tita/xacro/ros2control.xacro
+[0.834s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tower/meshes/base_link.STL
+[0.841s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tower/meshes/radar_link.STL
+[0.849s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/tower/xacro/tower.urdf.xacro
+[0.855s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/rviz/tita.rviz
+[0.862s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/ament_index/resource_index/package_run_dependencies/tita_pointfoot_description
+[0.869s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/ament_index/resource_index/parent_prefix_path/tita_pointfoot_description
+[0.875s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/ament_prefix_path.sh
+[0.882s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/ament_prefix_path.dsv
+[0.888s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/path.sh
+[0.893s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/environment/path.dsv
+[0.900s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.bash
+[0.908s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.sh
+[0.915s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.zsh
+[0.923s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/local_setup.dsv
+[0.932s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/package.dsv
+[0.940s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/ament_index/resource_index/packages/tita_pointfoot_description
+[0.948s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/cmake/tita_pointfoot_descriptionConfig.cmake
+[0.957s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/cmake/tita_pointfoot_descriptionConfig-version.cmake
+[0.964s] -- Symlinking: /mnt/dev/tita_ws/src/install/tita_pointfoot_description/share/tita_pointfoot_description/package.xml
+[0.996s] Invoked command in '/mnt/dev/tita_ws/src/build/tita_pointfoot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/tita_pointfoot_description

@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/robot_inertia_calculator/ament_cmake_core/robot_inertia_calculatorConfig-version.cmake

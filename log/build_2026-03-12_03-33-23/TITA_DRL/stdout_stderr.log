@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs320_slr[0m
+[ 25%] Built target text
+[ 50%] Built target tita_drl_obs57
+[ 75%] Built target tita_drl_obs32
+[ 87%] [32mBuilding CXX object CMakeFiles/tita_drl_obs320_slr.dir/src/tita_drl_obs320_slr.cpp.o[0m
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:684:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  684 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable tita_drl_obs320_slr[0m
+/usr/bin/ld: CMakeFiles/tita_drl_obs320_slr.dir/src/tita_drl_obs320_slr.cpp.o: in function `__static_initialization_and_destruction_0(int, int)':
+tita_drl_obs320_slr.cpp:(.text+0x2f3): undefined reference to `OrtGetApiBase'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/tita_drl_obs320_slr.dir/build.make:208: tita_drl_obs320_slr] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tita_drl_obs320_slr.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

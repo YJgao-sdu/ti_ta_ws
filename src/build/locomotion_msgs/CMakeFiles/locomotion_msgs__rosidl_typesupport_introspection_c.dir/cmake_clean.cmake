@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/plan_commands__type_support.c.o"
+  "CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/plan_commands__type_support.c.o.d"
+  "CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/rigid_body__type_support.c.o"
+  "CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/rigid_body__type_support.c.o.d"
+  "CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/robot_states__type_support.c.o"
+  "CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/robot_states__type_support.c.o.d"
+  "liblocomotion_msgs__rosidl_typesupport_introspection_c.pdb"
+  "liblocomotion_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/plan_commands__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/plan_commands__type_support.c"
+  "rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/rigid_body__type_support.c"
+  "rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/robot_states__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/locomotion_msgs/msg/detail/robot_states__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/locomotion_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

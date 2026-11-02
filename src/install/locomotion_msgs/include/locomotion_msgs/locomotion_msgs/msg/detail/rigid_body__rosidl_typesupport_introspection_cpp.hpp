@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/src/build/locomotion_msgs/rosidl_typesupport_introspection_cpp/locomotion_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp

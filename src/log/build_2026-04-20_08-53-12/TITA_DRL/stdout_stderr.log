@@ -1,0 +1,70 @@
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs192[0m
+[ 14%] Built target tita_drl_obs57
+[ 28%] Built target tita_drl_obs320_slr
+[ 35%] [32mBuilding CXX object CMakeFiles/tita_drl_obs192.dir/src/tita_drl_obs192.cpp.o[0m
+[ 50%] Built target tita_drl_obs32
+[ 64%] Built target text
+[ 78%] Built target tita_drl_obs_192-stand
+[ 92%] Built target tita_drl_obs374
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs192.cpp:684:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  684 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable tita_drl_obs192[0m
+[100%] Built target tita_drl_obs192
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs57
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs32
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs320_slr
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs192
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs_192-stand
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/tita_drl_obs374
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/lib/TITA_DRL/text
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/launch/tita_drl.launch.py
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/initial_pose.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_192.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_32.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_320.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_374.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_57.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/params_p.yaml
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.06-16.26.51.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-10000.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.09-10.12.51-16000.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy03.10-21.59.34-slr.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.01-20.44.22.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.03-11.12.35.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.09-17.28.51.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.10-15.37.25-2400.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-09.51.53.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07-9200.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-15.17.07.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.13-21.48.14.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.14-17.27.50.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy04.15.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy10.15-09.55.57.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy12.25-16.55.26.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-16.16.04-12000.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-10000.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy3.03-17.45.52-12000.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_1.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_57_2.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/config/policy/policy_p.onnx
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/ament_index/resource_index/package_run_dependencies/TITA_DRL
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/ament_index/resource_index/parent_prefix_path/TITA_DRL
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/path.sh
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/environment/path.dsv
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.bash
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.sh
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.zsh
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/local_setup.dsv
+-- Symlinking: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/package.dsv
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/ament_index/resource_index/packages/TITA_DRL
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig.cmake
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/cmake/TITA_DRLConfig-version.cmake
+-- Up-to-date symlink: /mnt/dev/tita_ws/src/install/TITA_DRL/share/TITA_DRL/package.xml

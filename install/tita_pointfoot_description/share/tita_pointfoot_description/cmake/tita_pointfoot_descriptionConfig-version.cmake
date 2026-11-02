@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_pointfoot_description/ament_cmake_core/tita_pointfoot_descriptionConfig-version.cmake

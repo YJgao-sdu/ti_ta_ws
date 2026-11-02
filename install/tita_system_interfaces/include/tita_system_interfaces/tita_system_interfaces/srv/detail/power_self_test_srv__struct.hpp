@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_system_interfaces/rosidl_generator_cpp/tita_system_interfaces/srv/detail/power_self_test_srv__struct.hpp

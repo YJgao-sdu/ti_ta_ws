@@ -1,0 +1,26 @@
+[0.028s] Invoking command in '/mnt/dev/tita_ws/build/custom_joint_position_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/custom_joint_position_controller -- -j16 -l16
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target joint_position_controller[0m
+[0.105s] [ 50%] [32mBuilding CXX object CMakeFiles/joint_position_controller.dir/src/joint_position_controller.cpp.o[0m
+[8.562s] [100%] [32m[1mLinking CXX executable joint_position_controller[0m
+[8.987s] [100%] Built target joint_position_controller
+[8.993s] Invoked command in '/mnt/dev/tita_ws/build/custom_joint_position_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/build/custom_joint_position_controller -- -j16 -l16
+[8.994s] Invoking command in '/mnt/dev/tita_ws/build/custom_joint_position_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/custom_joint_position_controller
+[8.998s] -- Install configuration: ""
+[8.998s] -- Execute custom install script
+[8.999s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/lib/custom_joint_position_controller/joint_position_controller
+[9.000s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/ament_index/resource_index/package_run_dependencies/custom_joint_position_controller
+[9.000s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/ament_index/resource_index/parent_prefix_path/custom_joint_position_controller
+[9.001s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/environment/ament_prefix_path.sh
+[9.001s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/environment/ament_prefix_path.dsv
+[9.001s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/environment/path.sh
+[9.002s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/environment/path.dsv
+[9.002s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/local_setup.bash
+[9.002s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/local_setup.sh
+[9.002s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/local_setup.zsh
+[9.002s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/local_setup.dsv
+[9.003s] -- Symlinking: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/package.dsv
+[9.008s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/ament_index/resource_index/packages/custom_joint_position_controller
+[9.008s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/cmake/custom_joint_position_controllerConfig.cmake
+[9.008s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/cmake/custom_joint_position_controllerConfig-version.cmake
+[9.009s] -- Up-to-date symlink: /mnt/dev/tita_ws/install/custom_joint_position_controller/share/custom_joint_position_controller/package.xml
+[9.010s] Invoked command in '/mnt/dev/tita_ws/build/custom_joint_position_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/build/custom_joint_position_controller

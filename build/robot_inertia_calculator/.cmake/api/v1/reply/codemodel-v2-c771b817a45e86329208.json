@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ce34b82188355a1bd1f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robot_inertia_calculator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_inertia_calculator_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_inertia_calculator_lib-171a2ba0eed8f3d9502a.json",
+					"name" : "robot_inertia_calculator_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_inertia_calculator_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_inertia_calculator_node-7e4c532fb5401fbb7e83.json",
+					"name" : "robot_inertia_calculator_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_inertia_calculator_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_inertia_calculator_uninstall-00559274635d01393e40.json",
+					"name" : "robot_inertia_calculator_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3ffde3e7ece6b24d4a47.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/dev/tita_ws/build/robot_inertia_calculator",
+		"source" : "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/tita_controllers/robot_inertia_calculator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,10 @@
+setup.py
+locomotion_msgs/__init__.py
+locomotion_msgs.egg-info/PKG-INFO
+locomotion_msgs.egg-info/SOURCES.txt
+locomotion_msgs.egg-info/dependency_links.txt
+locomotion_msgs.egg-info/top_level.txt
+locomotion_msgs/msg/__init__.py
+locomotion_msgs/msg/_plan_commands.py
+locomotion_msgs/msg/_rigid_body.py
+locomotion_msgs/msg/_robot_states.py

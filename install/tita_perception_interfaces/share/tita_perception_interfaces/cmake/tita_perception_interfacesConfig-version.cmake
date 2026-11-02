@@ -1,0 +1,1 @@
+/mnt/dev/tita_ws/build/tita_perception_interfaces/ament_cmake_core/tita_perception_interfacesConfig-version.cmake

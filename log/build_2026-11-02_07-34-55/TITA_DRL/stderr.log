@@ -1,0 +1,4 @@
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs170.cpp:[m[K In member function ‘[01m[Kvoid TitaWheelFootNode::controlLoop()[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs170.cpp:614:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  614 |             if ([01;35m[K26 + i >= observations_size_[m[K)
+      |                 [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K

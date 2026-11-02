@@ -1,0 +1,10 @@
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/uninstall.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/hardware_bridge_uninstall.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/hardware_bridge.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/test.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/edit_cache.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/rebuild_cache.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/list_install_components.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/install.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/install/local.dir
+/mnt/dev/tita_ws/build/hardware_bridge/CMakeFiles/install/strip.dir

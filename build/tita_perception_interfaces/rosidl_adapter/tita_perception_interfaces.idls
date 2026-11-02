@@ -1,0 +1,3 @@
+/mnt/dev/tita_ws/build/tita_perception_interfaces/rosidl_adapter/tita_perception_interfaces:msg/BoundingBox.idl
+/mnt/dev/tita_ws/build/tita_perception_interfaces/rosidl_adapter/tita_perception_interfaces:msg/BoundingBoxArray.idl
+/mnt/dev/tita_ws/build/tita_perception_interfaces/rosidl_adapter/tita_perception_interfaces:srv/ObjectDetection.idl

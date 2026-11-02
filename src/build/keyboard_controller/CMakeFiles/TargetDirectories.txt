@@ -1,0 +1,10 @@
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/uninstall.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/keyboard_controller_uninstall.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/keyboard_controller_node.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/test.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/edit_cache.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/rebuild_cache.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/list_install_components.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/install.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/install/local.dir
+/mnt/dev/tita_ws/src/build/keyboard_controller/CMakeFiles/install/strip.dir

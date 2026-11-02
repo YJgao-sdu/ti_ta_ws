@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/mnt/dev/tita_ws/src/build/custom_joint_position_controller/joint_position_controller" "TARGETS" "joint_position_controller" "DESTINATION" "lib/custom_joint_position_controller")

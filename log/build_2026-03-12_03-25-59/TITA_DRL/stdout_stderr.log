@@ -1,0 +1,68 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+WARNING: Package name "TITA_DRL" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/dev/tita_ws/build/TITA_DRL
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs32[0m
+[35m[1mConsolidate compiler generated dependencies of target tita_drl_obs57[0m
+[35m[1mConsolidate compiler generated dependencies of target text[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/tita_drl_obs320_slr.dir/src/tita_drl_obs320_slr.cpp.o[0m
+[ 37%] Built target text
+[ 62%] Built target tita_drl_obs32
+[ 87%] Built target tita_drl_obs57
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:168:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksttd[m[K’ does not name a type
+  168 |     [01;31m[Ksttd[m[K::vector<float> hisory_buffer_;
+      |     [01;31m[K^~~~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kbool TitaWheelFootNode::loadParameters()[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:419:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kthis[m[K’
+  419 |         [01;31m[Kthis[m[K->get_parameter("TITAWheelfootCfg.size.commands_size", commands_size_);
+      |         [01;31m[K^~~~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kbool TitaWheelFootNode::loadONNXModel(const string&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:503:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kss[m[K’ was not declared in this scope
+  503 |             [01;31m[Kss[m[K.str("");
+      |             [01;31m[K^~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:511:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kss[m[K’ was not declared in this scope
+  511 |         [01;31m[Kss[m[K.str("");
+      |         [01;31m[K^~[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TitaWheelFootNode::runInference(const std::vector<float>&)[m[K’:
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:685:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_obs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_obs_[m[K’?
+  685 |         history_buffer_.push_back([01;31m[Kcurrent_obs[m[K);
+      |                                   [01;31m[K^~~~~~~~~~~[m[K
+      |                                   [32m[Kcurrent_obs_[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:722:90:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{1, <expression error>}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<long int, std::allocator<long int> >[m[K’
+  722 |         std::vector<int64_t> current_shape = {1, static_cast<int64_t>(current_obs.size())[01;31m[K}[m[K;
+      |                                                                                          [01;31m[K^[m[K
+      |                                                                                          [01;31m[K|[m[K
+      |                                                                                          [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:756:16:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_values[m[K’ was not declared in this scope; did you mean ‘[01m[Koutput_names_[m[K’?
+  756 |         return [01;31m[Koutput_values[m[K;
+      |                [01;31m[K^~~~~~~~~~~~~[m[K
+      |                [32m[Koutput_names_[m[K
+[01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/src/tita_drl_obs320_slr.cpp:683:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_obs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  683 |     std::vector<float> runInference([01;35m[Kconst std::vector<float> &input_obs[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tita_drl_obs320_slr.dir/build.make:76: CMakeFiles/tita_drl_obs320_slr.dir/src/tita_drl_obs320_slr.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/tita_drl_obs320_slr.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

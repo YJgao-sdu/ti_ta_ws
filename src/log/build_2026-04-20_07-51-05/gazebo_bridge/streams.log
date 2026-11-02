@@ -1,0 +1,156 @@
+[0.016s] Invoking command in '/mnt/dev/tita_ws/src/build/gazebo_bridge': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/gazebo_bridge
+[0.087s] -- The C compiler identification is GNU 11.4.0
+[0.159s] -- The CXX compiler identification is GNU 11.4.0
+[0.164s] -- Detecting C compiler ABI info
+[0.246s] -- Detecting C compiler ABI info - done
+[0.247s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.247s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.249s] -- Detecting CXX compiler ABI info
+[0.335s] -- Detecting CXX compiler ABI info - done
+[0.342s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.343s] -- Detecting CXX compile features
+[0.343s] -- Detecting CXX compile features - done
+[0.346s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.491s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.572s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.690s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.696s] -- Checking for module 'bullet>=2.82'
+[0.709s] --   Found bullet, version 3.05
+[0.952s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.997s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.032s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.497s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.566s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.583s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.594s] -- Searching for dependencies of ignition-math6
+[1.601s] -- Looking for OGRE...
+[1.602s] -- OGRE_PREFIX_WATCH changed.
+[1.614s] -- Checking for module 'OGRE'
+[1.711s] --   Found OGRE, version 1.9.0
+[2.017s] -- Found Ogre Ghadamon (1.9.0)
+[2.030s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.054s] -- Looking for OGRE_Paging...
+[2.086s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.087s] -- Looking for OGRE_Terrain...
+[2.103s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.104s] -- Looking for OGRE_Property...
+[2.124s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.125s] -- Looking for OGRE_RTShaderSystem...
+[2.143s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.143s] -- Looking for OGRE_Volume...
+[2.164s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.165s] -- Looking for OGRE_Overlay...
+[2.191s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.556s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.564s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.565s] -- Searching for dependencies of ignition-transport8
+[2.590s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.610s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.634s] -- Checking for module 'libzmq >= 4'
+[2.701s] --   Found libzmq , version 4.3.4
+[2.950s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.964s] -- Checking for module 'uuid'
+[3.063s] --   Found uuid, version 2.37.2
+[3.280s] -- Found UUID: TRUE  
+[3.284s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.285s] -- Searching for dependencies of ignition-msgs5
+[3.359s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.382s] -- Checking for module 'tinyxml2'
+[3.485s] --   Found tinyxml2, version 9.0.0
+[3.831s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.835s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.836s] -- Searching for dependencies of ignition-common3
+[3.836s] -- Looking for dlfcn.h - found
+[3.838s] -- Looking for libdl - found
+[3.840s] -- Found DL: TRUE  
+[3.877s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.878s] -- Searching for <ignition-common3> component [graphics]
+[3.889s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.890s] -- Searching for dependencies of ignition-common3-graphics
+[3.890s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.904s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.908s] -- Searching for dependencies of ignition-fuel_tools4
+[4.442s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[4.462s] -- Checking for module 'jsoncpp'
+[4.612s] --   Found jsoncpp, version 1.9.5
+[4.850s] -- Found JSONCPP: TRUE  
+[4.906s] -- Checking for module 'libzip'
+[4.994s] --   Found libzip, version 1.7.3
+[5.330s] -- Found ZIP: TRUE  
+[5.331s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.331s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.331s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.331s] -- Gazebo version: 11.10
+[5.331s] -- Checking for module 'tbb'
+[5.406s] --   Found tbb, version 2021.5.0
+[5.661s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.668s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.680s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.699s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.741s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.280s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.320s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.416s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.699s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.702s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.728s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.747s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.764s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.778s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.799s] -- Found Threads: TRUE  
+[7.097s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.157s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.157s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.157s] -- Configured cppcheck include dirs: /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/include
+[7.157s] -- Configured cppcheck exclude dirs and/or files: 
+[7.157s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.158s] -- Configured cpplint exclude dirs and/or files: 
+[7.158s] -- Added test 'lint_cmake' to check CMake code style
+[7.158s] -- Added test 'xmllint' to check XML markup files
+[7.162s] -- Configuring done
+[7.244s] -- Generating done
+[7.253s] -- Build files have been written to: /mnt/dev/tita_ws/src/build/gazebo_bridge
+[7.300s] Invoked command in '/mnt/dev/tita_ws/src/build/gazebo_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:/opt/ros/humble /usr/bin/cmake /mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/dev/tita_ws/src/install/gazebo_bridge
+[7.315s] Invoking command in '/mnt/dev/tita_ws/src/build/gazebo_bridge': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/gazebo_bridge -- -j16 -l16
+[13.475s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_bridge.dir/src/gazebo_bridge.cpp.o[0m
+[13.532s] In file included from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/include/gazebo_bridge/gazebo_bridge.h:17[m[K,
+[13.533s]                  from [01m[K/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/gazebo_bridge/src/gazebo_bridge.cpp:15[m[K:
+[13.533s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+[13.533s]    22 | header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+[13.533s]       |                                                                                            [01;36m[K^[m[K
+[13.533s] 
+[32.015s] [100%] [32m[1mLinking CXX shared library libgazebo_bridge.so[0m
+[32.338s] [100%] Built target gazebo_bridge
+[32.366s] Invoked command in '/mnt/dev/tita_ws/src/build/gazebo_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:/opt/ros/humble /usr/bin/cmake --build /mnt/dev/tita_ws/src/build/gazebo_bridge -- -j16 -l16
+[32.369s] Invoking command in '/mnt/dev/tita_ws/src/build/gazebo_bridge': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/gazebo_bridge
+[32.373s] -- Install configuration: ""
+[32.374s] -- Execute custom install script
+[32.374s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge//gazebo_bridge_plugin.xml
+[32.380s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/config/controllers.yaml
+[32.385s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/launch/gazebo_bridge.launch.py
+[32.391s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/worlds/empty_world.world
+[32.396s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/include/gazebo_bridge/gazebo_bridge.h
+[32.401s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/environment/library_path.sh
+[32.407s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/environment/library_path.dsv
+[32.412s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/lib/libgazebo_bridge.so
+[32.417s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/ament_index/resource_index/package_run_dependencies/gazebo_bridge
+[32.423s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/ament_index/resource_index/parent_prefix_path/gazebo_bridge
+[32.428s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/environment/ament_prefix_path.sh
+[32.433s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/environment/ament_prefix_path.dsv
+[32.439s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/environment/path.sh
+[32.444s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/environment/path.dsv
+[32.449s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/local_setup.bash
+[32.455s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/local_setup.sh
+[32.459s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/local_setup.zsh
+[32.464s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/local_setup.dsv
+[32.470s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/package.dsv
+[32.475s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/ament_index/resource_index/packages/gazebo_bridge
+[32.481s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/ament_index/resource_index/gazebo_ros2_control__pluginlib__plugin/gazebo_bridge
+[32.486s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.492s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.497s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[32.502s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/cmake/gazebo_bridgeConfig.cmake
+[32.508s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/cmake/gazebo_bridgeConfig-version.cmake
+[32.513s] -- Symlinking: /mnt/dev/tita_ws/src/install/gazebo_bridge/share/gazebo_bridge/package.xml
+[32.521s] Invoked command in '/mnt/dev/tita_ws/src/build/gazebo_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/dev/tita_ws/src/install/tita_description:/opt/ros/humble /usr/bin/cmake --install /mnt/dev/tita_ws/src/build/gazebo_bridge
