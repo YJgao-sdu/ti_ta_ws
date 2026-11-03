@@ -1,0 +1,973 @@
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/float32_multi_array.hpp>
+#include <std_msgs/msg/float64_multi_array.hpp>
+#include <control_msgs/msg/multi_dof_command.hpp>
+#include <sensor_msgs/msg/imu.hpp>
+#include <sensor_msgs/msg/joint_state.hpp>
+#include <sensor_msgs/msg/joy.hpp>
+#include <geometry_msgs/msg/twist.hpp>
+#include <onnxruntime_cxx_api.h>
+#include <Eigen/Dense>
+#include <vector>
+#include <cmath>
+#include <string>
+#include <deque>
+#include <mutex>
+#include <numeric>
+#include <sstream>
+#include <fstream>
+#include <iomanip>
+#include <ctime>
+#include <chrono>
+
+using std::placeholders::_1;
+
+// 定义 TitaWheelFootNode 类
+// 学生策略部署节点 (student_policy.onnx, obs170)
+// 观测 obs (34维) = [lin_vel(3,恒0), ang_vel(3), gravity(3), commands(3),
+//                    joint_pos偏差(6), joint_vel(8), last_actions(8)]
+// 学生编码器输入 student_obs (170维) = 5帧历史观测堆叠, 每帧重复两次(训练代码双追加行为)
+// ONNX 输入: student_obs(1,170) + obs(1,34), 输出 actions(1,8)
+class TitaWheelFootNode : public rclcpp::Node
+{
+public:
+    TitaWheelFootNode()
+        : Node("tita_wheelfoot_node"),
+          env_(ORT_LOGGING_LEVEL_WARNING, "TITAStudentONNX")
+    {
+        // 初始化订阅者
+        imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
+            "/tita/imu_sensor_broadcaster/imu", 10,
+            std::bind(&TitaWheelFootNode::imuCallback, this, _1)); // 3037088
+
+        rclcpp::QoS qos(10);
+        qos.best_effort();
+        joint_state_sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
+            "/tita/joint_states", qos,
+            std::bind(&TitaWheelFootNode::jointStateCallback, this, _1)); // 3037088
+
+        // cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
+        //     "/cmd_vel", 10,
+        //     std::bind(&TitaWheelFootNode::cmdVelCallback, this, _1));
+        cmd_vel_sub_ = this->create_subscription<sensor_msgs::msg::Joy>(
+            "/tita3037088/command/teleop/command", qos,
+            std::bind(&TitaWheelFootNode::joycmdCallback, this, _1)); 
+
+        // 初始化发布者
+    	using CommandMsg = control_msgs::msg::MultiDOFCommand;
+        pos_action_pub_ = this->create_publisher<CommandMsg>(
+            "/tita/pid_controller/reference", 10);
+        vel_action_pub_ = this->create_publisher<CommandMsg>(
+            "/tita/wheel_pid_controller/reference", 10);
+
+        // 加载参数
+        if (!loadParameters())
+        {
+            RCLCPP_ERROR(this->get_logger(), "Failed to load parameters.");
+            rclcpp::shutdown();
+        }
+
+        // 加载 ONNX 模型
+        RCLCPP_INFO(this->get_logger(), "Loading ONNX model from: %s", model_path.c_str());
+        if (!loadONNXModel(model_path))
+        {
+            RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model.");
+            rclcpp::shutdown();
+        }
+
+        // 开启动作记录 (record.enable 为 true 时)
+        openRecording();
+
+	// 创建定时器，控制循环以50Hz频率运行 (仿真步长0.005s × decimation 4)
+        control_timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(20),
+            std::bind(&TitaWheelFootNode::controlLoop, this));
+
+        // 初始化默认关节角度
+        default_joint_angles_.resize(8);
+
+        // 初始化观测向量
+        observation_.resize(observations_size_, 0.0f);
+        current_obs_.resize(observations_size_, 0.0f);
+
+        // 初始化上一次动作
+        last_actions_.resize(actions_size_, 0.0f);
+
+        // 初始化当前命令
+        current_commands_.resize(commands_size_, 0.0f);
+
+        // 初始化学生编码器历史缓冲: 5个槽位初始化为全零 (训练代码启动行为, 复位不清空)
+        for (size_t i = 0; i < static_cast<size_t>(history_len_); ++i)
+        {
+            history_buffer_.push_back(std::vector<float>(observations_size_, 0.0f));
+        }
+
+        // 复位后"未驱动延时": 前30个控制周期 (0.6s) obs置零、动作置零
+        delay_steps_ = 30;
+
+        RCLCPP_INFO(this->get_logger(), "TitaWheelFootNode (student obs170) initialized successfully.");
+    }
+
+    ~TitaWheelFootNode()
+    {
+        if (record_stream_.is_open())
+        {
+            record_stream_.flush();
+            record_stream_.close();
+            RCLCPP_INFO(this->get_logger(), "动作记录已保存: 共 %zu 行.", record_rows_);
+        }
+        if (policy_session_)
+        {
+            delete policy_session_;
+            policy_session_ = nullptr;
+        }
+    }
+
+private:
+    // 订阅者和发布者
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
+    // rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr cmd_vel_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr cmd_vel_sub_;
+
+    rclcpp::Publisher<control_msgs::msg::MultiDOFCommand>::SharedPtr pos_action_pub_;
+    rclcpp::Publisher<control_msgs::msg::MultiDOFCommand>::SharedPtr vel_action_pub_;
+
+    // 定时器
+    rclcpp::TimerBase::SharedPtr control_timer_;
+
+    // 动作记录 (CSV): 每个控制周期追加一行 "时间,动作0..7", 供离线绘图
+    bool record_enabled_ = false;
+    std::string record_file_;
+    std::ofstream record_stream_;
+    std::chrono::steady_clock::time_point record_t0_;
+    bool record_t0_set_ = false;
+    size_t record_rows_ = 0;
+
+    // 最新的消息存储
+    sensor_msgs::msg::Imu::SharedPtr latest_imu_msg_;
+    sensor_msgs::msg::JointState::SharedPtr latest_joint_state_msg_;
+
+    // 互斥锁
+    std::mutex imu_mutex_;
+    std::mutex joint_state_mutex_;
+
+    // ONNX模型相关
+    Ort::Env env_;
+    Ort::Session *policy_session_ = nullptr;
+    Ort::SessionOptions session_options_;
+    std::vector<const char *> input_names_;
+    std::vector<const char *> output_names_;
+    std::string input_name_storage_;
+    std::string output_name_storage_;
+    std::vector<int64_t> input_shape_;
+    std::vector<int64_t> output_shape_;
+    std::vector<std::string> input_names_storage_;  // 存储多个输入名称
+    std::vector<std::vector<int64_t>> input_shapes_; // 存储多个输入形状
+    std::deque<std::vector<float>> history_buffer_;  // 学生编码器历史观测缓冲 (旧->新)
+    // 腿部位置控制关节在8关节序列中的索引 (不含轮子); 对应动作索引 {0,1,2,4,5,6}
+    const std::vector<size_t> pos_joint_indices = {0, 1, 2, 4, 5, 6};
+    const std::vector<size_t> wheel_joint_indices = {3, 7};  // 左右轮 (动作索引 = 关节索引)
+
+    // 参数
+    std::vector<std::string> joint_names_ = {
+            "joint_left_leg_1",
+            "joint_left_leg_2",
+            "joint_left_leg_3",
+	        "joint_left_leg_4",
+            "joint_right_leg_1",
+            "joint_right_leg_2",
+            "joint_right_leg_3",
+            "joint_right_leg_4"};
+    std::vector<float> default_joint_angles_;
+    float obs_scales_angvel_, obs_scales_dofpos_, obs_scales_dofvel_, obs_scales_gravity_;
+    float scaled_commands_x_, scaled_commands_y_, scaled_commands_z_;
+    float stiffness_, damping_, action_scale_pos_, action_scale_vel_, user_torque_limit_, decimation_;
+    int actions_size_, observations_size_, commands_size_, history_len_;
+    float clip_observations_, clip_actions_;
+    std::string model_path;
+
+    int history_length_dof_pos_;
+    int history_length_dof_vel_;
+
+    // 数据
+    std::vector<float> observation_;
+    std::vector<float> last_actions_;
+    std::vector<float> current_obs_;
+
+    // 当前速度命令
+    std::vector<float> current_commands_;
+
+    // 复位后未驱动延时剩余步数
+    int delay_steps_;
+
+    // 标志位，指示是否已接收到初始观测
+    bool has_received_observation_ = false;
+
+    // 观测数据的键
+    std::vector<std::string> observation_keys_ = {
+        "lin_vel_x",
+        "lin_vel_y",
+        "lin_vel_z",
+        "ang_vel_x",
+        "ang_vel_y",
+        "ang_vel_z",
+        "gravity_proj_x",
+        "gravity_proj_y",
+        "gravity_proj_z",
+        "cmd_lin_vel_x",
+        "cmd_lin_vel_y",
+        "cmd_ang_vel_yaw",
+        "joint_left_leg_1_pos",
+        "joint_left_leg_2_pos",
+        "joint_left_leg_3_pos",
+        "joint_right_leg_1_pos",
+        "joint_right_leg_2_pos",
+        "joint_right_leg_3_pos",
+        "joint_left_leg_1_vel",
+        "joint_left_leg_2_vel",
+        "joint_left_leg_3_vel",
+        "joint_left_leg_4_vel",
+        "joint_right_leg_1_vel",
+        "joint_right_leg_2_vel",
+        "joint_right_leg_3_vel",
+        "joint_right_leg_4_vel",
+        "last_action_1",
+        "last_action_2",
+        "last_action_3",
+        "last_action_4",
+        "last_action_5",
+        "last_action_6",
+    	"last_action_7",
+    	"last_action_8"};
+    // 打印obs
+    void printObservations(const std::vector<float> &observations)
+    {
+        if (observations.size() != observation_keys_.size())
+        {
+            RCLCPP_WARN(this->get_logger(), "Observations size (%lu) does not match keys size (%lu).", observations.size(), observation_keys_.size());
+            return;
+        }
+
+        std::stringstream ss;
+        ss << "{\n";
+        for (size_t i = 0; i < observations.size(); ++i)
+        {
+            ss << "  " << observation_keys_[i] << ": " << observations[i] << "\n";
+        }
+        ss << "}";
+
+        RCLCPP_INFO(this->get_logger(), "Observations:\n%s", ss.str().c_str());
+    }
+    // 成员函数
+
+    // IMU消息回调
+    void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
+    {
+    	std::lock_guard<std::mutex> lock(imu_mutex_);
+        latest_imu_msg_ = msg;
+        static bool once = false;
+        if (!once) { once = true; RCLCPP_INFO(this->get_logger(), "第一个 IMU received"); }
+    }
+
+    // JointState 消息回调
+    void jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
+    {
+	    std::lock_guard<std::mutex> lock(joint_state_mutex_);
+
+        // 定义所需的关节排序顺序 (URDF顺序: 左腿1-3, 左轮, 右腿1-3, 右轮)
+        std::vector<std::string> desired_order = {
+            "joint_left_leg_1",
+            "joint_left_leg_2",
+            "joint_left_leg_3",
+    	    "joint_left_leg_4",
+            "joint_right_leg_1",
+            "joint_right_leg_2",
+            "joint_right_leg_3",
+    	    "joint_right_leg_4"};
+
+        // 创建用于排序后的 position、velocity 和 effort 数据的向量
+        std::vector<double> sorted_position(desired_order.size());
+        std::vector<double> sorted_velocity(desired_order.size());
+        std::vector<double> sorted_effort(desired_order.size());
+
+        // 遍历所需顺序中的每个关节名，找到在传入消息（msg）中的对应索引
+        for (size_t i = 0; i < desired_order.size(); ++i)
+        {
+            auto it = std::find(msg->name.begin(), msg->name.end(), desired_order[i]);
+            if (it != msg->name.end())
+            {
+                size_t index = std::distance(msg->name.begin(), it);
+                sorted_position[i] = msg->position[index];
+                sorted_velocity[i] = msg->velocity[index];
+                sorted_effort[i] = msg->effort[index];
+            }
+        }
+
+        // 创建一个新的 JointState 消息，使用排序后的数据
+        auto sorted_msg = std::make_shared<sensor_msgs::msg::JointState>();
+        sorted_msg->header = msg->header;
+        sorted_msg->name = desired_order;
+        sorted_msg->position = sorted_position;
+        sorted_msg->velocity = sorted_velocity;
+        sorted_msg->effort = sorted_effort;
+
+        // 将排序后的消息赋值给 latest_joint_state_msg_
+        latest_joint_state_msg_ = sorted_msg;
+        static bool once = false;
+        if (!once) { once = true; RCLCPP_INFO(this->get_logger(), "第一个 JointState received"); }
+    }
+
+    // cmd_vel消息回调
+    void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg)
+    {
+        // Use the user_cmd_scales to scale the velocity commands
+        current_commands_[0] = static_cast<float>(msg->linear.x) * scaled_commands_x_;
+        current_commands_[1] = static_cast<float>(msg->linear.y) * scaled_commands_y_;
+        current_commands_[2] = static_cast<float>(msg->angular.z) * scaled_commands_z_;
+ 	    // current_commands_[3] = static_cast<float>(msg->linear.z) * scaled_commands_h_;
+
+        float norm1 = std::sqrt(current_commands_[0] * current_commands_[0]);
+        float norm2 = std::sqrt(current_commands_[2] * current_commands_[2]);
+
+        // 阈值判断
+        if (norm1 <= 0.01f) {
+            current_commands_[0] = 0.0f;
+        }
+        if (norm2 <= 0.01f) {
+            current_commands_[2] = 0.0f;
+        }
+
+        std::cout << "指令值: ";
+        for (size_t i = 0; i < current_commands_.size(); ++i) {
+            std::cout << current_commands_[i];
+            if (i < current_commands_.size() - 1) std::cout << ", ";
+        }
+        std::cout << std::endl;
+    }
+
+    // 手柄命令消息回调 (命令: lin_vel_x / lin_vel_y / ang_vel_yaw)
+    void joycmdCallback(const sensor_msgs::msg::Joy::SharedPtr msg)
+    {
+        // Use the user_cmd_scales to scale the velocity commands
+        current_commands_[0] = 1.0 * (-0.5) * msg->axes[2] * scaled_commands_x_;  // 前进
+        current_commands_[1] = 0 * msg->axes[0] * scaled_commands_y_;             // 横向 (训练中恒0)
+        current_commands_[2] = msg->axes[3] * scaled_commands_z_;                 // 自转
+
+        float norm1 = std::sqrt(msg->axes[2] * msg->axes[2]);
+        if (norm1 <= 0.1f) {
+            current_commands_[0] = 0.0f;
+        }
+        float norm2 = std::sqrt(msg->axes[3] * msg->axes[3]);
+        if (norm2 <= 0.01f) {
+            current_commands_[2] = 0.0f;
+        }
+        std::cout << "指令值: ";
+        for (size_t i = 0; i < current_commands_.size(); ++i) {
+            std::cout << current_commands_[i];
+            if (i < current_commands_.size() - 1) std::cout << ", ";
+        }
+        std::cout << std::endl;
+    }
+
+    // 加载参数
+    bool loadParameters()
+    {
+        RCLCPP_INFO(this->get_logger(), "Loading parameters directly...");
+        // 参数声明
+        this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_1", -0.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_2", 0.8);
+        this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_3", -1.5);
+	this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_left_leg_4", 0.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_1", 0.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_2", 0.8);
+        this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_3", -1.5);
+	this->declare_parameter<float>("TITAWheelfootCfg.default_joint_angle.joint_right_leg_4", 0.0);
+
+        this->declare_parameter<int>("TITAWheelfootCfg.observation.history_length_dof_pos", 0);
+        this->declare_parameter<int>("TITAWheelfootCfg.observation.history_length_dof_vel", 0);
+
+        this->declare_parameter<float>("TITAWheelfootCfg.control.stiffness", 40.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.control.damping", 1.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_pos", 0.25);
+    	this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_vel", 8.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.control.decimation", 4.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.control.user_torque_limit", 45.0);
+
+        this->declare_parameter<float>("TITAWheelfootCfg.normalization.clip_scales.clip_observations", 100.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.normalization.clip_scales.clip_actions", 50.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.ang_vel", 0.25);
+        this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.dof_pos", 1.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.dof_vel", 0.05);
+        this->declare_parameter<float>("TITAWheelfootCfg.normalization.obs_scales.projected_gravity", 1.0);
+
+        this->declare_parameter<int>("TITAWheelfootCfg.size.actions_size", 8);
+        this->declare_parameter<int>("TITAWheelfootCfg.size.observations_size", 34);
+        this->declare_parameter<int>("TITAWheelfootCfg.size.history_len", 5);
+        this->declare_parameter<int>("TITAWheelfootCfg.size.commands_size", 3);
+
+        this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.lin_vel_x", 2.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.lin_vel_y", 2.0);
+        this->declare_parameter<float>("TITAWheelfootCfg.user_cmd_scales.ang_vel_yaw", 0.25);
+
+        this->declare_parameter<std::string>("TITAWheelfootCfg.model_path", "/home/robot/gyj/student_policy.onnx");
+        // 动作记录: enable 开启后每个控制周期将 8 维动作输出追加到 file (自动插入时间戳)
+        this->declare_parameter<bool>("record.enable", false);
+        this->declare_parameter<std::string>("record.file", "/tmp/drl_actions.csv");
+
+
+        // 获取参数
+        default_joint_angles_.resize(8);
+        // 默认角度
+        this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_1", default_joint_angles_[0]);
+        this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_2", default_joint_angles_[1]);
+        this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_3", default_joint_angles_[2]);
+    	this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_left_leg_4", default_joint_angles_[3]);
+        this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_1", default_joint_angles_[4]);
+        this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_2", default_joint_angles_[5]);
+        this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_3", default_joint_angles_[6]);
+	    this->get_parameter("TITAWheelfootCfg.default_joint_angle.joint_right_leg_4", default_joint_angles_[7]);
+        // 历史数据长度
+        this->get_parameter("TITAWheelfootCfg.observation.history_length_dof_pos", history_length_dof_pos_);
+        this->get_parameter("TITAWheelfootCfg.observation.history_length_dof_vel", history_length_dof_vel_);
+        // control参数
+        this->get_parameter("TITAWheelfootCfg.control.stiffness", stiffness_);
+        this->get_parameter("TITAWheelfootCfg.control.damping", damping_);
+        this->get_parameter("TITAWheelfootCfg.control.action_scale_pos", action_scale_pos_);
+	    this->get_parameter("TITAWheelfootCfg.control.action_scale_vel", action_scale_vel_);
+        this->get_parameter("TITAWheelfootCfg.control.decimation", decimation_);
+        this->get_parameter("TITAWheelfootCfg.control.user_torque_limit", user_torque_limit_);
+        // 剪切和归一化参数
+        this->get_parameter("TITAWheelfootCfg.normalization.clip_scales.clip_observations", clip_observations_);
+        this->get_parameter("TITAWheelfootCfg.normalization.clip_scales.clip_actions", clip_actions_);
+        this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.ang_vel", obs_scales_angvel_);
+        this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.dof_pos", obs_scales_dofpos_);
+        this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.dof_vel", obs_scales_dofvel_);
+        this->get_parameter("TITAWheelfootCfg.normalization.obs_scales.projected_gravity", obs_scales_gravity_);
+        // 网络结构参数
+        this->get_parameter("TITAWheelfootCfg.size.actions_size", actions_size_);
+        this->get_parameter("TITAWheelfootCfg.size.observations_size", observations_size_);
+        this->get_parameter("TITAWheelfootCfg.size.history_len", history_len_);
+        this->get_parameter("TITAWheelfootCfg.size.commands_size", commands_size_);
+        // 命令缩放参数
+        this->get_parameter("TITAWheelfootCfg.user_cmd_scales.lin_vel_x", scaled_commands_x_);
+        this->get_parameter("TITAWheelfootCfg.user_cmd_scales.lin_vel_y", scaled_commands_y_);
+        this->get_parameter("TITAWheelfootCfg.user_cmd_scales.ang_vel_yaw", scaled_commands_z_);
+        // onnx文件路径
+        this->get_parameter("TITAWheelfootCfg.model_path", model_path);
+        // 动作记录
+        this->get_parameter("record.enable", record_enabled_);
+        this->get_parameter("record.file", record_file_);
+
+        RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
+        return true;
+    }
+
+    // 加载 ONNX 模型
+    bool loadONNXModel(const std::string &model_path)
+    {
+        session_options_.SetIntraOpNumThreads(1);
+
+        try
+        {
+            policy_session_ = new Ort::Session(env_, model_path.c_str(), session_options_);
+        }
+        catch (const std::exception &e)
+        {
+            RCLCPP_ERROR(this->get_logger(), "Failed to load ONNX model: %s", e.what());
+            return false;
+        }
+
+        // 清空之前的存储
+        input_names_storage_.clear();
+        input_names_.clear();
+
+        // 获取输入数量（student_policy.onnx 为2个: student_obs + obs）
+        size_t num_inputs = policy_session_->GetInputCount();
+        RCLCPP_INFO(this->get_logger(), "Model has %zu inputs", num_inputs);
+
+        Ort::AllocatorWithDefaultOptions allocator;
+
+        // 遍历所有输入
+        for (size_t i = 0; i < num_inputs; i++)
+        {
+            // 获取输入名称
+            auto input_name_ptr = policy_session_->GetInputNameAllocated(i, allocator);
+            input_names_storage_.push_back(std::string(input_name_ptr.get()));
+
+            // 如果是第一个输入，保存到原来的变量中以保持兼容
+            if (i == 0) {
+                input_name_storage_ = input_names_storage_.back();
+            }
+        }
+
+        // 获取输出名称
+        auto output_name_ptr = policy_session_->GetOutputNameAllocated(0, allocator);
+        output_name_storage_ = std::string(output_name_ptr.get());
+
+        // 构建输入名称指针向量
+        input_names_.clear();
+        for (const auto& name : input_names_storage_) {
+            input_names_.push_back(name.c_str());
+        }
+
+        output_names_.clear();
+        output_names_.push_back(output_name_storage_.c_str());
+    	// 打印所有输入名称
+        for (size_t i = 0; i < input_names_.size(); i++) {
+            RCLCPP_INFO(this->get_logger(),
+                "ONNX model input[%zu] name = '%s'", i, input_names_[i]);
+        }
+        RCLCPP_INFO(this->get_logger(),
+            "ONNX model output[0] name = '%s'", output_names_[0]);
+
+    	// 获取所有输入的形状
+        input_shapes_.clear();
+        for (size_t i = 0; i < num_inputs; i++) {
+            auto shape = policy_session_->GetInputTypeInfo(i).GetTensorTypeAndShapeInfo().GetShape();
+            input_shapes_.push_back(shape);
+        }
+        output_shape_ = policy_session_->GetOutputTypeInfo(0).GetTensorTypeAndShapeInfo().GetShape();
+
+        // 打印所有输入的形状
+        std::stringstream ss;
+        for (size_t i = 0; i < input_shapes_.size(); i++) {
+            ss.str("");
+            ss << "Model input[" << i << "] shape:";
+            for (auto dim : input_shapes_[i]) {
+                ss << " " << dim;
+            }
+            RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+        }
+
+        ss.str("");
+        ss << "Model output shape:";
+        for (auto dim : output_shape_)
+        {
+            ss << " " << dim;
+        }
+        RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+
+        RCLCPP_INFO(this->get_logger(), "ONNX model loaded successfully: %s", model_path.c_str());
+        return true;
+    }
+
+    // 向历史缓冲追加一帧 (训练代码中的 last_observations_save, 超出长度丢弃最旧帧)
+    void appendToHistory(const std::vector<float> &frame)
+    {
+        history_buffer_.push_back(frame);
+        if (history_buffer_.size() > static_cast<size_t>(history_len_))
+            history_buffer_.pop_front();
+    }
+
+    // 打开动作记录文件: 文件名插入启动时间戳, 避免多次运行相互覆盖
+    void openRecording()
+    {
+        if (!record_enabled_)
+        {
+            return;
+        }
+        std::string path = record_file_;
+        std::time_t now = std::time(nullptr);
+        char ts[32];
+        std::strftime(ts, sizeof(ts), "%Y%m%d_%H%M%S", std::localtime(&now));
+        const std::string ts_str(ts);
+        const size_t dot = path.find_last_of('.');
+        if (dot != std::string::npos)
+        {
+            path = path.substr(0, dot) + "_" + ts_str + path.substr(dot);
+        }
+        else
+        {
+            path += "_" + ts_str + ".csv";
+        }
+        record_stream_.open(path, std::ios::out);
+        if (!record_stream_.is_open())
+        {
+            RCLCPP_WARN(this->get_logger(), "无法打开动作记录文件: %s, 本次运行不记录动作", path.c_str());
+            record_enabled_ = false;
+            return;
+        }
+        // 表头: 时间 + 8 个动作列 (动作索引与关节索引一致: 左腿1-4, 右腿1-4)
+        record_stream_ << "time";
+        for (const auto & name : joint_names_)
+        {
+            record_stream_ << "," << name;
+        }
+        record_stream_ << "\n";
+        RCLCPP_INFO(this->get_logger(), "动作记录已开启: %s (50Hz 逐周期追加)", path.c_str());
+    }
+
+    // 每个控制周期调用一次, 追加一行: 时间(秒) + 8 个动作值
+    void recordActions(const std::vector<float> & actions)
+    {
+        if (!record_enabled_ || !record_stream_.is_open())
+        {
+            return;
+        }
+        if (!record_t0_set_)
+        {
+            record_t0_ = std::chrono::steady_clock::now();
+            record_t0_set_ = true;
+        }
+        const double t = std::chrono::duration<double>(
+            std::chrono::steady_clock::now() - record_t0_).count();
+        record_stream_ << std::fixed << std::setprecision(4) << t;
+        for (size_t i = 0; i < actions.size() && i < joint_names_.size(); ++i)
+        {
+            record_stream_ << "," << actions[i];
+        }
+        record_stream_ << "\n";
+        // 每 50 行 (约 1 秒) 落盘一次, 便于实时绘图; 其余由析构时关闭文件兜底
+        if (++record_rows_ % 50 == 0)
+        {
+            record_stream_.flush();
+        }
+    }
+
+    // 控制循环
+    void controlLoop()
+    {
+        // 获取最新的 IMU 和 JointState 消息
+        sensor_msgs::msg::Imu::SharedPtr imu_msg;
+        sensor_msgs::msg::JointState::SharedPtr joint_msg;
+
+        {
+            std::lock_guard<std::mutex> imu_lock(imu_mutex_);
+            imu_msg = latest_imu_msg_;
+        }
+
+        {
+            std::lock_guard<std::mutex> joint_lock(joint_state_mutex_);
+            joint_msg = latest_joint_state_msg_;
+        }
+
+        // 检查是否接收到所有必要的消息
+        if (!imu_msg || !joint_msg)
+        {
+            RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "Waiting for both IMU and JointState messages.");
+            return;
+        }
+
+        // 准备临时变量
+        std::vector<float> temp_observation(observations_size_, 0.0f);
+        std::vector<float> temp_last_actions = last_actions_;
+        std::vector<float> temp_current_commands = current_commands_;
+
+        // 将四元数转换为旋转矩阵并计算重力投影 (机体坐标系)
+        Eigen::Quaterniond q(imu_msg->orientation.w, imu_msg->orientation.x, imu_msg->orientation.y, imu_msg->orientation.z);
+        Eigen::Matrix3d rot_matrix = q.toRotationMatrix();
+        Eigen::Vector3d gravity_vector(0, 0, -1);
+        Eigen::Vector3d projected_gravity = rot_matrix.transpose() * gravity_vector;
+
+        // 更新观测 - 机体线速度 (索引 0-2): 训练代码显式置零, 部署无需速度估计器
+        temp_observation[0] = 0.0f;
+        temp_observation[1] = 0.0f;
+        temp_observation[2] = 0.0f;
+        // 更新观测 - 机体角速度 (索引 3-5), ×0.25
+        temp_observation[3] = static_cast<float>(imu_msg->angular_velocity.x) * obs_scales_angvel_;
+        temp_observation[4] = static_cast<float>(imu_msg->angular_velocity.y) * obs_scales_angvel_;
+        temp_observation[5] = static_cast<float>(imu_msg->angular_velocity.z) * obs_scales_angvel_;
+
+        // 更新观测 - 重力投影向量 (索引 6-8), ×1
+        temp_observation[6] = static_cast<float>(projected_gravity.x()) * obs_scales_gravity_;
+        temp_observation[7] = static_cast<float>(projected_gravity.y()) * obs_scales_gravity_;
+        temp_observation[8] = static_cast<float>(projected_gravity.z()) * obs_scales_gravity_;
+
+        // 更新观测 - 命令 (索引 9-11), 已乘缩放
+        temp_observation[9]  = temp_current_commands[0];
+        temp_observation[10] = temp_current_commands[1];
+        temp_observation[11] = temp_current_commands[2];
+
+        // 更新观测 - 腿部关节角偏差 (索引 12-17), ×1.0
+        // 12-14: 左腿1-3 (关节索引 0,1,2); 15-17: 右腿1-3 (关节索引 4,5,6)
+        for (size_t j = 0; j < pos_joint_indices.size(); ++j)
+        {
+            size_t i = pos_joint_indices[j];  // 原始关节索引
+            if (i < joint_msg->position.size())
+            {
+                float pos_offset = static_cast<float>(joint_msg->position[i]);
+                temp_observation[12 + j] = (pos_offset - default_joint_angles_[i]) * obs_scales_dofpos_;
+            }
+        }
+
+        // 更新观测 - 8关节角速度 (索引 18-25, 含轮子), ×0.05
+        for (size_t i = 0; i < 8; ++i)
+        {
+            if (i < joint_msg->velocity.size())
+            {
+                temp_observation[18 + i] = static_cast<float>(joint_msg->velocity[i]) * obs_scales_dofvel_;
+            }
+        }
+
+        // 更新观测 - 上一帧动作 (索引 26-33), ×1 (已裁剪±50, 未乘action_scale)
+        for (size_t i = 0; i < temp_last_actions.size(); ++i)
+        {
+            if (26 + i >= observations_size_)
+                break;
+            temp_observation[26 + i] = temp_last_actions[i];
+        }
+
+        // 复位后未驱动延时: 前30个控制周期 obs 置零 (训练代码 using_delay_action 行为)
+        if (delay_steps_ > 0)
+        {
+            std::fill(temp_observation.begin(), temp_observation.end(), 0.0f);
+        }
+
+        // 更新当前观测向量
+        current_obs_ = temp_observation;
+
+        // 设置标志位，指示已接收到初始观测
+        has_received_observation_ = true;
+
+        // 剪裁观测值 ±100
+        std::transform(current_obs_.begin(), current_obs_.end(), current_obs_.begin(),
+                       [this](float x) -> float
+                       { return std::clamp(x, -clip_observations_, clip_observations_); });
+
+        // 学生编码器历史缓冲: 每周期将当前帧追加两次 (训练代码在
+        // compute_observations 与 post_physics_step 中各调用一次保存所致)
+        // 稳态: student_obs = [o(t-2), o(t-2), o(t-1), o(t-1), o(t)]
+        appendToHistory(current_obs_);
+
+        std::vector<float> actions;
+        if (delay_steps_ > 0)
+        {
+            // 未驱动延时: 动作置零, 不推理
+            actions.assign(actions_size_, 0.0f);
+            --delay_steps_;
+        }
+        else
+        {
+            // 展平历史数据 (旧->新), 共 history_len × observations_size = 170 维
+            std::vector<float> hist_obs;
+            hist_obs.reserve(history_len_ * observations_size_);
+            for (const auto& frame : history_buffer_) {
+                hist_obs.insert(hist_obs.end(), frame.begin(), frame.end());
+            }
+            // 运行推理 (2个输入: student_obs + obs)
+            actions = runInference(hist_obs, current_obs_);
+            // 剪裁动作 ±50
+            std::transform(actions.begin(), actions.end(), actions.begin(),
+                           [this](float x) -> float
+                           { return std::clamp(x, -clip_actions_, clip_actions_); });
+
+            // 记录本轮动作输出 (含未驱动延时阶段的零动作)
+            recordActions(actions);
+        }
+
+        // 周期内第二次追加 (双追加行为的另一半, 推理后执行)
+        appendToHistory(current_obs_);
+
+        // 将动作转换为期望的位置
+        std::vector<float> desired_positions = convertActionsToDesiredPositions(actions);
+    	std::vector<float> desired_velocities = convertActionsToDesiredVelocities(actions);
+        std::vector<float> desired_goals;
+        desired_goals.reserve(desired_positions.size() + desired_velocities.size());
+        desired_goals.insert(desired_goals.end(), desired_positions.begin(), desired_positions.end());
+        desired_goals.insert(desired_goals.end(), desired_velocities.begin(), desired_velocities.end());
+       
+        // 发布期望的位置
+        publishDesiredPositions(desired_goals);
+    }
+
+    // 运行推理 (2个输入: student_obs 历史帧 + obs 当前帧)
+    std::vector<float> runInference(const std::vector<float> &hist_obs, const std::vector<float> &current_obs)
+    {
+        // 检查输入大小
+        if (hist_obs.size() != static_cast<size_t>(history_len_ * observations_size_))
+        {
+            RCLCPP_ERROR(this->get_logger(), "History size mismatch: %zu != %d",
+                         hist_obs.size(), history_len_ * observations_size_);
+            return std::vector<float>(actions_size_, 0.0f);
+        }
+
+        Ort::MemoryInfo memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
+
+        std::vector<Ort::Value> input_tensors;
+        // 按模型输入名称匹配: "student_obs" -> 历史帧(170), "obs" -> 当前帧(34)
+        for (size_t i = 0; i < input_names_storage_.size(); ++i)
+        {
+            const std::string &name = input_names_storage_[i];
+            if (name.find("student") != std::string::npos)
+            {
+                std::vector<int64_t> hist_shape = {1, static_cast<int64_t>(hist_obs.size())};
+                input_tensors.push_back(
+                    Ort::Value::CreateTensor<float>(memory_info,
+                                                    const_cast<float*>(hist_obs.data()),
+                                                    hist_obs.size(),
+                                                    hist_shape.data(),
+                                                    hist_shape.size()));
+            }
+            else
+            {
+                std::vector<int64_t> current_shape = {1, static_cast<int64_t>(current_obs.size())};
+                input_tensors.push_back(
+                    Ort::Value::CreateTensor<float>(memory_info,
+                                                    const_cast<float*>(current_obs.data()),
+                                                    current_obs.size(),
+                                                    current_shape.data(),
+                                                    current_shape.size()));
+            }
+        }
+
+        if (input_tensors.size() != input_names_.size())
+        {
+            RCLCPP_ERROR(this->get_logger(), "Input tensor count mismatch: %zu != %zu",
+                         input_tensors.size(), input_names_.size());
+            return std::vector<float>(actions_size_, 0.0f);
+        }
+
+        // 运行推理
+        try
+        {
+	        // 会话空指针
+            if (!policy_session_) {
+                static bool error_logged = false;
+                if (!error_logged) {
+                    RCLCPP_ERROR(this->get_logger(), "ONNX session null");
+                    error_logged = true;
+                }
+                return {};
+            }
+
+            auto output_tensors = policy_session_->Run(Ort::RunOptions{nullptr}, input_names_.data(),
+                                                       input_tensors.data(), input_tensors.size(),
+                                                       output_names_.data(), 1);
+
+            // 获取输出结果
+            float *output_data = output_tensors[0].GetTensorMutableData<float>();
+            std::vector<float> output_values(output_data, output_data + actions_size_);
+            return output_values;
+        }
+        catch (const std::exception &e)
+        {
+            RCLCPP_ERROR(this->get_logger(), "Failed to run inference: %s", e.what());
+            return std::vector<float>(actions_size_, 0.0f);
+        }
+    }
+
+    // 将动作转换为期望的位置 (腿部1-3关节, P控制)
+    std::vector<float> convertActionsToDesiredPositions(const std::vector<float> &actions)
+    {
+        std::vector<float> desired_positions;
+        desired_positions.resize(6, 0.0f);
+
+        // 使用最新的观测数据
+        std::vector<float> temp_observation = current_obs_;
+
+        // 腿部动作索引 (8维动作中不含轮子的6维): {0,1,2,4,5,6}
+        const size_t pos_act_idx[6] = {0, 1, 2, 4, 5, 6};
+        // obs 中位置偏差在 12-17 (左腿1-3, 右腿1-3), 速度在 18-25 (act_i 即关节索引)
+        const size_t pos_obs_idx[6] = {12, 13, 14, 15, 16, 17};
+        for (size_t i = 0; i < 6; i++)
+        {
+            size_t obs_i = pos_obs_idx[i];   // 在 obs 里的位置
+            size_t act_i = pos_act_idx[i];   // 在 actions 里的位置
+
+            if (obs_i >= temp_observation.size() || 18 + act_i >= temp_observation.size())
+                continue;
+
+            float joint_position = temp_observation[obs_i] / obs_scales_dofpos_ + default_joint_angles_[act_i];
+            float joint_velocity = temp_observation[18 + act_i] / obs_scales_dofvel_;
+
+            // 依据 PD 力矩限制 (τ = kp·(q_des-q) - kd·q̇, 裁剪到 ±user_torque_limit) 反推动作允许范围
+            float actionMin = joint_position - default_joint_angles_[act_i] + (damping_ * joint_velocity - user_torque_limit_) / stiffness_;
+            float actionMax = joint_position - default_joint_angles_[act_i] + (damping_ * joint_velocity + user_torque_limit_) / stiffness_;
+
+            float scaled_action = std::max(actionMin / action_scale_pos_, std::min(actionMax / action_scale_pos_, actions[act_i]));
+            desired_positions[i] = scaled_action * action_scale_pos_ + default_joint_angles_[act_i];
+        }
+
+        // 更新上一次动作 (已裁剪±50的原始网络输出, 存入下一帧obs)
+        last_actions_ = actions;
+        return desired_positions;
+    }
+
+    // 将动作转换为期望的轮速 (轮子, V控制)
+    // 训练控制律: τ = kp·(8.0·a - q̇) - kd·(q̇ - q̇_prev)/0.005, 其中 kp=1.0, kd=0
+    // 即 τ = 8.0·a - q̇, 单位增益速度伺服, 稳态 q̇ = 8.0·a: 期望轮速 = action_scale_vel · a
+    std::vector<float> convertActionsToDesiredVelocities(const std::vector<float> &actions)
+    {
+        std::vector<float> desired_velocities;
+        desired_velocities.resize(wheel_joint_indices.size(), 0.0f);
+
+        if (actions.size() < static_cast<size_t>(actions_size_))
+            return desired_velocities;
+
+        // 轮子动作索引 = 关节索引 (左轮3, 右轮7)
+        for (size_t i = 0; i < wheel_joint_indices.size(); ++i)
+        {
+            desired_velocities[i] = action_scale_vel_ * actions[wheel_joint_indices[i]];
+        }
+        return desired_velocities;
+    }
+
+    // 发布期望的位置
+    void publishDesiredPositions(const std::vector<float> &desired_goals)
+    {
+	    if (desired_goals.empty()) {
+            RCLCPP_WARN(this->get_logger(), "desired_goals 是空的!");
+            return;
+        }
+    	static bool once = false;
+        if (!once && !desired_goals.empty()) {
+            once = true;
+            RCLCPP_INFO(this->get_logger(), "RL 第一次8维动作 published, 均值=%.3f",
+                std::accumulate(desired_goals.begin(), desired_goals.end(), 0.0) / 8.0);
+        }
+    	control_msgs::msg::MultiDOFCommand pos_cmd;   // 位置控制
+        control_msgs::msg::MultiDOFCommand vel_cmd;   // 速度控制
+        pos_cmd.dof_names.reserve(6);
+        pos_cmd.values.reserve(6);
+        vel_cmd.dof_names.reserve(2);
+        vel_cmd.values.reserve(2);
+        for (size_t i = 0; i < desired_goals.size(); ++i)
+        {
+            if (i == 6)          // 速度控制关节
+            {
+                vel_cmd.dof_names.push_back(joint_names_[3]);
+                vel_cmd.values.push_back(desired_goals[i]);
+            }
+            else if (i == 7)     // 速度控制关节
+            {
+                vel_cmd.dof_names.push_back(joint_names_[i]);
+                vel_cmd.values.push_back(desired_goals[i]);
+            }
+            else if (i > 2)                      // 位置控制关节
+            {
+                pos_cmd.dof_names.push_back(joint_names_[i+1]);
+                pos_cmd.values.push_back(desired_goals[i]);
+            }
+	    else                                 // 位置控制关节
+            {
+                pos_cmd.dof_names.push_back(joint_names_[i]);
+                pos_cmd.values.push_back(desired_goals[i]);
+            }
+        }
+        pos_action_pub_->publish(pos_cmd);               // 发出去
+        vel_action_pub_->publish(vel_cmd);
+    	static bool first_pos = false;
+        static bool first_vel = false;
+        if (!first_pos && !pos_cmd.values.empty()) {
+            first_pos = true;
+            RCLCPP_INFO(this->get_logger(), "第一次 pos reference forwarded, values.size=%zu", pos_cmd.values.size());
+        }
+        if (!first_vel && !pos_cmd.values.empty()) {
+            first_vel = true;
+            RCLCPP_INFO(this->get_logger(), "第一次 vel reference forwarded, values.size=%zu", vel_cmd.values.size());
+        }
+    }
+};
+
+// 主函数
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+
+    auto node = std::make_shared<TitaWheelFootNode>();
+    rclcpp::spin(node);
+
+    rclcpp::shutdown();
+    return 0;
+}

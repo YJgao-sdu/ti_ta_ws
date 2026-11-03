@@ -1,0 +1,190 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""绘制 tita_drl_obs170 记录的 8 维动作输出曲线 (CSV -> PNG)。
+
+CSV 由 tita_drl_obs170 节点在 record.enable 为 true 时逐控制周期 (50Hz) 写出,
+格式: time,joint_left_leg_1,...,joint_right_leg_4 (动作索引与关节索引一致)。
+
+用法:
+    python3 plot_drl_actions.py <csv> [-o out.png] [--overlay] [--max-points 20000] [--title ...]
+    ros2 run TITA_DRL plot_drl_actions.py <csv> ...
+
+不带 <csv> 参数时, 自动在当前目录选择最新的 drl_actions*.csv。
+默认输出为 8 面板小倍数图 (每关节一个面板, 共享时间轴);
+--overlay 输出 8 条曲线叠加图 (适合横向对比)。
+"""
+import argparse
+import glob
+import os
+import sys
+
+import numpy as np
+
+import matplotlib
+matplotlib.use("Agg")  # 无显示环境下出图
+import matplotlib.pyplot as plt
+
+# ---- dataviz 参考调色板 (浅色模式) ----
+SURFACE = "#fcfcfb"          # 图表表面
+INK = "#0b0b0b"              # 主墨色 (标题)
+INK_SECONDARY = "#52514e"    # 次级墨色
+INK_MUTED = "#898781"        # 弱化墨色 (刻度/轴标签)
+GRID = "#e1e0d9"             # 网格线
+BASELINE = "#c3c2b7"         # 基线/轴线
+SERIES = [                   # 8 个分类色槽 (固定顺序, 已验证 CVD 安全)
+    "#2a78d6", "#1baf7a", "#eda100", "#008300",
+    "#4a3aa7", "#e34948", "#e87ba4", "#eb6834",
+]
+SERIES_MAIN = SERIES[0]      # 小倍数图中单序列用色 (蓝)
+
+
+def load_csv(path):
+    """读取 CSV, 返回 (时间数组, 动作矩阵 Nx8, 列名列表)。"""
+    with open(path, encoding="utf-8") as f:
+        header = f.readline().strip().split(",")
+    if header[0] != "time":
+        raise ValueError(f"CSV 表头不符合预期: {header}")
+    names = header[1:]
+    t = np.loadtxt(path, delimiter=",", skiprows=1, usecols=0)
+    y = np.loadtxt(path, delimiter=",", skiprows=1,
+                   usecols=range(1, len(header)))
+    if y.ndim == 1:
+        y = y.reshape(-1, 1)
+    if y.shape[1] != len(names):
+        raise ValueError(f"数据列数 {y.shape[1]} 与表头列数 {len(names)} 不一致")
+    return t, y, names
+
+
+def decimate(t, y, max_points):
+    """点数超过 max_points 时做 min/max 包络抽稀, 保留峰值特征; 否则返回 None。"""
+    if len(t) <= max_points:
+        return None
+    n_buckets = max_points // 2
+    t_out, lo, hi = [], [], []
+    for i in range(n_buckets):
+        s = i * len(t) // n_buckets
+        e = max(s + 1, (i + 1) * len(t) // n_buckets)
+        seg = y[s:e]
+        t_out.append(t[s])
+        lo.append(np.min(seg))
+        hi.append(np.max(seg))
+    return np.asarray(t_out), np.asarray(lo), np.asarray(hi)
+
+
+def style_axis(ax):
+    """应用标记规范: 细线、弱化网格、隐藏上/右脊线。"""
+    ax.set_facecolor(SURFACE)
+    ax.grid(True, color=GRID, linewidth=0.8)
+    for spine in ("top", "right"):
+        ax.spines[spine].set_visible(False)
+    for spine in ("left", "bottom"):
+        ax.spines[spine].set_color(BASELINE)
+    ax.tick_params(colors=INK_MUTED, labelsize=8)
+
+
+def plot_small_multiples(t, y, names, title, out, max_points):
+    """8 面板小倍数图: 每关节一个面板, 共享时间轴 (单序列, 无需图例)。"""
+    n = y.shape[1]
+    fig, axes = plt.subplots(4, 2, figsize=(12, 9), sharex=True)
+    fig.patch.set_facecolor(SURFACE)
+    fig.suptitle(title, color=INK, fontsize=13, fontweight="bold")
+    for i, ax in enumerate(axes.flat):
+        if i >= n:
+            ax.axis("off")
+            continue
+        style_axis(ax)
+        dec = decimate(t, y[:, i], max_points)
+        if dec is None:
+            ax.plot(t, y[:, i], color=SERIES_MAIN, linewidth=1.5)
+        else:
+            tc, lo, hi = dec
+            ax.fill_between(tc, lo, hi, color=SERIES_MAIN,
+                            alpha=0.18, linewidth=0)
+            ax.plot(tc, lo, color=SERIES_MAIN, linewidth=1.2)
+            ax.plot(tc, hi, color=SERIES_MAIN, linewidth=1.2)
+        ax.set_title(names[i], color=INK, fontsize=10, loc="left")
+    fig.supxlabel("time (s)", color=INK_MUTED, fontsize=10)
+    fig.supylabel("action", color=INK_MUTED, fontsize=10)
+    fig.tight_layout(rect=(0, 0, 1, 0.95))
+    fig.savefig(out, dpi=150, facecolor=SURFACE)
+    plt.close(fig)
+    print(f"已保存小倍数图: {out}")
+
+
+def plot_overlay(t, y, names, title, out, max_points):
+    """8 条曲线叠加图: 固定色槽顺序 + 图例 (≥2 序列必有图例)。"""
+    fig, ax = plt.subplots(figsize=(12, 6))
+    fig.patch.set_facecolor(SURFACE)
+    fig.suptitle(title, color=INK, fontsize=13, fontweight="bold")
+    style_axis(ax)
+    for i in range(y.shape[1]):
+        color = SERIES[i % len(SERIES)]
+        dec = decimate(t, y[:, i], max_points)
+        if dec is None:
+            ax.plot(t, y[:, i], color=color, linewidth=1.5, label=names[i])
+        else:
+            tc, lo, hi = dec
+            ax.fill_between(tc, lo, hi, color=color, alpha=0.12, linewidth=0)
+            ax.plot(tc, lo, color=color, linewidth=1.2, label=names[i])
+            ax.plot(tc, hi, color=color, linewidth=1.2)
+    # 图例文字保持墨色, 由色块承担身份 (文字不用序列色)
+    ax.legend(loc="upper right", frameon=False, fontsize=9,
+              labelcolor=INK_SECONDARY)
+    ax.set_xlabel("time (s)", color=INK_MUTED, fontsize=10)
+    ax.set_ylabel("action", color=INK_MUTED, fontsize=10)
+    fig.tight_layout(rect=(0, 0, 1, 0.94))
+    fig.savefig(out, dpi=150, facecolor=SURFACE)
+    plt.close(fig)
+    print(f"已保存叠加图: {out}")
+
+
+def print_stats(t, y, names):
+    """控制台输出统计表 (数值视图)。"""
+    duration = t[-1] - t[0]
+    rate = (len(t) - 1) / duration if duration > 0 else 0.0
+    print(f"\n数据: {len(t)} 行, 时长 {duration:.2f} s, 平均频率 {rate:.1f} Hz")
+    print(f"{'关节':<20} {'mean':>10} {'std':>10} {'min':>10} {'max':>10}")
+    for i, name in enumerate(names):
+        col = y[:, i]
+        print(f"{name:<20} {np.mean(col):>10.3f} {np.std(col):>10.3f} "
+              f"{np.min(col):>10.3f} {np.max(col):>10.3f}")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="绘制 tita_drl_obs170 记录的 8 维动作输出曲线")
+    parser.add_argument("csv", nargs="?",
+                        help="动作记录 CSV; 缺省时取当前目录最新的 drl_actions*.csv")
+    parser.add_argument("-o", "--output", default=None,
+                        help="输出 PNG 路径 (默认与 CSV 同名 .png)")
+    parser.add_argument("--overlay", action="store_true",
+                        help="8 条曲线叠加到同一坐标轴 (默认 8 面板小倍数图)")
+    parser.add_argument("--max-points", type=int, default=20000,
+                        help="超过该点数时做 min/max 包络抽稀 (默认 20000)")
+    parser.add_argument("--title", default=None, help="图标题 (默认使用 CSV 文件名)")
+    args = parser.parse_args()
+
+    csv_path = args.csv
+    if csv_path is None:
+        candidates = sorted(glob.glob("drl_actions*.csv"),
+                            key=os.path.getmtime)
+        if not candidates:
+            print("未找到 drl_actions*.csv, 请显式指定 CSV 路径", file=sys.stderr)
+            return 1
+        csv_path = candidates[-1]
+        print(f"自动选择: {csv_path}")
+
+    t, y, names = load_csv(csv_path)
+    out = args.output or os.path.splitext(csv_path)[0] + ".png"
+    title = args.title or os.path.basename(csv_path)
+
+    print_stats(t, y, names)
+    if args.overlay:
+        plot_overlay(t, y, names, title, out, args.max_points)
+    else:
+        plot_small_multiples(t, y, names, title, out, args.max_points)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

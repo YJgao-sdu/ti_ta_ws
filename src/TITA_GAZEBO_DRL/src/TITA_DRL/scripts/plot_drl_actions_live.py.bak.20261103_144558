@@ -1,0 +1,534 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""实时绘制 tita_drl_obs170 的轮关节速度跟踪 (默认记录轮关节目标/实际速度, 列数自适应)。
+
+两种模式:
+
+1) 交互模式 (推荐, 数据级缩放): --serve
+   python3 plot_drl_actions_live.py --serve
+   脚本在本地启动一个 HTTP 服务 (默认端口 8000), 浏览器打开 http://localhost:8000:
+     - 框选 (按住拖拽): 放大到选中的时间段 —— 服务端按时间窗口重新渲染矢量图,
+       线宽恒定、横纵坐标轴刻度随窗口重新生成, 可无限层级缩放;
+     - 滚轮: 时间轴左右平移; 双击或"复位": 回到全程; ＋/－: 中心缩放;
+     - 鼠标悬停: 十字光标 + 当前时刻目标/实际速度数值;
+     - 每 2 秒自动刷新, 缩放窗口与数值提示随新数据保持。
+   提示: 浏览器在哪台机器上, 就在哪台机器上运行本脚本 (CSV 在同一目录)。
+   容器内运行时需先映射端口 (-p 8000:8000)。
+
+2) 文件模式 (默认): 每 --interval 秒重绘 SVG 文件 + 简单 HTML 页面
+   python3 plot_drl_actions_live.py [<csv>] [--interval 1] [--overlay]
+   输出与 CSV 同目录的 <csv名>_live.svg / _live.html。
+
+CSV 尾行若处于写入中间状态 (残缺行), 会自动跳过, 不影响出图。
+"""
+import argparse
+import glob
+import io
+import json
+import os
+import sys
+import threading
+import time
+import urllib.parse
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+
+import numpy as np
+
+import matplotlib
+matplotlib.use("Agg")  # 无显示环境下出 SVG
+import matplotlib.pyplot as plt
+
+# ---- dataviz 参考调色板 (浅色模式) ----
+SURFACE = "#fcfcfb"
+INK = "#0b0b0b"
+INK_SECONDARY = "#52514e"
+INK_MUTED = "#898781"
+GRID = "#e1e0d9"
+BASELINE = "#c3c2b7"
+SERIES = [
+    "#2a78d6", "#1baf7a", "#eda100", "#008300",
+    "#4a3aa7", "#e34948", "#e87ba4", "#eb6834",
+]
+SERIES_MAIN = SERIES[0]
+
+_MPL_LOCK = threading.Lock()  # matplotlib 非线程安全, 服务端渲染需串行
+
+
+def load_csv_tolerant(path):
+    """读取 CSV: 跳过表头、残缺尾行与非法行 (实时写入中的文件安全)。"""
+    with open(path, encoding="utf-8", errors="replace") as f:
+        lines = f.readlines()
+    if len(lines) < 2:
+        return None
+    header = lines[0].strip().split(",")
+    if header[0] != "time":
+        raise ValueError(f"CSV 表头不符合预期: {header}")
+    names = header[1:]
+    rows = []
+    for ln in lines[1:]:
+        parts = ln.strip().split(",")
+        if len(parts) != len(header):
+            continue  # 残缺行 (写入中间状态), 跳过
+        try:
+            rows.append([float(x) for x in parts])
+        except ValueError:
+            continue  # 非法数值行, 跳过
+    if not rows:
+        return None
+    arr = np.asarray(rows, dtype=float)
+    return arr[:, 0], arr[:, 1:], names
+
+
+def decimate(t, y, max_points):
+    """点数超过 max_points 时做 min/max 包络抽稀, 保留峰值特征; 否则返回 None。"""
+    if max_points <= 0 or len(t) <= max_points:
+        return None
+    n_buckets = max_points // 2
+    t_out, lo, hi = [], [], []
+    for i in range(n_buckets):
+        s = i * len(t) // n_buckets
+        e = max(s + 1, (i + 1) * len(t) // n_buckets)
+        seg = y[s:e]
+        t_out.append(t[s])
+        lo.append(np.min(seg))
+        hi.append(np.max(seg))
+    return np.asarray(t_out), np.asarray(lo), np.asarray(hi)
+
+
+def tracked_pairs(names):
+    """检测列名是否为 <关节>_target / <关节>_actual 成对结构。
+    匹配返回 [(关节名, 目标列序号, 实际列序号), ...], 否则返回 None。"""
+    if len(names) % 2 != 0:
+        return None
+    pairs = []
+    for i in range(0, len(names), 2):
+        a, b = names[i], names[i + 1]
+        if a.endswith("_target") and b.endswith("_actual") and a[:-7] == b[:-7]:
+            pairs.append((a[:-7], i, i + 1))
+        else:
+            return None
+    return pairs
+
+
+def style_axis(ax):
+    ax.set_facecolor(SURFACE)
+    ax.grid(True, color=GRID, linewidth=0.8)
+    for spine in ("top", "right"):
+        ax.spines[spine].set_visible(False)
+    for spine in ("left", "bottom"):
+        ax.spines[spine].set_color(BASELINE)
+    ax.tick_params(colors=INK_MUTED, labelsize=8)
+
+
+def draw(t, y, names, out_svg, overlay, max_points, duration,
+         xlim=None, ylim=None):
+    """渲染图表。xlim/ylim 为数据级窗口 (交互模式按缩放窗口重新出图)。"""
+    n = y.shape[1]
+    if overlay:
+        fig, ax = plt.subplots(figsize=(12, 6))
+        fig.patch.set_facecolor(SURFACE)
+        style_axis(ax)
+        for i in range(n):
+            color = SERIES[i % len(SERIES)]
+            dec = decimate(t, y[:, i], max_points)
+            if dec is None:
+                ax.plot(t, y[:, i], color=color, linewidth=1.5, label=names[i])
+            else:
+                tc, lo, hi = dec
+                ax.fill_between(tc, lo, hi, color=color, alpha=0.12, linewidth=0)
+                ax.plot(tc, lo, color=color, linewidth=1.2, label=names[i])
+                ax.plot(tc, hi, color=color, linewidth=1.2)
+        ax.legend(loc="upper right", frameon=False, fontsize=9)
+        ax.set_xlabel("time (s)", color=INK_MUTED, fontsize=10)
+        ax.set_ylabel("velocity (rad/s)", color=INK_MUTED, fontsize=10)
+        fig.suptitle(f"DRL wheel velocity tracking ({duration:.1f} s)", color=INK,
+                     fontsize=13, fontweight="bold")
+        fig.tight_layout(rect=(0, 0, 1, 0.94))
+    else:
+        pairs = tracked_pairs(names)
+        if pairs is not None:
+            # 同一关节的目标/实际速度共用同一面板 (共享时间轴与纵轴)
+            fig, axes = plt.subplots(len(pairs), 1, figsize=(12, 3.2 * len(pairs)),
+                                     sharex=True)
+            fig.patch.set_facecolor(SURFACE)
+            for j, (joint, ti, ai) in enumerate(pairs):
+                ax = np.asarray(axes).ravel()[j]
+                style_axis(ax)
+                for col, label, color in ((ti, "target", SERIES[0]),
+                                          (ai, "actual", SERIES[1])):
+                    dec = decimate(t, y[:, col], max_points)
+                    if dec is None:
+                        ax.plot(t, y[:, col], color=color, linewidth=1.5,
+                                label=label)
+                    else:
+                        tc, lo, hi = dec
+                        ax.fill_between(tc, lo, hi, color=color, alpha=0.12,
+                                        linewidth=0)
+                        ax.plot(tc, lo, color=color, linewidth=1.2, label=label)
+                        ax.plot(tc, hi, color=color, linewidth=1.2)
+                # 目标/实际共用同一纵轴范围 (取两者包络 + 6% 边距)
+                vlo = min(np.min(y[:, ti]), np.min(y[:, ai]))
+                vhi = max(np.max(y[:, ti]), np.max(y[:, ai]))
+                vpad = max((vhi - vlo) * 0.06, 1e-6)
+                ax.set_ylim(vlo - vpad, vhi + vpad)
+                ax.legend(loc="upper right", frameon=False, fontsize=9)
+                ax.set_title(joint, color=INK, fontsize=10, loc="left")
+        else:
+            if n <= 3:
+                fig, axes = plt.subplots(n, 1, figsize=(12, 3.2 * n), sharex=True)
+            elif n == 4:
+                fig, axes = plt.subplots(2, 2, figsize=(12, 6.4), sharex=True)
+            else:
+                fig, axes = plt.subplots(4, 2, figsize=(12, 9), sharex=True)
+            fig.patch.set_facecolor(SURFACE)
+            for i, ax in enumerate(np.asarray(axes).ravel()):
+                if i >= n:
+                    ax.axis("off")
+                    continue
+                style_axis(ax)
+                dec = decimate(t, y[:, i], max_points)
+                if dec is None:
+                    ax.plot(t, y[:, i], color=SERIES_MAIN, linewidth=1.5)
+                else:
+                    tc, lo, hi = dec
+                    ax.fill_between(tc, lo, hi, color=SERIES_MAIN,
+                                    alpha=0.18, linewidth=0)
+                    ax.plot(tc, lo, color=SERIES_MAIN, linewidth=1.2)
+                    ax.plot(tc, hi, color=SERIES_MAIN, linewidth=1.2)
+                ax.set_title(names[i], color=INK, fontsize=10, loc="left")
+                if ylim is not None:
+                    ax.set_ylim(*ylim)
+        fig.suptitle(f"DRL wheel velocity tracking ({duration:.1f} s)", color=INK,
+                     fontsize=13, fontweight="bold")
+        fig.supxlabel("time (s)", color=INK_MUTED, fontsize=10)
+        fig.supylabel("velocity (rad/s)", color=INK_MUTED, fontsize=10)
+        fig.tight_layout(rect=(0, 0, 1, 0.95))
+    if xlim is not None:
+        for ax in np.asarray(fig.axes).ravel():
+            ax.set_xlim(*xlim)
+    fig.savefig(out_svg, format="svg", facecolor=SURFACE)
+    plt.close(fig)
+
+
+# ---- 交互模式前端页面 (数据级缩放: 窗口请求 -> 服务端重新渲染) ----
+APP_HTML = '''<!DOCTYPE html><html><head><meta charset="utf-8"><title>DRL wheel velocity tracking</title>
+<style>
+body{margin:0;background:#f9f9f7;font-family:system-ui,sans-serif}
+#bar{position:fixed;top:10px;right:14px;z-index:20;display:flex;gap:6px;align-items:center;
+  background:rgba(252,252,251,.92);padding:6px 10px;border:1px solid #e1e0d9;border-radius:6px}
+#bar button{font-size:14px;min-width:34px;padding:5px 10px;border:1px solid #c3c2b7;
+  background:#fcfcfb;border-radius:4px;cursor:pointer;color:#0b0b0b}
+#bar button:hover{background:#e9f1fc}
+#zoomlabel{font-size:13px;color:#52514e;min-width:44px;text-align:center}
+#winlabel{font-size:12px;color:#898781;margin-left:6px}
+#hint{position:fixed;bottom:8px;left:12px;z-index:20;font-size:12px;color:#898781;
+  background:rgba(252,252,251,.85);padding:3px 8px;border-radius:4px}
+#wrap{margin-top:56px;position:relative;overflow:auto}
+#chart{width:100%;display:block;user-select:none}
+#rubber{position:absolute;display:none;border:1px solid #2a78d6;background:rgba(42,120,214,.12);z-index:10;pointer-events:none}
+#cross{position:absolute;display:none;top:0;bottom:0;width:1px;background:#e34948;z-index:11;pointer-events:none}
+#tip{position:fixed;display:none;z-index:30;font-size:12px;color:#52514e;
+  background:#fcfcfb;border:1px solid #e1e0d9;border-radius:5px;padding:6px 9px;
+  box-shadow:0 2px 8px rgba(11,11,11,.12);pointer-events:none;line-height:1.5}
+#tip b{color:#0b0b0b}
+</style></head>
+<body>
+<div id="bar">
+<button onclick="zoomBtn(2)" title="放大">＋</button>
+<button onclick="zoomBtn(0.5)" title="缩小">－</button>
+<button onclick="resetBtn()">复位</button>
+<span id="zoomlabel">1x</span>
+<span id="winlabel"></span>
+</div>
+<div id="wrap"><div id="vp"><img id="chart" src="" draggable="false" alt="chart"></div>
+<div id="rubber"></div><div id="cross"></div></div>
+<div id="hint">框选(按住拖拽): 放大时间段 · 滚轮: 平移 · 双击/复位: 全程 · 悬停: 读值 · 每2秒自动刷新</div>
+<div id="tip"></div>
+<script>
+var V={full0:0,full1:1,w0:0,w1:1,follow:true,pts:null,drag:null};
+function el(id){return document.getElementById(id);}
+function fmt(x){return x.toFixed(2);}
+function fmtv(x){return x.toFixed(3);}
+function applyUI(){
+  el("zoomlabel").textContent=Math.round((V.full1-V.full0)/Math.max(V.w1-V.w0,1e-9))+"x";
+  el("winlabel").textContent="窗口 "+fmt(V.w0)+" - "+fmt(V.w1)+" s / 全程 "+fmt(V.full0)+" - "+fmt(V.full1)+" s";
+}
+function setSrc(){
+  el("chart").src="chart.svg?t0="+V.w0+"&t1="+V.w1+"&v="+Date.now();
+}
+function loadData(){
+  fetch("data.json?t0="+V.w0+"&t1="+V.w1).then(function(r){return r.json();})
+    .then(function(d){V.pts=d;}).catch(function(){});
+}
+function refresh(){
+  fetch("info.json").then(function(r){return r.json();}).then(function(d){
+    var grew=d.t1>V.full1;
+    V.full0=d.t0;V.full1=d.t1;
+    if(V.w1>d.t1){V.w1=d.t1;if(V.w0>V.w1){V.w0=d.t0;}}
+    if(V.follow&&grew){V.w0=d.t0;V.w1=d.t1;}
+    applyUI();setSrc();loadData();
+  }).catch(function(){});
+}
+function zoomBtn(f){
+  var c=(V.w0+V.w1)/2,newSpan=(V.w1-V.w0)/f;
+  V.w0=Math.max(V.full0,c-newSpan/2);V.w1=Math.min(V.full1,c+newSpan/2);
+  V.follow=false;applyUI();setSrc();loadData();
+}
+function resetBtn(){V.w0=V.full0;V.w1=V.full1;V.follow=true;applyUI();setSrc();loadData();}
+var vp=el("vp");
+vp.addEventListener("mousedown",function(e){V.drag={x:e.clientX};});
+window.addEventListener("mousemove",function(e){
+  if(V.drag){
+    var r=vp.getBoundingClientRect();
+    var x0=Math.min(V.drag.x,e.clientX),x1=Math.max(V.drag.x,e.clientX);
+    var rb=el("rubber");
+    rb.style.left=(x0-r.left)+"px";rb.style.top="0px";
+    rb.style.width=(x1-x0)+"px";rb.style.height=(r.height)+"px";
+    rb.style.display="block";
+  }
+  showTip(e);
+});
+window.addEventListener("mouseup",function(e){
+  if(!V.drag){return;}
+  var x0=V.drag.x,dx=Math.abs(e.clientX-x0);V.drag=null;
+  el("rubber").style.display="none";
+  if(dx>8){
+    var r=vp.getBoundingClientRect();
+    var f0=(Math.min(e.clientX,x0)-r.left)/r.width;
+    var f1=(Math.max(e.clientX,x0)-r.left)/r.width;
+    var span=V.w1-V.w0;
+    var nw0=V.w0+f0*span,nw1=V.w0+f1*span;
+    if(nw1-nw0>0.001){V.w0=nw0;V.w1=nw1;V.follow=false;applyUI();setSrc();loadData();}
+  }
+});
+vp.addEventListener("wheel",function(e){
+  e.preventDefault();
+  var span=V.w1-V.w0,shift=span*0.08*(e.deltaY>0?1:-1);
+  V.w0+=shift;V.w1+=shift;
+  if(V.w0<V.full0){V.w1+=V.full0-V.w0;V.w0=V.full0;}
+  if(V.w1>V.full1){V.w0-=V.w1-V.full1;V.w1=V.full1;}
+  V.follow=false;applyUI();setSrc();loadData();
+},{passive:false});
+vp.addEventListener("dblclick",function(){resetBtn();});
+function showTip(e){
+  if(!V.pts||!V.pts.t||!V.pts.t.length){return;}
+  var r=vp.getBoundingClientRect();
+  if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom){
+    el("tip").style.display="none";el("cross").style.display="none";return;
+  }
+  var fx=(e.clientX-r.left)/r.width;
+  var t=V.w0+fx*(V.w1-V.w0);
+  var ts=V.pts.t,best=0,bd=1e18;
+  for(var i=0;i<ts.length;i++){var d=Math.abs(ts[i]-t);if(d<bd){bd=d;best=i;}}
+  if(bd>(V.w1-V.w0)*0.01){el("tip").style.display="none";el("cross").style.display="none";return;}
+  var s="<b>t = "+fmt(ts[best])+" s</b>";
+  for(var k in V.pts.series){s+="<br>"+k+": "+fmtv(V.pts.series[k][best]);}
+  var tip=el("tip");tip.innerHTML=s;tip.style.display="block";
+  tip.style.left=(e.clientX+14)+"px";tip.style.top=(e.clientY+10)+"px";
+  var cr=el("cross");cr.style.display="block";cr.style.left=(e.clientX-r.left)+"px";
+}
+refresh();setInterval(refresh,2000);
+</script></body></html>'''
+
+
+class LiveServer:
+    """本地 HTTP 服务: 按时间窗口重新渲染 SVG, 供前端数据级缩放。"""
+
+    def __init__(self, csv_supplier, overlay, max_points, port):
+        self.csv_supplier = csv_supplier
+        self.overlay = overlay
+        self.max_points = max_points
+        self.port = port
+
+    def _send(self, handler, code, ctype, body):
+        handler.send_response(code)
+        handler.send_header("Content-Type", ctype)
+        handler.send_header("Content-Length", str(len(body)))
+        handler.send_header("Cache-Control", "no-store")
+        handler.end_headers()
+        handler.wfile.write(body)
+
+    def _render_svg(self, t0, t1):
+        """按窗口重新渲染: 线宽恒定, 坐标轴随窗口重新生成。"""
+        csv_path = self.csv_supplier()
+        if csv_path is None:
+            return None
+        data = load_csv_tolerant(csv_path)
+        if data is None:
+            return None
+        t, y, names = data
+        mask = (t >= t0) & (t <= t1)
+        if mask.sum() < 2:  # 窗口内样本不足, 退回全程
+            mask = np.ones(len(t), dtype=bool)
+        tw, yw = t[mask], y[mask]
+        ymin = float(np.min(yw))
+        ymax = float(np.max(yw))
+        pad = max((ymax - ymin) * 0.06, 1e-6)
+        ylim = (ymin - pad, ymax + pad)
+        duration = float(t[-1] - t[0])
+        buf = io.BytesIO()
+        with _MPL_LOCK:
+            draw(tw, yw, names, buf, self.overlay, self.max_points, duration,
+                 xlim=(float(tw[0]), float(tw[-1])), ylim=ylim)
+        return buf.getvalue()
+
+    def _window_slice(self, t0, t1):
+        """窗口内数据 (用于悬停读值), 超过 4000 点按步长抽取。"""
+        csv_path = self.csv_supplier()
+        if csv_path is None:
+            return None
+        data = load_csv_tolerant(csv_path)
+        if data is None:
+            return None
+        t, y, names = data
+        mask = (t >= t0) & (t <= t1)
+        if mask.sum() < 2:
+            mask = np.ones(len(t), dtype=bool)
+        tw, yw = t[mask], y[mask]
+        step = max(1, int(np.ceil(len(tw) / 4000.0)))
+        sl = slice(None, None, step)
+        return {"t": tw[sl].tolist(),
+                "series": {names[i]: yw[sl, i].tolist() for i in range(y.shape[1])}}
+
+    def _info(self):
+        csv_path = self.csv_supplier()
+        if csv_path is None:
+            return None
+        data = load_csv_tolerant(csv_path)
+        if data is None:
+            return None
+        t, y, names = data
+        return {"t0": float(t[0]), "t1": float(t[-1]),
+                "rows": int(len(t)), "names": names}
+
+    def handle(self, handler):
+        parsed = urllib.parse.urlparse(handler.path)
+        path = parsed.path
+        q = urllib.parse.parse_qs(parsed.query)
+        try:
+            if path in ("/", "/index.html"):
+                self._send(handler, 200, "text/html; charset=utf-8",
+                           APP_HTML.encode("utf-8"))
+            elif path == "/chart.svg":
+                t0 = float(q.get("t0", ["0"])[0])
+                t1 = float(q.get("t1", ["1e18"])[0])
+                body = self._render_svg(t0, t1)
+                if body is None:
+                    self._send(handler, 204, "text/plain", b"")
+                else:
+                    self._send(handler, 200, "image/svg+xml", body)
+            elif path == "/data.json":
+                t0 = float(q.get("t0", ["0"])[0])
+                t1 = float(q.get("t1", ["1e18"])[0])
+                body = self._window_slice(t0, t1)
+                if body is None:
+                    self._send(handler, 204, "text/plain", b"")
+                else:
+                    self._send(handler, 200, "application/json",
+                               json.dumps(body).encode("utf-8"))
+            elif path == "/info.json":
+                body = self._info()
+                if body is None:
+                    self._send(handler, 204, "text/plain", b"")
+                else:
+                    self._send(handler, 200, "application/json",
+                               json.dumps(body).encode("utf-8"))
+            else:
+                self._send(handler, 404, "text/plain", b"not found")
+        except Exception as e:  # 渲染失败不影响服务存活
+            self._send(handler, 500, "text/plain", str(e).encode("utf-8"))
+
+    def run(self):
+        srv = self
+
+        class Handler(BaseHTTPRequestHandler):
+            def do_GET(self):
+                srv.handle(self)
+
+            def log_message(self, *args):
+                pass
+
+        httpd = ThreadingHTTPServer(("0.0.0.0", self.port), Handler)
+        print(f"交互服务已启动: 浏览器打开 http://localhost:{self.port}")
+        print("  (在容器内运行且浏览器在宿主机时, 请改用宿主机直接运行本脚本,"
+              " 或为容器映射该端口; Ctrl+C 退出)")
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\n交互服务已停止。")
+
+
+def find_latest_csv():
+    candidates = sorted(glob.glob("drl_actions*.csv"), key=os.path.getmtime)
+    return candidates[-1] if candidates else None
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="实时绘制 DRL 动作输出 (SVG 矢量图)")
+    parser.add_argument("csv", nargs="?",
+                        help="动作记录 CSV; 缺省时自动跟随最新 drl_actions*.csv")
+    parser.add_argument("--serve", action="store_true",
+                        help="交互模式: 启动本地 HTTP 服务, 浏览器数据级缩放观察")
+    parser.add_argument("--port", type=int, default=8000,
+                        help="交互模式端口 (默认 8000)")
+    parser.add_argument("--interval", type=float, default=1.0,
+                        help="文件模式重绘间隔, 秒 (默认 1.0)")
+    parser.add_argument("--overlay", action="store_true",
+                        help="叠加图 (默认按列数分面板)")
+    parser.add_argument("--max-points", type=int, default=50000,
+                        help="超过该点数时做 min/max 包络抽稀; 0 表示不抽稀 (默认 50000)")
+    args = parser.parse_args()
+
+    if args.serve:
+        server = LiveServer(lambda: args.csv or find_latest_csv(),
+                            args.overlay, args.max_points, args.port)
+        server.run()
+        return 0
+
+    # ---- 文件模式 (原有行为) ----
+    fixed_csv = args.csv
+    last_state = None
+    print("实时绘图已启动: 等待 CSV 数据... (Ctrl+C 退出)")
+
+    while True:
+        csv_path = fixed_csv or find_latest_csv()
+        if csv_path is None:
+            print("未找到 drl_actions*.csv, 请先启动 tita_drl 节点...")
+            time.sleep(max(args.interval, 1.0))
+            continue
+        st = os.stat(csv_path)
+        state = (csv_path, st.st_size, st.st_mtime)
+        if state == last_state:
+            time.sleep(args.interval)
+            continue
+        last_state = state
+        try:
+            data = load_csv_tolerant(csv_path)
+        except ValueError as e:
+            print(f"读取失败: {e}")
+            time.sleep(args.interval)
+            continue
+        if data is None:
+            time.sleep(args.interval)
+            continue
+        t, y, names = data
+        duration = t[-1] - t[0]
+        svg_path = os.path.splitext(csv_path)[0] + "_live.svg"
+        try:
+            draw(t, y, names, svg_path, args.overlay, args.max_points, duration)
+        except OSError as e:
+            print(f"无法写入 {os.path.basename(svg_path)}: {e}"
+                  f" (检查输出目录写权限), 等待重试...")
+            time.sleep(args.interval)
+            continue
+        print(f"[{time.strftime('%H:%M:%S')}] {len(t)} 行, 时长 {duration:.1f} s"
+              f" -> {os.path.basename(svg_path)}")
+        time.sleep(args.interval)
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main())
+    except KeyboardInterrupt:
+        print("\n实时绘图已停止 (SVG 已保留)。")

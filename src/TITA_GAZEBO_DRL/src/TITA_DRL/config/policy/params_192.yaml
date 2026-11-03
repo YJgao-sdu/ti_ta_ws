@@ -1,0 +1,49 @@
+tita_wheelfoot_node:  # 节点名称，应与 Launch 文件中的节点名一致
+  ros__parameters:
+    TITAWheelfootCfg:
+      default_joint_angle:
+        joint_left_leg_1: -0.0
+        joint_left_leg_2: 0.8
+        joint_left_leg_3: -1.50
+        joint_left_leg_4: 0.0
+        joint_right_leg_1: 0.0
+        joint_right_leg_2: 0.8
+        joint_right_leg_3: -1.5
+        joint_right_leg_4: 0.0
+
+      observation:
+        history_length_dof_pos: 0
+        history_length_dof_vel: 0
+
+      control:
+        stiffness: 40.0
+        damping: 1.0
+        action_scale_pos: 0.25
+        action_scale_vel: 8.0
+        decimation: 4.0
+        user_torque_limit: 45.0
+
+      normalization:
+        clip_scales:
+          clip_observations: 100.0
+          clip_actions: 100.0
+        obs_scales:
+          ang_vel: 0.25
+          dof_pos: 1.0
+          dof_vel: 0.05
+
+      size:
+        actions_size: 8
+        observations_size: 33
+        history_len: 5
+        commands_size: 5
+
+      user_cmd_scales:
+        lin_vel_x: 2.0
+        lin_vel_y: 2.0
+        ang_vel_yaw: 0.25
+        base_height: 1.0
+
+      model_path: "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/config/policy/policy0526.onnx"
+      # model_path: "/ros_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/config/policy/policy12.25-16.55.26.onnx"
+

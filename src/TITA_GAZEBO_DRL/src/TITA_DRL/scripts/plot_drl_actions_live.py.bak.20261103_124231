@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""实时绘制 tita_drl_obs170 的动作输出: SVG 矢量图 + 浏览器自动刷新页面 (默认记录 2 个轮关节, 列数自适应)。
+
+与仿真同时运行, 每 refresh 秒重绘一次矢量图 (可无限放大观察):
+    python3 plot_drl_actions_live.py                 # 自动跟随最新的 drl_actions*.csv
+    python3 plot_drl_actions_live.py <csv>           # 指定记录文件
+    python3 plot_drl_actions_live.py --overlay       # 8 条曲线叠加图
+    python3 plot_drl_actions_live.py --interval 0.5  # 重绘间隔 (秒)
+
+输出 (与 CSV 同目录):
+    <csv名>_live.svg   矢量图, 浏览器/Inkscape 打开可无限放大
+    <csv名>_live.html  浏览器页面, 每 2 秒自动刷新最新曲线
+
+打开方式: 在宿主机浏览器直接打开 html 文件 (对应宿主机路径 /home/robot/gyj/tita_ws/...)。
+CSV 尾行若恰好处于写入中间状态 (残缺行), 本脚本自动跳过, 不影响出图。
+"""
+import argparse
+import glob
+import os
+import sys
+import time
+
+import numpy as np
+
+import matplotlib
+matplotlib.use("Agg")  # 无显示环境下出 SVG
+import matplotlib.pyplot as plt
+
+# ---- dataviz 参考调色板 (浅色模式) ----
+SURFACE = "#fcfcfb"
+INK = "#0b0b0b"
+INK_MUTED = "#898781"
+GRID = "#e1e0d9"
+BASELINE = "#c3c2b7"
+SERIES = [
+    "#2a78d6", "#1baf7a", "#eda100", "#008300",
+    "#4a3aa7", "#e34948", "#e87ba4", "#eb6834",
+]
+SERIES_MAIN = SERIES[0]
+
+
+def load_csv_tolerant(path):
+    """读取 CSV: 跳过表头、残缺尾行与非法行 (实时写入中的文件安全)。"""
+    with open(path, encoding="utf-8", errors="replace") as f:
+        lines = f.readlines()
+    if len(lines) < 2:
+        return None
+    header = lines[0].strip().split(",")
+    if header[0] != "time":
+        raise ValueError(f"CSV 表头不符合预期: {header}")
+    names = header[1:]
+    rows = []
+    for ln in lines[1:]:
+        parts = ln.strip().split(",")
+        if len(parts) != len(header):
+            continue  # 残缺行 (写入中间状态), 跳过
+        try:
+            rows.append([float(x) for x in parts])
+        except ValueError:
+            continue  # 非法数值行, 跳过
+    if not rows:
+        return None
+    arr = np.asarray(rows, dtype=float)
+    return arr[:, 0], arr[:, 1:], names
+
+
+def decimate(t, y, max_points):
+    """点数超过 max_points 时做 min/max 包络抽稀, 保留峰值特征; 否则返回 None。
+    max_points 传 0 表示不抽稀 (保留全部原始点, SVG 会更大但放大后细节最全)。"""
+    if max_points <= 0 or len(t) <= max_points:
+        return None
+    n_buckets = max_points // 2
+    t_out, lo, hi = [], [], []
+    for i in range(n_buckets):
+        s = i * len(t) // n_buckets
+        e = max(s + 1, (i + 1) * len(t) // n_buckets)
+        seg = y[s:e]
+        t_out.append(t[s])
+        lo.append(np.min(seg))
+        hi.append(np.max(seg))
+    return np.asarray(t_out), np.asarray(lo), np.asarray(hi)
+
+
+def style_axis(ax):
+    ax.set_facecolor(SURFACE)
+    ax.grid(True, color=GRID, linewidth=0.8)
+    for spine in ("top", "right"):
+        ax.spines[spine].set_visible(False)
+    for spine in ("left", "bottom"):
+        ax.spines[spine].set_color(BASELINE)
+    ax.tick_params(colors=INK_MUTED, labelsize=8)
+
+
+def draw(t, y, names, out_svg, overlay, max_points, duration):
+    n = y.shape[1]
+    if overlay:
+        fig, ax = plt.subplots(figsize=(12, 6))
+        fig.patch.set_facecolor(SURFACE)
+        style_axis(ax)
+        for i in range(n):
+            color = SERIES[i % len(SERIES)]
+            dec = decimate(t, y[:, i], max_points)
+            if dec is None:
+                ax.plot(t, y[:, i], color=color, linewidth=1.5, label=names[i])
+            else:
+                tc, lo, hi = dec
+                ax.fill_between(tc, lo, hi, color=color, alpha=0.12, linewidth=0)
+                ax.plot(tc, lo, color=color, linewidth=1.2, label=names[i])
+                ax.plot(tc, hi, color=color, linewidth=1.2)
+        ax.legend(loc="upper right", frameon=False, fontsize=9)
+        ax.set_xlabel("time (s)", color=INK_MUTED, fontsize=10)
+        ax.set_ylabel("action", color=INK_MUTED, fontsize=10)
+        fig.suptitle(f"DRL actions (live, {duration:.1f} s)", color=INK,
+                     fontsize=13, fontweight="bold")
+        fig.tight_layout(rect=(0, 0, 1, 0.94))
+    else:
+        if n <= 2:
+            fig, axes = plt.subplots(n, 1, figsize=(12, 3.2 * n), sharex=True)
+        else:
+            fig, axes = plt.subplots(4, 2, figsize=(12, 9), sharex=True)
+        fig.patch.set_facecolor(SURFACE)
+        for i, ax in enumerate(np.asarray(axes).ravel()):
+            if i >= n:
+                ax.axis("off")
+                continue
+            style_axis(ax)
+            dec = decimate(t, y[:, i], max_points)
+            if dec is None:
+                ax.plot(t, y[:, i], color=SERIES_MAIN, linewidth=1.5)
+            else:
+                tc, lo, hi = dec
+                ax.fill_between(tc, lo, hi, color=SERIES_MAIN,
+                                alpha=0.18, linewidth=0)
+                ax.plot(tc, lo, color=SERIES_MAIN, linewidth=1.2)
+                ax.plot(tc, hi, color=SERIES_MAIN, linewidth=1.2)
+            ax.set_title(names[i], color=INK, fontsize=10, loc="left")
+        fig.suptitle(f"DRL actions (live, {duration:.1f} s)", color=INK,
+                     fontsize=13, fontweight="bold")
+        fig.supxlabel("time (s)", color=INK_MUTED, fontsize=10)
+        fig.supylabel("action", color=INK_MUTED, fontsize=10)
+        fig.tight_layout(rect=(0, 0, 1, 0.95))
+    fig.savefig(out_svg, format="svg", facecolor=SURFACE)
+    plt.close(fig)
+
+
+def write_html(html_path, svg_name):
+    html = (
+        "<!DOCTYPE html><html><head><meta charset=\"utf-8\">"
+        "<title>DRL actions live</title></head>"
+        "<body style=\"margin:0;background:#f9f9f7\">"
+        f"<img id=\"chart\" src=\"{svg_name}\" style=\"width:100%\">"
+        "<script>setInterval(()=>{"
+        f"document.getElementById('chart').src='{svg_name}?t='+Date.now()"
+        "},2000)</script></body></html>"
+    )
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+
+def find_latest_csv():
+    candidates = sorted(glob.glob("drl_actions*.csv"), key=os.path.getmtime)
+    return candidates[-1] if candidates else None
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="实时绘制 DRL 动作输出 (SVG 矢量图 + 浏览器自动刷新)")
+    parser.add_argument("csv", nargs="?",
+                        help="动作记录 CSV; 缺省时自动跟随最新 drl_actions*.csv")
+    parser.add_argument("--interval", type=float, default=1.0,
+                        help="重绘间隔, 秒 (默认 1.0)")
+    parser.add_argument("--overlay", action="store_true",
+                        help="8 条曲线叠加到同一坐标轴 (默认 8 面板)")
+    parser.add_argument("--max-points", type=int, default=50000,
+                        help="超过该点数时做 min/max 包络抽稀; 0 表示不抽稀 (默认 50000)")
+    args = parser.parse_args()
+
+    fixed_csv = args.csv
+    last_state = None
+    print("实时绘图已启动: 等待 CSV 数据... (Ctrl+C 退出)")
+
+    while True:
+        csv_path = fixed_csv or find_latest_csv()
+        if csv_path is None:
+            print("未找到 drl_actions*.csv, 请先启动 tita_drl 节点...")
+            time.sleep(max(args.interval, 1.0))
+            continue
+        st = os.stat(csv_path)
+        state = (csv_path, st.st_size, st.st_mtime)
+        if state == last_state:
+            time.sleep(args.interval)
+            continue
+        last_state = state
+        try:
+            data = load_csv_tolerant(csv_path)
+        except ValueError as e:
+            print(f"读取失败: {e}")
+            time.sleep(args.interval)
+            continue
+        if data is None:
+            time.sleep(args.interval)
+            continue
+        t, y, names = data
+        duration = t[-1] - t[0]
+        svg_path = os.path.splitext(csv_path)[0] + "_live.svg"
+        html_path = os.path.splitext(csv_path)[0] + "_live.html"
+        try:
+            draw(t, y, names, svg_path, args.overlay, args.max_points, duration)
+            write_html(html_path, os.path.basename(svg_path))
+        except OSError as e:
+            print(f"无法写入 {os.path.basename(svg_path)}: {e}"
+                  f" (检查输出目录写权限), 等待重试...")
+            time.sleep(args.interval)
+            continue
+        print(f"[{time.strftime('%H:%M:%S')}] {len(t)} 行, 时长 {duration:.1f} s"
+              f" -> {os.path.basename(svg_path)}")
+        time.sleep(args.interval)
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main())
+    except KeyboardInterrupt:
+        print("\n实时绘图已停止 (SVG/HTML 已保留)。")

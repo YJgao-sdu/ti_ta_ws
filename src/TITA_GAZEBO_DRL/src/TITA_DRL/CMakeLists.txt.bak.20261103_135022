@@ -1,0 +1,101 @@
+cmake_minimum_required(VERSION 3.8)
+project(TITA_DRL)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(control_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(message_filters REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+# 手动指定 onnxruntime 的包含目录
+include_directories(/usr/local/include) #/usr/include/onnxruntime
+include_directories(${EIGEN3_INCLUDE_DIR})
+# 手动指定库目录
+link_directories(/usr/local/lib) #/usr/lib
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+add_executable(tita_drl_obs57 src/tita_drl_obs57.cpp)
+add_executable(tita_drl_obs32 src/tita_drl_obs32.cpp)
+add_executable(tita_drl_obs320_slr src/tita_drl_obs320_slr.cpp)
+add_executable(tita_drl_obs192 src/tita_drl_obs192.cpp)
+add_executable(tita_drl_obs_192-stand src/tita_drl_obs_192-stand.cpp)
+add_executable(tita_drl_obs194 src/tita_drl_obs194.cpp)
+add_executable(tita_drl_obs374 src/tita_drl_obs374.cpp)
+add_executable(tita_drl_obs170 src/tita_drl_obs170.cpp)
+add_executable(text src/text.cpp)
+# 链接库
+target_link_libraries(tita_drl_obs57
+    onnxruntime
+    # 如果有其他必要的库，可以在这里添加
+)
+target_link_libraries(tita_drl_obs32
+    onnxruntime
+)
+target_link_libraries(tita_drl_obs320_slr
+    onnxruntime
+)
+target_link_libraries(tita_drl_obs192
+    onnxruntime
+)
+target_link_libraries(tita_drl_obs_192-stand
+    onnxruntime
+)
+target_link_libraries(tita_drl_obs194
+    onnxruntime
+)
+target_link_libraries(tita_drl_obs374
+    onnxruntime
+)
+target_link_libraries(tita_drl_obs170
+    onnxruntime
+)
+ament_target_dependencies(tita_drl_obs57 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs32 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs320_slr rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs192 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs_192-stand rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs194 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs374 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs170 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+install(TARGETS
+  tita_drl_obs57
+  tita_drl_obs32
+  tita_drl_obs320_slr
+  tita_drl_obs192
+  tita_drl_obs_192-stand
+  tita_drl_obs194
+  tita_drl_obs374
+  tita_drl_obs170
+  text
+  DESTINATION lib/${PROJECT_NAME})
+
+  # 安装 launch 和 config 目录
+install(DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+  # 安装动作记录绘图脚本 (ros2 run TITA_DRL plot_drl_actions.py)
+install(PROGRAMS scripts/plot_drl_actions.py scripts/plot_drl_actions_live.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+ament_package()
