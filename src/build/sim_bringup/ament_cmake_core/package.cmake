@@ -5,7 +5,7 @@ set(sim_bringup_BUILD_DEPENDS "rclcpp" "rclcpp_lifecycle" "geometry_msgs" "senso
 set(sim_bringup_BUILDTOOL_DEPENDS "ament_cmake_auto")
 set(sim_bringup_BUILD_EXPORT_DEPENDS "rclcpp" "rclcpp_lifecycle" "geometry_msgs" "sensor_msgs" "pluginlib" "gazebo_bridge" "webots_bridge" "template_ros2_controller")
 set(sim_bringup_BUILDTOOL_EXPORT_DEPENDS )
-set(sim_bringup_EXEC_DEPENDS "imu_sensor_broadcaster" "joint_state_broadcaster" "robot_state_publisher" "rclcpp" "rclcpp_lifecycle" "geometry_msgs" "sensor_msgs" "pluginlib" "gazebo_bridge" "webots_bridge" "template_ros2_controller")
+set(sim_bringup_EXEC_DEPENDS "imu_sensor_broadcaster" "joint_state_broadcaster" "robot_state_publisher" "gazebo_msgs" "rclcpp" "rclcpp_lifecycle" "geometry_msgs" "sensor_msgs" "pluginlib" "gazebo_bridge" "webots_bridge" "template_ros2_controller")
 set(sim_bringup_TEST_DEPENDS "ament_lint_auto" "ament_lint_auto" "ament_cmake_clang_format" "ament_cmake_copyright" "ament_cmake_cppcheck" "ament_cmake_cpplint" "ament_cmake_lint_cmake" "ament_cmake_xmllint")
 set(sim_bringup_GROUP_DEPENDS )
 set(sim_bringup_MEMBER_OF_GROUPS )

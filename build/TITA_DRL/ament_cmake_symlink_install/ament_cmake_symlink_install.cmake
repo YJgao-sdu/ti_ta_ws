@@ -316,8 +316,8 @@ include("/mnt/dev/tita_ws/build/TITA_DRL/ament_cmake_symlink_install_targets_0_$
 # install(DIRECTORY "launch" "config" "DESTINATION" "share/TITA_DRL")
 ament_cmake_symlink_install_directory("/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL" DIRECTORY "launch" "config" "DESTINATION" "share/TITA_DRL")
 
-# install(PROGRAMS "scripts/plot_drl_actions.py" "DESTINATION" "lib/TITA_DRL")
-ament_cmake_symlink_install_programs("/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL" PROGRAMS "scripts/plot_drl_actions.py" "DESTINATION" "lib/TITA_DRL")
+# install(PROGRAMS "scripts/plot_drl_actions.py" "scripts/plot_drl_actions_live.py" "DESTINATION" "lib/TITA_DRL")
+ament_cmake_symlink_install_programs("/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL" PROGRAMS "scripts/plot_drl_actions.py" "scripts/plot_drl_actions_live.py" "DESTINATION" "lib/TITA_DRL")
 
 # install(FILES "/mnt/dev/tita_ws/build/TITA_DRL/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/TITA_DRL" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL" FILES "/mnt/dev/tita_ws/build/TITA_DRL/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/TITA_DRL" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

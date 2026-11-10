@@ -22,7 +22,7 @@ tita_wheelfoot_node:  # 节点名称，应与 Launch 文件中的节点名一致
         stiffness: 40.0
         damping: 1.0
         action_scale_pos: 0.25
-        action_scale_vel: 8.0
+        action_scale_vel: 1.5
         decimation: 4.0
         user_torque_limit: 45.0
 
@@ -47,5 +47,5 @@ tita_wheelfoot_node:  # 节点名称，应与 Launch 文件中的节点名一致
         lin_vel_y: 2.0
         ang_vel_yaw: 0.25
 
-      model_path: "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/config/policy/student_policy8.onnx"
-      # model_path: "/ros_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/config/policy/student_policy7.onnx"
+      model_path: "/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/config/policy/student_policy17.onnx"
+      # model_path: "/ros_ws/src/TITA_GAZEBO_DRL/src/TITA_DRL/config/policy/student_policy17.onnx"

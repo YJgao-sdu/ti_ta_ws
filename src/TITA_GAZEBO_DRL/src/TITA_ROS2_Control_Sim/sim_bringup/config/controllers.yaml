@@ -99,12 +99,12 @@
       command_interface: effort
       reference_and_state_interfaces: ["position"]
       gains:
-        joint_left_leg_1: {p: 20.0, i: 0.0, d: 0.8, i_clamp_max: 5.0, i_clamp_min: -5.0}
-        joint_left_leg_2: {p: 20.0, i: 0.0, d: 0.5, i_clamp_max: 5.0, i_clamp_min: -5.0}
-        joint_left_leg_3: {p: 20.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-        joint_right_leg_1: {p: 20.0, i: 0.0, d: 0.8, i_clamp_max: 5.0, i_clamp_min: -5.0}
-        joint_right_leg_2: {p: 20.0, i: 0.0, d: 0.5, i_clamp_max: 5.0, i_clamp_min: -5.0}
-        joint_right_leg_3: {p: 20.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_left_leg_1: {p: 40.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_left_leg_2: {p: 40.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_left_leg_3: {p: 40.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_right_leg_1: {p: 40.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_right_leg_2: {p: 40.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_right_leg_3: {p: 40.0, i: 0.0, d: 1.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
 
   wheel_pid_controller:
     ros__parameters:
@@ -114,6 +114,6 @@
       command_interface: effort
       reference_and_state_interfaces: ["velocity"]
       gains:
-        joint_left_leg_4: {p: 0.2, i: 0.0, d: 0.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-        joint_right_leg_4: {p: 0.2, i: 0.0, d: 0.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_left_leg_4: {p: 0.5, i: 0.0, d: 0.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+        joint_right_leg_4: {p: 0.5, i: 0.0, d: 0.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
 

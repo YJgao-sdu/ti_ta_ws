@@ -71,7 +71,41 @@ def decimate(t, y, max_points):
     return np.asarray(t_out), np.asarray(lo), np.asarray(hi)
 
 
-def tracked_pairs(names):
+ANALYSIS_NAMES = [
+    "left_wheel_action", "right_wheel_action",
+    "left_wheel_last_action", "right_wheel_last_action",
+    "left_wheel_vel", "right_wheel_vel",
+    "ang_vel_x", "ang_vel_y", "gravity_proj_x", "gravity_proj_y",
+]
+ANALYSIS_GROUPS = [
+    ("wheel actions vs ang_vel_x",
+     ["left_wheel_action", "right_wheel_action", "ang_vel_x"]),
+    ("wheel actions vs ang_vel_y",
+     ["left_wheel_action", "right_wheel_action", "ang_vel_y"]),
+    ("wheel actions vs gravity proj",
+     ["left_wheel_action", "right_wheel_action", "gravity_proj_x", "gravity_proj_y"]),
+    ("wheel actions vs wheel vel",
+     ["left_wheel_action", "right_wheel_action", "left_wheel_vel", "right_wheel_vel"]),
+    ("wheel actions vs last actions",
+     ["left_wheel_action", "right_wheel_action",
+      "left_wheel_last_action", "right_wheel_last_action"]),
+]
+
+
+def analysis_groups(names):
+    """检测是否为轮关节分析 10 路信号结构; 匹配返回 [(组标题, 组内列名), ...]。"""
+    if len(names) != len(ANALYSIS_NAMES) or sorted(names) != sorted(ANALYSIS_NAMES):
+        return None
+    out = []
+    for title, gcols in ANALYSIS_GROUPS:
+        if all(nm in names for nm in gcols):
+            out.append((title, gcols))
+        else:
+            return None
+    return out
+
+
+def track_pairs(names):
     """检测列名是否为 <关节>_target / <关节>_actual 成对结构。
     匹配返回 [(关节名, 目标列序号, 实际列序号), ...], 否则返回 None。"""
     if len(names) % 2 != 0:
@@ -102,7 +136,43 @@ def plot_small_multiples(t, y, names, title, out, max_points):
     列名为 <关节>_target/_actual 成对结构时, 同一关节的目标/实际速度
     画在同一个面板 (共享时间轴与纵轴), 便于直接对比。"""
     n = y.shape[1]
-    pairs = tracked_pairs(names)
+    groups = analysis_groups(names)
+    if groups is not None:
+        # 4 组同轴对比: 每组以两轮关节 action 为参照
+        fig, axes = plt.subplots(len(groups), 1,
+                                 figsize=(12, 3.2 * len(groups)), sharex=True)
+        fig.patch.set_facecolor(SURFACE)
+        fig.suptitle(title, color=INK, fontsize=13, fontweight="bold")
+        for g, (gtitle, gcols) in enumerate(groups):
+            ax = np.asarray(axes).ravel()[g]
+            style_axis(ax)
+            for j, nm in enumerate(gcols):
+                ci = names.index(nm)
+                color = SERIES[j % len(SERIES)]
+                dec = decimate(t, y[:, ci], max_points)
+                if dec is None:
+                    ax.plot(t, y[:, ci], color=color, linewidth=1.5, label=nm)
+                else:
+                    tc, lo, hi = dec
+                    ax.fill_between(tc, lo, hi, color=color, alpha=0.12,
+                                    linewidth=0)
+                    ax.plot(tc, lo, color=color, linewidth=1.2, label=nm)
+                    ax.plot(tc, hi, color=color, linewidth=1.2)
+            vlo = min(float(np.nanmin(y[:, names.index(nm)])) for nm in gcols)
+            vhi = max(float(np.nanmax(y[:, names.index(nm)])) for nm in gcols)
+            span = vhi - vlo
+            pad = span * 0.12 if span > 1e-9 else 0.1
+            ax.set_ylim(vlo - pad, vhi + pad)
+            ax.legend(loc="upper right", frameon=False, fontsize=9)
+            ax.set_title(gtitle, color=INK, fontsize=10, loc="left")
+        fig.supxlabel("time (s)", color=INK_MUTED, fontsize=10)
+        fig.supylabel("value (mixed units)", color=INK_MUTED, fontsize=10)
+        fig.tight_layout(rect=(0, 0, 1, 0.95))
+        fig.savefig(out, dpi=150, facecolor=SURFACE)
+        plt.close(fig)
+        print(f"已保存轮关节分析 4 组对比图: {out}")
+        return
+    pairs = track_pairs(names)
     if pairs is not None:
         fig, axes = plt.subplots(len(pairs), 1, figsize=(12, 3.2 * len(pairs)),
                                  sharex=True)
@@ -166,7 +236,8 @@ def plot_small_multiples(t, y, names, title, out, max_points):
     elif n == 4:
         fig, axes = plt.subplots(2, 2, figsize=(12, 6.4), sharex=True)
     else:
-        fig, axes = plt.subplots(4, 2, figsize=(12, 9), sharex=True)
+        rows = (n + 1) // 2
+        fig, axes = plt.subplots(rows, 2, figsize=(12, 2.2 * rows), sharex=True)
     fig.patch.set_facecolor(SURFACE)
     fig.suptitle(title, color=INK, fontsize=13, fontweight="bold")
     for i, ax in enumerate(np.asarray(axes).ravel()):

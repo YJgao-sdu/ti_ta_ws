@@ -789,10 +789,21 @@ CMakeFiles/joy_controller_node.dir/src/main.cpp.o: /mnt/dev/tita_ws/src/TITA_GAZ
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
   /mnt/dev/tita_ws/install/tita_bringup/include/tita_utils/topic_names.hpp
 
 
 /mnt/dev/tita_ws/install/tita_bringup/include/tita_utils/topic_names.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
 
@@ -983,6 +994,8 @@ CMakeFiles/joy_controller_node.dir/src/main.cpp.o: /mnt/dev/tita_ws/src/TITA_GAZ
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
@@ -1691,6 +1704,8 @@ CMakeFiles/joy_controller_node.dir/src/main.cpp.o: /mnt/dev/tita_ws/src/TITA_GAZ
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/c++/11/array:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 

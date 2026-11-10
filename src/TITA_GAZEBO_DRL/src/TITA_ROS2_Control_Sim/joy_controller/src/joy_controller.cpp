@@ -13,6 +13,7 @@
 // limitations under the License.
 
 #include "joy_controller/joy_controller.hpp"
+#include "std_msgs/msg/bool.hpp"
 
 namespace joy_controller
 {
@@ -34,6 +35,11 @@ JoyCommand::JoyCommand(const rclcpp::NodeOptions & options) : Node("joy_controll
     tita_topic::manager_pose_command, rclcpp::SystemDefaultsQoS());
   fsm_goal_publisher_ = this->create_publisher<std_msgs::msg::String>(
     tita_topic::manager_key_command, rclcpp::SystemDefaultsQoS());
+  // [新增] RL / Damping 模式切换发布器
+  damping_mode_publisher_ =
+      this->create_publisher<std_msgs::msg::Bool>(
+          "/tita/safety_damping/enable",
+          rclcpp::SystemDefaultsQoS());
   realtime_cmd_vel_publisher_ =
     std::make_shared<realtime_tools::RealtimePublisher<geometry_msgs::msg::Twist>>(
       cmd_vel_publisher_);
@@ -121,20 +127,17 @@ void JoyCommand::fsm_goal_cb()
   if (key_msg_updated_) {
     if (realtime_fsm_goal_publisher_ && realtime_fsm_goal_publisher_->trylock()) {
       auto & msg = realtime_fsm_goal_publisher_->msg_;
-      if (joy_msg_->axes[4] == 1) {
-        msg.data = "idle";
-      } else {
-        if (joy_msg_->axes[5] == 1) {
-          if (msg.data == "balance_stand") {
-            msg.data = "transform_down";
-          } else if (msg.data == "idle") {
-            msg.data = "transform_up";
-            std::cout << "transform_up" << std::endl;
-          }
-        } else if (joy_msg_->axes[5] == -1) {
-          msg.data = "rl";
+      if (joy_msg_->axes[5] == 1) {
+        if (msg.data == "balance_stand") {
+          msg.data = "transform_down";
+        } else if (msg.data == "idle") {
+          msg.data = "transform_up";
+          std::cout << "transform_up" << std::endl;
         }
+      } else if (joy_msg_->axes[5] == -1) {
+        msg.data = "rl";
       }
+      
       // if (joy_msg_->axes[4] == -1 && feedback_fsm_ == "idle") {
       //   msg.data = "transform_up";
       //   count++;
@@ -174,9 +177,49 @@ void JoyCommand::joy_cb(const sensor_msgs::msg::Joy::SharedPtr msg)
   }
   key_msg_updated_ = false;
   if (
-    joy_msg_->axes[4] != msg->axes[4] || joy_msg_->axes[5] != msg->axes[5] ||
+    joy_msg_->axes[5] != msg->axes[5] ||
     joy_msg_->axes[6] != msg->axes[6] || joy_msg_->axes[7] != msg->axes[7]) {
     key_msg_updated_ = true;
+  }
+  // =====================================================
+  // [新增] StandUp 按键：RL / Damping 交替切换
+  // axes[4] = 1：按键按下
+  // axes[4] = 0：按键松开
+  // =====================================================
+
+  if (msg->axes.size() > 4 && joy_msg_->axes.size() > 4)
+  {
+      // 当前按键状态
+      bool current_pressed = (msg->axes[4] < -0.5);
+
+      // 上一次按键状态
+      bool previous_pressed = (joy_msg_->axes[4] < -0.5);
+
+      // 只检测按下沿，避免长按时重复切换
+      if (current_pressed && !previous_pressed)
+      {
+          // 切换模式状态
+          damping_mode_enabled_ = !damping_mode_enabled_;
+
+          // 发布模式切换指令
+          std_msgs::msg::Bool damping_msg;
+          damping_msg.data = damping_mode_enabled_;
+
+          damping_mode_publisher_->publish(damping_msg);
+
+          if (damping_mode_enabled_)
+          {
+              RCLCPP_WARN(
+                  this->get_logger(),
+                  "Manual switch: DAMPING MODE ENABLED");
+          }
+          else
+          {
+              RCLCPP_INFO(
+                  this->get_logger(),
+                  "Manual switch: RL MODE REQUESTED");
+          }
+      }
   }
   *joy_msg_ = std::move(*msg);
 

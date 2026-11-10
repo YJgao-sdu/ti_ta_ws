@@ -6,6 +6,8 @@
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <sensor_msgs/msg/joy.hpp>
 #include <geometry_msgs/msg/twist.hpp>
+#include <std_srvs/srv/set_bool.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <onnxruntime_cxx_api.h>
 #include <Eigen/Dense>
 #include <vector>
@@ -46,12 +48,12 @@ public:
             "/tita/joint_states", qos,
             std::bind(&TitaWheelFootNode::jointStateCallback, this, _1)); // 3037088
 
-        // cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
-        //     "/cmd_vel", 10,
-        //     std::bind(&TitaWheelFootNode::cmdVelCallback, this, _1));
-        cmd_vel_sub_ = this->create_subscription<sensor_msgs::msg::Joy>(
-            "/tita3037088/command/teleop/command", qos,
-            std::bind(&TitaWheelFootNode::joycmdCallback, this, _1)); 
+        cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
+            "/cmd_vel", 10,
+            std::bind(&TitaWheelFootNode::cmdVelCallback, this, _1));
+        // cmd_vel_sub_ = this->create_subscription<sensor_msgs::msg::Joy>(
+        //     "/tita3037088/command/teleop/command", qos,
+        //     std::bind(&TitaWheelFootNode::joycmdCallback, this, _1)); 
 
         // 初始化发布者
     	using CommandMsg = control_msgs::msg::MultiDOFCommand;
@@ -59,6 +61,58 @@ public:
             "/tita/pid_controller/reference", 10);
         vel_action_pub_ = this->create_publisher<CommandMsg>(
             "/tita/wheel_pid_controller/reference", 10);
+
+        // [新增] 订阅控制器实际模式状态
+        safety_mode_subscriber_ =
+            this->create_subscription<std_msgs::msg::String>(
+                "/tita/safety_damping/status",
+                10,
+                [this](const std_msgs::msg::String::SharedPtr msg)
+                {
+                    if (safety_mode_ != msg->data)
+                    {
+                        safety_mode_ = msg->data;
+
+                        std::cout << "\n========== 控制模式切换 =========="
+                                  << std::endl;
+
+                        if (safety_mode_ == "RL_ACTIVE")
+                        {
+                            std::cout << "当前模式: RL 强化学习控制"
+                                      << std::endl;
+                        }
+                        else if (safety_mode_.find("DAMPING_LATCHED") != std::string::npos)
+                        {
+                            std::cout << "当前模式: 阻尼保护模式"
+                                      << std::endl;
+                        }
+                        else if (safety_mode_ == "RL_RECOVERING")
+                        {
+                            std::cout << "当前模式: 正在恢复 RL 控制"
+                                      << std::endl;
+                        }
+                        else
+                        {
+                            std::cout << "当前模式: " << safety_mode_
+                                      << std::endl;
+                        }
+
+                        std::cout << "=================================="
+                                  << std::endl;
+                    }
+                });
+            // 观测干预服务: 运行中随时将观测 ang_vel_y (索引4) 置零/恢复
+        zero_obs_service_ = this->create_service<std_srvs::srv::SetBool>(
+            "/tita/set_zero_ang_vel_y",
+            [this](const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
+                   std::shared_ptr<std_srvs::srv::SetBool::Response> response)
+            {
+                zero_ang_vel_y_ = request->data;
+                response->success = true;
+                response->message = zero_ang_vel_y_
+                    ? "观测 ang_vel_y 已置零" : "观测 ang_vel_y 已恢复";
+                RCLCPP_INFO(this->get_logger(), "%s", response->message.c_str());
+            });
 
         // 加载参数
         if (!loadParameters())
@@ -127,22 +181,37 @@ private:
     // 订阅者和发布者
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_sub_;
     // rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr cmd_vel_sub_;
-    rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr cmd_vel_sub_;
+
+    // [新增] 阻尼模式状态订阅器
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr
+
+    safety_mode_subscriber_;
 
     rclcpp::Publisher<control_msgs::msg::MultiDOFCommand>::SharedPtr pos_action_pub_;
     rclcpp::Publisher<control_msgs::msg::MultiDOFCommand>::SharedPtr vel_action_pub_;
 
     // 定时器
     rclcpp::TimerBase::SharedPtr control_timer_;
+    // [新增] 当前控制器实际执行的模式
+    std::string safety_mode_ = "UNKNOWN";
 
-    // 混合信号记录 (CSV): 每周期一行 "时间,左轮目标速度,重力投影x,机身角速度y", 供离线绘图
+    // 动作记录 (CSV): 每个控制周期追加一行 "时间,动作0..7", 供离线绘图
     bool record_enabled_ = false;
     std::string record_file_;
     std::ofstream record_stream_;
     std::chrono::steady_clock::time_point record_t0_;
     bool record_t0_set_ = false;
     size_t record_rows_ = 0;
+
+    // 观测干预: 置零 ang_vel_y (通过 /tita/set_zero_ang_vel_y 服务切换)
+    bool zero_ang_vel_y_ = false;
+
+    // ang_vel_y 低通滤波状态与系数 (alpha 默认 0.75, 参数 filter.alpha)
+    double ang_vel_y_filtered_ = 0.0;
+    double filter_alpha_ = 0.0;
+    rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr zero_obs_service_;
 
     // 最新的消息存储
     sensor_msgs::msg::Imu::SharedPtr latest_imu_msg_;
@@ -367,6 +436,27 @@ private:
             std::cout << current_commands_[i];
             if (i < current_commands_.size() - 1) std::cout << ", ";
         }
+
+        // [新增] 打印当前控制模式
+        std::cout << " | 控制模式: ";
+
+        if (safety_mode_ == "RL_ACTIVE")
+        {
+            std::cout << "RL强化学习模式";
+        }
+        else if (safety_mode_.find("DAMPING_LATCHED") != std::string::npos)
+        {
+            std::cout << "阻尼保护模式";
+        }
+        else if (safety_mode_ == "RL_RECOVERING")
+        {
+            std::cout << "RL模式恢复中";
+        }
+        else
+        {
+            std::cout << safety_mode_;
+        }
+
         std::cout << std::endl;
     }
 
@@ -390,7 +480,7 @@ private:
         this->declare_parameter<float>("TITAWheelfootCfg.control.stiffness", 40.0);
         this->declare_parameter<float>("TITAWheelfootCfg.control.damping", 1.0);
         this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_pos", 0.25);
-    	this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_vel", 8.0);
+    	this->declare_parameter<float>("TITAWheelfootCfg.control.action_scale_vel", 1.5);
         this->declare_parameter<float>("TITAWheelfootCfg.control.decimation", 4.0);
         this->declare_parameter<float>("TITAWheelfootCfg.control.user_torque_limit", 45.0);
 
@@ -413,6 +503,8 @@ private:
         this->declare_parameter<std::string>("TITAWheelfootCfg.model_path", "/home/robot/gyj/student_policy.onnx");
         // 动作记录: enable 开启后每个控制周期将 8 维动作输出追加到 file (自动插入时间戳)
         this->declare_parameter<bool>("record.enable", false);
+        // ang_vel_y 低通滤波系数 (0~1, 越大越平滑; 1.0 表示不用滤波)
+        this->declare_parameter<double>("filter.alpha", 0.1);
         this->declare_parameter<std::string>("record.file", "/tmp/drl_actions.csv");
 
 
@@ -458,6 +550,7 @@ private:
         // 动作记录
         this->get_parameter("record.enable", record_enabled_);
         this->get_parameter("record.file", record_file_);
+        this->get_parameter("filter.alpha", filter_alpha_);
 
         RCLCPP_INFO(this->get_logger(), "Parameters loaded successfully.");
         return true;
@@ -588,17 +681,20 @@ private:
             record_enabled_ = false;
             return;
         }
-        // 表头: 时间 + 三路信号 (左轮目标速度 rad/s, 重力投影x, 机身角速度y rad/s)
-        record_stream_ << "time,left_wheel_vel_target,gravity_proj_x,ang_vel_y\n";
+        // 表头: 时间 + 34 维观测 (与 observation_keys_ 一致) + 两轮原始动作 (索引3/7)
+        record_stream_ << "time";
+        for (const auto & key : observation_keys_)
+        {
+            record_stream_ << "," << key;
+        }
+        record_stream_ << ",left_wheel_action,right_wheel_action\n";
         RCLCPP_INFO(this->get_logger(), "动作记录已开启: %s (50Hz 逐周期追加)", path.c_str());
     }
 
-    // 每个控制周期调用一次, 追加一行: 时间(秒) + 三路混合信号
-    // (左轮目标速度 rad/s, 重力投影x 无量纲, 机身角速度y rad/s)
-    void recordMixedSignals(
-        const std::vector<float> & desired_velocities,
-        const Eigen::Vector3d & projected_gravity,
-        const sensor_msgs::msg::Imu::SharedPtr & imu_msg)
+    // 每个控制周期调用一次, 追加一行: 时间(秒) + 34 维观测 + 两轮原始动作
+    void recordObsAndActions(
+        const std::vector<float> & obs,
+        const std::vector<float> & actions)
     {
         if (!record_enabled_ || !record_stream_.is_open())
         {
@@ -612,14 +708,14 @@ private:
         const double t = std::chrono::duration<double>(
             std::chrono::steady_clock::now() - record_t0_).count();
         record_stream_ << std::fixed << std::setprecision(4) << t;
-        // 左轮目标速度 (desired_velocities[0], rad/s)
-        const double lw_target = (!desired_velocities.empty())
-            ? desired_velocities[0] : 0.0;
-        // 重力投影x (与策略观测一致, 已乘 obs_scales_gravity, 当前 1.0)
-        const double gpx = projected_gravity.x() * obs_scales_gravity_;
-        // 机身角速度y (IMU 原始值, rad/s)
-        const double avy = (imu_msg) ? imu_msg->angular_velocity.y : 0.0;
-        record_stream_ << "," << lw_target << "," << gpx << "," << avy;
+        // 34 维当前观测 (已裁剪 ±100, 与策略网络输入一致)
+        for (const auto v : obs)
+        {
+            record_stream_ << "," << v;
+        }
+        // 两轮原始动作 (8 维动作中索引 3=左轮, 7=右轮)
+        record_stream_ << "," << ((actions.size() > 3) ? actions[3] : 0.0f)
+                       << "," << ((actions.size() > 7) ? actions[7] : 0.0f);
         record_stream_ << "\n";
         // 每 50 行 (约 1 秒) 落盘一次, 便于实时绘图; 其余由析构时关闭文件兜底
         if (++record_rows_ % 50 == 0)
@@ -669,7 +765,17 @@ private:
         temp_observation[2] = 0.0f;
         // 更新观测 - 机体角速度 (索引 3-5), ×0.25
         temp_observation[3] = static_cast<float>(imu_msg->angular_velocity.x) * obs_scales_angvel_;
-        temp_observation[4] = static_cast<float>(imu_msg->angular_velocity.y) * obs_scales_angvel_;
+        // ang_vel_y 先低通滤波 (alpha 默认 0.75) 再乘缩放输入策略
+        const double ang_vel_y_raw = static_cast<double>(imu_msg->angular_velocity.y);
+        ang_vel_y_filtered_ = filter_alpha_ * ang_vel_y_filtered_
+            + (1.0 - filter_alpha_) * ang_vel_y_raw;
+        temp_observation[4] = static_cast<float>(ang_vel_y_filtered_) * obs_scales_angvel_;
+        // 外部干预: 通过 /tita/set_zero_ang_vel_y 服务可随时将观测 ang_vel_y (索引4) 置零
+        if (zero_ang_vel_y_)
+        {
+            temp_observation[4] = -2.55724e-05f;
+        }
+        // std::cout << "IMU角速度观测量: y=" << temp_observation[4] << std::endl;
         temp_observation[5] = static_cast<float>(imu_msg->angular_velocity.z) * obs_scales_angvel_;
 
         // 更新观测 - 重力投影向量 (索引 6-8), ×1
@@ -755,17 +861,17 @@ private:
                            [this](float x) -> float
                            { return std::clamp(x, -clip_actions_, clip_actions_); });
 
+            // 记录本轮动作输出 (含未驱动延时阶段的零动作)
+            // 记录本轮 34 维观测与两轮原始动作
+            recordObsAndActions(current_obs_, actions);
         }
 
         // 周期内第二次追加 (双追加行为的另一半, 推理后执行)
         appendToHistory(current_obs_);
 
-        // 将动作转换为期望的位置
+        // 将动作转换为期望的位置convertActionsToDesiredVelocities
         std::vector<float> desired_positions = convertActionsToDesiredPositions(actions);
     	std::vector<float> desired_velocities = convertActionsToDesiredVelocities(actions);
-
-        // 记录本轮三路混合信号: 左轮目标速度 / 重力投影x / 机身角速度y
-        recordMixedSignals(desired_velocities, projected_gravity, imu_msg);
         std::vector<float> desired_goals;
         desired_goals.reserve(desired_positions.size() + desired_velocities.size());
         desired_goals.insert(desired_goals.end(), desired_positions.begin(), desired_positions.end());

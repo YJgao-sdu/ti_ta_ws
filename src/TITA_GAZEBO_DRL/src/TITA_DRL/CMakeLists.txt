@@ -13,6 +13,7 @@ find_package(control_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(message_filters REQUIRED)
+find_package(std_srvs REQUIRED)
 find_package(Eigen3 REQUIRED)
 
 # 手动指定 onnxruntime 的包含目录
@@ -75,7 +76,7 @@ ament_target_dependencies(tita_drl_obs192 rclcpp std_msgs control_msgs sensor_ms
 ament_target_dependencies(tita_drl_obs_192-stand rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
 ament_target_dependencies(tita_drl_obs194 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
 ament_target_dependencies(tita_drl_obs374 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
-ament_target_dependencies(tita_drl_obs170 rclcpp std_msgs control_msgs sensor_msgs message_filters Eigen3)
+ament_target_dependencies(tita_drl_obs170 rclcpp std_msgs control_msgs sensor_msgs message_filters std_srvs Eigen3)
 install(TARGETS
   tita_drl_obs57
   tita_drl_obs32

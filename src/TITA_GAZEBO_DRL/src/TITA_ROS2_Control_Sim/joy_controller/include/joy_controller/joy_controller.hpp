@@ -30,6 +30,7 @@
 #include "realtime_tools/realtime_publisher.h"
 #include "sensor_msgs/msg/joy.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/bool.hpp"
 #include "tita_utils/topic_names.hpp"
 
 namespace joy_controller
@@ -57,6 +58,9 @@ private:
   std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist>> cmd_vel_publisher_;
   std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped>> posestamped_publisher_;
   std::shared_ptr<rclcpp::Publisher<std_msgs::msg::String>> fsm_goal_publisher_;
+  // [新增] RL / Damping 模式切换发布器
+  rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr 
+      damping_mode_publisher_;
 
   std::shared_ptr<realtime_tools::RealtimePublisher<geometry_msgs::msg::Twist>>
     realtime_cmd_vel_publisher_;
@@ -69,6 +73,10 @@ private:
   rclcpp::Duration period_ = rclcpp::Duration::from_seconds(0.0);
   sensor_msgs::msg::Joy::SharedPtr joy_msg_ = nullptr;
   bool key_msg_updated_{false};
+  // [新增] 阻尼模式状态
+  // false：RL模式
+  // true：阻尼模式
+  bool damping_mode_enabled_{false};
   std::string command_fsm_{"idle"}, feedback_fsm_{"idle"};
   long int count{0};
 

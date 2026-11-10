@@ -313,6 +313,9 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "config" "launch" "DESTINATION" "share/sim_bringup")
 ament_cmake_symlink_install_directory("/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup" DIRECTORY "config" "launch" "DESTINATION" "share/sim_bringup")
 
+# install(PROGRAMS "scripts/robot_reset_timer.py" "DESTINATION" "lib/sim_bringup")
+ament_cmake_symlink_install_programs("/mnt/dev/tita_ws/src/TITA_GAZEBO_DRL/src/TITA_ROS2_Control_Sim/sim_bringup" PROGRAMS "scripts/robot_reset_timer.py" "DESTINATION" "lib/sim_bringup")
+
 # install("TARGETS" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/mnt/dev/tita_ws/src/build/sim_bringup/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 

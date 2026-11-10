@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DRL actions live</title>
+<style>
+body{margin:0;background:#f9f9f7;font-family:system-ui,sans-serif;overflow:hidden}
+#viewport{position:fixed;inset:0;overflow:hidden;cursor:grab;touch-action:none}
+#chart{width:100%;transform-origin:0 0;user-select:none;display:block}
+#bar{position:fixed;top:10px;right:14px;z-index:10;display:flex;gap:6px;align-items:center}
+#bar button{font-size:14px;min-width:32px;padding:5px 10px;border:1px solid #c3c2b7;
+  background:#fcfcfb;border-radius:4px;cursor:pointer;color:#0b0b0b}
+#bar button:hover{background:#e9f1fc}
+#zoomlabel{font-size:13px;color:#52514e;min-width:48px;text-align:center}
+#hint{position:fixed;bottom:8px;left:12px;z-index:10;font-size:12px;color:#898781;
+  background:rgba(252,252,251,.85);padding:3px 8px;border-radius:4px}
+</style></head>
+<body>
+<div id="bar">
+<button onclick="zoomBy(1.5)" title="放大">＋</button>
+<button onclick="zoomBy(1/1.5)" title="缩小">－</button>
+<button onclick="resetView()" title="复位">复位</button>
+<span id="zoomlabel">100%</span>
+</div>
+<div id="viewport"><img id="chart" src="drl_actions_20261103_043304_live.svg" draggable="false" alt="chart"></div>
+<div id="hint">滚轮: 光标处缩放 · 拖拽: 平移 · 双击: 复位 · 每 2 秒自动刷新</div>
+<script>
+const vp=document.getElementById('viewport');
+const img=document.getElementById('chart');
+let k=1,x=0,y=0;
+const KMAX=200;
+function apply(){
+  img.style.transform='translate('+x+'px,'+y+'px) scale('+k+')';
+  document.getElementById('zoomlabel').textContent=Math.round(k*100)+'%';
+  vp.style.cursor=k>1?'grab':'default';
+}
+function zoomAt(mx,my,f){
+  const nk=Math.min(KMAX,Math.max(1,k*f));
+  x=mx-(mx-x)*(nk/k); y=my-(my-y)*(nk/k); k=nk; apply();
+}
+vp.addEventListener('wheel',function(e){
+  e.preventDefault();
+  const r=vp.getBoundingClientRect();
+  zoomAt(e.clientX-r.left,e.clientY-r.top,Math.exp(-e.deltaY*0.0016));
+},{passive:false});
+let drag=null;
+vp.addEventListener('mousedown',function(e){
+  if(k>1){drag={sx:e.clientX,sy:e.clientY,x:x,y:y};vp.style.cursor='grabbing';}
+});
+window.addEventListener('mousemove',function(e){
+  if(drag){x=drag.x+e.clientX-drag.sx;y=drag.y+e.clientY-drag.sy;apply();}
+});
+window.addEventListener('mouseup',function(){drag=null;vp.style.cursor=k>1?'grab':'default';});
+vp.addEventListener('dblclick',function(){resetView();});
+function zoomBy(f){const r=vp.getBoundingClientRect();zoomAt(r.width/2,r.height/2,f);}
+function resetView(){k=1;x=0;y=0;apply();}
+// 自动刷新: 仅替换图片数据, transform 保持在 img 上, 缩放/平移状态不丢
+setInterval(function(){img.src='drl_actions_20261103_043304_live.svg?t='+Date.now();},2000);
+</script></body></html>

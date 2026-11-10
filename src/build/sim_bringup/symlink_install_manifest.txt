@@ -2,6 +2,10 @@
 /mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/config/tita_controllers_ros2_control.yaml
 /mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/launch/hw_bringup.launch.py
 /mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/launch/sim_bringup.launch.py
+/mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/launch/sim_bringup.launch.py.bak.20261104_125834
+/mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/launch/sim_bringup.launch.py.bak.20261104_130205
+/mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/launch/sim_bringup.launch.py.bak.20261104_130542
+/mnt/dev/tita_ws/src/install/sim_bringup/lib/sim_bringup/robot_reset_timer.py
 /mnt/dev/tita_ws/src/install/sim_bringup/share/ament_index/resource_index/package_run_dependencies/sim_bringup
 /mnt/dev/tita_ws/src/install/sim_bringup/share/ament_index/resource_index/parent_prefix_path/sim_bringup
 /mnt/dev/tita_ws/src/install/sim_bringup/share/sim_bringup/environment/ament_prefix_path.sh

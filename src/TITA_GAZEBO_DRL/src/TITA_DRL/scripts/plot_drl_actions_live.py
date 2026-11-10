@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""实时绘制 tita_drl_obs170 的观测/记录信号 (成对目标/实际或混合信号同轴对比, 列数自适应)。
+"""实时绘制 tita_drl_obs170 的观测/记录数据 (成对同轴对比 / 混合同轴 / 按列分面板, 列数自适应)。
 
 两种模式:
 
@@ -95,7 +95,41 @@ def decimate(t, y, max_points):
     return np.asarray(t_out), np.asarray(lo), np.asarray(hi)
 
 
-def tracked_pairs(names):
+ANALYSIS_NAMES = [
+    "left_wheel_action", "right_wheel_action",
+    "left_wheel_last_action", "right_wheel_last_action",
+    "left_wheel_vel", "right_wheel_vel",
+    "ang_vel_x", "ang_vel_y", "gravity_proj_x", "gravity_proj_y",
+]
+ANALYSIS_GROUPS = [
+    ("wheel actions vs ang_vel_x",
+     ["left_wheel_action", "right_wheel_action", "ang_vel_x"]),
+    ("wheel actions vs ang_vel_y",
+     ["left_wheel_action", "right_wheel_action", "ang_vel_y"]),
+    ("wheel actions vs gravity proj",
+     ["left_wheel_action", "right_wheel_action", "gravity_proj_x", "gravity_proj_y"]),
+    ("wheel actions vs wheel vel",
+     ["left_wheel_action", "right_wheel_action", "left_wheel_vel", "right_wheel_vel"]),
+    ("wheel actions vs last actions",
+     ["left_wheel_action", "right_wheel_action",
+      "left_wheel_last_action", "right_wheel_last_action"]),
+]
+
+
+def analysis_groups(names):
+    """检测是否为轮关节分析 10 路信号结构; 匹配返回 [(组标题, 组内列名), ...]。"""
+    if len(names) != len(ANALYSIS_NAMES) or sorted(names) != sorted(ANALYSIS_NAMES):
+        return None
+    out = []
+    for title, gcols in ANALYSIS_GROUPS:
+        if all(nm in names for nm in gcols):
+            out.append((title, gcols))
+        else:
+            return None
+    return out
+
+
+def track_pairs(names):
     """检测列名是否为 <关节>_target / <关节>_actual 成对结构。
     匹配返回 [(关节名, 目标列序号, 实际列序号), ...], 否则返回 None。"""
     if len(names) % 2 != 0:
@@ -110,6 +144,22 @@ def tracked_pairs(names):
     return pairs
 
 
+def column_ylims(yw):
+    """每列按窗口内数据独立确定纵轴范围 (12% 边距, 常数通道 ±0.1)。"""
+    out = []
+    for i in range(yw.shape[1]):
+        col = yw[:, i]
+        vmin = float(np.nanmin(col))
+        vmax = float(np.nanmax(col))
+        span = vmax - vmin
+        if span < 1e-9:  # 常数通道 (如恒 0 的线速度): 显示 ±0.1
+            out.append((vmin - 0.1, vmax + 0.1))
+        else:
+            pad = span * 0.12
+            out.append((vmin - pad, vmax + pad))
+    return out
+
+
 def style_axis(ax):
     ax.set_facecolor(SURFACE)
     ax.grid(True, color=GRID, linewidth=0.8)
@@ -121,8 +171,9 @@ def style_axis(ax):
 
 
 def draw(t, y, names, out_svg, overlay, max_points, duration,
-         xlim=None, ylim=None):
-    """渲染图表。xlim/ylim 为数据级窗口 (交互模式按缩放窗口重新出图)。"""
+         xlim=None, ylims=None):
+    """渲染图表。xlim 为数据级时间窗口; ylims 为每面板独立纵轴范围
+    (交互模式按缩放窗口重新出图, 各通道量级不同, 纵轴各自自适应)。"""
     n = y.shape[1]
     if overlay:
         fig, ax = plt.subplots(figsize=(12, 6))
@@ -145,7 +196,47 @@ def draw(t, y, names, out_svg, overlay, max_points, duration,
                      fontsize=13, fontweight="bold")
         fig.tight_layout(rect=(0, 0, 1, 0.94))
     else:
-        pairs = tracked_pairs(names)
+        groups = analysis_groups(names)
+        if groups is not None:
+            # 4 组同轴对比: 每组以两轮关节 action 为参照
+            fig, axes = plt.subplots(len(groups), 1,
+                                     figsize=(12, 3.2 * len(groups)), sharex=True)
+            fig.patch.set_facecolor(SURFACE)
+            for g, (gtitle, gcols) in enumerate(groups):
+                ax = np.asarray(axes).ravel()[g]
+                style_axis(ax)
+                for j, nm in enumerate(gcols):
+                    ci = names.index(nm)
+                    color = SERIES[j % len(SERIES)]
+                    dec = decimate(t, y[:, ci], max_points)
+                    if dec is None:
+                        ax.plot(t, y[:, ci], color=color, linewidth=1.5,
+                                label=nm)
+                    else:
+                        tc, lo, hi = dec
+                        ax.fill_between(tc, lo, hi, color=color, alpha=0.12,
+                                        linewidth=0)
+                        ax.plot(tc, lo, color=color, linewidth=1.2, label=nm)
+                        ax.plot(tc, hi, color=color, linewidth=1.2)
+                vlo = min(float(np.nanmin(y[:, names.index(nm)])) for nm in gcols)
+                vhi = max(float(np.nanmax(y[:, names.index(nm)])) for nm in gcols)
+                span = vhi - vlo
+                pad = span * 0.12 if span > 1e-9 else 0.1
+                ax.set_ylim(vlo - pad, vhi + pad)
+                ax.legend(loc="upper right", frameon=False, fontsize=9)
+                ax.set_title(gtitle, color=INK, fontsize=10, loc="left")
+            fig.suptitle(f"DRL wheel analysis ({duration:.1f} s)", color=INK,
+                         fontsize=13, fontweight="bold")
+            fig.supxlabel("time (s)", color=INK_MUTED, fontsize=10)
+            fig.supylabel("value (mixed units)", color=INK_MUTED, fontsize=10)
+            if xlim is not None:
+                for ax in np.asarray(fig.axes).ravel():
+                    ax.set_xlim(*xlim)
+            fig.tight_layout(rect=(0, 0, 1, 0.95))
+            fig.savefig(out_svg, format="svg", facecolor=SURFACE)
+            plt.close(fig)
+            return
+        pairs = track_pairs(names)
         if pairs is not None:
             # 同一关节的目标/实际速度共用同一面板 (共享时间轴与纵轴)
             fig, axes = plt.subplots(len(pairs), 1, figsize=(12, 3.2 * len(pairs)),
@@ -208,7 +299,8 @@ def draw(t, y, names, out_svg, overlay, max_points, duration,
             elif n == 4:
                 fig, axes = plt.subplots(2, 2, figsize=(12, 6.4), sharex=True)
             else:
-                fig, axes = plt.subplots(4, 2, figsize=(12, 9), sharex=True)
+                rows = (n + 1) // 2
+                fig, axes = plt.subplots(rows, 2, figsize=(12, 2.2 * rows), sharex=True)
             fig.patch.set_facecolor(SURFACE)
             for i, ax in enumerate(np.asarray(axes).ravel()):
                 if i >= n:
@@ -225,8 +317,8 @@ def draw(t, y, names, out_svg, overlay, max_points, duration,
                     ax.plot(tc, lo, color=SERIES_MAIN, linewidth=1.2)
                     ax.plot(tc, hi, color=SERIES_MAIN, linewidth=1.2)
                 ax.set_title(names[i], color=INK, fontsize=10, loc="left")
-                if ylim is not None:
-                    ax.set_ylim(*ylim)
+                if ylims is not None and i < len(ylims):
+                    ax.set_ylim(*ylims[i])
             fig.suptitle(f"DRL signals ({duration:.1f} s)", color=INK,
                          fontsize=13, fontweight="bold")
             fig.supxlabel("time (s)", color=INK_MUTED, fontsize=10)
@@ -254,8 +346,8 @@ body{margin:0;background:#f9f9f7;font-family:system-ui,sans-serif}
   background:rgba(252,252,251,.85);padding:3px 8px;border-radius:4px}
 #wrap{margin-top:56px;position:relative;overflow:auto}
 #chart{width:100%;display:block;user-select:none}
-#rubber{position:absolute;display:none;border:1px solid #2a78d6;background:rgba(42,120,214,.12);z-index:10;pointer-events:none}
-#cross{position:absolute;display:none;top:0;bottom:0;width:1px;background:#e34948;z-index:11;pointer-events:none}
+#rubber{position:fixed;display:none;border:1px solid #2a78d6;background:rgba(42,120,214,.12);z-index:10;pointer-events:none}
+#cross{position:fixed;display:none;top:0;bottom:0;width:1px;background:#e34948;z-index:11;pointer-events:none}
 #tip{position:fixed;display:none;z-index:30;font-size:12px;color:#52514e;
   background:#fcfcfb;border:1px solid #e1e0d9;border-radius:5px;padding:6px 9px;
   box-shadow:0 2px 8px rgba(11,11,11,.12);pointer-events:none;line-height:1.5}
@@ -274,7 +366,8 @@ body{margin:0;background:#f9f9f7;font-family:system-ui,sans-serif}
 <div id="hint">框选(按住拖拽): 放大时间段 · 滚轮: 平移 · 双击/复位: 全程 · 悬停: 读值 · 每2秒自动刷新</div>
 <div id="tip"></div>
 <script>
-var V={full0:0,full1:1,w0:0,w1:1,follow:true,pts:null,drag:null};
+var V={full0:0,full1:1,w0:0,w1:1,follow:true,pts:null,drag:null,
+       busy:false,lastKey:"",lastDataKey:""};
 function el(id){return document.getElementById(id);}
 function fmt(x){return x.toFixed(2);}
 function fmtv(x){return x.toFixed(3);}
@@ -282,10 +375,21 @@ function applyUI(){
   el("zoomlabel").textContent=Math.round((V.full1-V.full0)/Math.max(V.w1-V.w0,1e-9))+"x";
   el("winlabel").textContent="窗口 "+fmt(V.w0)+" - "+fmt(V.w1)+" s / 全程 "+fmt(V.full0)+" - "+fmt(V.full1)+" s";
 }
-function setSrc(){
+function hint(msg){
+  var h=el("hint");
+  if(msg){h.setAttribute("data-base",h.getAttribute("data-base")||h.textContent);h.textContent=msg;}
+  else{h.textContent=h.getAttribute("data-base")||h.textContent;}
+}
+function updateChart(){
+  var key=V.w0+","+V.w1+","+V.full1;
+  if(key===V.lastKey||V.busy){return;}
+  V.lastKey=key;V.busy=true;hint("渲染中, 请稍候...");
   el("chart").src="chart.svg?t0="+V.w0+"&t1="+V.w1+"&v="+Date.now();
 }
-function loadData(){
+function updateData(){
+  var key=V.w0+","+V.w1+","+V.full1;
+  if(key===V.lastDataKey){return;}
+  V.lastDataKey=key;
   fetch("data.json?t0="+V.w0+"&t1="+V.w1).then(function(r){return r.json();})
     .then(function(d){V.pts=d;}).catch(function(){});
 }
@@ -295,24 +399,26 @@ function refresh(){
     V.full0=d.t0;V.full1=d.t1;
     if(V.w1>d.t1){V.w1=d.t1;if(V.w0>V.w1){V.w0=d.t0;}}
     if(V.follow&&grew){V.w0=d.t0;V.w1=d.t1;}
-    applyUI();setSrc();loadData();
+    applyUI();updateChart();updateData();
   }).catch(function(){});
 }
 function zoomBtn(f){
   var c=(V.w0+V.w1)/2,newSpan=(V.w1-V.w0)/f;
   V.w0=Math.max(V.full0,c-newSpan/2);V.w1=Math.min(V.full1,c+newSpan/2);
-  V.follow=false;applyUI();setSrc();loadData();
+  V.follow=false;applyUI();updateChart();updateData();
 }
-function resetBtn(){V.w0=V.full0;V.w1=V.full1;V.follow=true;applyUI();setSrc();loadData();}
+function resetBtn(){V.w0=V.full0;V.w1=V.full1;V.follow=true;applyUI();updateChart();updateData();}
 var vp=el("vp");
+var img=el("chart");
+img.onload=function(){V.busy=false;hint(null);};
+img.onerror=function(){V.busy=false;hint("渲染失败, 将自动重试");V.lastKey="";};
 vp.addEventListener("mousedown",function(e){V.drag={x:e.clientX};});
 window.addEventListener("mousemove",function(e){
   if(V.drag){
-    var r=vp.getBoundingClientRect();
     var x0=Math.min(V.drag.x,e.clientX),x1=Math.max(V.drag.x,e.clientX);
     var rb=el("rubber");
-    rb.style.left=(x0-r.left)+"px";rb.style.top="0px";
-    rb.style.width=(x1-x0)+"px";rb.style.height=(r.height)+"px";
+    rb.style.left=x0+"px";rb.style.top="0px";
+    rb.style.width=(x1-x0)+"px";rb.style.height="100vh";
     rb.style.display="block";
   }
   showTip(e);
@@ -327,7 +433,7 @@ window.addEventListener("mouseup",function(e){
     var f1=(Math.max(e.clientX,x0)-r.left)/r.width;
     var span=V.w1-V.w0;
     var nw0=V.w0+f0*span,nw1=V.w0+f1*span;
-    if(nw1-nw0>0.001){V.w0=nw0;V.w1=nw1;V.follow=false;applyUI();setSrc();loadData();}
+    if(nw1-nw0>0.001){V.w0=nw0;V.w1=nw1;V.follow=false;applyUI();updateChart();updateData();}
   }
 });
 vp.addEventListener("wheel",function(e){
@@ -336,7 +442,7 @@ vp.addEventListener("wheel",function(e){
   V.w0+=shift;V.w1+=shift;
   if(V.w0<V.full0){V.w1+=V.full0-V.w0;V.w0=V.full0;}
   if(V.w1>V.full1){V.w0-=V.w1-V.full1;V.w1=V.full1;}
-  V.follow=false;applyUI();setSrc();loadData();
+  V.follow=false;applyUI();updateChart();updateData();
 },{passive:false});
 vp.addEventListener("dblclick",function(){resetBtn();});
 function showTip(e){
@@ -351,10 +457,12 @@ function showTip(e){
   for(var i=0;i<ts.length;i++){var d=Math.abs(ts[i]-t);if(d<bd){bd=d;best=i;}}
   if(bd>(V.w1-V.w0)*0.01){el("tip").style.display="none";el("cross").style.display="none";return;}
   var s="<b>t = "+fmt(ts[best])+" s</b>";
-  for(var k in V.pts.series){s+="<br>"+k+": "+fmtv(V.pts.series[k][best]);}
+  var ks=Object.keys(V.pts.series),shown=0;
+  for(var i=0;i<ks.length;i++){if(shown<10){s+="<br>"+ks[i]+": "+fmtv(V.pts.series[ks[i]][best]);shown++;}}
+  if(ks.length>shown){s+="<br>&middot;&middot;&middot; (+"+(ks.length-shown)+" more)";}
   var tip=el("tip");tip.innerHTML=s;tip.style.display="block";
   tip.style.left=(e.clientX+14)+"px";tip.style.top=(e.clientY+10)+"px";
-  var cr=el("cross");cr.style.display="block";cr.style.left=(e.clientX-r.left)+"px";
+  var cr=el("cross");cr.style.display="block";cr.style.left=e.clientX+"px";
 }
 refresh();setInterval(refresh,2000);
 </script></body></html>'''
@@ -368,6 +476,7 @@ class LiveServer:
         self.overlay = overlay
         self.max_points = max_points
         self.port = port
+        self._render_cache = {}  # (csv, mtime, size, t0, t1) -> svg bytes
 
     def _send(self, handler, code, ctype, body):
         handler.send_response(code)
@@ -378,10 +487,17 @@ class LiveServer:
         handler.wfile.write(body)
 
     def _render_svg(self, t0, t1):
-        """按窗口重新渲染: 线宽恒定, 坐标轴随窗口重新生成。"""
+        """按窗口重新渲染: 线宽恒定, 坐标轴随窗口重新生成。
+        相同 (文件状态, 窗口) 的结果直接复用缓存, 避免框选请求排队。"""
         csv_path = self.csv_supplier()
         if csv_path is None:
             return None
+        st = os.stat(csv_path)
+        ckey = (csv_path, st.st_mtime, st.st_size, t0, t1)
+        with _MPL_LOCK:
+            hit = self._render_cache.get(ckey)
+            if hit is not None:
+                return hit
         data = load_csv_tolerant(csv_path)
         if data is None:
             return None
@@ -390,15 +506,15 @@ class LiveServer:
         if mask.sum() < 2:  # 窗口内样本不足, 退回全程
             mask = np.ones(len(t), dtype=bool)
         tw, yw = t[mask], y[mask]
-        ymin = float(np.min(yw))
-        ymax = float(np.max(yw))
-        pad = max((ymax - ymin) * 0.06, 1e-6)
-        ylim = (ymin - pad, ymax + pad)
+        ylims = column_ylims(yw)  # 各通道量级不同: 每面板独立纵轴
         duration = float(t[-1] - t[0])
         buf = io.BytesIO()
         with _MPL_LOCK:
             draw(tw, yw, names, buf, self.overlay, self.max_points, duration,
-                 xlim=(float(tw[0]), float(tw[-1])), ylim=ylim)
+                 xlim=(float(tw[0]), float(tw[-1])), ylims=ylims)
+            if len(self._render_cache) > 8:
+                self._render_cache.clear()
+            self._render_cache[ckey] = buf.getvalue()
         return buf.getvalue()
 
     def _window_slice(self, t0, t1):
@@ -414,7 +530,9 @@ class LiveServer:
         if mask.sum() < 2:
             mask = np.ones(len(t), dtype=bool)
         tw, yw = t[mask], y[mask]
-        step = max(1, int(np.ceil(len(tw) / 4000.0)))
+        # 列数多时降低切片行数上限, 控制悬停数据量 (总数值量约 2 万)
+        rows_cap = max(500, 20000 // max(y.shape[1], 1))
+        step = max(1, int(np.ceil(len(tw) / rows_cap)))
         sl = slice(None, None, step)
         return {"t": tw[sl].tolist(),
                 "series": {names[i]: yw[sl, i].tolist() for i in range(y.shape[1])}}
